@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/taberoajorge/booking-ui/issues"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
   }
 }

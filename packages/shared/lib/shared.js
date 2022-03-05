@@ -1,7 +1,10 @@
 'use strict';
 
-module.exports = shared;
+const { Button } = require("./components/Button");
+
+
+module.exports = Button;
 
 function shared() {
-    // TODO
+    console.log('epale');
 }

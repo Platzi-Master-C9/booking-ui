@@ -27,6 +27,6 @@
     "url": "https://github.com/taberoajorge/booking-ui/issues"
   },
   "dependencies": {
-    "@booking-ui/shared": "^1.0.0"
+    "dotenv": "^16.0.0"
   }
 }

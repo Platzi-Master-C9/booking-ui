@@ -5,7 +5,7 @@
   "author": "C9",
   "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/apps/shared#readme",
   "license": "ISC",
-  "main": "src/index.ts",
+  "main": "lib/shared.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -22,5 +22,11 @@
   },
   "bugs": {
     "url": "https://github.com/taberoajorge/booking-ui/issues"
+  },
+  "dependencies": {
+    "@booking-ui/geolocation": "^1.0.0",
+    "@booking-ui/messaging-system": "^1.0.0",
+    "@booking-ui/search-engine": "^1.0.0",
+    "dotenv": "^16.0.0"
   }
 }
