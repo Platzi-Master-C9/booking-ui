@@ -1,0 +1,26 @@
+{
+  "name": "@booking-ui/shared",
+  "version": "1.0.0",
+  "description": "This package will be in charge of distributing all the libraries to the next.js application.",
+  "author": "C9",
+  "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/apps/shared#readme",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taberoajorge/booking-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/taberoajorge/booking-ui/issues"
+  }
+}
