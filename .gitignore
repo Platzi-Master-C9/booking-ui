@@ -3,9 +3,6 @@
 
 # local env files (followinf dotenv-flow / nextjs convention)
 
-.env.local
-.env.*.local
-
 # security: atlassian/changeset
 
 **/.netrc
