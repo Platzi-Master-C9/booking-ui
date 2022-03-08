@@ -5,9 +5,9 @@
   "author": "C9",
   "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/apps/shared#readme",
   "license": "ISC",
-  "main": "lib/shared.js",
+  "main": "src/index.js",
   "directories": {
-    "lib": "lib",
+    "src": "serc",
     "test": "__tests__"
   },
   "files": [

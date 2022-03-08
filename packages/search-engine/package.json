@@ -2,29 +2,29 @@
   "name": "@booking-ui/search-engine",
   "version": "1.0.0",
   "description": "> TODO: description",
-  "author": "taberoajorge <taberoajorge@pm.me>",
+  "author": "C9",
   "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/packages/search-engine#readme",
   "license": "ISC",
-  "main": "lib/search-engine.js",
+  "main": "src/index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taberoajorge/booking-ui.git"
+    "url": "git+https://github.com/Platzi-Master-C9/booking-ui.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/taberoajorge/booking-ui/issues"
+    "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
   },
   "dependencies": {
     "dotenv": "^16.0.0"
