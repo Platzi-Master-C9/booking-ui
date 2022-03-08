@@ -1,0 +1,32 @@
+{
+  "name": "booking-ui",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "version": "0.0.1",
+  "description": "This monorepo will hold all the packages for the fronted teams.",
+  "main": "index.js",
+  "private": true,
+  "devDependencies": {
+    "@types/prettier": "^2.4.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "bootstrap": "yarn install; lerna bootstrap;",
+    "start": "lerna run start --parallel",
+    "start:app": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope booking-app --stream dev",
+    "build:app": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope booking-app --stream build",
+    "run:build:app": "lerna run start --scope booking-app"
+  },
+  "repository": "git+https://github.com/Platzi-Master-C9/booking-ui.git",
+  "author": "C9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
+  },
+  "homepage": "https://github.com/Platzi-Master-C9/booking-ui#readme"
+}
