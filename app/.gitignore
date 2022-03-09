@@ -1,25 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 # and https://github.com/github/gitignore for examples
 
-<<<<<<< HEAD
-# local env files (followinf dotenv-flow / nextjs convention)
-
-.env.local
-.env.*.local
-
-# security: atlassian/changeset
-
-**/.netrc
-
-# dependencies
-node_modules
-=======
 
 
 node_modules
 
 # dependencies
->>>>>>> 34a489fb92a20bf087adf71200720ec1b0a53157
 .yarn/*
 !.yarn/patches
 !.yarn/releases
@@ -67,13 +53,6 @@ yarn-error.log*
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
-<<<<<<< HEAD
-# Docker overrides
-
-./docker-compose.override.yml
-
-=======
->>>>>>> 34a489fb92a20bf087adf71200720ec1b0a53157
 # Deployment platforms
 
 .vercel

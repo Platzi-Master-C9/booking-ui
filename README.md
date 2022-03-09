@@ -23,6 +23,35 @@ This monorepo will hold all the packages for the frontend teams.
 ```
 
 
+<<<<<<< HEAD
+=======
+## Step by step [How to add new package]
+
+Define each of the UI components to be attached with the following command 
+
+`lerna create @booking-ui/[your-package-name]`.
+
+### Example
+
+`lerna create @booking-ui/search-engine`
+
+`Output:`
+
+```
+lerna create @booking-ui/search-engine
+lerna notice cli v3.22.1
+lerna info versioning independent
+package name: (@booking-ui/search-engine)
+version: (1.0.0)
+description: This is the default template that lerna configures.
+keywords:
+home page: (https://github.com/Platzi-Master-c9/frontend-services/tree/master/packages/search-engine#readme)
+license: (ISC)
+entry point: (lib/search-engine) lib/index.js
+git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
+```
+
+>>>>>>> 34a489fb92a20bf087adf71200720ec1b0a53157
 
 ## Folder overview
 
