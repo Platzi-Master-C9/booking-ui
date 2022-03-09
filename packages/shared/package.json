@@ -7,7 +7,7 @@
   "license": "ISC",
   "main": "src/index.js",
   "directories": {
-    "src": "serc",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [

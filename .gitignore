@@ -6,6 +6,7 @@
 node_modules
 
 # dependencies
+node_modules
 .yarn/*
 !.yarn/patches
 !.yarn/releases
@@ -53,6 +54,3 @@ yarn-error.log*
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
-# Deployment platforms
-
-.vercel
