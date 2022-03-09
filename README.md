@@ -23,11 +23,6 @@ This monorepo will hold all the packages for the frontend teams.
 ```
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0c3cd7416625e68be8d3dab877f6abbacdcb49bc
 ## Step by step [How to add new package]
 
 Define each of the UI components to be attached with the following command 
@@ -54,10 +49,6 @@ entry point: (lib/search-engine) lib/index.js
 git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
 ```
 
-<<<<<<< HEAD
->>>>>>> 34a489fb92a20bf087adf71200720ec1b0a53157
-=======
->>>>>>> 0c3cd7416625e68be8d3dab877f6abbacdcb49bc
 
 ## Folder overview
 
