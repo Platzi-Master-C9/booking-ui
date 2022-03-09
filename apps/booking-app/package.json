@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@booking-ui/shared": "^1.0.0",
+    "@testing-library/react": "^12.1.3",
     "next": "12.1.0",
     "next-compose-plugins": "^2.2.1",
     "next-transpile-modules": "^9.0.0",
