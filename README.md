@@ -29,6 +29,12 @@ Define each of the UI components to be attached with the following command
 
 `lerna create @booking-ui/[your-package-name]`.
 
+### Then
+you need to share your package to `shared` package
+
+`lerna add @booking-ui/[your-package-name] --scope=@booking-ui/shared`.
+
+
 ### Example
 
 `lerna create @booking-ui/search-engine`
