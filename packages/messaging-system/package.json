@@ -21,12 +21,30 @@
     "url": "git+https://github.com/Platzi-Master-C9/booking-ui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "bugs": {
     "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
   },
   "dependencies": {
     "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "babel-loader": "^8.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
