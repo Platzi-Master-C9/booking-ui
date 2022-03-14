@@ -1,8 +1,13 @@
 import React from 'react'
 
-const ChatItem = ({ chat }) => {
+const ChatItem = ({ chat, onSelect, selected }) => {
+  
+  const handleSelect = () => {
+    onSelect && onSelect(chat.id);
+  }
+
   return (
-    <div className={`chat ${chat.active ? 'chat--active' : ''}`}>
+    <div onClick={handleSelect} className={`chat ${selected ? 'chat--active' : ''}`}>
       {Boolean(chat.notifications) && (
         <span className="notification-badge">1</span>
       )}
