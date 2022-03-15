@@ -1,5 +1,5 @@
 export function debounce (func: () => void, wait: number) {
-  let timeout;
+  let timeout; 
 
   if(!func)
     return
