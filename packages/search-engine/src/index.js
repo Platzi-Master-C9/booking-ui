@@ -1,1 +1,1 @@
-export { SearchEngine } from './components/helloWorld';
+export { Demo } from './components/Demo';
