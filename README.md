@@ -25,7 +25,7 @@ This monorepo will hold all the packages for the frontend teams.
 
 ## Step by step [How to add new package]
 
-Define each of the UI components to be attached with the following command 
+Define each of the UI components to be attached with the following command
 
 `lerna create @booking-ui/[your-package-name]`.
 
@@ -55,6 +55,26 @@ entry point: (lib/search-engine) lib/index.js
 git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
 ```
 
+## How to render your package into Next.js Booking-app
+You must add your package name into `const withTM ` to render it
+
+```
+const withPlugins = require("next-compose-plugins");
+const withTM = require("next-transpile-modules")([
+  "@booking-ui/shared",
+  "@booking-ui/search-engine", <--------- add your package
+  "@booking-ui/messaging-system",
+  "@booking-ui/geolocation"
+]);
+module.exports = withPlugins([withTM()], {
+  webpack: (config) => {
+    // custom webpack config
+    return config;
+  },
+  images: {},
+});
+
+```
 
 ## Folder overview
 
@@ -73,7 +93,7 @@ git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
 │       ├── package.json         (define package workspace)
 │       └── tsconfig.json        (define path to packages)
 ├── packages
-│   ├── geolocation                
+│   ├── geolocation
 │   │   ├── src/
 │   │   │    ├── components/
 │   │   │    ├── templates/
@@ -81,7 +101,7 @@ git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
 │   │   ├── package.json
 │   │   └── index.js
 │   │
-│   ├── messaging-system          
+│   ├── messaging-system
 │   │   │    ├── components/
 │   │   │    ├── templates/
 │   │   │    └── assets/
@@ -89,7 +109,7 @@ git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
 │   │   └── index.js
 │   │
 │   │
-│   ├── search-engine          
+│   ├── search-engine
 │   │   │    ├── components/
 │   │   │    ├── templates/
 │   │   │    └── assets/
@@ -98,7 +118,7 @@ git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
 │   │
 │   │
 │   │
-│   └── shared  (It will contain all component exports to the app.)                 
+│   └── shared  (It will contain all component exports to the app.)
 │       ├── src/
 │       ├── package.json (It will contain as a dependency
 │       │                 each one of the packages to export)
@@ -106,9 +126,9 @@ git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
 │
 ├── .npmrc
 ├── dotenv.config.js
-├── lerna.json          
-├── yarn.lock          
-└── package.json        
+├── lerna.json
+├── yarn.lock
+└── package.json
 ```
 
 </details>
@@ -125,7 +145,7 @@ git repository: (https://github.com/Platzi-Master-C9/frontend-services.git) |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `yarn bootstrap`           | install all dependencies and start symlinks                                                                                                                      |
 | `yarn start ` | run all packages in paralel                                                         |
-| `yarn start:app ` |                                                                      |
+| `yarn start:app ` | run server                                                               |
 | `yarn build:app`    |                                                                                  |
 | `yarn run:build:app`                | Built-in                                                                             |
 
