@@ -1,16 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Home.module.css';
 
 import {
   Demo,
-  Places,
   Geolocation,
   MessagingSystem,
   AdminPanel,
-  Authentication,
-  LoginButton,
-  UserAccount,
 } from '@booking-ui/shared';
 
 export default function Home() {
@@ -31,9 +27,6 @@ export default function Home() {
         <Geolocation />
         <MessagingSystem />
         <AdminPanel />
-        <Authentication />
-        <UserAccount />
-        <LoginButton label="Not login" />
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
