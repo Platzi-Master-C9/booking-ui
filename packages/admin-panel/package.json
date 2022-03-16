@@ -9,13 +9,13 @@
   "author": "Pedro Silva <pedroalejsp@gmail.com>",
   "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/packages/admin-panel#readme",
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "lib/admin-panel.js",
   "directories": {
-    "src": "src",
+    "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "src"
+    "lib"
   ],
   "publishConfig": {
     "access": "public"
@@ -29,13 +29,5 @@
   },
   "bugs": {
     "url": "https://github.com/pedroalesp/booking-ui/issues"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
-    "@mui/icons-material": "^5.5.1",
-    "@mui/material": "^5.5.3",
-    "react-dom": "^18.0.0",
-    "styled-components": "^5.3.5"
   }
 }
