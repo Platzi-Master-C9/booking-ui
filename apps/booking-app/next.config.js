@@ -1,10 +1,10 @@
-const withPlugins = require("next-compose-plugins");
-const withTM = require("next-transpile-modules")([
-  "@booking-ui/shared",
-  "@booking-ui/search-engine",
-  "@booking-ui/messaging-system",
-  "@booking-ui/geolocation",
-  "@booking-ui/admin-panel",
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')([
+  '@booking-ui/shared',
+  '@booking-ui/search-engine',
+  '@booking-ui/messaging-system',
+  '@booking-ui/geolocation',
+  '@booking-ui/admin-panel',
 ]);
 module.exports = withPlugins([withTM()], {
   webpack: (config) => {
