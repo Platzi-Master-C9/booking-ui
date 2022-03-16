@@ -9,13 +9,13 @@
   "author": "Pedro Silva <pedroalejsp@gmail.com>",
   "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/packages/admin-panel#readme",
   "license": "ISC",
-  "main": "lib/admin-panel.js",
+  "main": "src/index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "access": "public"
