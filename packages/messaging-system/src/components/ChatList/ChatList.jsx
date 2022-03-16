@@ -1,32 +1,24 @@
 import React, { useState } from 'react';
-import profileImage from '../../assets/profile-image.png';
-
+import { useChatList } from '../../hooks';
 import ChatItem from './ChatItem';
 
 import './ChatList.css';
 
-const chats = [
-    {
-        id: 1,
-        name: 'Laura Restrepo',
-        message: 'Hola. Cómo te pued...',
-        image: profileImage,
-        notifications: 0,
-    },
-    {
-        id: 2,
-        name: 'Booking System',
-        message: 'Novedad de Booking...',
-        image: null,
-        notifications: 1,
-    },
-]
 
 export default function ChatList(props) {
     const [selected, setSelected] = useState(1);
+    const { chats, loading } = useChatList();
 
     const handleSelect = (id) => {
       setSelected(id);
+    }
+
+    if (loading) {
+      return (
+        <div>
+          <span>Cargando chats...</span>
+        </div>
+      )
     }
 
     return(
