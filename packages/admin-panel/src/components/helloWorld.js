@@ -1,5 +1,8 @@
 import React from 'react';
 
 export const AdminPanel = () => {
-  return <h1>This is the best admin panel in the world :D</h1>;
+  return (
+    //console.log('hello from admin panel')
+    <h1>hello from admin panel :D</h1>
+  );
 };
