@@ -24,6 +24,7 @@
     "url": "https://github.com/taberoajorge/booking-ui/issues"
   },
   "dependencies": {
+    "@booking-ui/admin-panel": "^1.0.0",
     "@booking-ui/geolocation": "^1.0.0",
     "@booking-ui/messaging-system": "^1.0.0",
     "@booking-ui/places": "^1.0.0",
