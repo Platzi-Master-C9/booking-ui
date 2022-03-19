@@ -5,6 +5,7 @@
         "node": true
     },
     "extends": [
+        "plugin:storybook/recommended",
         "plugin:react/recommended",
         "airbnb"
     ],
