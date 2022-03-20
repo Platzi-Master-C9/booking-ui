@@ -1,5 +1,14 @@
 import React from 'react';
 
-const Admin = () => <h1>Hello Admin Panel :D</h1>;
+import { DropdownMenu } from '@booking-ui/shared';
+
+const Admin = () => {
+  return (
+    <>
+      <h1>Hello Admin Panel :D</h1>;
+      <DropdownMenu />
+    </>
+  );
+};
 
 export default Admin;
