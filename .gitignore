@@ -16,7 +16,7 @@ node_modules
 .pnp.*
 
 # testing
-/coverage
+coverage
 .out/
 
 # Build directories (next.js...)
