@@ -1,5 +1,8 @@
-export function debounce (func, wait) {
+export function debounce (func: () => void, wait: number) {
   let timeout;
+
+  if(!func)
+    return
 
   return function () {
     if(timeout){
