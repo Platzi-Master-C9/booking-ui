@@ -90,3 +90,52 @@
     height: 24px;
     width: 24px;
 }
+
+.modal {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .containerCards {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: right;
+        width: 100%;
+    }
+    .cardContainer {
+        position: initial;
+        width: 100%;
+    }
+    .type {
+        border: none;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .cardContainer {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .lineDown {
+        border-bottom: none;
+    }
+    .containerFilters {
+        display: none;
+    }
+    .containerFiltersTwo {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .modal {
+        display: block;
+        height: -webkit-fill-available;
+        width: 100%;
+        background: white;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+    }
+}
