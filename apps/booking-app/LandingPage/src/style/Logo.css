@@ -1,0 +1,10 @@
+.logo-container {
+  background-color: #ffffff;
+  color: #1572a1;
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid #1572a1;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
