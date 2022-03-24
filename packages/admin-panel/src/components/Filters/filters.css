@@ -95,9 +95,12 @@
     display: none;
 }
 
+.buttonFilter {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .containerCards {
-        height: 100vh;
         flex-direction: column;
         justify-content: right;
         width: 100%;
@@ -123,12 +126,12 @@
     }
     .containerFiltersTwo {
         display: flex;
+        flex-direction: column;
         width: 100%;
         box-sizing: border-box;
         justify-content: space-evenly;
         align-items: center;
     }
-
     .modal {
         display: block;
         height: -webkit-fill-available;
@@ -137,5 +140,23 @@
         position: absolute;
         z-index: 2;
         top: 0;
+    }
+    .buttonFilter {
+        background-color: white;
+        display: block;
+        height: 48px;
+        width: 68px;
+        border: 1px solid #1572A1;
+        border-radius: 32px;
+        box-sizing: border-box;
+    }
+    .eq {
+        height: 2rem;
+        width: 2rem;
+    }
+    .containerEq {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
     }
 }
