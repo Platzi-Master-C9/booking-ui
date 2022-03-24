@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/DropdownMenu.css';
+import '../assets/styles/DropdownMenu.css';
 
 export const DropdownMenu = () => (
   <div className="manage__container">
