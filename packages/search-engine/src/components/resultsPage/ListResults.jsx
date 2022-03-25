@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/ListResults.css'
 
 export default function Results(props) {
   return <React.Fragment>

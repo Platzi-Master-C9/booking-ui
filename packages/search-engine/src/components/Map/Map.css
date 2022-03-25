@@ -1,0 +1,7 @@
+.map__container {
+  grid-area: map;
+  width: 558px;
+  height: 764px;
+  background-color: darkslategrey;
+  background-image: url("./assets/map.png");
+}
