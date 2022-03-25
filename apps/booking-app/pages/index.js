@@ -7,6 +7,7 @@ import {
   Geolocation,
   MessagingSystem,
   AdminPanel,
+  UserAccount,
 } from '@booking-ui/shared';
 
 export default function Home() {
@@ -26,6 +27,8 @@ export default function Home() {
         <Geolocation />
         <MessagingSystem />
         <AdminPanel />
+        <UserAccount />
+
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
