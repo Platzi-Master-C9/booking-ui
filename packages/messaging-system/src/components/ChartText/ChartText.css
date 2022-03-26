@@ -1,5 +1,6 @@
-main {
+.principal_chart {
     padding:10px 25px;
+    width: 100%;
 }
 .main_box {
     position: relative;
@@ -21,6 +22,7 @@ main {
     font-size: 18px;
     line-height: 27px;
     padding: 0px 125px 0px 12px;
+    letter-spacing: 1px;
 }
 .btn_box {
     position: absolute;

@@ -1,8 +1,8 @@
 import './ChartText.css'
 
-const ChartText = () => {
+export const ChartText = () => {
     return ( 
-        <main>
+        <main className='principal_chart'>
             <div className='main_box'>
                 <input className='text_box' type = 'text' name = 'textbox' placeholder= 'Escribe un mensaje...'/>
                 <input className='btn_box' type='button' name='btn' value='Enviar'/>
@@ -11,7 +11,7 @@ const ChartText = () => {
         </main> 
         
     );
-}
+};
  
-export default ChartText;
+
 
