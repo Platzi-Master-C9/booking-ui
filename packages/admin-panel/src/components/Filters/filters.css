@@ -1,0 +1,92 @@
+.containerCards {
+    display: flex;
+    justify-content: space-around;
+    width: 30rem;
+  }
+  
+  .containerUsers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .type {
+    display: flex;
+    height: 48px;
+    width: 126px;
+    border: 1px solid #1572A1;
+    border-radius: 32px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.figure {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+.img {
+    height: inherit;
+    width: inherit;
+}
+
+.cardContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+    height: 237px;
+    justify-content: space-between;
+    padding: 1rem;
+    position: absolute;
+    width: 388px;
+}
+
+.details {
+    align-items: center;
+    display: flex;
+    text-align: start;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    color: #666666;
+}
+
+.lineDown {
+    border-bottom: 1px solid gray;
+}
+
+.buttonContainer {
+    align-items: self-end;
+    display: flex;
+    height: -webkit-fill-available;
+    justify-content: space-between;
+}
+
+.delete {
+    color: #1572A1;
+    height: 2rem;
+}
+
+.buttonSave {
+    background: #1572A1;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    height: 45px;
+    width: 107px;
+}
+
+.dees {
+    margin: 0 2rem;
+}
+
+.input {
+    height: 24px;
+    width: 24px;
+}
