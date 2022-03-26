@@ -4,3 +4,4 @@ export { MessagingSystem } from '@booking-ui/messaging-system';
 export { Demo } from '@booking-ui/search-engine';
 export { AdminPanel } from '@booking-ui/admin-panel';
 export { Authentication } from '@booking-ui/authentication';
+export { LoginButton } from '@booking-ui/authentication';
