@@ -1,0 +1,16 @@
+.most-visited-container {
+  position: relative;
+  width: 100%;
+  height: 470px;
+}
+
+.most-visited-title {
+  margin: 34px 0 28px 64px;
+}
+
+.cards-section {
+  display: flex;
+  width: 95%;
+  height: 380px;
+  margin: 0 0 0 34px;
+}

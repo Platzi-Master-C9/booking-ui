@@ -1,0 +1,31 @@
+.card {
+  margin: 0 20px;
+  width: 380px;
+  height: 360px;
+  border-radius: 34px;
+  background-size: cover;
+  background: no-repeat;
+}
+
+.card p {
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.malta {
+  background: url(https://images.pexels.com/photos/3496763/pexels-photo-3496763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+}
+
+.peru {
+  background: url(https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+}
+
+.mexico {
+  background: url(https://images.pexels.com/photos/604661/pexels-photo-604661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+}
