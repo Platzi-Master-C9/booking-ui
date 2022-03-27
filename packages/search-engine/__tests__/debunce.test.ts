@@ -1,8 +1,8 @@
 import { debounce } from "../src/scripts/debounce";
 
 jest.useFakeTimers();
-describe('Debounce function', () => {
-    test('execute just once', () => {
+describe('Given the debounce function is used', () => {
+    test('when is called sometimes in a short time period, then should just executed once', () => {
         const func = jest.fn();
         const debouncedFunc = debounce(func, 500);
     
@@ -20,7 +20,7 @@ describe('Debounce function', () => {
         expect(func).toBeCalledTimes(1);
     });
 
-    test('should not execute the function when is undefined', () => {
+    test('when we do not pass a function, then should not execute', () => {
         const debouncedFunc = debounce(undefined, 500);
 
         expect(debouncedFunc).toEqual(undefined);
