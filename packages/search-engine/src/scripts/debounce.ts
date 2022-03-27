@@ -4,12 +4,6 @@ export function debounce (func: () => void, wait: number) {
   if(!func)
     return
 
-  if(!func)
-    return
-
-  if(!func)
-    return
-
   return function () {
     if(timeout){
       clearTimeout(timeout);
