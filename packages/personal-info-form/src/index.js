@@ -1,0 +1,1 @@
+export { PersonalInfoForm } from './components/App';
