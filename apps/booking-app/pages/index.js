@@ -1,8 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
-import {Demo, Geolocation, MessagingSystem} from '@booking-ui/shared'
+import {
+  Demo,
+  Geolocation,
+  MessagingSystem,
+  AdminPanel,
+} from '@booking-ui/shared';
 
 export default function Home() {
   return (
@@ -20,6 +25,7 @@ export default function Home() {
         <Demo />
         <Geolocation />
         <MessagingSystem />
+        <AdminPanel />
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
@@ -69,5 +75,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
