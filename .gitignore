@@ -2,7 +2,7 @@
 # and https://github.com/github/gitignore for examples
 
 
-
+dist
 node_modules
 
 # dependencies
@@ -23,6 +23,7 @@ node_modules
 /.next/
 /out/
 /build
+
 
 # Cache
 **/tsconfig.tsbuildinfo
