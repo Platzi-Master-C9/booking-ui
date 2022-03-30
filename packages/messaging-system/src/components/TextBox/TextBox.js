@@ -1,7 +1,7 @@
 import React from 'react';
 import './TextBox.css';
 
-const TextBox = () => {
+ export const TextBox = () => {
     return (
         <main className='principal_chart'>
             <div className='main_box'>

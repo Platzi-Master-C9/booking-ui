@@ -6,6 +6,7 @@ import {
   Demo,
   Geolocation,
   MessagingSystem,
+  TextBox,
   AdminPanel,
 } from '@booking-ui/shared';
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Demo />
         <Geolocation />
         <MessagingSystem />
+        <TextBox />
         <AdminPanel />
         <p className={styles.description}>
           Get started by editing{' '}
