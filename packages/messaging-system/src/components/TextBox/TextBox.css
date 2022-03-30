@@ -1,7 +1,7 @@
 .principal_chart {
-    padding:10px 25px;
+    /* padding:10px 25px; */
     width: 100%;
-}
+} /* No need for padding here (at least in storybook) */
 .main_box {
     position: relative;
     width: 100%;
@@ -16,7 +16,7 @@
     border: 1px solid #9B9B9B;
     box-sizing: border-box;
     border-radius: 32px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif; /* loads sans-serif font if poppins doesn't*/
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -33,7 +33,7 @@
     background: #1572A1;
     border-radius: 32px;
     color:#FFFFFF ;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif; /* loads sans-serif font if poppins doesn't*/
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
