@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.scss';
 
 import {
   Demo,
+  Places,
   Geolocation,
   MessagingSystem,
   AdminPanel,
@@ -25,6 +26,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <Demo />
+        <Places />
         <Geolocation />
         <MessagingSystem />
         <AdminPanel />
