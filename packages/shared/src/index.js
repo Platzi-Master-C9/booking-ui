@@ -6,4 +6,3 @@ export { Demo } from '@booking-ui/search-engine';
 export { AdminPanel } from '@booking-ui/admin-panel';
 export { UserAccount } from '@booking-ui/user-account';
 export * from '@booking-ui/authentication';
-export { AdminPanel, DropdownMenu } from '@booking-ui/admin-panel';
