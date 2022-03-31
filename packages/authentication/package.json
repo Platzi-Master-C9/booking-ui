@@ -1,0 +1,34 @@
+{
+  "name": "@booking-ui/authentication",
+  "version": "1.0.0",
+  "description": "This is the package for the UI components for the authentication squad",
+  "keywords": [
+    "authentication",
+    "login",
+    "auth0"
+  ],
+  "author": "Cristian Diaz <crisdi384@hotmail.com>",
+  "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/packages/authentication#readme",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsCrisDiaz/booking-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ItsCrisDiaz/booking-ui/issues"
+  }
+}
