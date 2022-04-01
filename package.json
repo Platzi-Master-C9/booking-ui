@@ -29,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
   },
-  "homepage": "https://github.com/Platzi-Master-C9/booking-ui#readme"
+  "homepage": "https://github.com/Platzi-Master-C9/booking-ui#readme",
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "react-datepicker": "^4.7.0"
+  }
 }
