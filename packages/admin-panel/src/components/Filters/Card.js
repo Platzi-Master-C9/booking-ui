@@ -8,14 +8,14 @@ export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, check
                 <div className='details'>
                     <input onChange={handleChexboxOne} checked={checkedOne} className='input' type="checkbox" />
                     <div className='dees'>
-                        <p>{titleOne}</p>
+                        <p className='title'>{titleOne}</p>
                         <span className='description'>{descriptionOne}</span>
                     </div>
                 </div>
                 <div className='details'>
                     <input onChange={handleChexboxTwo} checked={checkedTwo} className='input' type="checkbox" />
                     <div className='dees'>
-                        <p>{titleTwo}</p>
+                        <p className='descriptionTitle'>{titleTwo}</p>
                         <span className='description'>{descriptionTwo}</span>
                     </div>
                 </div>
