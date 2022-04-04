@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card } from './Card';
 import "./filters.css";
-import arrow from '../../assets/arrow.png';
 
 export const CardContainer = ({ type, titleOne, titleTwo, descriptionOne, descriptionTwo, show, checkedOne, checkedTwo, handleSetShow, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete, }) => {
 
