@@ -1,6 +1,8 @@
 import React from "react";
 import "../../assets/styles/favoriteViewCard.css";
 
+const favoriteCard = {"cardTitle":"Lala", "cardPhoto":"https://cdn2.infocasas.com.uy/repo/img/558354207cc43558354207ccbb.jpg.th810.jpg"}
+
 function FavoriteCard(cardPhoto, cardTitle) {
   return (
     <html>
@@ -9,7 +11,7 @@ function FavoriteCard(cardPhoto, cardTitle) {
     referrerpolicy="no-referrer" />
       </head>
       <div className="favorite-card">
-        <a href="">
+        <a href="#">
           <img className="favorite-card-photo" src={favoriteCard.cardPhoto}></img>
           <div className="favorite-card-content">
             <h2 className="favorite-card-title">{favoriteCard.cardTitle}</h2>
