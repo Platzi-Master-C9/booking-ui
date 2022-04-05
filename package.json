@@ -21,7 +21,8 @@
     "start": "lerna run start --parallel",
     "start:app": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope booking-app --stream dev",
     "build:app": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope booking-app --stream build",
-    "run:build:app": "lerna run start --scope booking-app"
+    "run:build:app": "lerna run start --scope booking-app",
+    "storybook:app": "lerna run --scope booking-app --stream storybook"
   },
   "repository": "git+https://github.com/Platzi-Master-C9/booking-ui.git",
   "author": "C9",
