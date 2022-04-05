@@ -16,7 +16,7 @@ This monorepo will hold all the packages for the frontend teams.
 └── packages
     ├── shared
     ├── geolocation
-    ├── messaging-sytem
+    ├── messaging-system
     ├── search-engine
     └── ...others parts of booking-ui
 

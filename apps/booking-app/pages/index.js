@@ -1,13 +1,17 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 
 import {
   Demo,
+  Places,
   Geolocation,
   MessagingSystem,
   AdminPanel,
+  Authentication,
+  LoginButton,
 } from '@booking-ui/shared';
+import { PersonalInfo } from '../../../packages/user-account/src';
 
 export default function Home() {
   return (
@@ -23,9 +27,13 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <Demo />
+        <Places />
+        <PersonalInfo />
         <Geolocation />
         <MessagingSystem />
         <AdminPanel />
+        <Authentication />
+        <LoginButton label="Not login" />
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
