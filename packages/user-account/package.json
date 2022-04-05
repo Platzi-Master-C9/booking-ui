@@ -1,0 +1,29 @@
+{
+  "name": "@booking-ui/user-account",
+  "version": "1.0.0",
+  "description": "package for user account components",
+  "author": "juli666n <julianhfan@gmail.com>",
+  "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/packages/user-account#readme",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Platzi-Master-C9/booking-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
+  }
+}
