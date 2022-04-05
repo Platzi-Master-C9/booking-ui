@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function InputContainer({ label, value, sub }) {
+export default function InputContainer({ label, value }) {
   const [disabled, setDisabled] = useState(true);
   const [isActive, setActive] = useState("false");
   function handleGameClick() {
@@ -19,15 +19,15 @@ export default function InputContainer({ label, value, sub }) {
           <div className="data-input-item">
             <input
           type="text" 
-          value={text ? text : value.email}
+          value={text ? text : value.phoneNumber}
           onChange={(e) => setText(e.target.value)}
         />
-            <sub>{sub}</sub>
+            <sub>Escriba su número de teléfono</sub>
           </div>
         )}
       </div>
       <div className="data-text">
-        {isActive && <p>{text ? text : value.email}</p>}
+        {isActive && <p>{text ? text : value.phoneNumber}</p>}
       </div>
     </div>
   );

@@ -11,15 +11,15 @@ export default function InputContainer({ label, value, sub }) {
   return (
     <div className="inputContainer">
       <label>{label}</label>
-      {isActive && <span onClick={handleGameClick}>Editar</span>}
-      {!isActive && <span onClick={handleGameClick}>Guardar</span>}
+      {isActive && sub && <span onClick={handleGameClick}>Editar</span>}
+      {!isActive && sub && <span onClick={handleGameClick}>Guardar</span>}
 
       <div className="data-input">
-        {!isActive && (
+        {!isActive && sub && (
           <div className="data-input-item">
             <input
           type="text" 
-          value={text ? text : value.email}
+          value={text ? text : value}
           onChange={(e) => setText(e.target.value)}
         />
             <sub>{sub}</sub>
@@ -27,7 +27,7 @@ export default function InputContainer({ label, value, sub }) {
         )}
       </div>
       <div className="data-text">
-        {isActive && <p>{text ? text : value.email}</p>}
+        {isActive && <p>{text ? text : value}</p>}
       </div>
     </div>
   );

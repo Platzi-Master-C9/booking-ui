@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
-export default function InputContainer({ label, value }) {
+export default function InputContainer({ label, value, sub }) {
   const [disabled, setDisabled] = useState(true);
   const [isActive, setActive] = useState("false");
   function handleGameClick() {
     setDisabled(!disabled);
     setActive(!isActive);
   }
+  console.log(value);
   const [firstname, setFirstName] = useState("");
   const [secondname, setSecondname] = useState("");
   const [firstSurname, setFirstSurname] = useState("");
@@ -27,7 +28,7 @@ export default function InputContainer({ label, value }) {
           value={firstname ? firstname : value.firstName}
           onChange={(e) => setFirstName(e.target.value)}
         />
-        <sub>Primer Nombre</sub>
+        <sub>{sub.firstName}</sub>
           </div>
         )}
         {!isActive && (
@@ -37,7 +38,7 @@ export default function InputContainer({ label, value }) {
           value={secondname ? secondname : value.secondName}
           onChange={(e) => setSecondname(e.target.value)}
         />
-            <sub>Segundo Nombre</sub>
+            <sub>{sub.secondName}</sub>
           </div>
         )}
         {!isActive && (
@@ -47,7 +48,7 @@ export default function InputContainer({ label, value }) {
           value={firstSurname ? firstSurname : value.firstSurname}
           onChange={(e) => setFirstSurname(e.target.value)}
         />
-            <sub>Primer Apellido</sub>
+            <sub>{sub.firstSurname}</sub>
           </div>
         )}
         {!isActive && (
@@ -57,7 +58,7 @@ export default function InputContainer({ label, value }) {
           value={secondSurname ? secondSurname : value.secondSurname}
           onChange={(e) => setSecondSurname(e.target.value)}
         />
-            <sub>Segundo Apellido</sub>
+            <sub>{sub.secondSurname}</sub>
           </div>
         )}
       </div>
