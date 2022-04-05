@@ -1,6 +1,6 @@
 import InputNameContainer from "./InputNameContainer";
 import InputEmailContainer from "./InputEmailContainer";
-import "../styles/styles.css";
+import "../../styles/styles.css";
 export default function App() {
   const user = {
     idUser: "1",
