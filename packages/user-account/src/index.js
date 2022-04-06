@@ -1,3 +1,3 @@
 export { UserAccount } from './components/helloWorld';
-export { FavoriteCard } from './components/favorite/favoriteCard/favoriteViewCard';
-export { FavoritesView } from './components/favorite/favoriteView/layout'
+export { FavoriteCard } from './components/favoriteCard/favoriteViewCard';
+export { FavoritesView } from './components/favoriteView/layout'

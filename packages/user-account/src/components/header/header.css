@@ -1,0 +1,33 @@
+.header {
+    grid-area: 1 / 1 / 2 / 9;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+  
+  .logo {
+    border-radius: 100%;
+    color: rgba(21, 114, 161, 1);
+    height: 5%;
+    width: 5%;
+  }
+  
+  .user-info {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .secondary-button {
+    color: rgba(21, 114, 161, 1);
+    background: none;
+    border: none;
+  }
+  
+  .profile-photo {
+    border-radius: 100%;
+    color: rgba(21, 114, 161, 1);
+    height: 55%;
+    width: 8%;
+    align-self: center;
+  }
