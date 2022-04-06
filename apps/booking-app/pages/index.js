@@ -33,12 +33,9 @@ export default function Home() {
         <Geolocation />
         <MessagingSystem />
         <AdminPanel />
-<<<<<<< HEAD
         <Authentication />
         <LoginButton label="Not login" />
-=======
         <UserAccount />
->>>>>>> The component favorite view card was added
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>

@@ -5,5 +5,4 @@ export { MessagingSystem } from '@booking-ui/messaging-system';
 export { Demo, ResultsPage } from '@booking-ui/search-engine';
 export * from '@booking-ui/authentication';
 export { AdminPanel, DropdownMenu } from '@booking-ui/admin-panel';
-export { UserAccount } from '@booking-ui/user-account';
-export { FavoriteCard } from '@booking-ui/user-account/src/components/favorites/favoriteViewCard'
+export { UserAccount, FavoriteCard, favoritesView } from '@booking-ui/user-account';
