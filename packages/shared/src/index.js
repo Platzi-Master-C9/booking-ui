@@ -4,4 +4,4 @@ export { Geolocation } from '@booking-ui/geolocation';
 export { MessagingSystem } from '@booking-ui/messaging-system';
 export { Demo, ResultsPage } from '@booking-ui/search-engine';
 export * from '@booking-ui/authentication';
-export { AdminPanel, DropdownMenu } from '@booking-ui/admin-panel';
+export { AdminPanel, DropdownMenu, Sidebar } from '@booking-ui/admin-panel';
