@@ -7,6 +7,7 @@ const withTM = require('next-transpile-modules')([
   '@booking-ui/geolocation',
   '@booking-ui/admin-panel',
   '@booking-ui/authentication',
+  '@booking-ui/user-account'
 ]);
 module.exports = withPlugins([withTM()], {
   webpack: (config) => {
