@@ -6,5 +6,5 @@ export { Demo } from '@booking-ui/search-engine';
 export { UserAccount } from '@booking-ui/user-account';
 export { Demo, ResultsPage } from '@booking-ui/search-engine';
 export * from '@booking-ui/authentication';
-export { AdminPanel, DropdownMenu } from '@booking-ui/admin-panel';
+export { AdminPanel, DropdownMenu, Sidebar } from '@booking-ui/admin-panel';
 
