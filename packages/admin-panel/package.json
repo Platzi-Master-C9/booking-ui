@@ -29,5 +29,13 @@
   },
   "bugs": {
     "url": "https://github.com/pedroalesp/booking-ui/issues"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.3",
+    "react-dom": "^18.0.0",
+    "styled-components": "^5.3.5"
   }
 }
