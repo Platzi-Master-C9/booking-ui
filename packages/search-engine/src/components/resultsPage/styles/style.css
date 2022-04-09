@@ -1,0 +1,32 @@
+:root {
+  /* colors */
+  --color-font-dark: #000000;
+  --color-font-middle: #666666;
+  --color-font-light: #FFFFFF;
+  --color-font-alt: #1572A1;
+  --color-main: #1572A1;
+
+  /* font-size */
+  --size-font-l: 36px;
+  --size-font-m: 24px;
+  --size-font-s: 18px;
+}
+
+.results__container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.section__container {
+  grid-area: content;
+  width: 100%;
+  max-width: 1512px;
+  display: grid;
+  grid-template-areas:
+    "map results"
+    " .  pages";
+  margin: 0 auto;
+}

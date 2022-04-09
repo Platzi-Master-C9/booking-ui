@@ -1,8 +1,12 @@
-.login-button {
+.loginButton {
   display: grid;
   place-items: center;
   font-size: 1.3rem;
   font-family: inherit;
   background-color: hsl(212, 100%, 38%);
   color: wheat;
+
+  & .icon {
+    font-size: 0.75em;
+  }
 }
