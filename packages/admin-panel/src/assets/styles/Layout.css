@@ -1,0 +1,15 @@
+.layout__container {
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #9b9b9b;
+}
+
+.layout-container__lateral-menu {
+  max-width: 15%;
+  padding: 1rem 0 0 1rem;
+}
+
+.layout-container__dashboard {
+  border-left: 1px solid #9b9b9b;
+  padding: 1rem 0 0 2rem;
+}
