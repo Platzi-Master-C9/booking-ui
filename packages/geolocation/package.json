@@ -27,6 +27,9 @@
     "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
   },
   "dependencies": {
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "fast-equals": "^3.0.0",
+    "google-map-react": "^2.1.10",
+    "react-icons": "^4.3.1"
   }
 }
