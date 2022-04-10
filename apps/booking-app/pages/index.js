@@ -6,6 +6,7 @@ import {
   Demo,
   Places,
   Geolocation,
+  SearchResultsMap,
   MessagingSystem,
   AdminPanel,
   Authentication,
