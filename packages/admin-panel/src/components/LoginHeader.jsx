@@ -1,6 +1,6 @@
 import React from 'react';
 
-const div_login_header = {
+const divLoginHeader = {
   fontSize: '18px',
   lineHeight: '27px',
   fontWeight: '600',
@@ -12,6 +12,6 @@ const div_login_header = {
 
 export const LoginHeader = () => {
   return (
-    <div style={div_login_header}>Iniciar sesión o registrarse</div>
+    <div style={divLoginHeader}>Iniciar sesión o registrarse</div>
   );
 };

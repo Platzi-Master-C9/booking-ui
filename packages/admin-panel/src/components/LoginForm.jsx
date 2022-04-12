@@ -4,7 +4,7 @@ import { LoginTitle } from './LoginTitle';
 import { InputPhoneNumber } from './InputPhoneNumber';
 import { AlternativeLogin } from './AlternativeLogin';
 
-const div_login_style = {
+const divLoginStyle = {
   backgroundColor: '#ffffff',
   borderRadius: '24px',
   width: '100%',
@@ -15,10 +15,13 @@ const div_login_style = {
 
 export const LoginForm = () => {
   return (
-    <div style={div_login_style}>
+    <div style={divLoginStyle}>
       <LoginHeader />
+
       <LoginTitle />
+      
       <InputPhoneNumber />
+      
       <AlternativeLogin />
     </div>
   );

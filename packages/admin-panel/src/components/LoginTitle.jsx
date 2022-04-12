@@ -1,6 +1,6 @@
 import React from 'react';
 
-const div_login_title = {
+const divLoginTitle = {
   fontSize: '36px',
   lineHeight: '40px',
   fontWeight: '800',
@@ -11,6 +11,6 @@ const div_login_title = {
 
 export const LoginTitle = () => {
   return (
-    <div style={div_login_title}>¡Te damos la bienvenida!</div>
+    <div style={divLoginTitle}>¡Te damos la bienvenida!</div>
   );
 };

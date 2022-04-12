@@ -1,6 +1,6 @@
 import React from 'react';
 
-const div_container = {
+const divContainer = {
     width: '100%',
     textAlign: 'center',
     paddingTop: '8px',
@@ -8,7 +8,7 @@ const div_container = {
     borderBottom: '1px solid #000000',
 }
 
-const label_phone_number = {
+const labelPhoneNumber = {
     position: 'absolute',
     marginLeft: '28px',
     marginTop: '4px',
@@ -16,7 +16,7 @@ const label_phone_number = {
     color: '#404040'
 }
 
-const input_phone_number = {
+const inputPhoneNumber = {
   width: '90%',
   height: '72px',
   borderRadius: '24px',
@@ -25,7 +25,7 @@ const input_phone_number = {
   paddingTop: '24px'
 }
 
-const footer_phone_number = {
+const footerPhoneNumber = {
     marginTop: '4px',
     fontSize: '12px',
     color: '#666666'
@@ -33,16 +33,16 @@ const footer_phone_number = {
 
 export const InputPhoneNumber = () => {
   return (
-      <div style={div_container}>
-          <label style={label_phone_number}>Número de teléfono</label>
+      <div style={divContainer}>
+          <label style={labelPhoneNumber}>Número de teléfono</label>
           <input 
             type={'phone'} 
-            style={input_phone_number} 
+            style={inputPhoneNumber} 
             placeholder={'5555555555'} 
             maxlength="10" 
             pattern="[0-9]*"
             onKeyPress={
-                (evt)=>{
+                (evt) => {
                     var theEvent = evt || window.event;
                     if (theEvent.type === 'paste') {
                         key = event.clipboardData.getData('text/plain');
@@ -57,7 +57,7 @@ export const InputPhoneNumber = () => {
                     }
                 }
             } />
-            <div style={footer_phone_number}>Ingresa tu número para iniciar sesión o registrarte. Te enviaremos un código de verificación.</div>
+            <div style={footerPhoneNumber}>Ingresa tu número para iniciar sesión o registrarte. Te enviaremos un código de verificación.</div>
       </div>
   );
 };
