@@ -1,0 +1,49 @@
+.principal_chart {
+    /* padding:10px 25px; */
+    width: 100%;
+} /* No need for padding here (at least in storybook) */
+.main_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.text_box {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: 1px solid #9B9B9B;
+    box-sizing: border-box;
+    border-radius: 32px;
+    font-family: 'Poppins', sans-serif; /* loads sans-serif font if poppins doesn't*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0px 125px 0px 12px;
+    letter-spacing: 1px;
+}
+.btn_box {
+    position: absolute;
+    width: 98px;
+    height: 36px;
+    top: 12px;
+    right: 12px;
+    background: #1572A1;
+    border-radius: 32px;
+    color:#FFFFFF ;
+    font-family: 'Poppins', sans-serif; /* loads sans-serif font if poppins doesn't*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding-right: 22px;
+    border: none;
+}
+.btn_box-icon {
+    position: absolute;
+    width: 15px;
+    right: 25px;
+    top: 21px;
+}
