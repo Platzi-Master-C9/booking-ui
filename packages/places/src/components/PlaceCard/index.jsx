@@ -42,9 +42,9 @@ const PlaceCard = () => {
             ></img>
           </div>
           <div className={styles.card_body}>
-            <h2 className={styles.subtitle__cardbody}>{props.place.title2 || 'titulo 2'}</h2>
+            <h2 className={styles.subtitle__cardbody}>{props.place.title2}</h2>
             <hr className={styles.line}/>
-            <h2 className={styles.perks}>{props.place.perks || 'perks'}</h2>
+            <h2 className={styles.perks}>{props.place.perks}</h2>
           </div>
           <div className={styles.card__footer}>
             <div className={styles.container_puntuation}>
@@ -54,11 +54,11 @@ const PlaceCard = () => {
                 height={30}
                 alt={'StarIcon'}
               ></img>
-              <p>{props.place.calification || 'califi'}</p>
-              <p>{`( ${props.place.comments || 'comments'} Reseñas) `}</p>
+              <p>{props.place.calification}</p>
+              <p>{`( ${props.place.comments} Reseñas) `}</p>
             </div>
             <div className={styles.container__price}>
-              <p>{`$${props.place.price || 'price'} COP `}</p>
+              <p>{`$${props.place.price} COP `}</p>
               <p>/ noche</p>
             </div>
           </div>
