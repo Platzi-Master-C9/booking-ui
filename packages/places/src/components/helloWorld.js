@@ -1,8 +1,8 @@
 import React from "react";
 
-export const places = () => {
+export const Places = () => {
   return (
     //console.log('Hello from places')
-    <h1>Hello from places</h1>
+    <h1>Hello from Places</h1>
   );
 };

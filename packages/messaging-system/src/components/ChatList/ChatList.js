@@ -5,7 +5,7 @@ import ChatItem from './ChatItem';
 import './ChatList.css';
 
 
-export default function ChatList(props) {
+export const ChatList = (props) => {
     const [selected, setSelected] = useState(1);
     const { chats, loading } = useChatList();
 

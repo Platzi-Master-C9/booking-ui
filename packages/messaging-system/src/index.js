@@ -1,2 +1,3 @@
 export { MessagingSystem } from './components/helloWorld';
-export { default as ChatList } from './components/ChatList';
+export { ChatList } from './components/ChatList/ChatList';
+export { TextBox } from './components/TextBox/TextBox';
