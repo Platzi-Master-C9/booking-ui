@@ -1,0 +1,12 @@
+.footer-container {
+  margin: 40px 0 0 64px;
+  width: 600px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #000000;
+}
