@@ -1,0 +1,121 @@
+@use '../abstract/desig-tokens' as *;
+
+// Colores principales
+
+@each $key, $item in $main-colors {
+  .bg-main-#{$key} {
+    background-color: $item;
+  }
+
+  .color-main-#{$key} {
+    color: $item;
+  }
+
+  .border-main-#{$key} {
+    border-color: $item;
+  }
+}
+
+// Colores neutrales
+
+@each $key, $item in $neutral-colors {
+  .bg-neutral-#{$key} {
+    background-color: $item;
+  }
+
+  .color-neutral-#{$key} {
+    color: $item;
+  }
+
+  .border-neutral-#{$key} {
+    border-color: $item;
+  }
+}
+
+// Gradientes
+
+@each $key, $item in $background {
+  .gradient-#{$key} {
+    background-color: #{$item};
+  }
+}
+
+// Font sizes
+
+@each $key, $item in $font-sizes {
+  .fs-#{$key} {
+    font-size: #{$item};
+  }
+}
+
+// Border radius
+
+@each $key, $item in $border-radius {
+  .br-#{$key} {
+    border-radius: #{$item};
+  }
+}
+
+// Spacing
+
+@each $key, $item in $spacing {
+  .p-#{$key} {
+    padding: #{$item};
+  }
+
+  .pt-#{$key} {
+    padding-top: #{$item};
+  }
+
+  .pb-#{$key} {
+    padding-bottom: #{$item};
+  }
+
+  .pl-#{$key} {
+    padding-left: #{$item};
+  }
+
+  .pr-#{$key} {
+    padding-right: #{$item};
+  }
+
+  .px-#{$key} {
+    padding-left: #{$item};
+    padding-right: #{$item};
+  }
+
+  .py-#{$key} {
+    padding-top: #{$item};
+    padding-bottom: #{$item};
+  }
+
+  .m-#{$key} {
+    margin: #{$item};
+  }
+
+  .mt-#{$key} {
+    margin-top: #{$item};
+  }
+
+  .mb-#{$key} {
+    margin-bottom: #{$item};
+  }
+
+  .ml-#{$key} {
+    margin-left: #{$item};
+  }
+
+  .mr-#{$key} {
+    margin-right: #{$item};
+  }
+
+  .mx-#{$key} {
+    margin-left: #{$item};
+    margin-right: #{$item};
+  }
+
+  .my-#{$key} {
+    margin-top: #{$item};
+    margin-bottom: #{$item};
+  }
+}
