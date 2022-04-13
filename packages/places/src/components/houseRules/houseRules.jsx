@@ -4,31 +4,31 @@ import css from './houseRules.module.scss';
 export const houseRules = () => {
   return (
     <div className={css["should-know"]} >
-      <h1>Lo que debes saber</h1>
+      <h1>What you should know</h1>
       <div className="rules">
-        <h2>Reglas de la casa</h2>
+        <h2>House rules</h2>
         <ul>
-          <li>Check-in: 15:00 a 02:00</li>
-          <li>Salida: 11:00 </li>
-          <li>Acceso sin restricción de horario con caja de seguridad con llaves </li>
-          <li>No se admiten mascotas</li>
-          <li>Está prohibido hacer fiestas o eventos</li>
-          <li>Apto para fumadores</li>
+          <li>Check-in: 15:00 to 02:00</li>
+          <li>Checkout: 11:00 </li>
+          <li>Access without time restrictions with security box with keys </li>
+          <li>No pets</li>
+          <li>No parties or events</li>
+          <li>Smoker friendly</li>
         </ul>
       </div>
       <div className="health-security">
-        <h2>Salud y seguridad</h2>
+        <h2>Health and security</h2>
         <ul>
-          <li>Comprometido a seguir el proceso de limpieza avanzada de Airbnb</li>
-          <li>Se aplican las pautas de distanciamiento social de Booking System y otras pautas relacionadas con el COVID-19 </li>
-          <li>Piscina/jacuzzi sin puertas ni cerraduras</li>
-          <li>Alarma de monóxido de carbono</li>
-          <li>Alarma de humo</li>
+          <li>Committed to enhanced cleaning process.</li>
+          <li>Social-distancing and other COVID-19-related guidelines apply </li>
+          <li>Piscina/jacuzzi  without doors or locks</li>
+          <li>Carbon monoxide detector</li>
+          <li>Smoke alarm</li>
         </ul>
       </div>
       <div className="cancellations">
-        <h2>Política de cancelación</h2>
-        <span>Agrega las fechas de tu viaje para obtener los detalles de cancelación de esta estadía.</span>
+        <h2>Cancellation policy</h2>
+        <span>Add your travel dates to get cancellation details for this stay.</span>
       </div>
     </div>
   );

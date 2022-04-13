@@ -4,18 +4,18 @@ import css from './perks.module.scss';
 export const Perks = () => {
   return (
     <div className={css.perks}>
-      <h1>Lo que este lugar ofrece</h1>
+      <h1>What this place offers</h1>
       <ul>
-        <li><img src="/places/cocina.png" />Cocina</li>
-        <li><img src="/places/estacionamiento.png" />Estacionamiento gratuito</li>
-        <li><img src="/places/tv.png" />Television con cable estándar</li>
-        <li><img src="/places/lavadora.png" />Lavadora</li>
+        <li><img src="/places/kitchen.png" />Kitchen</li>
+        <li><img src="/places/parkingLot.png" />Free parking</li>
+        <li><img src="/places/tv.png" />TV</li>
+        <li><img src="/places/washer.png" />Washer</li>
         <li><img src="/places/wifi.png" />Wifi</li>
-        <li><img src="/places/piscina.png" />Piscina</li>
-        <li><img src="/places/banera.png" />Agua caliente</li>
-        <li><img src="/places/calefaccion.png" />Calefacción</li>
+        <li><img src="/places/pool.png" />Pool</li>
+        <li><img src="/places/bathtub.png" />Hot water</li>
+        <li><img src="/places/heating.png" />Heating</li>
       </ul>
-      <a href="#">Mostrar más</a>
+      <a href="#">Show more</a>
     </div>
   );
 };
