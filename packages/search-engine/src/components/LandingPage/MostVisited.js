@@ -1,6 +1,6 @@
-import React from "react";
-import "../style/MostVisited.css";
-import { VisitedCards } from "./VisitedCards";
+import React from 'react';
+import './MostVisited.css';
+import { VisitedCards } from './VisitedCards';
 
 const MostVisited = () => {
   return (

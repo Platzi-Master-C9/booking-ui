@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import userImage from "../assets/iconUser.png";
-import "../style/User.css";
+import userImage from './assets/iconUser.png';
+import './User.css';
 
 const User = () => {
   return (

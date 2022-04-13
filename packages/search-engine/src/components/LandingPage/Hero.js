@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { Header } from "./Header";
-import "../style/Hero.css";
+import { Header } from '../Header';
+import './Hero.css';
 
 const Hero = () => {
   return (

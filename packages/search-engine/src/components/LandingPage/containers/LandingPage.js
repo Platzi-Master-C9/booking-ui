@@ -1,7 +1,8 @@
 import { Layout } from '../Layout';
 import { Hero } from '../Hero';
 import { MostVisited } from '../MostVisited';
-import { Footer } from '../Footer';
+import { Footer } from '../../Footer';
+import '../global.css';
 
 function LandingPage() {
   return (
@@ -13,4 +14,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export { LandingPage };

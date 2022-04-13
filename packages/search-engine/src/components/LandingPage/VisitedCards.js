@@ -1,5 +1,5 @@
-import React from "react";
-import "../style/VisitedCards.css";
+import React from 'react';
+import './VisitedCards.css';
 
 const VisitedCards = () => {
   return (
