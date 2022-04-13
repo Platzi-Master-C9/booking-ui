@@ -1,7 +1,7 @@
-import { Layout } from '../Layout';
-import { Hero } from '../Hero';
-import { MostVisited } from '../MostVisited';
-import { Footer } from '../../Footer';
+import Layout from '../Layout';
+import Hero from '../Hero';
+import MostVisited from '../MostVisited';
+import Footer from '../../Footer';
 import '../global.css';
 
 function LandingPage() {
@@ -14,4 +14,4 @@ function LandingPage() {
   );
 }
 
-export { LandingPage };
+export default LandingPage;

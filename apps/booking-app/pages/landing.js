@@ -1,4 +1,4 @@
-import { LandingPage } from '@booking-ui/shared';
+import LandingPage from '@booking-ui/shared';
 
 export default function landing() {
   return <LandingPage />;

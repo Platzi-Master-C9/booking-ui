@@ -1,7 +1,7 @@
 import React from 'react';
-import { Logo } from '../LandingPage/Logo';
-import { SearchBar } from '../LandingPage/SearchBar';
-import { User } from '../LandingPage/User';
+import Logo from '../LandingPage/Logo';
+import SearchBar from '../LandingPage/SearchBar';
+import User from '../LandingPage/User';
 import './Header.css';
 
 const Header = () => {
@@ -14,4 +14,4 @@ const Header = () => {
   );
 };
 
-export { Header };
+export default Header;

@@ -17,4 +17,4 @@ const VisitedCards = () => {
   );
 };
 
-export { VisitedCards };
+export default VisitedCards;

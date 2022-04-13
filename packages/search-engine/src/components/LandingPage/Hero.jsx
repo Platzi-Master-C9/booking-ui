@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header } from '../Header';
+import Header from '../Header';
 import './Hero.css';
 
 const Hero = () => {
@@ -21,4 +21,4 @@ const Hero = () => {
   );
 };
 
-export { Hero };
+export default Hero;
