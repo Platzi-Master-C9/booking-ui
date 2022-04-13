@@ -33,31 +33,31 @@ const footerPhoneNumber = {
 
 export const InputPhoneNumber = () => {
   return (
-      <div style={divContainer}>
-          <label style={labelPhoneNumber}>Número de teléfono</label>
-          <input 
-            type={'phone'} 
-            style={inputPhoneNumber} 
-            placeholder={'5555555555'} 
-            maxlength="10" 
-            pattern="[0-9]*"
-            onKeyPress={
-                (evt) => {
-                    var theEvent = evt || window.event;
-                    if (theEvent.type === 'paste') {
-                        key = event.clipboardData.getData('text/plain');
-                    } else {
-                        var key = theEvent.keyCode || theEvent.which;
-                        key = String.fromCharCode(key);
-                    }
-                    var regex = /[0-9]|\./;
-                    if( !regex.test(key) ) {
-                        theEvent.returnValue = false;
-                        if(theEvent.preventDefault) theEvent.preventDefault();
-                    }
-                }
-            } />
-            <div style={footerPhoneNumber}>Ingresa tu número para iniciar sesión o registrarte. Te enviaremos un código de verificación.</div>
-      </div>
+    <div style={divContainer}>
+      <label style={labelPhoneNumber}>Número de teléfono</label>
+      <input 
+        type={'phone'} 
+        style={inputPhoneNumber} 
+        placeholder={'5555555555'} 
+        maxlength="10" 
+        pattern="[0-9]*"
+        onKeyPress={
+          (evt) => {
+            var theEvent = evt || window.event;
+            if (theEvent.type === 'paste') {
+              key = evt.clipboardData.getData('text/plain');
+            } else {
+              var key = theEvent.keyCode || theEvent.which;
+              key = String.fromCharCode(key);
+            }
+            var regex = /[0-9]|\./;
+            if( !regex.test(key) ) {
+              theEvent.returnValue = false;
+              if(theEvent.preventDefault) theEvent.preventDefault();
+            }
+          }
+        } />
+        <div style={footerPhoneNumber}>Ingresa tu número para iniciar sesión o registrarte. Te enviaremos un código de verificación.</div>
+    </div>
   );
 };

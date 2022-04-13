@@ -17,11 +17,8 @@ export const LoginForm = () => {
   return (
     <div style={divLoginStyle}>
       <LoginHeader />
-
       <LoginTitle />
-      
       <InputPhoneNumber />
-      
       <AlternativeLogin />
     </div>
   );

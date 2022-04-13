@@ -1,10 +1,7 @@
-import React from 'react';
+import React from "react";
 
 export const AdminPanel = () => {
   return (
-    //console.log('hello from admin panel')
-    <div>
-      <h1>Hello from admin panel :D</h1>
-    </div>
-  );
+    <h1>This is the best admin panel in the world :D</h1>
+  )
 };
