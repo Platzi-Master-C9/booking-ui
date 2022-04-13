@@ -12,7 +12,7 @@ export const ResultsPage = () => {
   const [allPlaces, setAllPlaces] = useState([]);
   
   const GetDataFromApi = () => {
-    fetch('https://jsonplaceholder.typicode.com/todos')
+    fetch(process.env.REACT_APP_API_RESULTS)
       .then(response => response.json())
       .then(data => setAllPlaces(data))
       .catch(error => console.error(error))
