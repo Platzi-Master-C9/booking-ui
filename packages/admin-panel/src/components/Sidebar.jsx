@@ -23,12 +23,6 @@ export const Sidebar = () => {
             <MenuIcon onClick={showSidebar} />
           </div>
         </div>
-        {/* <div className="Circulo" id="BS">
-          <p>Circulo</p>
-        </div>
-        <div className="Circulo" id="Perfil">
-          <p>Perfil</p>
-        </div> */}
       </div>
       <SidebarNav className="Sidebar" sidebar={sidebar}>
         <ul className="SidebarList">
@@ -40,7 +34,6 @@ export const Sidebar = () => {
                 onClick={() => {
                   window.location.pathname = val.link;
                 }}
-                // id={window.location.pathname === val.link ? 'active' : ''}
               >
                 <div id="Sidebar-list-icon">{val.icon}</div>
                 <div id="Sidebar-list-title">{val.title}</div>
