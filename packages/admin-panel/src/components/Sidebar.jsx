@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 // import CloseIcon from '@mui/icons-material/Close';
 import { SidebarData } from './SidebarData.js';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const SidebarNav = styled.nav`
   position: fixed;
@@ -37,13 +38,15 @@ export const Sidebar = () => {
               <li
                 key={key}
                 className="row"
-                onClick={() => {
-                  window.location.pathname = val.link;
-                }}
+                // onClick={() => {
+                //   window.location.pathname = val.link;
+                // }}
                 // id={window.location.pathname === val.link ? 'active' : ''}
               >
-                <div id="Sidebar-list-icon">{val.icon}</div>
-                <div id="Sidebar-list-title">{val.title}</div>
+                  <div id="Sidebar-list-icon">{val.icon}</div>
+                <Link href={val.link}>
+                  <div id="Sidebar-list-title">{val.title}</div>
+                </Link>
               </li>
             );
           })}
