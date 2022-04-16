@@ -18,13 +18,11 @@
 }
 
 .user--img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 54px;
   height: 54px;
   background-color: #1572a1;
   border-radius: 50%;
-}
-
-.user--img-container img {
-  margin-left: 6px;
-  margin-top: 6px;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 
-import userImage from './assets/iconUser.png';
+import userImage from '../assets/iconUser.png';
 import './User.css';
 
 const User = () => {
@@ -8,7 +9,7 @@ const User = () => {
     <div className="user--experience-container">
       <p>Hazte anfitrion</p>
       <div className="user--img-container">
-        <img src={userImage} />
+        <Image src={userImage} />
       </div>
     </div>
   );
