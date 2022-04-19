@@ -4,11 +4,19 @@ import Image from 'next/image';
 import userImage from '../assets/iconUser.png';
 import './User.css';
 
-const User = () => {
+const User = ({ classUser }) => {
+  if (classUser !== 'landing') {
+    classUser = 'users_container';
+  } else {
+    classUser = classUser + ' users_container';
+  }
   return (
-    <div className="user--experience-container">
-      <p>Hazte anfitrion</p>
-      <div className="user--img-container">
+    <div className={classUser}>
+      <div className="link host">
+        <a href="/">Hazte anfitrión</a>
+      </div>
+
+      <div className="user">
         <Image src={userImage} />
       </div>
     </div>

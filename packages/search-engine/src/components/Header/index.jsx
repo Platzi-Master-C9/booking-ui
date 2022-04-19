@@ -1,17 +1,23 @@
 import React from 'react';
-import Logo from '../LandingPage/Logo';
 import SearchBar from '../LandingPage/SearchBar';
 import User from '../LandingPage/User';
 import './Header.css';
 
-const Header = () => {
+export default function Header({ classPage }) {
+  let classHeader;
+  if (classPage !== 'landing') {
+    classHeader = 'header__container';
+  } else {
+    classHeader = classPage + ' header__container';
+  }
+
   return (
-    <header className="header-container">
-      <Logo />
+    <header className={classHeader}>
+      <div className="logo">
+        <a href="/">BS</a>
+      </div>
       <SearchBar />
-      <User />
+      <User classUser={classPage} />
     </header>
   );
-};
-
-export default Header;
+}

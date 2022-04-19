@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <div className="hero-background">
-        <Header />
+        <Header classPage="landing" />
         <div className="hero--text-container">
           <h1>
             Encuentra los mejores <br />

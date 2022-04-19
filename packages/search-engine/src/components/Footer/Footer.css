@@ -1,12 +1,22 @@
-.footer-container {
-  margin: 40px 0 0 64px;
-  width: 600px;
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
+.footer__container {
+  grid-area: footer;
+  width: 100%;
+  height: 130px;
 }
 
-.footer-container a {
-  text-decoration: none;
-  color: #000000;
+.footer__wrapper {
+  max-width: 1512px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 100px;
+  padding-left: 146px;
+}
+
+.link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(color-font-dark);
 }

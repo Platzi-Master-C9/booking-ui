@@ -1,12 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  /* colors */
+  --color-font-dark: #000000;
+  --color-font-middle: #666666;
+  --color-font-light: #ffffff;
+  --color-font-alt: #1572a1;
+  --color-main: #1572a1;
+
+  /* font-size */
+  --size-font-l: 36px;
+  --size-font-m: 24px;
+  --size-font-s: 18px;
 }
-.list-searchbar {
-  width: 748px;
+
+.search__container {
+  width: 590px;
   height: 60px;
-  background: #ffffff;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  justify-self: center;
   border-radius: 60px;
+  background-color: var(--color-font-light);
+  box-shadow: 0 0 10px var(--color-font-middle);
 }
