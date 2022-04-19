@@ -1,7 +1,7 @@
 import React from "react";
 import "./assets/styles/favoriteCard.css";
-import "../DeleteItem/deleteCard"
-import DeleteCardItem from "../DeleteItem/deleteCard";
+import "../DeleteItem/deleteFavoriteList"
+import DeleteCardItem from "../DeleteItem/deleteFavoriteList";
 
 const favoriteCard = {"cardPhoto":"https://cdn2.infocasas.com.uy/repo/img/55835182a525b55835182a52d1.jpg.th810.jpg", "cardTitle":"holi"}
 
@@ -16,7 +16,9 @@ function FavoriteCard(cardPhoto, cardTitle) {
         <img className="favorite-card-photo" src={favoriteCard.cardPhoto}></img>
         <div className="favorite-card-content">
           <h2 className="favorite-card-title">{favoriteCard.cardTitle}</h2>
-          <DeleteCardItem />
+          <div className="trash-item">
+            <DeleteCardItem />
+          </div>
         </div>
       </div>
     </html>

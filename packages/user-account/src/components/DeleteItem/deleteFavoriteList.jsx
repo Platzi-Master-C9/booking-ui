@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./assets/styles/deleteFavoriteList.css"
 
 export default function DeleteCardItem() {
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
