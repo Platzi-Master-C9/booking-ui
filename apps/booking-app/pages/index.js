@@ -10,6 +10,7 @@ import {
   AdminPanel,
   Authentication,
   LoginButton,
+  UserAccount,
 } from '@booking-ui/shared';
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         <MessagingSystem />
         <AdminPanel />
         <Authentication />
+        <UserAccount />
         <LoginButton label="Not login" />
         <p className={styles.description}>
           Get started by editing{' '}

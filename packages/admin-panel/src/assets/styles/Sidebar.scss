@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  border-bottom: 1px solid #f5d6d6;
+  padding: 0 18px 0 18px;
+}
+
+// #Perfil {
+//   justify-content: end;
+// }
+// .Circulo {
+//   background-color: aqua;
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 100%;
+// }
+
+.Sidebar {
+  height: 100vh;
+  width: 230px;
+  border-right: 1px solid #9b9b9b;
+}
+
+.SidebarList {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 80px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #1572a10d;
+}
+
+.SidebarList #active {
+  background-color: #1572a10d;
+  border-left: 4px solid #1572a1;
+  color: #1572a1;
+}
+
+.row #Sidebar-list-icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.row #Sidebar-list-icon .MuiSvgIcon-root {
+  font-size: 2rem;
+}
+
+.row #Sidebar-list-title {
+  flex: 70%;
+}
+#Menu-hamburger {
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .Sidebar {
+    width: 65px;
+  }
+  .row #Sidebar-list-title {
+    display: none;
+  }
+}
