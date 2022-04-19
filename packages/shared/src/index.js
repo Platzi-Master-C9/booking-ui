@@ -1,5 +1,5 @@
 export { Button } from './components/Button';
-export { Places } from '@booking-ui/places';
+export { Places, Perks, HouseRules} from '@booking-ui/places';
 export { Geolocation } from '@booking-ui/geolocation';
 export { MessagingSystem, TextBox } from '@booking-ui/messaging-system';
 // export { Demo } from '@booking-ui/search-engine';
