@@ -15,6 +15,7 @@ export const FavoritesView = () => {
   return (
     <div className="container"> 
       <Header />
+      <h2>Mis favoritos</h2>
       <div className="favorite-grid">
         {favorites.map(favorite =>(
           <FavoriteCard key={favorite.id} cardPhoto={favorite.cardPhoto} cardTitle={favorite.cardTitle}/>
