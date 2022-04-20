@@ -18,13 +18,10 @@
   
   .favorite-card-photo {
     border-radius: inherit;
+    height: 100px;
   }
   
   .favorite-card-title {
     font-size: 0.9rem;
-  }
-  
-  #delete-button {
-    color: rgba(21, 114, 161, 1);
   }
   
