@@ -1,11 +1,14 @@
 import React from 'react';
+import { LoginContainer } from '../../../../packages/admin-panel/src/components/LoginContainer'
 import { FiltersContainer } from '@booking-ui/admin-panel';
 
-const Admin = () => (
-    <>
-        <h1>Hello Admin Panel :D</h1>
-        <FiltersContainer />
-    </>
-);
+const Admin = () => {
+    return (
+        <>
+            <LoginContainer />
+            <FiltersContainer />
+        </>
+    );
+};
 
 export default Admin;
