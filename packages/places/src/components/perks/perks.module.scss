@@ -1,0 +1,23 @@
+.perks{
+  width: 100%;
+  padding-left: 40px;
+  ul{
+    width: 60%;
+    column-count: 2;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+    li{
+      padding-top: 29px;
+      img {
+        height: 32px;
+        width: 32px;
+        margin-right: 24px;
+      }
+    }
+  }
+  a {
+    color: inherit;
+    margin-top: 10px;
+  }
+}

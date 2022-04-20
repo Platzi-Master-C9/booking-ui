@@ -1,0 +1,22 @@
+:root {
+  /* colors */
+  --color-font-dark: #000000;
+  --color-font-middle: #666666;
+  --color-font-light: #ffffff;
+  --color-font-alt: #1572a1;
+  --color-main: #1572a1;
+
+  /* font-size */
+  --size-font-l: 36px;
+  --size-font-m: 24px;
+  --size-font-s: 18px;
+}
+
+.search__container {
+  width: 590px;
+  height: 60px;
+  justify-self: center;
+  border-radius: 60px;
+  background-color: var(--color-font-light);
+  box-shadow: 0 0 10px var(--color-font-middle);
+}
