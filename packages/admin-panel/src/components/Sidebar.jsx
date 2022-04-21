@@ -42,6 +42,7 @@ const TitleSidebar = styled.div`
   }
 `;
 
+<<<<<<< HEAD
 export const Sidebar = () => {
   const [sidebar, setSidebar] = useState(true);
   const showSidebar = () => setSidebar(!sidebar);
@@ -85,3 +86,26 @@ export const Sidebar = () => {
     </>
   );
 };
+=======
+export const Sidebar = ({ sidebar }) => (
+  <SidebarNav className="Sidebar" sidebar={sidebar}>
+    <ul className="SidebarList">
+      {SidebarData.map((val, key) => {
+        return (
+          <li
+            key={key}
+            className="row"
+            onClick={() => {
+              window.location.pathname = val.link;
+            }}
+            // id={window.location.pathname === val.link ? 'active' : ''}
+          >
+            <div id="Sidebar-list-icon">{val.icon}</div>
+            <div id="Sidebar-list-title">{val.title}</div>
+          </li>
+        );
+      })}
+    </ul>
+  </SidebarNav>
+);
+>>>>>>> Reorganized the layout and integrated the sidebar menu

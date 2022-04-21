@@ -1,39 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: 'Poppins', sans-serif;
-}
-
-.App {
-  width: 100vw;
-  height: 100vh;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.Header {
-  display: flex;
-  justify-content: space-between;
-  height: 65px;
-  border-bottom: 1px solid #f5d6d6;
-  padding: 0 18px 0 18px;
-}
-
-// #Perfil {
-//   justify-content: end;
-// }
-// .Circulo {
-//   background-color: aqua;
-//   width: 60px;
-//   height: 60px;
-//   border-radius: 100%;
-// }
-
 .Sidebar {
   height: 100vh;
   width: 230px;
