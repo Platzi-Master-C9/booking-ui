@@ -4,6 +4,7 @@
 .dashboard h2 {
   font-size: 2.2em;
   margin-bottom: 1.8em;
+  margin-left: 17rem;
 }
 .list {
   list-style: none;
@@ -26,4 +27,17 @@
   padding: 0 1rem;
   color: #1572A1;
   font-weight: 500;
+  padding-left: 0;
+}
+.list__item {
+  display: flex;
+  flex-direction: row;
+}
+.item__tag {
+  margin-right: 5rem;
+}
+.manage {
+  cursor: pointer;
+  color: #1572a1;
+  font-weight: bold;
 }
