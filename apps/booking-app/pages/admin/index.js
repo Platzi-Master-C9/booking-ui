@@ -1,14 +1,11 @@
 import React from 'react';
 
-import { Layout } from '@booking-ui/shared';
+import { Layout, Dashboard } from '@booking-ui/shared';
 
-const Admin = () => {
-  return (
-    <>
-      <h1>Hello Admin Panel :D</h1>
-      <Layout />
-    </>
-  );
-};
+const Admin = () => (
+  <Layout>
+    <Dashboard />
+  </Layout>
+);
 
 export default Admin;
