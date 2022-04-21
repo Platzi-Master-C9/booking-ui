@@ -2,6 +2,8 @@
 .personalInfo {
   font-family: "Poppins", sans-serif;
   padding: 1em;
+  max-width: 600px;
+  width: 100%;
 }
 .personalInfo h2 {
   font-style: normal;
