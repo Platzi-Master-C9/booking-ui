@@ -7,9 +7,9 @@ const Admin = () => {
     return (
         <>
             <LoginContainer />
-            <ContextOfFilters>
+            {/* <ContextOfFilters>
                 <FiltersContainer />
-            </ContextOfFilters>
+            </ContextOfFilters> */}
         </>
     );
 };
