@@ -86,11 +86,3 @@ body {
 #Menu-hamburger {
   display: flex;
 }
-@media screen and (max-width: 1024px) {
-  .Sidebar {
-    width: 65px;
-  }
-  .row #Sidebar-list-title {
-    display: none;
-  }
-}
