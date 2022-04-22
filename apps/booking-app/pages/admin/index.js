@@ -6,7 +6,7 @@ import { ContextOfFilters } from '@booking-ui/admin-panel/src/components/Filters
 const Admin = () => {
     return (
         <>
-            {/* <LoginContainer /> */}
+            <LoginContainer />
             <ContextOfFilters>
                 <FiltersContainer />
             </ContextOfFilters>
