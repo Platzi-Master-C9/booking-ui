@@ -2,25 +2,29 @@ import { useState } from "react";
 import "./assets/styles/deleteFavoriteList.css"
 
 export default function DeleteCardItem() {
+
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const [successDeleteModal, setSuccessDeleteModal] = useState(false);
 
-  function toggleDeleteModal() {
+  function toggleDeleteModal(event) {
+    if (event) event.stopPropagation() 
     setOpenDeleteModal(!openDeleteModal);
   }
 
-  function toggleSuccessDeleteModal() {
+  function toggleSuccessDeleteModal(event) {
+    if (event) event.stopPropagation() 
     setSuccessDeleteModal(!successDeleteModal);
   }
 
-  function deleteList() {
+  function deleteList(event) {
+    if (event) event.stopPropagation() 
     toggleDeleteModal();
     toggleSuccessDeleteModal();
   }
 
   return (
     <>
-      <i className="fa-solid fa-trash" onClick={toggleDeleteModal}></i>
+      <i className="fa-solid fa-trash" onClick={event => toggleDeleteModal(event)} ></i>
 
       {openDeleteModal && (
         <DeleteCardConfirm
@@ -47,10 +51,10 @@ function DeleteCardConfirm({ deleteList, toggleDeleteModal }) {
           borraran todos los favoritos que contiene esta lista
         </p>
         <div className="white_card-buttons">
-          <button id="cancel" onClick={toggleDeleteModal}>
+          <button id="cancel" onClick={event => toggleDeleteModal(event)}>
             Cancelar
           </button>
-          <button id="delete" onClick={deleteList}>
+          <button id="delete" onClick={event => deleteList(event)}>
             Borrar lista
           </button>
         </div>
@@ -65,7 +69,7 @@ function DeleteCardSuccess({ toggleSuccessDeleteModal }) {
       <article className="success-delete">
         <p>Se ha eliminado exitosamente la lista</p>
         <hr />
-        <button id="confirm" onClick={toggleSuccessDeleteModal}>
+        <button id="confirm" onClick={event => toggleSuccessDeleteModal(event)}>
           Continuar
         </button>
       </article>

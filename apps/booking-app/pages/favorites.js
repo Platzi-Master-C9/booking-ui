@@ -1,5 +1,5 @@
-import { FavoritesView } from '@booking-ui/user-account';
+import { FavoritesLayout } from '@booking-ui/user-account';
 
 export default function Home() {
-  return <FavoritesView />
+  return <FavoritesLayout />
 }
