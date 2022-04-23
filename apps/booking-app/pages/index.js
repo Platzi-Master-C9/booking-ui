@@ -33,10 +33,14 @@ export default function Home() {
         <Geolocation />
         <MessagingSystem />
         <AdminPanel />
+<<<<<<< HEAD
         <Authentication />
         <LoginButton label="Not login" />
         <UserAccount />
         <FavoriteCard />
+=======
+        <UserAccount />
+>>>>>>> d4d8928d9466715e5345196333f1bef824a65266
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
