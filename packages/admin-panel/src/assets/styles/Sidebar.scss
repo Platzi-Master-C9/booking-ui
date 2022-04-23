@@ -38,6 +38,7 @@ body {
   height: 100vh;
   width: 230px;
   border-right: 1px solid #9b9b9b;
+  background-color: #fff;
 }
 
 .SidebarList {
@@ -84,12 +85,4 @@ body {
 }
 #Menu-hamburger {
   display: flex;
-}
-@media screen and (max-width: 1024px) {
-  .Sidebar {
-    width: 65px;
-  }
-  .row #Sidebar-list-title {
-    display: none;
-  }
 }
