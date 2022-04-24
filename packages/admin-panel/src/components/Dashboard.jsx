@@ -1,38 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-import styles from '../assets/styles/Dashboard.module.scss';
+import styles from "../assets/styles/Dashboard.module.scss";
 
 export const Dashboard = () => {
-  const [data, setData] = useState({ results: [] });
+  const [users, setUsers] = useState([]);
   const [error, setError] = useState(null);
-  const MOCK_API = 'https://apimocha.com/boocking-pad/admins';
+  const baseURL = "http://demo3812532.mockable.io/users";
 
   useEffect(() => {
-    fetchData();
+    getUsers();
   }, []);
 
-  const fetchData = async () => {
+  const getUsers = async () => {
     try {
-      const response = await fetch(MOCK_API);
-      const data = await response.json();
-      setData({ results: data.results });
+      const response = await axios.get(baseURL);
+      setUsers(response.data);
     } catch (error) {
       setError(error);
     }
   };
+  console.log(users);
 
   return (
     <section className={styles.dashboard}>
-      <h2>Administradores (E.g)</h2>
+      <h2>Users</h2>
       <ul className={styles.list}>
-        <li className={styles.list__item}>
-          <div className={styles.item__tag}>Nombre y apellido</div>
-          <div className={styles.item__tag}>Tipo</div>
-          <div className={styles.item__tag}>Estado</div>
-          <div className={styles.item__tag}>Validación</div>
-          <div className={styles.item__tag}>Fecha</div>
-          <div className={styles.manage}>Manejar</div>
-        </li>
+        {users.map((user) => {
+          return (
+            <li id={user.id} className={styles.list__item}>
+              <div className={styles.item__tag}>{user.full_name}</div>
+              <div className={styles.item__tag}>Host</div>
+              <div className={styles.item__tag}>{user.status}</div>
+              <div className={styles.item__tag}>Yes</div>
+              <div className={styles.item__tag}>{user.date_of_register}</div>
+              <div className={styles.manage}>Manage</div>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
