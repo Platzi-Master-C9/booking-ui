@@ -24,7 +24,6 @@ export const Dashboard = () => {
       setError(error);
     }
   };
-  console.log(users);
 
  const filterUsers = users.filter((u) => checked.checkedOne && u.type === "Anfitrión" || checked.checkedTwo && u.type === "Huésped" || checked.checkedThree && u.status === "Activo" || checked.checkedFour && u.status === "Inactivo" || checked.checkedFive && u.validate === "Sí" || checked.checkedSixx && u.validate === "No")
 
