@@ -17,4 +17,4 @@ const User = ({ classUser = 'users_container' }) => {
   );
 };
 
-export default User;
+export { User };

@@ -3,7 +3,7 @@ import SearchBar from '../LandingPage/SearchBar';
 import User from '../LandingPage/User';
 import './Header.css';
 
-export default function Header({ classPage }) {
+function Header({ classPage }) {
   let classHeader;
   if (classPage !== 'landing') {
     classHeader = 'header__container';
@@ -17,7 +17,9 @@ export default function Header({ classPage }) {
         <a href="/">BS</a>
       </div>
       <SearchBar />
-      <User classUser={classPage} />
+      <User classUser={classPage} userImage='../assets/iconUser.png' />
     </header>
   );
 }
+
+export { Header };
