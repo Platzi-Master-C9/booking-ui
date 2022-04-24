@@ -1,6 +1,7 @@
 .Header {
   display: flex;
   position: fixed;
+  z-index: 9;
   justify-content: space-between;
   height: 65px;
   width: 100%;

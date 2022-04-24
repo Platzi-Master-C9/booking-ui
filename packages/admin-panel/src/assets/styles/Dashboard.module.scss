@@ -11,13 +11,3 @@
   width: 100%;
   padding-left: 0;
 }
-.list__item {
-  margin-bottom: 1.7em;
-  display: inline-grid;
-  grid-template-columns: [first] 250px [second] 130px [third] 130px [fourth] 120px [fifth] 160px [last] 130px;
-}
-.manage {
-  cursor: pointer;
-  color: #1572a1;
-  font-weight: bold;
-}
