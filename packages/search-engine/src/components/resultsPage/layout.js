@@ -19,6 +19,7 @@ const ResultsPage = () => {
   const [ dataState, setDataState ] = useState({ loading: true, error: false });
   const [ currentPage, setCurrentPage ] = useState(0);
   const [ TotalPages, setTotalPages ] = useState(0);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     try {
@@ -31,6 +32,9 @@ const ResultsPage = () => {
 
   useEffect(() => {
     setRenderedPlaces([...allPlaces].splice(0, PLACES_PER_PAGE));
+
+  useEffect(() => {
+    setPlaces([...allPlaces].splice(0, PLACES_PER_PAGE));
     setTotalPages(Math.ceil(allPlaces.length / PLACES_PER_PAGE));
   }, [allPlaces]);
 
@@ -55,9 +59,25 @@ const ResultsPage = () => {
     setCurrentPage(nextPage);
   }
 
+  const handleSubmitFilters = async (minPrice, maxPrice, stars, fullPlace, privateRoom) => {
+    const baseURL = 'https://624c7e76d71863d7a80bb010.mockapi.io/places/places'
+
+    try {
+      const response = await window.fetch(baseURL);
+      if (!response.ok) {
+          throw new Error(`Http status ${response.status}`);
+      }
+      const data = await response.json();
+      setAllPlaces(data);
+    } catch (error) {
+      console.error(error.message, 'error');
+      setError(error)
+    }
+  }
+
   return (
     <div className="results__container">
-      <Header />
+      <Header handleSubmitFilters={handleSubmitFilters} />
 
       <section className="section__container">
         <Map />
@@ -66,7 +86,7 @@ const ResultsPage = () => {
           statePlaces={dataState}
         />
         <Pagination 
-          TotalPages={TotalPages} 
+          TotalPages={totalPages} 
           currentPage={currentPage} 
           prevHandler={prevHandler} 
           nextHandler={nextHandler} 

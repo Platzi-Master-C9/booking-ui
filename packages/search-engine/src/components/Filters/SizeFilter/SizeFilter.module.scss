@@ -1,0 +1,31 @@
+.sizeFilter {
+  & .containerLabel {
+    display: flex;
+    cursor: pointer;
+
+    &:nth-child(1){
+      margin-bottom: 16px;
+    }
+    & input {
+      width: 24px;      
+      height: 24px;      
+    }
+    & .containerText {
+      display: flex;
+      flex-direction: column;
+      padding-left: 24px;
+      & .title {
+        color: #000;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 4px;
+      }
+      & .description {
+        font-size: 14px;
+        line-height: 21px;
+        color: #666; 
+        width: 287px;
+      }
+    }
+  }  
+}

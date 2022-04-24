@@ -1,0 +1,32 @@
+.starsFilter{
+  & .containerLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 5px;
+    }
+    & input {
+      width: 24px;      
+      height: 24px;      
+    }
+    & .opinions {
+      color: #000;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    & .containerStars {
+      display: flex;
+      align-items: center;
+      min-width: 200px;
+      margin-left: 14px;
+      & svg {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+      }
+    }
+  }
+}
