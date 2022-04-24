@@ -1,10 +1,10 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
-import ResultsPage from '../../src/components/resultsPage/layout';
+import ResultsPage from '../../../src/components/resultsPage/layout';
 
 describe('<Results />', () => {
-  const Results = shallow(<ResultsPage />);
+  const Results = mount(<ResultsPage />);
 
   it('Must be rendered', () => {
     expect(Results.length).toEqual(1);

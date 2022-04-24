@@ -1,23 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-import Header from "../Header"
-import Map from "../Map"
-import Footer from "../Footer"
-import ListResults from "./ListResults"
-import Pagination from "./Pagination"
+import { Header } from "../Header"
+import { Map } from "../Map"
+import { Footer } from "../Footer"
+import { ListResults } from "./ListResults"
+import { Pagination } from "./Pagination"
 import "./styles/style.css"
-import { DATA_API } from "./API/data";
-// import getData from "./API/getData";
+import { getData } from "./API/getData";
 
-export const ResultsPage = () => {
-// export const ResultsPage = ({ DataFromApi }) => {
-  const PLACES_PER_PAGE = 10;
+const PLACES_PER_PAGE = 10;
+const keys = 1;
+
+const ResultsPage = () => {
+// const ResultsPage = ({ keys }) => {
   
-  const [ allPlaces, setAllPlaces ] = useState(DATA_API); //debbuging
-  // const [ allPlaces, setAllPlaces ] = useState(DataFromApi); //debbuging
-  const [ places, setPlaces ] = useState([...allPlaces].splice(0, PLACES_PER_PAGE)); //debbuging
+  const [ allPlaces, setAllPlaces ] = useState([]); //debbuging
+
+  const [ renderedPlaces, setRenderedPlaces ] = useState([]); //rendered places in the current page
+  const [ loading, setLoading ] = useState(true);
   const [ currentPage, setCurrentPage ] = useState(0);
-  const TotalPages = Math.ceil(allPlaces.length / PLACES_PER_PAGE);
+  const [ TotalPages, setTotalPages ] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      getData(keys).then(res => setAllPlaces(res.data));
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  useEffect(() => {
+    setRenderedPlaces([...allPlaces].splice(0, PLACES_PER_PAGE));
+    setTotalPages(Math.ceil(allPlaces.length / PLACES_PER_PAGE));
+  }, [allPlaces]);
 
   const prevHandler = () => {
     const prevPage = currentPage - 1;
@@ -25,7 +39,7 @@ export const ResultsPage = () => {
     if(prevPage < 0) { return }
     const currentIndex = prevPage * PLACES_PER_PAGE;
 
-    setPlaces([...allPlaces].splice(currentIndex, PLACES_PER_PAGE));
+    setRenderedPlaces([...allPlaces].splice(currentIndex, PLACES_PER_PAGE));
     setCurrentPage(prevPage);
   }
 
@@ -34,30 +48,57 @@ export const ResultsPage = () => {
     const nextPage = currentPage + 1;
     const currentIndex = nextPage * PLACES_PER_PAGE;
 
-    if(currentIndex === TotalPlaces) { return }
+    if(currentIndex >= TotalPlaces) { return }
 
-    setPlaces([...allPlaces].splice(currentIndex, PLACES_PER_PAGE));
+    setRenderedPlaces([...allPlaces].splice(currentIndex, PLACES_PER_PAGE));
     setCurrentPage(nextPage);
   }
 
-  return (
-    <div className="results__container">
-      <Header />
-
-      <section className="section__container">
-        <Map />
-        <ListResults 
-          data={places} 
-        />
-        <Pagination 
-          TotalPages={TotalPages} 
-          currentPage={currentPage} 
-          prevHandler={prevHandler} 
-          nextHandler={nextHandler} 
-        />
-      </section>
-
-      <Footer />
-    </div>
-  )
+  if(loading) {
+    return (
+      <div className="results__container">
+        <Header />
+  
+        <section className="section__container">
+          <Map />
+          <section className='list__results'>
+            <div className="results__card">
+              Loading...
+            </div>
+          </section>
+          <Pagination 
+            TotalPages={TotalPages} 
+            currentPage={currentPage} 
+            prevHandler={prevHandler} 
+            nextHandler={nextHandler} 
+          />
+        </section>
+  
+        <Footer />
+      </div>
+    )
+  } else {
+    return (
+      <div className="results__container">
+        <Header />
+  
+        <section className="section__container">
+          <Map />
+          <ListResults 
+            places={renderedPlaces} 
+          />
+          <Pagination 
+            TotalPages={TotalPages} 
+            currentPage={currentPage} 
+            prevHandler={prevHandler} 
+            nextHandler={nextHandler} 
+          />
+        </section>
+  
+        <Footer />
+      </div>
+    )
+  }
 }
+
+export { ResultsPage };

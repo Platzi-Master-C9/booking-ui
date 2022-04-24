@@ -1,12 +1,15 @@
 import React from 'react';
+// import { Card } from '../Card';
 import './styles/ListResults.css'
 
-export default function Results(props) {
+function ListResults({ places }) {
   return <React.Fragment>
     <section className='list__results'>
-      { props.data.map((card, index) => {
-        return <div className="results__card" key={card.id}> {card.title} </div>
+      { places.map(card => {
+        return <div className="results__card" key={card.uuid}> {card.city} </div>
       })}
     </section>
   </React.Fragment>
 }
+
+export { ListResults };
