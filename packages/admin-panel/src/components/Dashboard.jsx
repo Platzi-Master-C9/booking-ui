@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+import { GridItem } from "./GridItem";
 import styles from "../assets/styles/Dashboard.module.scss";
 
 export const Dashboard = () => {
@@ -20,24 +21,14 @@ export const Dashboard = () => {
       setError(error);
     }
   };
-  console.log(users);
 
   return (
     <section className={styles.dashboard}>
       <h2>Users</h2>
       <ul className={styles.list}>
-        {users.map((user) => {
-          return (
-            <li id={user.id} className={styles.list__item}>
-              <div className={styles.item__tag}>{user.full_name}</div>
-              <div className={styles.item__tag}>Host</div>
-              <div className={styles.item__tag}>{user.status}</div>
-              <div className={styles.item__tag}>Yes</div>
-              <div className={styles.item__tag}>{user.date_of_register}</div>
-              <div className={styles.manage}>Manage</div>
-            </li>
-          );
-        })}
+        {users.map((user) => (
+          <GridItem user={user} />
+        ))}
       </ul>
     </section>
   );
