@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import styled from "styled-components";
 import { Header } from "./Header";
 import { Sidebar } from "./Sidebar";
@@ -20,6 +21,13 @@ const Section = styled.section`
     }
   }
 `;
+=======
+
+import { Header } from "./Header";
+import { Sidebar } from "./Sidebar";
+
+import "../assets/styles/Layout.scss";
+>>>>>>> Integrated the layout with the grid, sidebar and header. The layout was rendered in the different views
 
 export const Layout = ({ children }) => {
   const [sidebar, setSidebar] = useState(true);
@@ -28,8 +36,16 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Header showSidebar={showSidebar} />
+<<<<<<< HEAD
       <Sidebar sidebar={sidebar} />
       <Section sidebar={sidebar}>{children}</Section>
+=======
+
+      <section className="container">
+        <Sidebar sidebar={sidebar} />
+        {children}
+      </section>
+>>>>>>> Integrated the layout with the grid, sidebar and header. The layout was rendered in the different views
     </>
   );
 };
