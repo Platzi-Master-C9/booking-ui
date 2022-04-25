@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 export const AdminPanel = () => {
   return (
-    //console.log('hello from admin panel')
-    <h1>Hello from admin panel :D</h1>
+    //console.log('Hello from Geolocation')
+    <h1>Hello from AdminPanel :D</h1>
   );
 };
