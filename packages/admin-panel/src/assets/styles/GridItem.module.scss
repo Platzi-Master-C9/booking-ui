@@ -1,0 +1,5 @@
+.list__item {
+  margin-bottom: 1.7em;
+  display: inline-grid;
+  grid-template-columns: [first] 220px [second] 120px [third] 130px [fourth] 120px [fifth] 160px [last] 70px;
+}
