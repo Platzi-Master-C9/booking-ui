@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Usuarios = () => {
-  return <div>Usuarios</div>;
-};
+import { Layout, Dashboard } from '@booking-ui/shared';
 
-export default Usuarios;
+const Users = () => (
+  <Layout>
+    <Dashboard />
+  </Layout>
+);
+
+export default Users;
