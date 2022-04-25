@@ -24,7 +24,7 @@ export const Dashboard = () => {
 
   return (
     <section className={styles.dashboard}>
-      <h2>Users develop</h2>
+      <h2>Users</h2>
       <ul className={styles.list}>
         {users.map((user) => (
           <GridItem user={user} />
