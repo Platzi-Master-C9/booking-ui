@@ -26,6 +26,9 @@ export const Header = ({ showSidebar }) => (
       <div className="Company-container">
         <h1 className="Company-name"> BS</h1>
       </div>
+      <div className="Company-container">
+        <h1 className="Company-name"> BS</h1>
+      </div>
     </div>
     <div className="admin">
       <p className="Administrador"> Administrador</p>

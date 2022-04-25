@@ -30,6 +30,7 @@ export const Layout = ({ children }) => {
       <Header showSidebar={showSidebar} />
       <Sidebar sidebar={sidebar} />
       <Section sidebar={sidebar}>{children}</Section>
+
       <section className="container">
         <Sidebar sidebar={sidebar} />
         {children}
