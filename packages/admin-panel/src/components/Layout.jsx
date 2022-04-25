@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { Header } from './Header';
-import { Sidebar } from './Sidebar';
+import { Header } from "./Header";
+import { Sidebar } from "./Sidebar";
 
-import CloseIcon from '@mui/icons-material/Close';
-import '../assets/styles/Layout.scss';
+import "../assets/styles/Layout.scss";
 
 export const Layout = ({ children }) => {
   const [sidebar, setSidebar] = useState(true);
@@ -13,6 +12,7 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Header showSidebar={showSidebar} />
+
       <section className="container">
         <Sidebar sidebar={sidebar} />
         {children}
