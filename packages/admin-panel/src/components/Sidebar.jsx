@@ -6,13 +6,9 @@ import "../assets/styles/Sidebar.scss";
 import { SidebarData } from "./SidebarData.js";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const SidebarContainer = styled.div`
-  width: 230px;
-`;
 
 const SidebarNav = styled.nav`
   position: fixed;
-  top: 100px;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
 
@@ -46,13 +42,11 @@ const TitleSidebar = styled.div`
   }
 `;
 
-export const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(true);
-  const showSidebar = () => setSidebar(!sidebar);
+export const Sidebar = ({ sidebar }) => {
   const router = useRouter();
 
   return (
-    <SidebarContainer className="Sidebar-container">
+    <>
       <SidebarNav className="Sidebar" sidebar={sidebar}>
         <ul className="SidebarList">
           {SidebarData.map((val, key) => {
@@ -72,6 +66,6 @@ export const Sidebar = () => {
           })}
         </ul>
       </SidebarNav>
-    </SidebarContainer>
+    </>
   );
 };

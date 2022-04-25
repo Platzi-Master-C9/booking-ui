@@ -33,9 +33,12 @@
   width: 60px;
   height: 60px;
   background-color: var(--color-main);
+<<<<<<< HEAD
   background-image: url('../assets/iconUser.png');
   background-repeat: no-repeat;
   background-position: center;
+=======
+>>>>>>> Fixed rebase conflicts
   border-radius: 50%;
   cursor: pointer;
 }
