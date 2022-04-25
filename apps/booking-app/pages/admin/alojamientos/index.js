@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Alojamientos = () => {
-  return <div>Alojamientos</div>;
-};
+import { Layout, Dashboard } from '@booking-ui/shared';
+
+const Alojamientos = () => (
+  <Layout>
+    <Dashboard />
+  </Layout>
+);
 
 export default Alojamientos;

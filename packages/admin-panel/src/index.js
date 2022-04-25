@@ -4,5 +4,5 @@ export { Layout } from './components/Layout';
 export { Header } from './components/Layout';
 export { Sidebar } from './components/Sidebar';
 export { Dashboard } from './components/Dashboard';
-export { Navbar } from './components/NavBar';
+export { NavBar } from './components/NavBar';
 export { FilterContainer } from './components/Filters/FiltersContainer';

@@ -42,9 +42,7 @@ const TitleSidebar = styled.div`
   }
 `;
 
-export const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(true);
-  const showSidebar = () => setSidebar(!sidebar);
+export const Sidebar = ({ sidebar }) => {
   const router = useRouter();
 
   return (
