@@ -5,4 +5,5 @@ export { MessagingSystem, TextBox } from '@booking-ui/messaging-system';
 export { UserAccount, FavoriteCard, favoritesView } from '@booking-ui/user-account';
 export { ResultsPage, LandingPage } from '@booking-ui/search-engine';
 export * from '@booking-ui/authentication';
-export { AdminPanel, DropdownMenu, Sidebar } from '@booking-ui/admin-panel';
+export * from '@booking-ui/notification-system';
+export * from '@booking-ui/admin-panel';
