@@ -11,6 +11,7 @@ import {
   LoginButton,
   UserAccount,
   FavoriteCard,
+  NotificationSystem,
 } from '@booking-ui/shared';
 
 
@@ -32,6 +33,7 @@ export default function Home() {
         <MessagingSystem />
         <AdminPanel />
         <Authentication />
+        <NotificationSystem />
         <LoginButton label="Not login" />
         <UserAccount />
         <FavoriteCard />
