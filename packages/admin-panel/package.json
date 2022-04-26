@@ -38,5 +38,8 @@
     "axios": "^0.26.1",
     "react-dom": "^18.0.0",
     "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "react-datepicker": "^4.7.0"
   }
 }
