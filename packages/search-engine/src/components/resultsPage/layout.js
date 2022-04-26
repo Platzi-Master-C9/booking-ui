@@ -1,31 +1,32 @@
 import React, { useEffect, useState } from "react";
 
-import { Header } from "../Header"
+import Header from "../Header"
 import { Map } from "../Map"
-import { Footer } from "../Footer"
+import Footer from "../Footer"
 import { ListResults } from "./ListResults"
 import { Pagination } from "./Pagination"
 import "./styles/style.css"
 import { getData } from "./API/getData";
 
 const PLACES_PER_PAGE = 10;
-const keys = 1;
+const key = 15;
 
 const ResultsPage = () => {
-// const ResultsPage = ({ keys }) => {
   
-  const [ allPlaces, setAllPlaces ] = useState([]); //debbuging
+  const [ allPlaces, setAllPlaces ] = useState([]);
 
-  const [ renderedPlaces, setRenderedPlaces ] = useState([]); //rendered places in the current page
-  const [ loading, setLoading ] = useState(true);
+  const [ renderedPlaces, setRenderedPlaces ] = useState([]);
+  const [ dataState, setDataState ] = useState({ loading: true, error: false });
   const [ currentPage, setCurrentPage ] = useState(0);
   const [ TotalPages, setTotalPages ] = useState(0);
 
   useEffect(() => {
-    setTimeout(() => {
-      getData(keys).then(res => setAllPlaces(res.data));
-      setLoading(false);
-    }, 3000);
+    try {
+      getData(key).then(res => setAllPlaces(res.data));
+      setDataState({ ...dataState, loading: false });
+    } catch(error) {
+      setDataState({ ...dataState, error: error });
+    }
   }, []);
 
   useEffect(() => {
@@ -54,51 +55,27 @@ const ResultsPage = () => {
     setCurrentPage(nextPage);
   }
 
-  if(loading) {
-    return (
-      <div className="results__container">
-        <Header />
-  
-        <section className="section__container">
-          <Map />
-          <section className='list__results'>
-            <div className="results__card">
-              Loading...
-            </div>
-          </section>
-          <Pagination 
-            TotalPages={TotalPages} 
-            currentPage={currentPage} 
-            prevHandler={prevHandler} 
-            nextHandler={nextHandler} 
-          />
-        </section>
-  
-        <Footer />
-      </div>
-    )
-  } else {
-    return (
-      <div className="results__container">
-        <Header />
-  
-        <section className="section__container">
-          <Map />
-          <ListResults 
-            places={renderedPlaces} 
-          />
-          <Pagination 
-            TotalPages={TotalPages} 
-            currentPage={currentPage} 
-            prevHandler={prevHandler} 
-            nextHandler={nextHandler} 
-          />
-        </section>
-  
-        <Footer />
-      </div>
-    )
-  }
+  return (
+    <div className="results__container">
+      <Header />
+
+      <section className="section__container">
+        <Map />
+        <ListResults 
+          places={renderedPlaces}
+          statePlaces={dataState}
+        />
+        <Pagination 
+          TotalPages={TotalPages} 
+          currentPage={currentPage} 
+          prevHandler={prevHandler} 
+          nextHandler={nextHandler} 
+        />
+      </section>
+
+      <Footer />
+    </div>
+  )
 }
 
 export { ResultsPage };
