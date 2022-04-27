@@ -27,17 +27,21 @@ export const FavoritesLayout = () => {
   }
 
   return (
-    <div className="container"> 
+    <div>
       <Header />
       <h2 className='title'>Mis favoritos</h2>
-      <div className="favorite-grid">
-        {favorites.map(favorite =>(
-            <a onClick={(event) => navigate(favorite.id, event)}>
-            <FavoriteCard key={favorite.id} cardPhoto={favorite.cardPhoto} cardTitle={favorite.cardTitle}/>
-            </a>
-        )) }
+      <div className="container">
+        <div className='body-container'>
+          <div className="favorite-grid">
+            {favorites.map(favorite =>(
+              <a onClick={(event) => navigate(favorite.id, event)}>
+                <FavoriteCard key={favorite.id} cardPhoto={favorite.cardPhoto} cardTitle={favorite.cardTitle}/>
+              </a>
+            )) }
+          </div>
+        </div>
       </div>
-    <Footer />
+      <Footer />
     </div>
 
   );
