@@ -11,6 +11,7 @@ import {
   Authentication,
   LoginButton,
   UserAccount,
+  NotificationSystem,
 } from '@booking-ui/shared';
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
         <AdminPanel />
         <Authentication />
         <UserAccount />
+        <NotificationSystem />
         <LoginButton label="Not login" />
         <p className={styles.description}>
           Get started by editing{' '}

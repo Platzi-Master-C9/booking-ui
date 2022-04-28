@@ -1,34 +1,23 @@
 import React from 'react';
+import SearchBar from '../LandingPage/SearchBar';
+import User from '../LandingPage/User';
 import './Header.css';
 
-export default function Header() {
-	return <header className="header__container">
-    <div className='logo'>
-      <a href='/'>BS</a>
-    </div>
+export default function Header({ classPage }) {
+  let classHeader;
+  if (classPage !== 'landing') {
+    classHeader = 'header__container';
+  } else {
+    classHeader = classPage + ' header__container';
+  }
 
-    <div className='search__container'></div>
-
-    <div className='users_container'>
-      <div className='link host'>
-        <a href='/'>Hazte anfitrión</a>
+  return (
+    <header className={classHeader}>
+      <div className="logo">
+        <a href="/">BS</a>
       </div>
-
-      <div className='user'></div>
-    </div>
-
-    <div className='filter__container'>
-      <div className='filter'>
-        <p>Precio <span>v</span></p>
-      </div>
-
-      <div className='filter'>
-        <p>Tipo de alojamiento <span>v</span></p>
-      </div>
-
-      <div className='filter'>
-        <p>Clasificación <span>v</span></p>
-      </div>
-    </div>
-  </header>
+      <SearchBar />
+      <User classUser={classPage} />
+    </header>
+  );
 }
