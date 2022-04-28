@@ -13,8 +13,8 @@
 
   .type {
     display: flex;
+    color: #1572A1;
     height: 48px;
-    width: 126px;
     border: 1px solid #1572A1;
     border-radius: 32px;
     box-sizing: border-box;
