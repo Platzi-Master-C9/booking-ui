@@ -1,5 +1,5 @@
 import React from 'react';
-import NotificationCard from '../NotificationCard';
+import NotificationCard from '../../components/NotificationCard/index.component';
 import styles from './NotificationsDashboard.module.scss';
 
 const NotificationsDashboard = () => {
