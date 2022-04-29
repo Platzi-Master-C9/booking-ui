@@ -26,11 +26,14 @@ export const Dashboard = () => {
   };
 
  const filterUsers = users.filter((u) => checked.checkedOne && u.type === "Anfitrión" || checked.checkedTwo && u.type === "Huésped" || checked.checkedThree && u.status === "Activo" || checked.checkedFour && u.status === "Inactivo" || checked.checkedFive && u.validate === "Sí" || checked.checkedSixx && u.validate === "No")
-  console.log(filterUsers)
-  return (
+
+ return (
     <section className={styles.dashboard}>
       <h2>Users</h2>
       <div className={styles.filtersItem}>
+        <div style={{ gridColumn: "1/2"}}>
+        <span style={{ height: "48px", padding: "0 1rem", color: "#1572A1", fontWeight: "500"}}>Nombre</span>
+        </div>
         <div style={{ gridColumn: "2/3"}}>
           <CardContainer styles type={"Tipo"} titleOne="Anfitrión" titleTwo="Huésped" descriptionOne="Descripcion para anfitrion" descriptionTwo="Descripcion para huesped" show={show.showOne} checkedOne={checked.checkedOne} checkedTwo={checked.checkedTwo} handleSetShow={() => handleSetShow("showOne", !show.showOne)} handleChexboxOne={(e) => handleSetChecked("checkedOne", e.target.checked)} handleChexboxTwo={(e) => handleSetChecked("checkedTwo", e.target.checked)} handleChexboxOneDelete={(e) => handleSetDelete("checkedOne", "checkedTwo", false, false)} />
         </div>

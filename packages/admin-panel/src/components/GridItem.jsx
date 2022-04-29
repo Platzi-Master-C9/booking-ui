@@ -22,7 +22,7 @@ export const GridItem = ({ user }) => {
 
   return (
     <li key={user.id} className={styles.list__item}>
-      <div>{user.full_name}</div>
+      <div className={styles.textCenterName}>{user.full_name}</div>
       <div>{user.type}</div>
       <div>{user.status}</div>
       <div>{user.validate}</div>
