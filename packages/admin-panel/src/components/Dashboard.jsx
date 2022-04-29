@@ -32,7 +32,7 @@ export const Dashboard = () => {
       <h2>Users</h2>
       <div className={styles.filtersItem}>
         <div style={{ gridColumn: "1/2"}}>
-        <span style={{ height: "48px", padding: "0 1rem", color: "#1572A1", fontWeight: "500"}}>Nombre</span>
+        <span className={styles.spanName}>Nombre</span>
         </div>
         <div style={{ gridColumn: "2/3"}}>
           <CardContainer styles type={"Tipo"} titleOne="Anfitrión" titleTwo="Huésped" descriptionOne="Descripcion para anfitrion" descriptionTwo="Descripcion para huesped" show={show.showOne} checkedOne={checked.checkedOne} checkedTwo={checked.checkedTwo} handleSetShow={() => handleSetShow("showOne", !show.showOne)} handleChexboxOne={(e) => handleSetChecked("checkedOne", e.target.checked)} handleChexboxTwo={(e) => handleSetChecked("checkedTwo", e.target.checked)} handleChexboxOneDelete={(e) => handleSetDelete("checkedOne", "checkedTwo", false, false)} />
