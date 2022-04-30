@@ -1,2 +1,3 @@
 export { Loader } from './components/Loader';
-export { default as NotificationCard } from './components/NotificationCard/index.component';
+export { NotificationCard } from './components/NotificationCard';
+export { NotificationsDashboard } from './views/NotificationsDashboard';

@@ -1,7 +1,7 @@
 import { Close } from "../../assets/icons"
 import styles from "./NotificationCard.module.scss";
 
-const NotificationCard = () => {
+export const NotificationCard = () => {
 	return (
 		<>
 			<div className={styles.card}>
@@ -24,5 +24,3 @@ const NotificationCard = () => {
 		</>
 	);
 };
-
-export default NotificationCard;
