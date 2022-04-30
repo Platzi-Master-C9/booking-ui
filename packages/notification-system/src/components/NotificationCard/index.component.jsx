@@ -1,4 +1,4 @@
-import React from "react";
+import { Close } from "../../assets/icons"
 import styles from "./NotificationCard.module.scss";
 
 const NotificationCard = () => {
@@ -9,9 +9,8 @@ const NotificationCard = () => {
 					{/* <img src="" alt="BookingSystem Logo" /> */}
 					BS
 				</div>
-
 				<div className={styles.card__close}>
-					<img src={require("./close.svg").default} alt="Close"></img>
+					<Close />
 				</div>
 				<div className={styles.card__content}>
 					<div className={styles.card__text}>

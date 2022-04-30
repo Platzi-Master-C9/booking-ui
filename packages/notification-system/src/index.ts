@@ -1,1 +1,2 @@
-export { default as NotificationSystem } from './components/helloWorld.js';
+export { Loader } from './components/Loader';
+export { default as NotificationCard } from './components/NotificationCard/index.component';
