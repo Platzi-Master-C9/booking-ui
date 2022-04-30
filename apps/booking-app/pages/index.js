@@ -6,6 +6,7 @@ import {
   Demo,
   Places,
   Geolocation,
+  Booking,
   MessagingSystem,
   AdminPanel,
   Authentication,
@@ -31,6 +32,7 @@ export default function Home() {
         <Demo />
         <Places />
         <Geolocation />
+        <Booking />
         <MessagingSystem />
         <AdminPanel />
         <Authentication />

@@ -1,11 +1,11 @@
-# `@booking-ui/booking`
+# `@booking-ui/geolocation`
 
 > TODO: description
 
 ## Usage
 
 ```
-const booking = require('@booking-ui/booking');
+const geolocation = require('@booking-ui/geolocation');
 
 // TODO: DEMONSTRATE API
 ```
