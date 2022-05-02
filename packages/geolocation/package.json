@@ -21,15 +21,31 @@
     "url": "git+https://github.com/Platzi-Master-C9/booking-ui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
-    "fast-equals": "^3.0.0",
     "google-map-react": "^2.1.10",
     "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
+    "enzyme": "^3.11.0",
+    "jest": "^28.0.3"
+  },
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "<rootDir>/__tests__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "transform": {},
+    "testEnvironment": "jsdom"
   }
 }

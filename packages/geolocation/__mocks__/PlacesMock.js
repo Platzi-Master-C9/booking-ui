@@ -1,6 +1,4 @@
-19.4326 - 99.1332;
-
-const places = [
+const PlacesMock = [
   {
     id: 871931,
     type: 'Entire Loft',
@@ -115,4 +113,4 @@ const places = [
   },
 ];
 
-export { places };
+export { PlacesMock };

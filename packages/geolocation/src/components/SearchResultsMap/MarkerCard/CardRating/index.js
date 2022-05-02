@@ -6,8 +6,8 @@ function CardRating({ rating, reviews }) {
   return (
     <div className={styles.rating}>
       <AiFillStar className={styles.star} />
-      <p>4.98</p>
-      <p>(62)</p>
+      <p>{rating}</p>
+      <p>{reviews}</p>
     </div>
   );
 }
