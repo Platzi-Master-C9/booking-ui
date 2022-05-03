@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Layout, Dashboard } from '@booking-ui/shared';
+import { Layout, LayoutAdministrators } from '@booking-ui/shared';
 
 const Administradores = () => (
     <Layout>
