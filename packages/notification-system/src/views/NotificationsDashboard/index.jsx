@@ -28,7 +28,6 @@ export const NotificationsDashboard = () => {
   // Function to get a random number and simulate a delay
   const randomNumber = () => {
     const number = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
-    console.log(number);
     return number;
   }
 

@@ -1,4 +1,4 @@
-import { Close } from "../../assets/icons"
+import { Close } from "../../assets/Close"
 import styles from "./NotificationCard.module.scss";
 
 export const NotificationCard = () => {
