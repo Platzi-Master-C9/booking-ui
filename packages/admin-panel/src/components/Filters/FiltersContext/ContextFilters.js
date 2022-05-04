@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-export const ContextFilters = React.createContext(null);
+export const ContextFilters = React.createContext({});
 
 export const ContextOfFilters = (props) => {
-
+    
     const [checked, setChecked] = useState({
         checkedOne: false,
         checkedTwo: false,
@@ -75,10 +75,9 @@ export const ContextOfFilters = (props) => {
         }
     ]
 
-    const filterUsers = users.filter((u) => checked.checkedOne && u.tipo === "anfitrion" || checked.checkedTwo && u.tipo === "huesped" || checked.checkedThree && u.estado === "activo" || checked.checkedFour && u.estado === "inactivo" || checked.checkedFive && u.validacion === "si" || checked.checkedSixx && u.validacion === "no")
 
     return (
-        <ContextFilters.Provider value={{ checked, setChecked, show, setShow, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, filterUsers, users }}>
+        <ContextFilters.Provider value={{ checked, setChecked, show, setShow, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, users }}>
             {props.children}
         </ContextFilters.Provider>
     )
