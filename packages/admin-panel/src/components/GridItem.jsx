@@ -30,7 +30,9 @@ export const GridItem = ({ user }) => {
       <StyledButton onClick={handleActive} isActive={isMenuActive}>
         Manage
       </StyledButton>
-      {isMenuActive ? <DropdownMenu isActive={isMenuActive} /> : null}
+      <div>
+        <DropdownMenu isActive={isMenuActive} />
+      </div>
     </li>
   );
 };

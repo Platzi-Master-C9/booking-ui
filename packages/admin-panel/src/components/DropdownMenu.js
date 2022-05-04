@@ -4,15 +4,13 @@ import "../assets/styles/DropdownMenu.scss";
 import styled from "styled-components";
 
 const StyledDropdown = styled.div`
-  visibility: ${({ isActive }) => (isActive ? " visible" : "hidden")}
+  visibility: ${({ isActive }) => (isActive ? " visible" : "hidden")};
   font-family: sans-serif;
   text-align: center;
   font-size: 18px;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  //right: -200px;
+  z-index: 3;
   margin: auto;
   width: 154px;
   height: 279px;
