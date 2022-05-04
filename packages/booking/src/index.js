@@ -1,3 +1,2 @@
 export { Booking } from './components/index';
-// export { Booking } from './components/App';
-
+export { App } from './components/Card/App';
