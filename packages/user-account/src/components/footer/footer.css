@@ -1,0 +1,22 @@
+footer {
+    padding-top: 30px;
+    grid-area: 4 / 1 / 5 / 9;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 2%;
+  }
+  
+.footer-button {
+    background: none;
+    border: none;
+    height: 27px;
+    left: 603px;
+    top: 1133px;
+    color: #000000;
+  }
+
+  .line-item hr{
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
