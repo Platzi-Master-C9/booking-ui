@@ -55,9 +55,8 @@ export const Sidebar = ({ sidebar }) => {
         <ul className="SidebarList">
           {SidebarData.map((val, key) => {
             return (
-              <Link href={val.link}>
+              <Link key={key} href={val.link}>
                 <li
-                  key={key}
                   className="row"
                   id={router.pathname === val.link ? "active" : ""}
                 >
