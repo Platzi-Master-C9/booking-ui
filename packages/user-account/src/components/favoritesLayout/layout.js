@@ -1,8 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./assets/styles/style.css";
 import Footer from '../footer';
 import Header from '../header'
-import Link from 'next/link'
 import { FavoriteCard } from '../favoriteCard/favoriteItemCard';
 import { useRouter } from "next/router";
 
@@ -16,6 +15,7 @@ const favorites = [
 ]
 
 export const FavoritesLayout = () => {
+  const [cardList, setCardList] = useState(favorites);
   const router = useRouter();
 
   const navigate = (id, event) => {
@@ -26,6 +26,13 @@ export const FavoritesLayout = () => {
     });
   }
 
+  function deleteCard (id) {
+    const newCardList = cardList.filter((card)=>{
+      return card.id !== id;
+    });
+    setCardList(newCardList);
+  }
+
   return (
     <div>
       <Header />
@@ -33,9 +40,12 @@ export const FavoritesLayout = () => {
       <div className="container">
         <div className='body-container'>
           <div className="favorite-grid">
-            {favorites.map(favorite =>(
+            {cardList.map(favorite =>(
               <a onClick={(event) => navigate(favorite.id, event)}>
-                <FavoriteCard key={favorite.id} cardPhoto={favorite.cardPhoto} cardTitle={favorite.cardTitle}/>
+                <FavoriteCard key={favorite.id} cardPhoto={favorite.cardPhoto} cardTitle={favorite.cardTitle}
+                cardId={favorite.id}
+                deleteCard={deleteCard}
+                />
               </a>
             )) }
           </div>

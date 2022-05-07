@@ -1,10 +1,20 @@
 import { useState } from "react";
 import "./assets/styles/deleteFavoriteList.css"
 
-export default function DeleteCardItem() {
+// Delete card confirm = mensaje de confirmacion
+// Delete card success = eliminado exitosamente
+
+export default function DeleteCardItem(props) {
 
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const [successDeleteModal, setSuccessDeleteModal] = useState(false);
+
+
+  function deleteList(event) {
+    if (event) event.stopPropagation() 
+    toggleDeleteModal();
+    toggleSuccessDeleteModal();
+  }
 
   function toggleDeleteModal(event) {
     if (event) event.stopPropagation() 
@@ -14,12 +24,9 @@ export default function DeleteCardItem() {
   function toggleSuccessDeleteModal(event) {
     if (event) event.stopPropagation() 
     setSuccessDeleteModal(!successDeleteModal);
-  }
-
-  function deleteList(event) {
-    if (event) event.stopPropagation() 
-    toggleDeleteModal();
-    toggleSuccessDeleteModal();
+    if (successDeleteModal === true) {
+      props.onDeleteFavoriteCard();
+    }
   }
 
   return (
