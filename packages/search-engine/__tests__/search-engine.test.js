@@ -1,8 +1,6 @@
 'use strict';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import SizeFilter from '../src/components/Filters/SizeFilter'
-
-// const searchEngine = require('..');
 
 describe('@booking-ui/search-engine', () => {
     test('needs tests', () => {
