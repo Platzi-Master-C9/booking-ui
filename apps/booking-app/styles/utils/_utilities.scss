@@ -1,34 +1,12 @@
-@use '../abstract/desig-tokens' as *;
+@use '../abstract/design-tokens' as *;
 
 // Colores principales
 
-@each $key, $item in $main-colors {
-  .bg-main-#{$key} {
-    background-color: $item;
-  }
-
-  .color-main-#{$key} {
-    color: $item;
-  }
-
-  .border-main-#{$key} {
-    border-color: $item;
-  }
-}
-
-// Colores neutrales
-
-@each $key, $item in $neutral-colors {
-  .bg-neutral-#{$key} {
-    background-color: $item;
-  }
-
-  .color-neutral-#{$key} {
-    color: $item;
-  }
-
-  .border-neutral-#{$key} {
-    border-color: $item;
+@each $key, $item in $colors {
+  @each $shade, $color in $item {
+    .bg-#{$key}-#{$shade} {
+      background-color: var(--#{$key}-color-#{$shade});
+    }
   }
 }
 
@@ -36,7 +14,7 @@
 
 @each $key, $item in $background {
   .gradient-#{$key} {
-    background-color: #{$item};
+    background: #{$item};
   }
 }
 

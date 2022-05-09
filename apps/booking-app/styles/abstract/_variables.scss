@@ -1,14 +1,21 @@
+@use './design-tokens' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;600&display=swap');
 
 :root {
   /* Color */
-  --main-color-400: hsla(200, 77%, 36%, 1);
-  --main-color-500: hsla(200, 95%, 46%, 1);
-  --main-color-900: hsla(200, 41%, 95%, 1);
-  --neutral-color-100: hsla(0, 0%, 0%, 1);
-  --neutral-color-400: hsla(0, 0%, 40%, 1);
-  --neutral-color-600: hsla(0, 0%, 61%, 1);
-  --neutral-color-900: hsla(0, 0%, 100%, 1);
+  // --main-color-400: hsla(200, 77%, 36%, 1);
+  // --main-color-500: hsla(200, 95%, 46%, 1);
+  // --main-color-900: hsla(200, 41%, 95%, 1);
+  // --neutral-color-100: hsla(0, 0%, 0%, 1);
+  // --neutral-color-400: hsla(0, 0%, 40%, 1);
+  // --neutral-color-600: hsla(0, 0%, 61%, 1);
+  // --neutral-color-900: hsla(0, 0%, 100%, 1);
+  @each $key, $item in $colors {
+    @each $shade, $color in $item {
+      --#{$key}-color-#{$shade}: #{$color};
+    }
+  }
 
   /* Gradients */
   --background-1: linear-gradient(

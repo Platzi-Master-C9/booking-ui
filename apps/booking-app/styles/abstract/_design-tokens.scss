@@ -1,5 +1,19 @@
 // Colors
 
+$colors: (
+  main: (
+    '400': hsla(200, 77%, 36%, 1),
+    '500': hsla(200, 95%, 46%, 1),
+    '900': hsla(200, 41%, 95%, 1),
+  ),
+  neutral: (
+    '100': hsla(0, 0%, 0%, 1),
+    '400': hsla(0, 0%, 40%, 1),
+    '600': hsla(0, 0%, 61%, 1),
+    '900': hsla(0, 0%, 100%, 1),
+  ),
+);
+
 $main-colors: (
   '400': hsla(200, 77%, 36%, 1),
   '500': hsla(200, 95%, 46%, 1),
@@ -15,7 +29,7 @@ $neutral-colors: (
 
 $background: (
   'main':
-    linear-gradient(180deg, var(--main-color) 0%, hsla(0, 0%, 77%, 0) 100%),
+    linear-gradient(180deg, var(--main-color-400) 0%, hsla(0, 0%, 77%, 0) 100%),
 );
 
 $font-sizes: (
