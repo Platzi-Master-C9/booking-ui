@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 470px;
+  padding: 24px;
+}
+
+.hero-background {
+  height: 450px;
+  width: 1300px;
+  border-radius: 40px;
+  background: url(https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero--text-container {
+  width: 424px;
+  height: 131px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  color: #ffffff;
+}
