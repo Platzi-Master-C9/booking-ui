@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react';
 
 export const Places = () => {
   return (
-      //console.log('Hello from places')
-      <h1>Hello from Places</h1>
+    <h1>
+      Hello from
+        <a href='/places'>{' '}Places</a>
+    </h1>
+    //console.log('Hello from places')
   );
 };
