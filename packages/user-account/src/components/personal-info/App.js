@@ -51,12 +51,12 @@ export default function App() {
     <div className="personalInfo">
       <h2>Información personal</h2>
       <InputNameContainer label="Nombre legal" value={name}  sub={subName}/>
-      <InputSingleContainer label="Email" value={user.email} sub="Escriba su email"/>
-      <InputSingleContainer label="Sexo" value={user.gender} sub="Escriba su sexo"/>
-      <InputSingleContainer label="Número de teléfono" value={user.phoneNumber} sub="Escriba su número de teléfono"/>
+      <InputSingleContainer label="Email" value={user.email} sub="Escriba su email" /> 
+      <InputSingleContainer label="Sexo" value={user.gender} sub="Escriba su sexo" type="alphabet"/>
+      <InputSingleContainer label="Número de teléfono" value={user.phoneNumber} sub="Escriba su número de teléfono" type="number"/>
       <InputSingleContainer label="Identificación" value={user.identification.idOfNationality}/>
       <InputAddresContainer label="Dirección" value={user.addres}  sub={subAddres}/>
-      <InputSingleContainer label="Contacto de emergencia" value={user.phoneNumber} sub="Escriba su número de teléfono"/>
+      <InputSingleContainer label="Contacto de emergencia" value={user.phoneNumber} sub="Escriba su número de teléfono" type="number"/>
       <InputSingleContainer label="Pasaporte" value={user.passport} sub="Escriba su número de pasaporte"/>
     </div>
   );
