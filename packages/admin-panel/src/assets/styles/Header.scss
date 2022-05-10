@@ -1,3 +1,8 @@
+.Header-conteiner{
+  display: block;
+  height: 100px;
+}
+
 .Header {
   display: flex;
   position: fixed;
@@ -21,6 +26,7 @@
 }
 #Menu-hamburger {
   display: flex;
+  cursor: pointer;
 }
 .Company-name {
   background-color: #1572a1;

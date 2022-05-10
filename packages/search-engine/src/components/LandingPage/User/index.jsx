@@ -1,24 +1,18 @@
 import React from 'react';
-import Image from 'next/image';
-
-import userImage from '../assets/iconUser.png';
 import './User.css';
 
-const User = ({ classUser }) => {
-  if (classUser !== 'landing') {
-    classUser = 'users_container';
-  } else {
+const User = ({ classUser = 'users_container' }) => {
+  if (classUser === 'landing') {
     classUser = classUser + ' users_container';
   }
+
   return (
     <div className={classUser}>
       <div className="link host">
         <a href="/">Hazte anfitrión</a>
       </div>
 
-      <div className="user">
-        <Image src={userImage} />
-      </div>
+      <div className="user"></div>
     </div>
   );
 };
