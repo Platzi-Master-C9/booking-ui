@@ -1,39 +1,16 @@
 import React from "react";
 import "../assets/styles/LayoutAdministrators.scss";
 
-export const CardAdmin = ({ admins }) => {
-  const [profileType, setProfileType] = React.useState(3);
-
+export const CardAdmin = ({ searchAdmin, profileType, setProfileType }) => {
   return (
     <>
-      <div className="conteiner-filters_DashboardAdmins">
-        <p>
-          <b>Filtros:</b>
-        </p>
-        <button
-          id={profileType == 1 ? "active" : ""}
-          className="btn-filter_DashboardAdmins"
-          onClick={
-            profileType != 1 ? () => setProfileType(1) : () => setProfileType(3)
-          }
-        >
-          Admin
-        </button>
-        <button
-          className="btn-filter_DashboardAdmins"
-          id={profileType == 2 ? "active" : ""}
-          onClick={
-            profileType != 2 ? () => setProfileType(2) : () => setProfileType(3)
-          }
-        >
-          Super Admin
-        </button>
-      </div>
       <div className="container_CardsAdmin">
-        {admins.map((admin, key) => {
-          if (admin.profile != profileType) {
+        {searchAdmin.map((admin, key) => {
+          if (admin.profile == 3) {
+            return null;
+          } else if (admin.profile != profileType) {
             return (
-              <div className="CardAdmin">
+              <div key={key} className="CardAdmin">
                 <img
                   src={admin.urlImage}
                   alt="profile picture"
