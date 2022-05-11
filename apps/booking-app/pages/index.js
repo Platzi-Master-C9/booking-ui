@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss';
 import {
   Places,
   Geolocation,
+  SearchResultsMap,
   MessagingSystem,
   AdminPanel,
   Authentication,
