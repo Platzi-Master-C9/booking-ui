@@ -13,25 +13,25 @@ const StyledButton = styled.button`
   font-size: 1em;
 `;
 
-export const GridItem = ({ user }) => {
-  const [isMenuActive, setIsMenuActive] = useState(false);
+export const GridItem = ({ user, isActive, handleActive }) => {
+  // const [isMenuActive, setIsMenuActive] = useState(false);
 
-  const handleActive = () => {
-    setIsMenuActive(!isMenuActive);
-  };
+  // const handleActive = () => {
+  //   setIsMenuActive(!isMenuActive);
+  // };
 
   return (
     <li key={user.id} className={styles.list__item}>
-      <div className={styles.textCenterName}>{user.full_name}</div>
+      <div className={styles.textCenterName}>{user.fullName}</div>
       <div>{user.type}</div>
       <div>{user.status}</div>
       <div>{user.validate}</div>
-      <div>{user.date_of_register}</div>
-      <StyledButton onClick={handleActive} isActive={isMenuActive}>
+      <div>{user.dateOfRegister}</div>
+      <StyledButton onClick={handleActive} isActive={isActive}>
         Manage
       </StyledButton>
       <div>
-        <DropdownMenu isActive={isMenuActive} />
+        <DropdownMenu isActive={isActive} />
       </div>
     </li>
   );
