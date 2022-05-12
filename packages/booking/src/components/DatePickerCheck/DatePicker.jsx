@@ -2,7 +2,7 @@ import React from "react";
 
 import css from "./DatePicker.module.scss";
 import DatePickerForm from "../DatePicker/DatePickerForm";
-import DatePickerButton from "./DatePickerButton";
+import DatePickerButtonCheck from "./DatePickerButtonCheck";
 
 
 const DatePicker = () => {
@@ -15,7 +15,7 @@ const DatePicker = () => {
         <b> ${feePerNight} COP</b> / noche
       </p>
       <DatePickerForm />
-      <DatePickerButton />
+      <DatePickerButtonCheck />
     </div>
   );
 };

@@ -1,19 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 
-import css from './DatePicker.module.scss'
-
+import css from "./DatePicker.module.scss";
 
 const DatePickerForm = () => {
+  const [checkinType, setCheckinType] = useState("text");
+  const [checkoutType, setCheckoutType] = useState("text");
+
+  const handleCheckinClick = (Type) => {
+    setCheckinType("date");
+  };
+
+  const handleCheckoutClick = (Type) => {
+    setCheckoutType("date");
+  };
+  
   return (
     <section className={css["date-picker-form"]}>
       <div className={css["check-in-container"]}>
         <label htmlFor="check-in">Llegada</label>
-        <input type="date" name="check-in" id="" />
+        <input
+          onClick={handleCheckinClick}
+          type={checkinType}
+          name="check-in"
+          id=""
+          placeholder="Ingresa una fecha"
+        />
       </div>
 
       <div className={css["checkout-container"]}>
         <label htmlFor="checkout">Salida</label>
-        <input type="date" name="checkout" id="" />
+        <input
+          onClick={handleCheckoutClick}
+          type={checkoutType}
+          name="checkout"
+          id=""
+          placeholder="Ingresa una fecha"
+        />
       </div>
 
       <div className={css["guest-counter-container"]}>
