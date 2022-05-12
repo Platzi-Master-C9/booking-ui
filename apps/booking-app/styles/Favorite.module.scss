@@ -1,8 +1,37 @@
-.paragraph {
-      font-size: 16px;
-      text-align: center;
-    }
+.bodyContainer{
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.favoriteName{
+  grid-area: 1 / 1 / 2 / 5; 
+  margin: 2%;
+}
+.photo{
+  grid-area: 2 / 1 / 6 / 3; 
+  max-width: 500px;
+  justify-self: center;
+}
+.card {
+  grid-column: 3 / 5;
+  grid-row-start: 2;  
+  display: flex;
+  flex-direction: row;
+  border-radius: 32px;
+  padding: 0.5rem;
+  margin-left: 2em;
+  margin-right: 2em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-    .paragraph:hover {
-      color: red;
-    }
+}
+.cardPhoto {
+  border-radius: inherit;
+  align-self: center;
+  width: 180px;
+  padding: 1rem
+}
+
+.cardTitle {
+  font-size: 1rem;
+  align-self: center;
+}
