@@ -2,13 +2,13 @@ import React from "react";
 
 import css from "./DatePicker.module.scss";
 import DatePickerForm from "./DatePickerForm";
-import DatePickerButton from "./DatePickerButton";
-import DatePickerDescriptions from "./DatePickerDescriptions";
+import DatePickerButtonCheck from "./DatePickerButtonCheck";
 
 const DatePicker = () => {
   const feePerNight = 285040;
   const feePerService = 44000;
   const taxes = 20000;
+
 
   return (
     <div className={css["container"]}>
@@ -16,8 +16,7 @@ const DatePicker = () => {
         <b> ${feePerNight} COP</b> / noche
       </p>
       <DatePickerForm />
-      <DatePickerButton />
-      <DatePickerDescriptions
+      <DatePickerButtonCheck
         feePerNight={feePerNight}
         feePerService={feePerService}
         taxes={taxes}

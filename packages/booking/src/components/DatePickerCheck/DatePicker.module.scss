@@ -22,18 +22,21 @@ button {
   font-style: normal;
   font-size: 18px;
   height: 64px;
-  margin: 31px 31px 5px 31px;
+  margin: 31px 31px 15px 31px;
   line-height: 27px;
 }
 
 input {
   align-self: flex-start;
   border-style: none;
+  width: 160px;
 }
 
 select {
+  background: none;
   border-style: none;
   margin: 0 3px 0 3px;
+  width: 362px;
 }
 
 span {
@@ -51,14 +54,16 @@ span {
 }
 
 .container {
+  align-items: start;
   display: grid;
   background: #FFFFFF;
   border-radius: 32px;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
   font-family: Poppins;
   font-size: 18px;
-  height: 598px;
+  max-height: 598px;
   max-width: 460px;
+  min-height: 392px;
 }
 
 .night-fee {
@@ -76,7 +81,7 @@ span {
 
 .check-in-container,
 .checkout-container {
-  width: 50%;
+  width: 182px;
 }
 
 .check-in-container {
@@ -101,7 +106,7 @@ span {
 
 .descriptions {
   grid-area: 1/1/2/2;
-  height: 81px;
+  height: 91px;
   width: 194px;
 }
 
@@ -121,11 +126,8 @@ span {
 .total-container {
   border-top: 1px solid #9B9B9B;
   display: grid;
-  margin-bottom: 44px;
   margin-top: 0;
-  padding-top: 16px;
   width: 396px;
-
 }
 
 .total-text {
