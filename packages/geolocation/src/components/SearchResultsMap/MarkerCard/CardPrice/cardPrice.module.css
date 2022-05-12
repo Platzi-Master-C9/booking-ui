@@ -1,0 +1,11 @@
+.price {
+  display: flex;
+  flex-direction: row;
+  height: 33%;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.price > p:nth-child(1) {
+  font-weight: bold;
+}

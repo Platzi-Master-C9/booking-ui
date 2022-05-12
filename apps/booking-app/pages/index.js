@@ -3,9 +3,9 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
 import {
-  Demo,
   Places,
   Geolocation,
+  SearchResultsMap,
   MessagingSystem,
   AdminPanel,
   Authentication,
@@ -28,7 +28,6 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <Demo />
         <Places />
         <Geolocation />
         <MessagingSystem />

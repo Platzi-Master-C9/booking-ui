@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  padding-top: 0.2rem;
+  height: 30%;
+}
+
+.star {
+  color: rgb(255, 153, 0);
+  margin-right: 0.2rem;
+  position: relative;
+}
+
+.rating p:nth-child(3) {
+  color: rgb(151, 151, 151);
+  margin-left: 0.2rem;
+  font-size: 0.6rem;
+}

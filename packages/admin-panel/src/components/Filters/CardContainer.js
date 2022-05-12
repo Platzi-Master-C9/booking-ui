@@ -6,7 +6,7 @@ export const CardContainer = ({ type, titleOne, titleTwo, descriptionOne, descri
 
   return (
     <>
-      <div>
+      
         <div className='type'>{type}
           <figure onClick={handleSetShow} className='figure'>
             {show === true ?
@@ -22,7 +22,7 @@ export const CardContainer = ({ type, titleOne, titleTwo, descriptionOne, descri
         {
           show === true && <Card checkedOne={checkedOne} checkedTwo={checkedTwo} handleChexboxOne={handleChexboxOne} handleChexboxTwo={handleChexboxTwo} handleChexboxOneDelete={handleChexboxOneDelete} titleOne={titleOne} titleTwo={titleTwo} descriptionOne={descriptionOne} descriptionTwo={descriptionTwo} />
         }
-      </div>
+      
     </>
   )
 }
