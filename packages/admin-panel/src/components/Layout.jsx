@@ -28,12 +28,8 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Header showSidebar={showSidebar} />
+      <Sidebar sidebar={sidebar} />
       <Section sidebar={sidebar}>{children}</Section>
-
-      <section className="container">
-        <Sidebar sidebar={sidebar} />
-        {children}
-      </section>
     </>
   );
-}
+};
