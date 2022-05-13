@@ -1,6 +1,6 @@
 export { Button } from './components/Button';
 export { Places, Perks, HouseRules} from '@booking-ui/places';
-export { Geolocation } from '@booking-ui/geolocation';
+export { Geolocation, SearchResultsMap } from '@booking-ui/geolocation';
 export { Booking, Reservation } from '@booking-ui/booking';
 export { MessagingSystem, TextBox } from '@booking-ui/messaging-system';
 export { UserAccount, FavoriteCard, favoritesView } from '@booking-ui/user-account';
