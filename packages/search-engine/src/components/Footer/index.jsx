@@ -6,13 +6,13 @@ export default function Footer() {
     <footer className="footer__container">
       <div className="footer__wrapper">
         <a className="link" href="./">
-          Sobre Nosotros
+          About us
         </a>
         <a className="link" href="./">
-          Propósito del proyecto
+          Aim of the project
         </a>
         <a className="link" href="./">
-          Redes Sociales
+          Social media
         </a>
       </div>
     </footer>
