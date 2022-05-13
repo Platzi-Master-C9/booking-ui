@@ -3,15 +3,18 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
 import {
-  Demo,
   Places,
   Geolocation,
+  SearchResultsMap,
   MessagingSystem,
   AdminPanel,
   Authentication,
   LoginButton,
   UserAccount,
+  FavoriteCard,
+  Booking
 } from '@booking-ui/shared';
+
 
 export default function Home() {
   return (
@@ -26,14 +29,15 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <Demo />
         <Places />
         <Geolocation />
         <MessagingSystem />
         <AdminPanel />
         <Authentication />
-        <UserAccount />
         <LoginButton label="Not login" />
+        <UserAccount />
+        <FavoriteCard />
+        <Booking />
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>

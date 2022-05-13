@@ -1,0 +1,50 @@
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: repeat(8, 1fr);
+    place-items: center;
+  }
+  
+  .title {
+    grid-area: 2 / 1 / 3 / 9;
+    margin: 2%;
+  }
+  .body-container{
+    max-width: 1024px;
+    grid-area: 3 / 2 / 4 / 8;
+  
+  
+  }
+  .favorite-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 1%;
+  }
+  
+  .favorite-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    padding: 24px;
+    padding-top: 32px;
+    padding-bottom: 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .favorite-card-content {
+    display: flex;
+    flex-direction: row;
+    height: 83px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .favorite-card-title {
+    font-size: 0.9rem;
+  }
+  
+  #delete-button {
+     color: rgba(21, 114, 161, 1);
+  } 

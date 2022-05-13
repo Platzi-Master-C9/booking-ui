@@ -8,6 +8,8 @@ const withTM = require('next-transpile-modules')([
   '@booking-ui/admin-panel',
   '@booking-ui/user-account',
   '@booking-ui/authentication',
+  '@booking-ui/notification-system',
+  '@booking-ui/booking',
 ]);
 module.exports = withPlugins([withTM()], {
   webpack: (config) => {

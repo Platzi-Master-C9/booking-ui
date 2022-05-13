@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshot compounding the UI of the component 1`] = `
+<header
+  className="header__container"
+>
+  <div
+    className="logo"
+  >
+    <a
+      href="/"
+    >
+      BS
+    </a>
+  </div>
+  <div
+    className="search__container"
+  />
+  <div
+    className="users_container"
+  >
+    <div
+      className="link host"
+    >
+      <a
+        href="/"
+      >
+        Hazte anfitrión
+      </a>
+    </div>
+    <div
+      className="user"
+    />
+  </div>
+</header>
+`;
+
+exports[`Header Snapshot compounding the UI of the component in the landing page 1`] = `
+<header
+  className="landing header__container"
+>
+  <div
+    className="logo"
+  >
+    <a
+      href="/"
+    >
+      BS
+    </a>
+  </div>
+  <div
+    className="search__container"
+  />
+  <div
+    className="landing users_container"
+  >
+    <div
+      className="link host"
+    >
+      <a
+        href="/"
+      >
+        Hazte anfitrión
+      </a>
+    </div>
+    <div
+      className="user"
+    />
+  </div>
+</header>
+`;

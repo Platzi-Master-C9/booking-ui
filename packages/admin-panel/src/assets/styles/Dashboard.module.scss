@@ -1,0 +1,29 @@
+.dashboard {
+  padding: 2em;
+}
+.dashboard h2 {
+  font-size: 2.2em;
+  margin-bottom: 1.8em;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  padding-left: 0;
+}
+
+.filtersItem {
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-template-columns: [first] 220px [second] 120px [third] 130px [fourth] 150px [fifth] 160px [last] 70px;
+  height: 5rem;
+}
+
+.spanName {
+  align-items: center;
+  display: flex;
+  height: 48px;
+  padding: 0 1rem;
+  color: #1572A1;
+  font-weight: 500;
+}

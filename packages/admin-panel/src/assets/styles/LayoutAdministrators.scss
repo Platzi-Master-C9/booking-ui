@@ -1,0 +1,150 @@
+
+.container-Search-and-filters{
+  width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .conteiner-SearchBar_DashboardAdmins  {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e9e3;
+    border-radius: 15px
+}
+
+.button-filters_DashboardAdmins {
+  width: 110px;
+  height: 60px;
+  cursor: pointer;
+  border-left: 1px solid #e5e9e3;
+}
+
+.icon-filter_DashboardAdmins {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-filters_DashboardAdmins {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.searchBar {
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+}
+
+.icon-search {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.btn-filter_DashboardAdmins {
+  transition: 350ms;
+  background: none;
+  color: #1572A1;
+  border: flex;
+  padding: 8px;
+  margin-left: 15px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: 1px solid #1572A1;
+  border-radius: 18px;
+}
+
+#filters-active {
+  transition: 350ms;
+  display: flex;
+  margin-top: 20px;
+}
+
+#active {
+  background-color: #1572A1;
+  color: white;
+}
+
+.container_CardsAdmin {
+  box-sizing: border-box;
+  margin-top: 30px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+.conteiner-DashboardAdmin {
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.title-DashboardAdmin {
+  padding-bottom: 30px;
+}
+
+.CardAdmin{
+  background-color: white;
+  width: 220px;
+  height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #1572A1;
+  box-shadow: 0px 0px 7px rgba(107, 107, 107, 0.61);
+}
+
+.profile-picture_CardAdmin {
+  border-radius: 100%;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+}
+.full-name_CardAdmin {
+  padding-top: 15px;
+  
+}
+
+.profile_CardAdmin{
+  font-size: 14px;
+}
+
+.container-button_CardAdmin {
+  width: 100%;
+  height: 40px;
+  // padding: 15px 0 15px 0;
+}
+.container-button_CardAdmin:hover{
+  background-color: #1572a10d;
+}
+
+.button_CardAdmin {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #1572A1;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-top: #1572A1 solid 1px;
+  }
