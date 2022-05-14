@@ -2,7 +2,7 @@ import React from 'react'
 import css from './Filter.module.scss'
 import ArrowBottom from '../../../assets/icons/ArrowBottom'
 
-export default function Filter(props) {
+export default function ModalFilters(props) {
   const { title, children, visible, setVisible, reset, submitFn } = props
 
   return (

@@ -9,9 +9,10 @@ export default function StartsFilter (props) {
     check,
     handleCheck,
     numberStars,
-    numberOpinions
+    numberOpinions,
+    testID
   }) => (
-    <label className={css.containerLabel}>
+    <label className={css.containerLabel} data-testid={testID}>
       <input type="checkbox" checked={check === numberStars} onChange={handleCheck} />
       <div className={css.containerStars}>
         {[1, 2, 3, 4, 5].map((star, index) => (
@@ -33,6 +34,7 @@ export default function StartsFilter (props) {
         handleCheck={() => handleStar(5)}
         numberStars={5}
         numberOpinions={35}
+        testID='one-start'
       />
 
       <StarOption 
