@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import "../assets/styles/LayoutAdministrators.scss";
+import { Modal } from "./Modal";
 
 export const CardAdmin = ({ searchAdmin, profileType, setProfileType }) => {
+  const [estadoModal, cambiarEstadoModal] = useState(false);
   return (
     <>
       <div className="container_CardsAdmin">
@@ -23,8 +25,17 @@ export const CardAdmin = ({ searchAdmin, profileType, setProfileType }) => {
                   {admin.profile == 1 ? "Super Admin" : "Admin"}
                 </p>
                 <div className="container-button_CardAdmin">
-                  <button className="button_CardAdmin">Manage</button>
+                  <button className="button_CardAdmin"
+                    onClick={() => {
+                      cambiarEstadoModal(!estadoModal)
+                    }}>Manage</button>
                 </div>
+                <Modal
+                  estado={estadoModal}
+                  cambiarEstado={cambiarEstadoModal}
+                  admin={admin}
+                >
+                </Modal>
               </div>
             );
           }
@@ -33,3 +44,4 @@ export const CardAdmin = ({ searchAdmin, profileType, setProfileType }) => {
     </>
   );
 };
+
