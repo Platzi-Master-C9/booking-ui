@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { CardContainer } from "./Filters/CardContainer";
+import { DropdownMenu } from "./DropdownMenu";
 import { GridItem } from "./GridItem";
 import styles from "../assets/styles/Dashboard.module.scss";
 import { ContextFilters } from "./Filters/FiltersContext/ContextFilters";
@@ -144,6 +145,7 @@ export const Dashboard = () => {
               />
             ))}
       </ul>
+      <DropdownMenu isActive={isMenuActive} />
     </section>
   );
 };

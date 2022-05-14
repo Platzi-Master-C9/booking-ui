@@ -9,7 +9,7 @@ const StyledDropdown = styled.div`
   text-align: center;
   font-size: 18px;
   position: absolute;
-  //right: -200px;
+
   z-index: 3;
   margin: auto;
   width: 154px;
