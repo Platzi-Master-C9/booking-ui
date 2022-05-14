@@ -132,6 +132,7 @@ export const Dashboard = () => {
         {filterUsers.length === 0
           ? users.map((user) => (
               <GridItem
+                key={user.id}
                 user={user}
                 handleActive={handleActive}
                 isActive={isMenuActive}
@@ -139,6 +140,7 @@ export const Dashboard = () => {
             ))
           : filterUsers.map((userFiltered) => (
               <GridItem
+                key={userFiltered.id}
                 user={userFiltered}
                 isActive={isMenuActive}
                 handleActive={handleActive}

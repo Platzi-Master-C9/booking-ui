@@ -16,9 +16,9 @@ export const GridItem = ({ user, handleActive }) => {
   return (
     <li key={user.id} className={styles.list__item}>
       <div className={styles.textCenterName}>{user.fullName}</div>
-      <div>{user.type}</div>
+      <div>{user.userType === 1 ? "GUEST" : "HOST"}</div>
       <div>{user.status}</div>
-      <div>{user.validate}</div>
+      <div>{user.validated === true ? "VALIDATED" : "REQUIRED"}</div>
       <div>{user.dateOfRegister}</div>
       <StyledButton onClick={handleActive}>Manage</StyledButton>
     </li>
