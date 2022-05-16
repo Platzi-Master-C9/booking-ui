@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { CardContainer } from "./Filters/CardContainer";
-import { DropdownMenu } from "./DropdownMenu";
 import { GridItem } from "./GridItem";
 import styles from "../assets/styles/Dashboard.module.scss";
 import { ContextFilters } from "./Filters/FiltersContext/ContextFilters";
@@ -11,7 +10,7 @@ export const Dashboard = () => {
   const [error, setError] = useState(null);
   const baseURL =
     "https://admin-panel-booking-services.herokuapp.com/admin-panel/users";
-  const [isMenuActive, setIsMenuActive] = useState(false);
+  // const [isMenuActive, setIsMenuActive] = useState(false);
 
   const {
     checked,
@@ -38,10 +37,9 @@ export const Dashboard = () => {
     }
   };
 
-  const handleActive = (e) => {
-    console.log(e);
-    setIsMenuActive(!isMenuActive);
-  };
+  // const handleActive = (e) => {
+  //   setIsMenuActive(!isMenuActive);
+  // };
 
   const filterUsers = users.filter(
     (u) =>
@@ -134,20 +132,19 @@ export const Dashboard = () => {
               <GridItem
                 key={user.id}
                 user={user}
-                handleActive={handleActive}
-                isActive={isMenuActive}
+                // handleActive={handleActive}
+                // isActive={isMenuActive}
               />
             ))
           : filterUsers.map((userFiltered) => (
               <GridItem
                 key={userFiltered.id}
                 user={userFiltered}
-                isActive={isMenuActive}
-                handleActive={handleActive}
+                // isActive={isMenuActive}
+                // handleActive={handleActive}
               />
             ))}
       </ul>
-      <DropdownMenu isActive={isMenuActive} />
     </section>
   );
 };

@@ -1,0 +1,36 @@
+.detailsList {
+  list-style: none;
+}
+
+.detailsList__item {
+  border-bottom: 1px solid #9b9b9b;
+  margin-bottom: 1em;
+}
+
+.detailsList__item div {
+  margin-bottom: 0.5em;
+}
+
+.listHeadline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listHeadline p {
+  font-weight: bold;
+}
+
+.listHeadline button {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  color: #1572a1;
+  cursor: pointer;
+}
+
+.listHeadline button:hover {
+  border-bottom: 1px solid #1572a1;
+}

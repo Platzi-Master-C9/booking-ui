@@ -8,3 +8,5 @@ export { Dashboard } from './components/Dashboard';
 export { FilterContainer } from './components/Filters/FiltersContainer';
 export { LayoutAdministrators } from './components/LayoutAdministrators';
 export { FiltersContainer } from './components/Filters/FiltersContainer';
+export { UserContainer } from './components/users/UserContainer';
+export { UserDetails } from './components/users/UserDetails';
