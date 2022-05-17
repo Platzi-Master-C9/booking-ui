@@ -9,10 +9,10 @@
   height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
   gap: 100px;
-  padding-right: 146px;
+  padding-left: 146px;
 }
 
 .link {

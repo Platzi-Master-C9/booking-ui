@@ -1,0 +1,65 @@
+{
+  "name": "@booking-ui/booking",
+  "version": "1.0.0",
+  "description": "This is the package for booking sections UI",
+  "keywords": [
+    "UI",
+    "frontend"
+  ],
+  "author": "Rodrigo Cabrera <rodrigo_cabrera_cab@hotmail.com>",
+  "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/packages/booking#readme",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wiliberto/booking-ui.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "bugs": {
+    "url": "https://github.com/Wiliberto/booking-ui/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "eslint": "^8.11.0",
+    "eslint-plugin-react": "^7.29.4",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^17.0.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/__tests__/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(styl|css)": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "testEnvironment": "jsdom"
+  }
+}

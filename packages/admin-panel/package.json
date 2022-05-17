@@ -35,7 +35,12 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.5.1",
     "@mui/material": "^5.5.3",
+    "axios": "^0.26.1",
+    "react-datepicker": "^4.7.0",
     "react-dom": "^18.0.0",
     "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "react-datepicker": "^4.7.0"
   }
 }

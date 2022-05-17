@@ -1,12 +1,27 @@
 import React from 'react';
-import './styles/ListResults.css'
+// import { Card } from '../Card';
+import './styles/ListResults.css';
+import './styles/loader.css';
 
-export default function Results(props) {
+function ListResults({ places, statePlaces }) {
   return <React.Fragment>
     <section className='list__results'>
-      { props.data.map((card, index) => {
-        return <div className="results__card" key={card.id}> {card.title} </div>
+      { statePlaces.loading &&
+        <div className="loader__conatiner">
+          <span className="loader"></span>
+        </div>
+      }
+      { (!statePlaces.loading && statePlaces.error) &&
+        <h1>An error has occurred: <span>{statePlaces.error}</span></h1>
+      }
+      { (!statePlaces.loading && !places.length) &&
+        <h1>Places not found</h1>
+      }
+      { places.map(card => {
+        return <div className="results__card" key={card.uuid}> {card.city} </div>
       })}
     </section>
   </React.Fragment>
 }
+
+export { ListResults };
