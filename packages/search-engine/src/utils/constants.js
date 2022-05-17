@@ -5,11 +5,6 @@ const supportedEnvs = {
 	DEVELOP: 'develop'
 }
 
-const operations = {
-	SUM: 'SUM',
-}
-
 module.exports = {
 	supportedEnvs,
-	operations,
 }
