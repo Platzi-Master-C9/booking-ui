@@ -6,13 +6,13 @@ import axios from "axios";
 import styles from "../../assets/styles/UserContainer.module.scss";
 
 export const UserContainer = ({ userId }) => {
-  const [userData, setUserData] = useState([]);
+  const [userData, setUserData] = useState({});
   const [error, setError] = useState(null);
   const baseURL = `https://admin-panel-booking-services.herokuapp.com/admin-panel/users/${userId}`;
 
   useEffect(() => {
     getUserDetails();
-  }, []);
+  }, [userId]);
 
   const getUserDetails = async () => {
     try {
