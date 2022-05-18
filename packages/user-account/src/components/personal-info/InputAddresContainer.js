@@ -7,7 +7,7 @@ export default function InputContainer({ label, value, sub }) {
     setDisabled(!disabled);
     setActive(!isActive);
   }
-  console.log(value);
+  //console.log(value);
   const [country, setCountry] = useState("");
   const [citie, setCitie] = useState("");
   const [addres, setAddres] = useState("");

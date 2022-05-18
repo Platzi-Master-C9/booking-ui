@@ -7,7 +7,7 @@ export default function InputContainer({ label, value, sub }) {
     setDisabled(!disabled);
     setActive(!isActive);
   }
-  console.log(value);
+ // console.log(value);
   const [firstname, setFirstName] = useState("");
   const [secondname, setSecondname] = useState("");
   const [firstSurname, setFirstSurname] = useState("");
