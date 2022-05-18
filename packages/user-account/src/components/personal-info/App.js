@@ -6,7 +6,6 @@ import InputSingleContainer from "./InputSingleContainer";
 import "../../styles/styles.css";
 export default function App() {
 /*const [user, setUser] = useState([])
-
   useEffect(() => {
     fetch('https://demo5622332.mockable.io/user/1')
       .then((response) => {
@@ -16,8 +15,6 @@ export default function App() {
         setUser(user)
       })
   }, [])*/
-
-    //console.log(user)
   const user = {
     idUser: "1",
     firstName: "Mauricio",
@@ -66,11 +63,11 @@ export default function App() {
       <h2>Información personal</h2>
       <InputNameContainer label="Nombre legal" value={name}  sub={subName}/>
       <InputSingleContainer label="Email" value={user.email} sub="Escriba su email" /> 
-      <InputSingleContainer label="Sexo" value={user.gender} sub="Escriba su sexo" type="alphabet"/>
-      <InputSingleContainer label="Número de teléfono" value={user.phoneNumber} sub="Escriba su número de teléfono" type="number"/>      
-      <InputSingleContainer label="Identificación" value={user.identidication.idOfNationality}/>
+      <InputSingleContainer label="Sexo" value={user.gender} sub="Escriba su sexo" type="alphabet" containerId="sexo"/>
+      <InputSingleContainer label="Número de teléfono" value={user.phoneNumber} sub="Escriba su número de teléfono" type="number" containerId="phone"/>      
+      <InputSingleContainer label="Identificación" value={user.identification.idOfNationality}/>
       <InputAddresContainer label="Dirección" value={user.addres}  sub={subAddres}/>
-      <InputSingleContainer label="Contacto de emergencia" value={user.phoneNumber} sub="Escriba su número de teléfono" type="number"/>
+      <InputSingleContainer label="Contacto de emergencia" value={user.phoneNumber} sub="Escriba su número de teléfono" type="number" containerId="emergencyPhone"/>
       <InputSingleContainer label="Pasaporte" value={user.passport} sub="Escriba su número de pasaporte"/>
     </div>
   );
