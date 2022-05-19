@@ -9,7 +9,7 @@
   "author": "Rodrigo Cabrera <rodrigo_cabrera_cab@hotmail.com>",
   "homepage": "https://github.com/Platzi-Master-C9/booking-ui/tree/main/packages/booking#readme",
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "directories": {
     "src": "src",
     "test": "__tests__"
