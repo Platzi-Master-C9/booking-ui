@@ -36,6 +36,31 @@ export default function InputContainer({ label, value, sub, type, containerId })
             return (false)
           }
         }
+        if (type == "mail"){
+          var mail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+          if(inputtxt.match(mail)){
+            setText(inputtxt)
+            handleGameClick()
+          } else {
+            alert("Please input a valid email")
+            return (false)
+          }
+        }
+        if (type == "passport"){
+          var passport = /^(?!^0+$)[a-zA-Z0-9]{6,9}$/;
+          if(inputtxt.match(passport)){
+            setText(inputtxt)
+            handleGameClick()
+          } else {
+            alert("Please input a valid passport")
+            return (false)
+          }
+        }
+        if (type == "select"){
+          setText(inputtxt)
+            handleGameClick()
+        }
+        
       }
   const [text, setText] = useState("");
   return (

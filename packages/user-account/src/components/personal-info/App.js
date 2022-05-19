@@ -61,14 +61,14 @@ export default function App() {
   return (
     <div className="personalInfo">
       <h2>Información personal</h2>
-      <InputNameContainer label="Nombre legal" value={name}  sub={subName}/>
-      <InputSingleContainer label="Email" value={user.email} sub="Escriba su email" /> 
-      <InputSingleContainer label="Sexo" value={user.gender} sub="Escriba su sexo" type="alphabet" containerId="sexo"/>
+      <InputNameContainer label="Nombre legal" value={name}  sub={subName} type="alphabet" containerId="full-name"/>
+      <InputSingleContainer label="Email" value={user.email} sub="Escriba su email" type="mail" containerId="email" /> 
+      <InputSingleContainer label="Sexo" value={user.gender} sub="Escriba su sexo" type="select" containerId="sexo"/>
       <InputSingleContainer label="Número de teléfono" value={user.phoneNumber} sub="Escriba su número de teléfono" type="number" containerId="phone"/>      
-      <InputSingleContainer label="Identificación" value={user.identification.idOfNationality}/>
-      <InputAddresContainer label="Dirección" value={user.addres}  sub={subAddres}/>
+      <InputSingleContainer label="Identificación" value={user.identification.idOfNationality} />
+      <InputAddresContainer label="Dirección" value={user.addres}  sub={subAddres} />
       <InputSingleContainer label="Contacto de emergencia" value={user.phoneNumber} sub="Escriba su número de teléfono" type="number" containerId="emergencyPhone"/>
-      <InputSingleContainer label="Pasaporte" value={user.passport} sub="Escriba su número de pasaporte"/>
+      <InputSingleContainer label="Pasaporte" value={user.passport} sub="Escriba su número de pasaporte" type="passport" containerId="passport"/>
     </div>
   );
 }
