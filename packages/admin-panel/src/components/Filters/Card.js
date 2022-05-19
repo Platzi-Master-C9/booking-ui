@@ -1,7 +1,7 @@
 import React from 'react';
 import "./filters.css"
 
-export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, checkedOne, checkedTwo, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete }) => {
+export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, checkedOne, checkedTwo, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete, clicked, setClicked }) => {
     return (
         <div className='cardContainer'>
             <div className='lineDown'>
@@ -23,7 +23,7 @@ export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, check
 
             <div className='buttonContainer'>
                 <span className='delete' onClick={handleChexboxOneDelete}>Borrar</span>
-                <button className='buttonSave'>Guardar</button>
+                <button className='buttonSave' disabled={checkedOne === false && checkedTwo === false} onClick={() => setClicked(true)}>Guardar</button>
             </div>
         </div>
     )

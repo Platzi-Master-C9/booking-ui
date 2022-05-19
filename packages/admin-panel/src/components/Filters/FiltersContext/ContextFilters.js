@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const ContextFilters = React.createContext({});
 
 export const ContextOfFilters = (props) => {
-    
+
     const [checked, setChecked] = useState({
         checkedOne: false,
         checkedTwo: false,
@@ -20,6 +20,7 @@ export const ContextOfFilters = (props) => {
     })
 
     const [openFilters, setOpenFilters] = useState(false)
+    const [clicked, setClicked] = useState(false);
 
     const handleSetShow = (state, value) => {
         setShow({
@@ -33,6 +34,9 @@ export const ContextOfFilters = (props) => {
             ...checked,
             [state]: value,
         })
+        if ([state] !== true) {
+            setClicked(false)
+        }
     }
 
     const handleSetDelete = (stateOne, stateTwo, valueOne, valueTwo) => {
@@ -41,7 +45,9 @@ export const ContextOfFilters = (props) => {
             [stateOne]: valueOne,
             [stateTwo]: valueTwo
         })
+        setClicked(false)
     }
+
     const users = [
         {
             nombre: "user apellido apellido",
@@ -75,9 +81,21 @@ export const ContextOfFilters = (props) => {
         }
     ]
 
+    const handleClose = () => {
+
+        const { showOne, showTwo, showThree } = show
+        if (showOne === true && clicked === true || showTwo === true && clicked === true || showThree === true && clicked === true) {
+            setShow({
+                ...show,
+                showOne: false,
+                showTwo: false,
+                showThree: false
+            })
+        }
+    }
 
     return (
-        <ContextFilters.Provider value={{ checked, setChecked, show, setShow, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, users }}>
+        <ContextFilters.Provider value={{ checked, setChecked, show, setShow, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, users, clicked, setClicked, handleClose }}>
             {props.children}
         </ContextFilters.Provider>
     )
