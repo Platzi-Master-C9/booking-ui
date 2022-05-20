@@ -45,6 +45,7 @@
     padding: 1rem;
     position: absolute;
     width: 370px;
+    z-index: 2;
 }
 
 .details {
@@ -104,6 +105,14 @@
     margin: 0;
 }
 
+.filterDiv {
+    position: fixed;
+    top: 0;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    left: 0;
+    z-index: 1;
+  }
 
 @media (max-width: 768px) {
     .containerCards {

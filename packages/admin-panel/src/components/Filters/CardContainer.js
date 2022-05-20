@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from './Card';
 import "./filters.css";
 
-export const CardContainer = ({ type, titleOne, titleTwo, descriptionOne, descriptionTwo, show, checkedOne, checkedTwo, handleSetShow, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete, clicked, setClicked }) => {
+export const CardContainer = ({ type, titleOne, titleTwo, descriptionOne, descriptionTwo, show, checkedOne, checkedTwo, handleSetShow, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete }) => {
 
   return (
     <>
@@ -20,7 +20,7 @@ export const CardContainer = ({ type, titleOne, titleTwo, descriptionOne, descri
           </figure>
         </div>
         {
-          show === true && <Card checkedOne={checkedOne} checkedTwo={checkedTwo} handleChexboxOne={handleChexboxOne} handleChexboxTwo={handleChexboxTwo} handleChexboxOneDelete={handleChexboxOneDelete} titleOne={titleOne} titleTwo={titleTwo} descriptionOne={descriptionOne} descriptionTwo={descriptionTwo} clicked={clicked} setClicked={setClicked} />
+          show === true && <Card checkedOne={checkedOne} checkedTwo={checkedTwo} handleChexboxOne={handleChexboxOne} handleChexboxTwo={handleChexboxTwo} handleChexboxOneDelete={handleChexboxOneDelete} titleOne={titleOne} titleTwo={titleTwo} descriptionOne={descriptionOne} descriptionTwo={descriptionTwo} />
         }
       
     </>

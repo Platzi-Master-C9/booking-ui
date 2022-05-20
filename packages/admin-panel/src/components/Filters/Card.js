@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./filters.css"
+import { ContextFilters } from './FiltersContext/ContextFilters';
 
-export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, checkedOne, checkedTwo, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete, clicked, setClicked }) => {
+export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, checkedOne, checkedTwo, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete}) => {
+    const {  clicked, setClicked, handleClose } = useContext(ContextFilters)
+
     return (
+        <>
         <div className='cardContainer'>
             <div className='lineDown'>
                 <div className='details'>
@@ -26,5 +30,7 @@ export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, check
                 <button className='buttonSave' disabled={checkedOne === false && checkedTwo === false} onClick={() => setClicked(true)}>Guardar</button>
             </div>
         </div>
+        <div onClick={handleClose} className="filterDiv" id="filter"></div>
+        </>
     )
 }

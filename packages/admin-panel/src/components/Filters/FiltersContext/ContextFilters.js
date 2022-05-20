@@ -48,43 +48,10 @@ export const ContextOfFilters = (props) => {
         setClicked(false)
     }
 
-    const users = [
-        {
-            nombre: "user apellido apellido",
-            tipo: "huesped",
-            estado: "activo",
-            validacion: "si",
-        },
-        {
-            nombre: "user apellido apellido",
-            tipo: "huesped",
-            estado: "activo",
-            validacion: "si",
-        },
-        {
-            nombre: "user apellido apellido",
-            tipo: "anfitrion",
-            estado: "inactivo",
-            validacion: "si",
-        },
-        {
-            nombre: "user apellido apellido",
-            tipo: "anfitrion",
-            estado: "inactivo",
-            validacion: "si",
-        },
-        {
-            nombre: "user apellido apellido",
-            tipo: "anfitrion",
-            estado: "activo",
-            validacion: "no",
-        }
-    ]
-
     const handleClose = () => {
 
         const { showOne, showTwo, showThree } = show
-        if (showOne === true && clicked === true || showTwo === true && clicked === true || showThree === true && clicked === true) {
+        if (showOne === true || showTwo === true || showThree === true) {
             setShow({
                 ...show,
                 showOne: false,
@@ -95,7 +62,7 @@ export const ContextOfFilters = (props) => {
     }
 
     return (
-        <ContextFilters.Provider value={{ checked, setChecked, show, setShow, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, users, clicked, setClicked, handleClose }}>
+        <ContextFilters.Provider value={{ checked, setChecked, show, setShow, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, clicked, setClicked, handleClose }}>
             {props.children}
         </ContextFilters.Provider>
     )
