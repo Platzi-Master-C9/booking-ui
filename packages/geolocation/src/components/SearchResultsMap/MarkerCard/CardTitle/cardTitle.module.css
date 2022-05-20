@@ -1,0 +1,15 @@
+.title {
+  width: calc(100%);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 37%;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.title p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

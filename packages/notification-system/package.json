@@ -28,5 +28,8 @@
   },
   "bugs": {
     "url": "https://github.com/leolicona/booking-ui/issues"
+  },
+  "dependencies": {
+    "react-infinite-scroll-component": "^6.1.0"
   }
 }

@@ -1,0 +1,28 @@
+.favorite-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    padding: 24px;
+    padding-top: 32px;
+    padding-bottom: 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 16px 3px;
+  }
+  
+  .favorite-card-content {
+    display: flex;
+    flex-direction: row;
+    height: 83px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .favorite-card-photo {
+    border-radius: 15px;
+    height: 100px;
+    cursor: pointer;
+  }
+  
+  .favorite-card-title {
+    font-size: 0.9rem;
+  }
+  

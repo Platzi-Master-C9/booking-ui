@@ -1,11 +1,12 @@
 import React from 'react';
+import { Layout, LayoutAdministrators } from '@booking-ui/shared';
 
-import { Layout, Dashboard } from '@booking-ui/shared';
-
-const Administradores = () => (
-  <Layout>
-    <Dashboard />
-  </Layout>
-);
+const Administradores = () => {
+  return (
+    <Layout>
+      <LayoutAdministrators />
+    </Layout>
+  );
+};
 
 export default Administradores;

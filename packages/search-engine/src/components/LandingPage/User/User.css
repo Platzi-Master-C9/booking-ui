@@ -33,6 +33,9 @@
   width: 60px;
   height: 60px;
   background-color: var(--color-main);
+  background-image: url('../assets/iconUser.png');
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   cursor: pointer;
 }
