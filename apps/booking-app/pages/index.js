@@ -27,6 +27,7 @@ export default function Home() {
           domain="dev-c6aj47u9.us.auth0.com"
           clientId="axswQ6YQfprwTh5UKbA3lflmViJrQSsb"
           redirectUri="http://localhost:3000"
+          audience="https://hinojsa0/api/v2/"
         >
           <main className={styles.main}>
             <h1 className={styles.title}>
