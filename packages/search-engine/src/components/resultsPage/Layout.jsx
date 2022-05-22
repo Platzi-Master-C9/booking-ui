@@ -6,7 +6,9 @@ import Footer from "../Footer"
 import { ListResults } from "./ListResults"
 import { Pagination } from "./Pagination"
 import "./styles/style.css"
-import { getData } from "./API/getData";
+import { DATA_API } from "./API/data";
+import { getData } from "../../scripts/petitions";
+import { ErrorMessage } from "../ErrorMessage";
 
 const PLACES_PER_PAGE = 10;
 const key = 15;
@@ -60,19 +62,12 @@ const ResultsPage = () => {
   }
 
   const handleSubmitFilters = async (minPrice, maxPrice, stars, fullPlace, privateRoom) => {
-    const baseURL = 'https://624c7e76d71863d7a80bb010.mockapi.io/places/places'
-
-    try {
-      const response = await window.fetch(baseURL);
-      if (!response.ok) {
-          throw new Error(`Http status ${response.status}`);
-      }
-      const data = await response.json();
-      setAllPlaces(data);
-    } catch (error) {
-      console.error(error.message, 'error');
-      setError(error)
-    }
+    const data = await getData('places');
+    if(data.error) {
+      setError('Ha ocurrido un error al obtener los lugares');
+      return;
+    };
+    setAllPlaces(data);
   }
 
   return (
@@ -81,16 +76,23 @@ const ResultsPage = () => {
 
       <section className="section__container">
         <Map />
-        <ListResults 
-          places={renderedPlaces}
-          statePlaces={dataState}
-        />
-        <Pagination 
-          TotalPages={totalPages} 
-          currentPage={currentPage} 
-          prevHandler={prevHandler} 
-          nextHandler={nextHandler} 
-        />
+
+        {!error ? 
+          <>
+            <ListResults 
+              places={renderedPlaces}
+              statePlaces={dataState}
+            />
+            <Pagination 
+              TotalPages={totalPages} 
+              currentPage={currentPage} 
+              prevHandler={prevHandler} 
+              nextHandler={nextHandler} 
+            />
+          </>
+          : 
+          <ErrorMessage message={error} />
+        }
       </section>
 
       <Footer />

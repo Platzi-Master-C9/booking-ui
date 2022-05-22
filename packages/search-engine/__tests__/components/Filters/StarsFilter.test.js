@@ -8,13 +8,13 @@ describe('Given that StarsFilter component is used', () => {
     const handleStar = jest.fn();
 
     const component = render(
-      <StartsFilter 
+      <StartsFilter
         stars={1}
         handleStar={handleStar}
       />
     );
     
-    const startOne = component.getByTestId('one-start')
+    const startOne = component.getByTestId('one-start');
 
     fireEvent.click(startOne);
     expect(handleStar).toHaveBeenCalledTimes(1);
