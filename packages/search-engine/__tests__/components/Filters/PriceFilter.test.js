@@ -1,4 +1,5 @@
 'use strict';
+import React from 'react';
 import { render } from '@testing-library/react';
 import PriceFilter from '../../../src/components/Filters/PriceFilter'
 

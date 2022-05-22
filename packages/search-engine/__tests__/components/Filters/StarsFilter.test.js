@@ -1,4 +1,5 @@
 'use strict';
+import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import StartsFilter from '../../../src/components/Filters/StarsFilter';
 

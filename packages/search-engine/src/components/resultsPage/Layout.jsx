@@ -6,7 +6,6 @@ import Footer from "../Footer"
 import { ListResults } from "./ListResults"
 import { Pagination } from "./Pagination"
 import "./styles/style.css"
-import { DATA_API } from "./API/data";
 import { getData } from "../../scripts/petitions";
 import { ErrorMessage } from "../ErrorMessage";
 
@@ -20,7 +19,7 @@ const ResultsPage = () => {
   const [ renderedPlaces, setRenderedPlaces ] = useState([]);
   const [ dataState, setDataState ] = useState({ loading: true, error: false });
   const [ currentPage, setCurrentPage ] = useState(0);
-  const [ TotalPages, setTotalPages ] = useState(0);
+  const [ totalPages, setTotalPages ] = useState(0);
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -33,11 +32,10 @@ const ResultsPage = () => {
   }, []);
 
   useEffect(() => {
-    setRenderedPlaces([...allPlaces].splice(0, PLACES_PER_PAGE));
-
-  useEffect(() => {
-    setPlaces([...allPlaces].splice(0, PLACES_PER_PAGE));
-    setTotalPages(Math.ceil(allPlaces.length / PLACES_PER_PAGE));
+    if(allPlaces){
+      setRenderedPlaces([...allPlaces].splice(0, PLACES_PER_PAGE));
+      setTotalPages(Math.ceil(allPlaces.length / PLACES_PER_PAGE));
+    }
   }, [allPlaces]);
 
   const prevHandler = () => {

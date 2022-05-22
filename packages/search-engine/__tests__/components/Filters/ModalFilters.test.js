@@ -1,4 +1,5 @@
 'use strict';
+import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import ModalFilters from '../../../src/components/Filters/ModalFilters'
 
