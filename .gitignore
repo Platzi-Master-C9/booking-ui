@@ -18,6 +18,7 @@ node_modules
 # testing
 /coverage
 coverage
+.coverage*
 .out/
 
 # Build directories (next.js...)
