@@ -86,7 +86,11 @@ function EnterAddress({ housingOptions, setHousingOptions, setNextDisable }) {
         />
       </label>
       <label className="enter-address__field" htmlFor="country">
-        <select value={country} onChange={(e) => setCountry(e.target.value)} required>
+        <select
+          value={country}
+          onChange={(e) => setCountry(e.target.value)}
+          required
+        >
           {availableCountries.map(({ code, value }) => (
             <option key={code} value={code}>
               {value}
