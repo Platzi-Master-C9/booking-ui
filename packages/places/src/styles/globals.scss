@@ -22,7 +22,9 @@ a {
   max-height: 400px;
   // padding: 24px;
   display: grid;
-  grid-template-rows: repeat($elements-amount, 52px);
+  @if $elements-amount > 0 {
+    grid-template-rows: repeat($elements-amount, 52px);
+  }
   align-content: center;
   row-gap: 8px;
   // border: 1px solid #9b9b9b;
