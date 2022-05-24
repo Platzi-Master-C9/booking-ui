@@ -1,0 +1,53 @@
+.host-container {
+  
+  padding: 30px 20px 40px 20px;
+  border-top: 1px solid #9B9B9B;
+  border-bottom: 1px solid #9B9B9B;
+}
+
+.host-profile__date{
+  color:#9B9B9B;
+}
+.host-profile__ranking p {
+  display: inline;
+  padding-left: 20px;
+}
+.host-container h3 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.host__details-container {
+  padding-top: 20px;
+  column-count: 2;
+  column-gap: 40px;
+  font-size: 14px;
+}
+
+.host-description-bio  {
+text-align: justify;
+ padding-bottom: 20px;
+}
+
+.host-description a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.host-info ul li {
+  list-style: none;
+  width:90%;
+  line-height: 25px;
+}
+
+.host-container button {
+  width: 200px;
+  height: 50px;
+  margin-top: 24px;
+  font-weight: 600;
+  color: var(--color-main);
+  background-color: white;
+  border-radius: 32px;
+  border: 1px solid #1572A1;
+}
+/*# sourceMappingURL=hostDetails.module.css.map */
