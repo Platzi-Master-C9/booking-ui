@@ -7,7 +7,7 @@ function MapDetails()
       <section className="map">
          <div className="container-global">
             <h2 className="map__title-details">A dónde irás</h2>
-            <img className="map__image" src="https://omarsav.com/images/booking/map.svg" />
+            <img className="map__image" src="/places/map.png" />
          </div>
       </section>
    );

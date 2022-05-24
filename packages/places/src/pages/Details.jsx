@@ -13,11 +13,11 @@ import { MapDetails } from '../components/MapDetails';
 //posteriormente deben cambiarse por las imagenes reales del host
 const imgsPlace = 
 [
-  { urlImg: 'https://omarsav.com/images/booking/image1.png' },
-  { urlImg: 'https://omarsav.com/images/booking/image2.png' },
-  { urlImg: 'https://omarsav.com/images/booking/image3.png' },
-  { urlImg: 'https://omarsav.com/images/booking/image4.png' },
-  { urlImg: 'https://omarsav.com/images/booking/image5.png' },
+  { urlImg: '/places/image1.png' },
+  { urlImg: '/places/image2.png' },
+  { urlImg: '/places/image3.png' },
+  { urlImg: '/places/image4.png' },
+  { urlImg: '/places/image5.png' },
 ]
 
 //Este codigo nos genera una funcion aleatoria que nos da el rating y el numero de reseñas provisionalmente 
@@ -62,23 +62,23 @@ const descriptionPlace =
   rooms: '1 habitación',
   bed: '1 cama',
   bathroom: '1 baño',
-  photoHost: 'https://omarsav.com/images/booking/photo_profile.png', 
+  photoHost: '/places/photo_profile.png', 
   description: 'Te va a encantar mi espacio principalmente por la excelente ubicación Vivo frente al Parque de los Pies Descalsos, esta es una de las principales lugares de Medellín y conecta los barrios más al norte de la ciudad. Parque de los Pies Descalsos es conocido por ser el mejor lugar para hospedarse en Medellín debido a todos los excelentes bares y clubes, restaurantes y centros comerciales, y la reputación de ser la zona más bonita y segura de la ciudad.'
 }
 
 const benefits = [
 {
-  photoBenefit: 'https://omarsav.com/images/booking/cleaning.png',
+  photoBenefit: '/places/cleaning.png',
   title: 'Opciones de limpieza mejoradas',
   description: 'Este anfitrión se comprometió a seguir el proceso de limpieza avanzada de 5 pasos de Booking System.',
 },
 {
-  photoBenefit: 'https://omarsav.com/images/booking/key.png',
+  photoBenefit: '/places/key.png',
   title: 'Acceso sin restricción de horario',
   description: 'Realiza tu llegada fácilmente mediante la caja de seguridad para llaves.',
 },
 {
-  photoBenefit: 'https://omarsav.com/images/booking/pool.png',
+  photoBenefit: '/places/pool-benefit.png',
   title: 'Piscina',
   description: 'Los huéspedes suelen buscar este popular servicio.',
 }]
@@ -120,7 +120,7 @@ export const DetailsPage = () => {
               title = { benefit.title }
               description = { benefit.description }
           />   
-      ))}     
+      ))}      
     </DescriptionHosting> 
     <Perks/>
     <MapDetails/>
