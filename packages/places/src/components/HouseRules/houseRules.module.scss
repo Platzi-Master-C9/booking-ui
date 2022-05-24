@@ -1,17 +1,28 @@
-.should-know{
-  padding-left: 15px;
+.should-know {
+  margin: 40px 64px;
+  padding: 40px 0;
   border-top: 1px solid #9B9B9B;
   border-bottom: 1px solid #9B9B9B;
+  h2 {
+    width: 722px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: 36px;
+  }
   div{
     width: 33%;
     display: inline-flex;
     flex-direction: column;
+    ul{
+    width: 380px;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    }
+    li::marker{
+      font-size: 10px
+    }
   }
-}
-
-.health-security ul{
-  display: flex;
-  flex-direction: column;
 }
 
 .cancellations span{

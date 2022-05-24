@@ -122,10 +122,10 @@ export const DetailsPage = () => {
           />   
       ))}     
     </DescriptionHosting> 
-    <Perks/><hr/>
+    <Perks/>
     <MapDetails/>
     <HouseRules/>
-    <p><i>Host Details</i></p><hr/>
+    <p><i>Host Details</i></p>
     <Footer/>
     </>
   )

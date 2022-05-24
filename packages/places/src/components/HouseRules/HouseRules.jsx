@@ -4,9 +4,9 @@ import css from './houseRules.module.scss';
 export const HouseRules = () => {
   return (
     <div className={css["should-know"]} >
-      <h1>What you should know</h1>
+      <h2>What you should know</h2>
       <div className="rules">
-        <h2>House rules</h2>
+        <h3>House rules</h3>
         <ul>
           <li>Check-in: 15:00 to 02:00</li>
           <li>Checkout: 11:00 </li>
@@ -17,7 +17,7 @@ export const HouseRules = () => {
         </ul>
       </div>
       <div className="health-security">
-        <h2>Health and security</h2>
+        <h3>Health and security</h3>
         <ul>
           <li>Committed to enhanced cleaning process.</li>
           <li>Social-distancing and other COVID-19-related guidelines apply </li>
@@ -27,7 +27,7 @@ export const HouseRules = () => {
         </ul>
       </div>
       <div className="cancellations">
-        <h2>Cancellation policy</h2>
+        <h3>Cancellation policy</h3>
         <span>Add your travel dates to get cancellation details for this stay.</span>
       </div>
     </div>
