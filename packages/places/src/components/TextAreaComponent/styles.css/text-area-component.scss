@@ -1,19 +1,27 @@
 @import '../../../styles/globals.scss';
-.create-title {
+.text-area-component {
   @include form-layout(0);
   &__title {
     font-size: 2.4rem;
   }
-  &__textarea {
+  &__input {
     min-width: 100%;
     max-width: 100%;
     textarea {
       min-width: 100%;
       max-width: 100%;
-      min-height: 40px;
-      max-height: 120px;
+      min-height: 120px;
+      max-height: 160px;
+      padding: 24px;
+    }
+    &--text-title {
       font-size: 3.2rem;
       font-weight: bold;
+    }
+    &--text-paragraph {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: #666666;
     }
   }
   &__length {

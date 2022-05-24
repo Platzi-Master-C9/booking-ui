@@ -6,7 +6,7 @@ import { BSIconButton } from '../BSIconButton';
 // views
 import EnterAddress from '../EnterAddress';
 import FloorPlan from '../FloorPlan';
-import CreateTitle from '../CreateTitle';
+import TextAreaComponent from '../TextAreaComponent';
 
 export function WizardLayout() {
   const [housingOptions, setHousingOptions] = useState({
@@ -33,6 +33,8 @@ export function WizardLayout() {
       },
     ],
     title: 'Hogar para todos',
+    description:
+      'Relájate con toda la familia en este alojamiento donde la tranquilidad se respira.',
   });
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
@@ -60,9 +62,26 @@ export function WizardLayout() {
     {
       title: 'Ponle un nombre a tu alojamiento',
       form: (
-        <CreateTitle
+        <TextAreaComponent
           housingOptions={housingOptions}
           setHousingOptions={setHousingOptions}
+          componentTitle="Crea tu título"
+          maxLength={50}
+          field="title"
+          textStyle="title"
+        />
+      ),
+    },
+    {
+      title: 'Ahora vamos a describir tu alojamiento',
+      form: (
+        <TextAreaComponent
+          housingOptions={housingOptions}
+          setHousingOptions={setHousingOptions}
+          componentTitle="Crea tu descripción"
+          maxLength={500}
+          field="description"
+          textStyle="paragraph"
         />
       ),
     },
