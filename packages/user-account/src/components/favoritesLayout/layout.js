@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect, useState } from "react";
 import "./assets/styles/style.css";
 import Footer from '../footer';
 import Header from '../header'     
@@ -7,37 +8,21 @@ import { useRouter } from "next/router";
 import Link from 'next/link'
 
 const ROUTE_FAVORITE_ID = "favorites/[id]";
-const favorite1 = [
-  {
-    title: 'favorito uno',
-    photo: 'https://cdn2.infocasas.com.uy/repo/img/55835182a525b55835182a52d1.jpg.th810.jpg',
-    description: 'este es el favorito numero uno',
-    price: '2',
-  }
-]
-const favorites = [
-  {
-    id: '1',
-    cardPhoto: 'https://cdn2.infocasas.com.uy/repo/img/55835182a525b55835182a52d1.jpg.th810.jpg', 
-    cardTitle: 'Lujosa suite en ciudad bolivar',
-    favorites: [favorite1]
-  },
-  {
-    id: '2',
-    cardPhoto: 'https://directorioicc.gov.co/sites/default/files/espacio-audiovisual-barrio-los-laches/481_barrio_los_laches036.jpg', 
-    cardTitle: 'suite en los laches'},
-  {
-    id: '3', 
-    cardPhoto: 'https://cdn2.infocasas.com.uy/repo/img/55835182a525b55835182a52d1.jpg.th810.jpg', 
-    cardTitle: 'Lujosa suite en ciudad bolivar'},
-  {
-    id: '4', 
-    cardPhoto: 'https://directorioicc.gov.co/sites/default/files/espacio-audiovisual-barrio-los-laches/481_barrio_los_laches036.jpg', 
-    cardTitle: 'suite en los laches'
-  },
-]
 
 export const FavoritesLayout = () => {
+  const [favorites, setData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('http://demo2545346.mockable.io/');
+      console.log("response: ",response)
+      const json = await response.json();
+      console.log("json: ",json)
+      setData(json.favorites);
+    };
+    fetchData();
+  }, [setData]);
+  console.log(favorites)
+
   const router = useRouter();
   const navigate = (id, event) => {
     event.stopPropagation();
