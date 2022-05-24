@@ -2,56 +2,23 @@ import styles from "../../assets/styles/UserDetails.module.scss";
 
 export const UserDetails = ({ userData }) => {
   return (
-    <ul className={styles.detailsList}>
-      <li className={styles.detailsList__item}>
-        <div className={styles.listHeadline}>
-          <p>Legal name</p>
-          <button>Edit</button>
+    <>
+      <div className={styles.containerData}>
+        <div className={styles.containerImg}>
+          <img
+            src={userData.urlImage}
+            className={styles.user__image}
+            alt="User profile image"
+          />
         </div>
-        <div>
-          <p>{userData.fullName}</p>
+        <div className={styles.details}>
+          <h4>{userData.fullName}</h4>
+          <p className={styles.date}>
+            Registered on: {userData.dateOfRegister}
+          </p>
         </div>
-      </li>
-
-      <li className={styles.detailsList__item}>
-        <div className={styles.listHeadline}>
-          <p>User type</p>
-          <button>Edit</button>
-        </div>
-        <div>
-          <p>{userData.userType === 1 ? "GUEST" : "HOST"}</p>
-        </div>
-      </li>
-
-      <li className={styles.detailsList__item}>
-        <div className={styles.listHeadline}>
-          <p>User state</p>
-          <button>Edit</button>
-        </div>
-        <div>
-          <p>{userData.status}</p>
-        </div>
-      </li>
-
-      <li className={styles.detailsList__item}>
-        <div className={styles.listHeadline}>
-          <p>Validation</p>
-          <button>Edit</button>
-        </div>
-        <div>
-          <p>{userData.validated === true ? "VALIDATED" : "REQUIRED"}</p>
-        </div>
-      </li>
-
-      <li className={styles.detailsList__item}>
-        <div className={styles.listHeadline}>
-          <p>Date of register</p>
-          <button>Edit</button>
-        </div>
-        <div>
-          <p>{userData.dateOfRegister}</p>
-        </div>
-      </li>
-    </ul>
+        <button className={styles.delete__button}>Delete user</button>
+      </div>
+    </>
   );
 };

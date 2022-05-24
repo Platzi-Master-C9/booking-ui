@@ -10,3 +10,5 @@ export { LayoutAdministrators } from './components/LayoutAdministrators';
 export { FiltersContainer } from './components/Filters/FiltersContainer';
 export { UserContainer } from './components/users/UserContainer';
 export { UserDetails } from './components/users/UserDetails';
+export { UserDetailsList } from './components/users/UserDetailsList';
+export { ChangeStatus } from './components/users/ChangeStatus';

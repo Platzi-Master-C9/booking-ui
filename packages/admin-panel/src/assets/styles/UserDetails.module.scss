@@ -1,36 +1,44 @@
-.detailsList {
-  list-style: none;
+.user__image {
+  border-radius: 70%;
 }
 
-.detailsList__item {
-  border-bottom: 1px solid #9b9b9b;
-  margin-bottom: 1em;
-}
-
-.detailsList__item div {
-  margin-bottom: 0.5em;
-}
-
-.listHeadline {
+.containerData {
+  border: 1px solid #9b9b9b;
+  border-radius: 12px;
+  border-radius: 12px;
+  width: 350px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 1.5em 1.5em 0.7em 1.5em;
   align-items: center;
 }
 
-.listHeadline p {
-  font-weight: bold;
+.details h4 {
+  font-size: 1.5em;
 }
 
-.listHeadline button {
-  border: none;
-  background-color: transparent;
-  font-weight: bold;
-  border-bottom: 1px solid transparent;
-  color: #1572a1;
+.date {
+  color: #8c8888;
+  font-size: 0.8em;
+}
+
+.delete__button {
+  padding: 0.6em 1em;
+  font-size: 1em;
   cursor: pointer;
+  background-color: #f8475f;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
-.listHeadline button:hover {
-  border-bottom: 1px solid #1572a1;
+.delete__button:hover {
+  background-color: #e81431;
 }
+
+// .delete__container {
+//   display: flex;
+//   justify-content: flex-end;
+// }

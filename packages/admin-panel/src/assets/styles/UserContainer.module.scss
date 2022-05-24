@@ -2,7 +2,7 @@
   padding: 2em;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: auto;
 }
 
 .user__container span {
@@ -29,4 +29,10 @@
 
 .breadcrumbs p {
   margin-left: 2em;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }

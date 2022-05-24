@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { UserDetails } from "./UserDetails";
+import { UserDetailsList } from "./UserDetailsList";
 import axios from "axios";
 
 import styles from "../../assets/styles/UserContainer.module.scss";
@@ -31,7 +32,10 @@ export const UserContainer = ({ userId }) => {
         </Link>
       </div>
       <h2>User information</h2>
-      <UserDetails userData={userData} />
+      <div className={styles.userDetails}>
+        <UserDetails userData={userData} />
+        <UserDetailsList userData={userData} />
+      </div>
     </article>
   );
 };
