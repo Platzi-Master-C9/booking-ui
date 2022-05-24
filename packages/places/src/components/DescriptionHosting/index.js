@@ -1,14 +1,14 @@
 import React from "react";
-import './DescriptionHosting.css';
+import './DescriptionHosting.scss';
 
 function DescriptionHosting(props)
 {
    return (
       <section className="container-description">
-         <div className="header">
+         <div>
             <div className="info">
-               <h2 className="title-details">Loft entero en { props.location } · Anfitrión: { props.host }</h2>
-               <ul className="spaces-availables">
+               <h2 className="info__title">Loft entero en { props.location } · Anfitrión: { props.host }</h2>
+               <ul className="info__spaces-availables">
                   <li>{props.guests} <span>·</span></li>
                   <li>{props.rooms} <span>·</span></li>
                   <li>{props.bed} <span>·</span></li>

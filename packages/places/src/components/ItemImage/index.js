@@ -1,5 +1,5 @@
 import React from "react";
-import './ItemImage.css';
+import './ItemImage.scss';
 
 function ItemImage (props)
 {

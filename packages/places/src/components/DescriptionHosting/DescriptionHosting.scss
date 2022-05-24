@@ -1,0 +1,54 @@
+.container-description
+{
+   margin-left: 64px;
+   width: 60%;
+   
+   .info 
+   {
+      display: inline-block;
+      margin-right: 20px;
+
+      &__title
+      {
+         font-size: 36px;
+         font-weight: 500;
+      }
+      &__spaces-availables 
+      {
+         display: flex;
+         font-size: 18px;
+         font-weight: 400;
+         list-style: none;
+         padding-bottom: 40px;
+         padding-top: 12px;
+
+         li:last-child span
+         {
+            display: none;
+         }
+      }
+   }
+   .container-global
+   {
+      border-top: 1px solid #9B9B9B;
+      padding: 40px 0;
+      
+      .item-benefit:last-child
+      {
+         margin-bottom: 0;
+      }
+      .description-text
+      {
+         color: #000000;
+         font-size: 18px;
+         font-weight: 400;
+         margin-bottom: 24px;
+      }
+      .show-more 
+      {
+         color: #000000;
+         font-size: 18px;
+         font-weight: 500;
+      }
+   }
+}

@@ -1,14 +1,14 @@
 import React from "react";
-import './ItemBenefit.css';
+import './ItemBenefit.scss';
 
 function ItemBenefit (props)
 {
    return(
       <div className="item-benefit">
-         <img  className="benefit-image" src={props.photoBenefit} alt="benefit"/>
+         <img  className="item-benefit__image" src={props.photoBenefit} alt="benefit"/>
          <div>
-            <h2 className="benefit-title">{props.title}</h2>
-            <p className="benefit-description">{props.description}</p>
+            <h2 className="item-benefit__title">{props.title}</h2>
+            <p className="item-benefit__description">{props.description}</p>
             <a className="show-more" href="#"> Mostrar más</a>
          </div>
       </div>

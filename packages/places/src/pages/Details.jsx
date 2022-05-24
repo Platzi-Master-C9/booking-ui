@@ -20,13 +20,13 @@ const imgsPlace =
   { urlImg: '/places/image5.png' },
 ]
 
-//Este codigo nos genera una funcion aleatoria que nos da el rating y el numero de reseñas provisionalmente 
+//Este codigo nos genera una funcion aleatoria que nos da el ranking y el numero de reseñas provisionalmente 
 const minInt = 1;
 const maxInt = 5;
 const minFloat = 0;
 const maxFloat= 99;
 let getNumber = '';
-let ratingPlace = '';
+let rankingPlace = '';
 let reviews = '';
 
 function random(min, max) 
@@ -35,12 +35,12 @@ function random(min, max)
 }
 
 random (minInt, maxInt);
-ratingPlace = getNumber; 
+rankingPlace = getNumber; 
 
 if(getNumber != 5)
 {
   random (minFloat, maxFloat);
-  ratingPlace = `${ratingPlace}.${getNumber}`
+  rankingPlace = `${rankingPlace}.${getNumber}`
 }
 
 random(minFloat, maxFloat)
@@ -49,7 +49,7 @@ reviews = getNumber;
 let dataPlace = 
 {
   nameHosting: 'Parque de los Pies Descalsos', 
-  rating: `${ratingPlace}`,
+  ranking: `${rankingPlace}`,
   reviews: `${reviews}`, 
   location: 'Medellín, Antioquia, Colombia',
 }
@@ -90,15 +90,15 @@ export const DetailsPage = () => {
     <Header/>
     <GridImages
       nameHosting = { dataPlace.nameHosting }
-      rating = { dataPlace.rating }
+      ranking = { dataPlace.ranking }
       reviews = { dataPlace.reviews }
       location = { dataPlace.location }
     >
       {
         imgsPlace.map( imgPlace => (
           <ItemImage
-              key = { key++ }
-              urlImg  = { imgPlace.urlImg }
+            key = { key++ }
+            urlImg  = { imgPlace.urlImg }
           />
       ))}
     </GridImages>
@@ -115,10 +115,10 @@ export const DetailsPage = () => {
       {
         benefits.map( benefit => (
           <ItemBenefit
-              key = { benefit.title }
-              photoBenefit = { benefit.photoBenefit }
-              title = { benefit.title }
-              description = { benefit.description }
+            key = { benefit.title }
+            photoBenefit = { benefit.photoBenefit }
+            title = { benefit.title }
+            description = { benefit.description }
           />   
       ))}      
     </DescriptionHosting> 

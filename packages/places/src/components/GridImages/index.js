@@ -1,22 +1,22 @@
 import React from "react";
-import './GridImages.css';
+import './GridImages.scss';
 
 function GridImages(props)
 {      
    return (
       <section className="hosting">
-         <h2 className="nameHosting">New loft near {props.nameHosting}</h2>
-         <div className="reputationHosting">
-            <div className="dataHosting">
-               <img className="start" src="/places/startRating.png" alt="Start Rating"/>
-               <h5 className="rating" id="rating">{ props.rating }</h5>
-               <a href="#" className="reviews"> · { props.reviews } reseñas</a>
-               <h5 className="location">{ props.location }</h5>
+         <h2 className="hosting__name">New loft near {props.nameHosting}</h2>
+         <div className="hosting__reputation">
+            <div className="data">
+               <img className="data__icon-start" src="/places/startRanking.png" alt="Start Ranking"/>
+               <h5 className="data__ranking" id="ranking">{ props.ranking }</h5>
+               <a href="#" className="data__reviews"> · { props.reviews } reseñas</a>
+               <h5 className="data__location">{ props.location }</h5>
             </div>
-            <button className="saveHosting"><img className="heart" src="/places/heartFavorites.png" alt="heart Favorites"/>Guardar</button>
+            <button className="button-save"><img src="/places/heartFavorites.png" alt="heart Favorites"/>Guardar</button>
          </div>
 
-         <ul className="containerImgs">
+         <ul className="hosting__images">
             {props.children}
          </ul>
       </section>
