@@ -6,6 +6,7 @@ import { BSIconButton } from '../BSIconButton';
 // views
 import EnterAddress from '../EnterAddress';
 import FloorPlan from '../FloorPlan';
+import CreateTitle from '../CreateTitle';
 
 export function WizardLayout() {
   const [housingOptions, setHousingOptions] = useState({
@@ -31,6 +32,7 @@ export function WizardLayout() {
         amount: 1,
       },
     ],
+    title: 'Hogar para todos',
   });
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
@@ -50,6 +52,15 @@ export function WizardLayout() {
       title: '¿A cuántos huéspedes te gustaría recibir?',
       form: (
         <FloorPlan
+          housingOptions={housingOptions}
+          setHousingOptions={setHousingOptions}
+        />
+      ),
+    },
+    {
+      title: 'Ponle un nombre a tu alojamiento',
+      form: (
+        <CreateTitle
           housingOptions={housingOptions}
           setHousingOptions={setHousingOptions}
         />
