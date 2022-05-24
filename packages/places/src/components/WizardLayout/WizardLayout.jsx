@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import './styles/wizard.scss';
 import { BSIconButton } from '../BSIconButton';
+
+// views
 import EnterAddress from '../EnterAddress';
+import FloorPlan from '../FloorPlan';
 
 export function WizardLayout() {
   const [housingOptions, setHousingOptions] = useState({
@@ -10,6 +13,24 @@ export function WizardLayout() {
     spaces: 1,
     services: ['wifi'],
     address: null,
+    floorPlans: [
+      {
+        field: 'Huéspedes',
+        amount: 2,
+      },
+      {
+        field: 'Camas',
+        amount: 1,
+      },
+      {
+        field: 'Recámaras',
+        amount: 1,
+      },
+      {
+        field: 'Baños',
+        amount: 1,
+      },
+    ],
   });
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
@@ -26,12 +47,11 @@ export function WizardLayout() {
       ),
     },
     {
-      title: '¿Dónde se encuentra tu alojamiento?',
+      title: '¿A cuántos huéspedes te gustaría recibir?',
       form: (
-        <EnterAddress
+        <FloorPlan
           housingOptions={housingOptions}
           setHousingOptions={setHousingOptions}
-          setNextDisable={setNextDisable}
         />
       ),
     },
