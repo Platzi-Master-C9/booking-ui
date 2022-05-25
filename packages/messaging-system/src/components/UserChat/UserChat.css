@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.userChat-body {
+    position: relative;
+    /* display: grid;
+    grid-template-rows: 100px 1fr 1fr; */
+    width: 650px;
+    height: 587px;
+    /* left: 431px;
+    top: 200px; */
+    margin: 0 auto;
+
+    background: #FFFFFF;
+    border: 1px solid #9B9B9B;
+    border-radius: 32px;
+}
+
+.userChat-head {
+    position: relative;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0;
+
+    border-bottom: 1px solid #9B9B9B;
+}
+
+.userChat-head_name {
+    position: absolute;
+    width: 172px;
+    height: 27px;
+    left: 32px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+
+}
+
+.userChat-head_timeOfResponse {
+    position: absolute;
+    width: 424px;
+    height: 33px;
+    left: 175px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.userChat-main {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.userChat-main_time {
+    position: relative;
+    width: 424px;
+    height: 33px;
+    left: 113px;;
+    margin-top: 16px;
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.userChat-main_client {
+    position: relative;
+    display: block;
+    width: fit-content;
+    left: 170px;
+    top: 75px;
+    text-align: right;
+}
+
+.userChat-main_user {
+    position: relative;
+    display: block;
+    width: fit-content;
+    left: 61px;
+    top: 162px;
+}
+
+.userChat-main_name {
+    position: relative;
+    width: 354px;
+    height: 27px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.userChat-main_message {
+    position: relative;
+    width: 363px;
+    height: 27px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.userChat-main_userImg {
+    position: absolute;
+}
+
+.userChat-main_userImg img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -62px;
+    right: 30.69%;
+    top: 36.05%;
+    bottom: 57.84%;
+    
+    border-radius: 100px;
+}
+
+.userChat-main_clientImg {
+    position: static;
+}
+
+.userChat-main_clientImg img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 370px;
+    top: 0;
+    bottom: 0;
+
+    border-radius: 100px;
+}
+
+section p {
+    margin: 0;
+}
