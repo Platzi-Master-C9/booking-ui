@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from 'axios';
 import "./assets/styles/deleteFavoriteList.css"
 
 // Delete card confirm = mensaje de confirmacion
@@ -8,12 +9,17 @@ export default function DeleteCardItem(props) {
 
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const [successDeleteModal, setSuccessDeleteModal] = useState(false);
+  //const [openErrorModal, setOpenErrorModal] = useState(false);
 
 
   function deleteList(event) {
     if (event) event.stopPropagation() 
-    toggleDeleteModal();
-    toggleSuccessDeleteModal();
+    axios.delete(`https://628d8d5ba339dfef879c4b9f.mockapi.io/favorites/${props.id}`).then(()=>{
+      toggleDeleteModal();
+      toggleSuccessDeleteModal();
+    }).catch((error)=>{
+      console.error(error);
+    })
   }
 
   function toggleDeleteModal(event) {
@@ -29,6 +35,11 @@ export default function DeleteCardItem(props) {
     }
   }
 
+  /*function toggleErrorModal(event){
+    console.log(event);
+    if (event) event.stopPropagation(); 
+  }
+*/
   return (
     <>
       <i className="fa-solid fa-trash" onClick={event => toggleDeleteModal(event)} ></i>
@@ -37,6 +48,7 @@ export default function DeleteCardItem(props) {
         <DeleteCardConfirm
           deleteList={deleteList}
           toggleDeleteModal={toggleDeleteModal}
+          listName={props.listName}
         />
       )}
       {successDeleteModal && (
@@ -44,17 +56,22 @@ export default function DeleteCardItem(props) {
           toggleSuccessDeleteModal={toggleSuccessDeleteModal}
         />
       )}
+      {/* {openErrorModal && (
+        <DeleteError
+        toggleErrorModal={toggleErrorModal}
+        />
+      )} */}
     </>
   );
 }
 
-function DeleteCardConfirm({ deleteList, toggleDeleteModal }) {
+function DeleteCardConfirm({ deleteList, toggleDeleteModal, listName}) {
   return (
     <div className="modal-container">
       <div className="white_card-confirm">
         <i className="fa-solid fa-trash"></i>
         <p>
-          ¿Estas seguro que deseas borrar la lista Vacaciones con mi familia? Se
+          ¿Estas seguro que deseas borrar la {listName}? Se
           borraran todos los favoritos que contiene esta lista
         </p>
         <div className="white_card-buttons">
@@ -83,3 +100,17 @@ function DeleteCardSuccess({ toggleSuccessDeleteModal }) {
     </div>
   );
 }
+/*
+function DeleteError() {
+  return (
+    <div className="modal-container">
+      <article className="success-delete">
+        <p>Hubo un error al eliminar, inténtalo más tarde</p>
+        <hr />
+        <button id="close" onClick={event => toggleErrorModal(event)}>
+            Cancelar
+          </button>
+      </article>
+    </div>
+  );
+}*/
