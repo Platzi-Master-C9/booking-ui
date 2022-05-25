@@ -1,0 +1,8 @@
+// Variables
+@use './variables.scss';
+
+.paragraph {
+  font-size: 18px;
+  font-weight: 600;
+  color: variables.$bk-black;
+}

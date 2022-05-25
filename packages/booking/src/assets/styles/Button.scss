@@ -1,0 +1,25 @@
+// Variables
+@use './variables.scss';
+
+.button {
+  border-radius: 32px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+
+  &__add {
+    background-color: variables.$bk-white;
+    color: variables.$bk-blue;
+    border: 1px solid variables.$bk-blue;
+    width: 141px;
+  }
+
+  &__confirm {
+    outline: none;
+    background-color: variables.$bk-blue;
+    color: variables.$bk-white;
+    width: 181px;
+    border: 1px solid variables.$bk-blue;
+  }
+}
