@@ -2,9 +2,6 @@ import { useState } from "react";
 import axios from 'axios';
 import "./assets/styles/deleteFavoriteList.css"
 
-// Delete card confirm = mensaje de confirmacion
-// Delete card success = eliminado exitosamente
-
 export default function DeleteCardItem(props) {
 
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
@@ -35,11 +32,6 @@ export default function DeleteCardItem(props) {
     }
   }
 
-  /*function toggleErrorModal(event){
-    console.log(event);
-    if (event) event.stopPropagation(); 
-  }
-*/
   return (
     <>
       <i className="fa-solid fa-trash" onClick={event => toggleDeleteModal(event)} ></i>
@@ -56,11 +48,6 @@ export default function DeleteCardItem(props) {
           toggleSuccessDeleteModal={toggleSuccessDeleteModal}
         />
       )}
-      {/* {openErrorModal && (
-        <DeleteError
-        toggleErrorModal={toggleErrorModal}
-        />
-      )} */}
     </>
   );
 }
@@ -100,17 +87,3 @@ function DeleteCardSuccess({ toggleSuccessDeleteModal }) {
     </div>
   );
 }
-/*
-function DeleteError() {
-  return (
-    <div className="modal-container">
-      <article className="success-delete">
-        <p>Hubo un error al eliminar, inténtalo más tarde</p>
-        <hr />
-        <button id="close" onClick={event => toggleErrorModal(event)}>
-            Cancelar
-          </button>
-      </article>
-    </div>
-  );
-}*/
