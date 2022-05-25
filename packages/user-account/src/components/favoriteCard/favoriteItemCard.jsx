@@ -14,7 +14,7 @@ function FavoriteCard(props) {
         <div className="favorite-card">
           <img className="favorite-card-photo" src={props.cardPhoto}></img>
           <div className="favorite-card-content">
-            <h2 className="favorite-card-title">{props.cardTitle}</h2>
+            <h2 className="favorite-card-title">{props.listTitle}</h2>
             <div className="trash-item">
               <DeleteCardItem />
             </div>

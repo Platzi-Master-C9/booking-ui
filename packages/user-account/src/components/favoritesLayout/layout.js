@@ -10,6 +10,11 @@ import Link from 'next/link'
 const ROUTE_FAVORITE_ID = "favorites/[id]";
 
 export const FavoritesLayout = () => {
+  const router = useRouter();
+  const navigate = (id, event) => {
+    event.stopPropagation();
+  }
+
   const [favorites, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -21,12 +26,6 @@ export const FavoritesLayout = () => {
     };
     fetchData();
   }, [setData]);
-  console.log(favorites)
-
-  const router = useRouter();
-  const navigate = (id, event) => {
-    event.stopPropagation();
-  }
   return (
     <div>
       <Header />
@@ -39,13 +38,13 @@ export const FavoritesLayout = () => {
                 pathname: ROUTE_FAVORITE_ID,
                 query: {
                   id: favorite.id,
-                  title: favorite.cardTitle,
+                  title: favorite.listTitle,
                   photoUrl: favorite.cardPhoto,
                   favorites: favorite.favorites,
                 }
               }}>
                 <a onClick={(event) => navigate(favorite.id, event)}>
-                  <FavoriteCard key={favorite.id} cardPhoto={favorite.cardPhoto} cardTitle={favorite.cardTitle}/>
+                  <FavoriteCard key={favorite.id} cardPhoto={favorite.cardPhoto} listTitle={favorite.listTitle}/>
                 </a>
               </Link>
                       )) }

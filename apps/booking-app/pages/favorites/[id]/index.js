@@ -1,48 +1,58 @@
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Header from "@booking-ui/user-account/src/components/header";
 import Footer from "@booking-ui/user-account/src/components/footer";
 import styles from  "../../../styles/Favorite.module.scss";
 
 export default function Favorite() {
   const router = useRouter()
-  const title = router.query.title
-  const photoUrl = router.query.photoUrl
-  const favorites = router.query.favorites
+
+  const [favorites, setData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('http://demo2545346.mockable.io/');
+      console.log("response: ",response)
+      const json = await response.json();
+      console.log("json: ",json)
+      setData(json.favorites);
+    };
+    fetchData();
+  }, [setData]);
+  console.log(favorites)
 
   
 
   return (
     <div>
       <Header />
-      <div className={styles.bodyContainer}>
-        <h2 className={styles.favoriteName}>{title}</h2>
-        <img className={styles.photo} src={photoUrl}></img>
-        <div className={styles.card}>
-          <img className={styles.cardPhoto} src="https://img-co-1.trovit.com/q1OI16cgGE/q1OI16cgGE.1_12.jpg" alt=""></img>
-          <div>
-            <h1 className={styles.cardTitle}>Lujosa suite en ciudad bolivar</h1>
-            <hr></hr>
-            <p>El Apartamento amoblado Ciudad Bolivar ofrece alojamiento con balcón en Ciudad Bolívar. Todos los alojamientos disponen de sala de estar con TV de pantalla plana y cocina con microondas y fogones</p>
-            <div>
-              <p>4.53(15 reseñas)</p>
-              <p>$285,040 COP/noche</p>
+      <div className={styles.body}>
+        <div className={styles.container}>
+          <h2 className={styles.name}>{favorites.name}</h2>
+          <div className={styles.properties}>
+            {favorites.filter(favorite => favorite.id == 1).map(favorite =>(
+              <div key={favorite.id}>
+                {favorite.favorites.map (fav=> (
+                  <div className={styles.card}>
+                  <img className={styles.photo} src={fav.photo} alt=""></img>
+                  <div className={styles.content}>
+                    <h1 className={styles.title}>{fav.propertyName}</h1>
+                    <hr></hr>
+                    <p>{fav.description}</p>
+                    <div>
+                      <p>{fav.stars}(15 reseñas)</p>
+                      <p>${fav.price} COP/noche</p>
+                    </div>
+                  </div>
+                </div>
+
+                ))}
+            
             </div>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <img className={styles.cardPhoto} src="https://img-co-1.trovit.com/q1OI16cgGE/q1OI16cgGE.1_12.jpg" alt=""></img>
-          <div>
-            <h1 className={styles.cardTitle}>Lujosa suite en ciudad bolivar</h1>
-            <hr></hr>
-            <p>El Apartamento amoblado Ciudad Bolivar ofrece alojamiento con balcón en Ciudad Bolívar. Todos los alojamientos disponen de sala de estar con TV de pantalla plana y cocina con microondas y fogones</p>
-            <div>
-              <p>4.53(15 reseñas)</p>
-              <p>$285,040 COP/noche</p>
-            </div>
+))}
+
           </div>
         </div>
       </div>
-      
       <Footer />
     </div>
   );}
