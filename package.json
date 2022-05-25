@@ -13,15 +13,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.5.1",
-<<<<<<< HEAD
-    "typescript": "^4.6.2",
-    "webpack": "^5.70.0",
-    "stylus-loader": "^6.2.0"
-=======
-    "stylus-loader": "^6.2.0",
-    "typescript": "^4.6.2",
-    "webpack": "^5.72.0"
->>>>>>> 84bf487 (workspace ready to work with storybook and create UserChat component)
+    "typescript": "^4.6.2"
   },
   "scripts": {
     "bootstrap": "yarn install; lerna bootstrap;",
