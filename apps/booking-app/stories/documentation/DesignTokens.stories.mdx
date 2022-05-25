@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/addon-docs';
+import css from '../../styles/globals.scss';
+
+<Meta title="Documentation/DesignTokens" />
+
+<style>{`
+  .color-container {
+    width: 200px;
+    height: 100px;
+  }
+`}</style>
+
+# Design Tokens
+
+Los design tokens de este proyecto se dividen en las siguientes categorías
+
+## Colors
+
+<div class="color-container bg-main-400"></div>
+
+```css
+main-colors: (
+  '400': hsla(200, 77%, 36%, 1),
+  '500': hsla(200, 95%, 46%, 1),
+  '900': hsla(200, 41%, 95%, 1)
+);
+```
+
+```css
+neutral-colors: (
+  '100': hsla(0, 0%, 0%, 1),
+  '400': hsla(0, 0%, 40%, 1),
+  '600': hsla(0, 0%, 61%, 1),
+  '900': hsla(0, 0%, 100%, 1)
+);
+```

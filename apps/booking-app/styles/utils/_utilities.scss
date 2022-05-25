@@ -1,0 +1,99 @@
+@use '../abstract/design-tokens' as *;
+
+// Colores principales
+
+@each $key, $item in $colors {
+  @each $shade, $color in $item {
+    .bg-#{$key}-#{$shade} {
+      background-color: var(--#{$key}-color-#{$shade});
+    }
+  }
+}
+
+// Gradientes
+
+@each $key, $item in $background {
+  .gradient-#{$key} {
+    background: #{$item};
+  }
+}
+
+// Font sizes
+
+@each $key, $item in $font-sizes {
+  .fs-#{$key} {
+    font-size: #{$item};
+  }
+}
+
+// Border radius
+
+@each $key, $item in $border-radius {
+  .br-#{$key} {
+    border-radius: #{$item};
+  }
+}
+
+// Spacing
+
+@each $key, $item in $spacing {
+  .p-#{$key} {
+    padding: #{$item};
+  }
+
+  .pt-#{$key} {
+    padding-top: #{$item};
+  }
+
+  .pb-#{$key} {
+    padding-bottom: #{$item};
+  }
+
+  .pl-#{$key} {
+    padding-left: #{$item};
+  }
+
+  .pr-#{$key} {
+    padding-right: #{$item};
+  }
+
+  .px-#{$key} {
+    padding-left: #{$item};
+    padding-right: #{$item};
+  }
+
+  .py-#{$key} {
+    padding-top: #{$item};
+    padding-bottom: #{$item};
+  }
+
+  .m-#{$key} {
+    margin: #{$item};
+  }
+
+  .mt-#{$key} {
+    margin-top: #{$item};
+  }
+
+  .mb-#{$key} {
+    margin-bottom: #{$item};
+  }
+
+  .ml-#{$key} {
+    margin-left: #{$item};
+  }
+
+  .mr-#{$key} {
+    margin-right: #{$item};
+  }
+
+  .mx-#{$key} {
+    margin-left: #{$item};
+    margin-right: #{$item};
+  }
+
+  .my-#{$key} {
+    margin-top: #{$item};
+    margin-bottom: #{$item};
+  }
+}
