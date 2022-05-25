@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../../search-engine/src/components/Header';
 import HouseRules from '../components/HouseRules/HouseRules';
 import Perks from '../components/perks/perks';
+import { HostDetails } from '../components/HostDetails/HostDetails';
 import Footer from '../../../search-engine/src/components/Footer';
 import { GridImages } from '../components/GridImages'; 
 import { ItemImage } from '../components/ItemImage';
@@ -83,6 +84,20 @@ const benefits = [
   description: 'Los huéspedes suelen buscar este popular servicio.',
 }]
 
+const hostDetails =
+  {
+    host: 'Laura',
+    id: true,
+    photoHost : '/places/photo_profile.png',
+    ratings: '221',
+    registerDate: 'Febrero 2018',
+    hostBio: `Hola, mi nombre es Laura  y soy del hermoso y colorido norte de Colombia. Vine a Medellín hace 10 años para sentirme  mitad costeña y mitad paisa, mi cultura es una mezcla compleja ya que también he vivido en el extranjero. Soy ingeniera civil que actualmente estudia francés. Disfruto...`,
+    languages: 'Español, Inglés y Francés',
+    responseIndex : 98 ,
+    responseTime: 'En menos de una hora'
+  }
+
+
 let key = 0;
 export const DetailsPage = () => {
   return (
@@ -125,7 +140,17 @@ export const DetailsPage = () => {
     <Perks/>
     <MapDetails/>
     <HouseRules/>
-    <p><i>Host Details</i></p>
+    < HostDetails 
+      host = {hostDetails.host}
+      id = {hostDetails.id}
+      photoHost= {hostDetails.photoHost}
+      registerDate = {hostDetails.registerDate}
+      ratings = {hostDetails.ratings}
+      hostBio = {hostDetails.hostBio}
+      languages =  {hostDetails.languages}
+      responseIndex = {hostDetails.responseIndex}
+      responseTime = {hostDetails.responseTime}
+      />
     <Footer/>
     </>
   )

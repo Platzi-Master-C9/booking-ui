@@ -1,0 +1,198 @@
+.container-Search-and-filters {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteiner-SearchBar_DashboardAdmins {
+  width: 80%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #e5e9e3;
+  border-radius: 15px;
+}
+
+.button-filters_DashboardAdmins {
+  width: 110px;
+  height: 60px;
+  cursor: pointer;
+  border-left: 1px solid #e5e9e3;
+}
+
+.icon-filter_DashboardAdmins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-filters_DashboardAdmins {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchBar {
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  outline: none;
+  background-color: white;
+  border: 0;
+}
+
+.icon-search {
+  width: 80px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-filter_DashboardAdmins {
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  background: none;
+  color: #1572A1;
+  border: flex;
+  padding: 8px;
+  margin-left: 15px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: 1px solid #1572A1;
+  border-radius: 18px;
+}
+
+#filters-active {
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+#active {
+  background-color: #1572A1;
+  color: white;
+}
+
+.container_CardsAdmin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+  -ms-grid-columns: (minmax(210px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+.conteiner-DashboardAdmin {
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title-DashboardAdmin {
+  padding-bottom: 30px;
+}
+
+.CardAdmin {
+  background-color: white;
+  width: 220px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  border: 1px solid #1572A1;
+  -webkit-box-shadow: 0px 0px 7px rgba(107, 107, 107, 0.61);
+          box-shadow: 0px 0px 7px rgba(107, 107, 107, 0.61);
+}
+
+.profile-picture_CardAdmin {
+  border-radius: 100%;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+}
+
+.full-name_CardAdmin {
+  padding-top: 15px;
+}
+
+.profile_CardAdmin {
+  font-size: 14px;
+}
+
+.container-button_CardAdmin {
+  width: 100%;
+  height: 40px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.container-button_CardAdmin:hover {
+  background-color: #1572a10d;
+}
+
+.button_CardAdmin {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #1572A1;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-top: #1572A1 solid 1px;
+}
+/*# sourceMappingURL=LayoutAdministrators.css.map */

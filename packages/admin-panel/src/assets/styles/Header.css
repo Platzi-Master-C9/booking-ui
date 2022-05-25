@@ -1,0 +1,106 @@
+.Header-conteiner {
+  display: block;
+  height: 100px;
+}
+
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 9;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #9b9b9b;
+  padding: 0 18px 0 18px;
+  background-color: #fff;
+}
+
+#Perfil {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.Circulo {
+  background-color: aqua;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+#Menu-hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.Company-name {
+  background-color: #1572a1;
+  border-radius: 50%;
+  margin: 0;
+  color: white;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+}
+
+.Company-container {
+  margin-left: 2em;
+}
+
+.admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2em;
+}
+
+.Administrador {
+  color: #1572a1;
+  margin-right: 20px;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.Admin-photo {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 425px) {
+  .Company-name {
+    width: 50px;
+    height: 50px;
+  }
+  .Admin-photo {
+    width: 40px;
+    height: 40px;
+  }
+  .Administrador {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

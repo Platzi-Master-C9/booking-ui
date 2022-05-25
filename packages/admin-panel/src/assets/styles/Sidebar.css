@@ -1,0 +1,75 @@
+.Sidebar-container {
+  display: block;
+  width: 230px;
+}
+
+.Sidebar {
+  height: 100vh;
+  width: 230px;
+  border-right: 1px solid #9b9b9b;
+  background-color: #fff;
+}
+
+.SidebarList {
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 80px;
+  list-style-type: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #1572a10d;
+}
+
+.SidebarList #active {
+  background-color: #1572a10d;
+  border-left: 4px solid #1572a1;
+  color: #1572a1;
+}
+
+.row #Sidebar-list-icon {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.row #Sidebar-list-icon .MuiSvgIcon-root {
+  font-size: 2rem;
+}
+
+.row #Sidebar-list-title {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+}
+
+#Menu-hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Sidebar.css.map */

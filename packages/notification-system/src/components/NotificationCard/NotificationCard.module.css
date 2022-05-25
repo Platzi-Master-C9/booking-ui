@@ -1,0 +1,89 @@
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 32px;
+  border-radius: 32px;
+  border: 1px solid #9B9B9B;
+}
+
+@media (min-width: 768px) {
+  .card {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.card__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+  background: #1572a1;
+}
+
+.card__content {
+  margin-top: 12px;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .card__content {
+    margin-top: 0;
+    margin-left: 13px;
+    margin-right: 40px;
+  }
+}
+
+.card__text {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card__date {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card__close {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  font-weight: 100;
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .card__close {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+/*# sourceMappingURL=NotificationCard.module.css.map */
