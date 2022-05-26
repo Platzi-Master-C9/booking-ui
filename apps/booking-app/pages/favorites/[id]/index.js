@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Header from "@booking-ui/user-account/src/components/header";
 import Footer from "@booking-ui/user-account/src/components/footer";
 import styles from  "../../../styles/Favorite.module.scss";
+import { withRouter } from "react-router-dom";
+
 
 export default function Favorite() {
   const router = useRouter()
@@ -18,9 +20,14 @@ export default function Favorite() {
     };
     fetchData();
   }, [setData]);
-  console.log(favorites)
 
-  
+  if (typeof window !== "undefined") {
+    let path = window.location.pathname
+    const pathSplited = path.split("/")[2]
+  }
+
+
+ 
 
   return (
     <div>
@@ -29,7 +36,7 @@ export default function Favorite() {
         <div className={styles.container}>
           <h2 className={styles.name}>{favorites.name}</h2>
           <div className={styles.properties}>
-            {favorites.filter(favorite => favorite.id == 1).map(favorite =>(
+            {favorites.filter(favorite => favorite.id == pathSplited).map(favorite =>(
               <div key={favorite.id}>
                 {favorite.favorites.map (fav=> (
                   <div className={styles.card}>

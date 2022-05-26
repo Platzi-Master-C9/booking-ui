@@ -19,9 +19,7 @@ export const FavoritesLayout = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch('http://demo2545346.mockable.io/');
-      console.log("response: ",response)
       const json = await response.json();
-      console.log("json: ",json)
       setData(json.favorites);
     };
     fetchData();
