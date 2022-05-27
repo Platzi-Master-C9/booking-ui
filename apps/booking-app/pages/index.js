@@ -2,16 +2,14 @@ import { Auth0Provider } from '@auth0/auth0-react';
 import {
   AdminPanel,
   Authentication,
-  Booking, Geolocation,
-  LoginButton,
-  MessagingSystem,
+  Booking,
+  Geolocation, MessagingSystem,
   Places,
   UserAccount
 } from '@booking-ui/shared';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
-
 
 export default function Home() {
   return (
@@ -38,7 +36,6 @@ export default function Home() {
             <AdminPanel />
             <Booking />
             <Authentication />
-            <LoginButton label="Not login" />
             <UserAccount />
             <Booking />
             <p className={styles.description}>

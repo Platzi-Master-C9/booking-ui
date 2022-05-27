@@ -1,6 +1,6 @@
 export * from '@booking-ui/admin-panel';
 export * from '@booking-ui/authentication';
-export { Booking, Booking, Reservation } from '@booking-ui/booking';
+export { Booking, Reservation } from '@booking-ui/booking';
 export { Geolocation, SearchResultsMap } from '@booking-ui/geolocation';
 export { MessagingSystem, TextBox } from '@booking-ui/messaging-system';
 export * from '@booking-ui/notification-system';
