@@ -1,14 +1,14 @@
-export { Button } from './components/Button';
-export { Places, Perks, HouseRules } from '@booking-ui/places';
+export * from '@booking-ui/admin-panel';
+export * from '@booking-ui/authentication';
+export { Booking, Booking, Reservation } from '@booking-ui/booking';
 export { Geolocation, SearchResultsMap } from '@booking-ui/geolocation';
 export { MessagingSystem, TextBox } from '@booking-ui/messaging-system';
+export * from '@booking-ui/notification-system';
+export { HouseRules, Perks, Places } from '@booking-ui/places';
+export { LandingPage, ResultsPage } from '@booking-ui/search-engine';
 export {
-  UserAccount,
   FavoriteCard,
   favoritesView,
+  UserAccount,
 } from '@booking-ui/user-account';
-export { ResultsPage, LandingPage } from '@booking-ui/search-engine';
-export * from '@booking-ui/authentication';
-export * from '@booking-ui/notification-system';
-export * from '@booking-ui/admin-panel';
-export { Booking } from '@booking-ui/booking';
+export { Button } from './components/Button';
