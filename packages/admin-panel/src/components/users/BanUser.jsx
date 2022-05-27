@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { useRouter } from "next/router";
+import axios from "axios";
 import styled from "styled-components";
 
 const ChangeStatusForm = styled.form`
@@ -32,9 +35,28 @@ const ChangeStatusForm = styled.form`
   }
 `;
 
-export const ChangeStatus = ({ userData, isChangeStatusActive }) => {
+export const BanUser = ({ userData, isChangeStatusActive }) => {
+  const [reason, setReason] = useState("");
+  const router = useRouter();
+  const { userId } = router.query;
+  const BASE_URL = `https://admin-panel-booking-services.herokuapp.com/admin-panel/user-status/${userId}`;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .patch(BASE_URL, {
+        status: "BANNED",
+        reason: reason,
+      })
+      .then((data) => console.log(data, userData.status, reason))
+      .catch((err) => console.log(err));
+  };
+
   return (
-    <ChangeStatusForm isChangeStatusActive={isChangeStatusActive}>
+    <ChangeStatusForm
+      onSubmit={handleSubmit}
+      isChangeStatusActive={isChangeStatusActive}
+    >
       <p>
         This user is currently <strong>{userData.status}</strong>. <br /> In
         order <strong>to ban this user</strong> select an option:{" "}
@@ -46,6 +68,8 @@ export const ChangeStatus = ({ userData, isChangeStatusActive }) => {
           id="opt 1"
           name="banning_options"
           value="Non-compliance with the policies"
+          onChange={(e) => setReason(e.target.value)}
+          required
         />
         <label for="Non-compliance with the policies">
           Non-compliance with the policies
@@ -58,6 +82,7 @@ export const ChangeStatus = ({ userData, isChangeStatusActive }) => {
           id="opt 2"
           name="banning_options"
           value="Private property damage"
+          onChange={(e) => setReason(e.target.value)}
         />
         <label for="Private property damage">Private property damage</label>
       </div>
@@ -68,6 +93,7 @@ export const ChangeStatus = ({ userData, isChangeStatusActive }) => {
           id="opt 3"
           name="banning_options"
           value="Bad rating"
+          onChange={(e) => setReason(e.target.value)}
         />
         <label for="Bad rating">Bad rating</label>
       </div>

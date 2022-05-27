@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import { ChangeStatus } from "./ChangeStatus";
+import { BanUser } from "./BanUser";
+import { ActiveUser } from "./ActiveUser";
 import styles from "../../assets/styles/UserDetailsList.module.scss";
 
 export const UserDetailsList = ({ userData }) => {
@@ -21,10 +22,17 @@ export const UserDetailsList = ({ userData }) => {
           <div>
             <p>{userData.status}</p>
           </div>
-          <ChangeStatus
-            userData={userData}
-            isChangeStatusActive={userStatusActive}
-          />
+          {userData.status === "BANNED" ? (
+            <ActiveUser
+              userData={userData}
+              isChangeStatusActive={userStatusActive}
+            />
+          ) : (
+            <BanUser
+              userData={userData}
+              isChangeStatusActive={userStatusActive}
+            />
+          )}
         </li>
 
         <li className={styles.detailsList__item}>
