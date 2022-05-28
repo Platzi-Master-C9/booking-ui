@@ -1,0 +1,60 @@
+.selectFilter{
+  position: relative;
+
+  & .buttonFilter {
+    border: 1px solid #1572A1;
+    background-color: transparent;
+    border-radius: 32px;
+    padding: 10px 16px 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  & span {
+    margin-right: 4px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1572A1;
+  }
+
+  & .modalFilter {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;    
+    background-color: #fff;
+    border-radius: 32px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+
+    & .modalContent {
+      padding: 20px 24px;
+      border-bottom: 1px solid #9B9B9B;
+      min-width: 250px;
+    }
+
+    & .modalFooter {
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      
+      & .delete {
+        background-color: transparent;
+        color: #1572A1;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      & .done {
+        background-color: #1572A1;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 32px;
+        font-size: 14px;
+        line-height: 21px;
+        border: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
