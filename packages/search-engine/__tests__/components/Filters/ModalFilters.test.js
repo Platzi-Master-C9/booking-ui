@@ -2,11 +2,12 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import ModalFilters from '../../../src/components/Filters/ModalFilters'
+import { faker } from '@faker-js/faker'
 
 describe('Given that ModalFilter component is used', () => {
   test('When the variable visible is false, then the modal should be invisible', () => {
-    const title = 'modalTitle'
-    const children = 'Texto de prueba'
+    const title = faker.lorem.sentence(1);
+    const children = faker.lorem.sentence(2);
 
     const component = render(
         <ModalFilters 
@@ -25,8 +26,8 @@ describe('Given that ModalFilter component is used', () => {
   });
 
   test('When the variable visible is true, then the modal should be visible', () => {
-    const title = 'modalTitle'
-    const children = 'Texto de prueba'
+    const title = faker.lorem.sentence(1);
+    const children = faker.lorem.sentence(2);
 
     const component = render(
         <ModalFilters 
@@ -45,7 +46,7 @@ describe('Given that ModalFilter component is used', () => {
   });
 
   test('When the user presses the filter, then the modal opens', () => {
-      const title = 'modalTitle'
+      const title = faker.lorem.sentence(1);
       const openModal = jest.fn()
 
       const component = render(
@@ -66,7 +67,7 @@ describe('Given that ModalFilter component is used', () => {
   });
 
   test('When the user presses reset, then this function should be executed', () => {
-    const title = 'modalTitle'
+    const title = faker.lorem.sentence(1);
     const resetFn = jest.fn()
 
     const component = render(
@@ -87,7 +88,7 @@ describe('Given that ModalFilter component is used', () => {
   });
 
   test('When the user presses submit button, then this function should be executed', () => {
-    const title = 'modalTitle'
+    const title = faker.lorem.sentence(1);
     const submitFn = jest.fn()
 
     const component = render(

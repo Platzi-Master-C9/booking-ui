@@ -71,7 +71,7 @@ export default function Header({ classPage, handleSubmitFilters }) {
 
   // Send all filters
 
-  const sendFitler = () => {
+  const sendFilter = () => {
     handleSubmitFilters(minPrice, maxPrice, stars, fullPlace, privateRoom);
   }
 
