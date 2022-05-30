@@ -1,11 +1,10 @@
 // Internal dependencies
-const axios = require('../utils/axios');
+const { axios, getMessagesEndpoint } = require('../utils');
 
-const getMessages = async (chatId) => {
-  const endpoint = `chats/${chatId}/messages`
-  const messagesData =  await axios.get(endpoint).then(response => response.data);
-
-  return messagesData
+const getMessages = (chatId) => {
+  const endpoint = getMessagesEndpoint(chatId);
+  
+  return  axios.get(endpoint).then(response => response.data);
 };
 
 module.exports = getMessages;
