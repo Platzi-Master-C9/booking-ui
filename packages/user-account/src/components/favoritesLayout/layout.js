@@ -1,22 +1,29 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "./assets/styles/style.css";
 import Footer from '../footer';
 import Header from '../header'
-import Link from 'next/link'
 import { FavoriteCard } from '../favoriteCard/favoriteItemCard';
 import { useRouter } from "next/router";
+import axios from 'axios';
 
 
 const ROUTE_FAVORITE_ID = "favorite/[id]";
-const favorites = [
-  {id: '1', cardPhoto: 'https://shorturl.ae/RqAB4', cardTitle: 'Lujosa suite en Londres'},
-  {id: '2', cardPhoto: 'https://shorturl.ae/fwbyC', cardTitle: 'Suite en Dubai'},
-  {id: '3', cardPhoto: 'https://shorturl.ae/RqAB4', cardTitle: 'Lujosa suite en Londres'},
-  {id: '4', cardPhoto: 'https://shorturl.ae/fwbyC', cardTitle: 'Suite en Dubai'},
-]
 
 export const FavoritesLayout = () => {
+  const [cardList, setCardList] = useState([]);
   const router = useRouter();
+
+  useEffect (()=>{
+    getFavoriteList();
+  }, [])
+
+  function getFavoriteList () {
+    axios.get("https://628d8d5ba339dfef879c4b9f.mockapi.io/favorites").then((response)=>{
+      setCardList(response.data);
+      }).catch((error)=>{
+        console.error(error);
+      })
+  }
 
   const navigate = (id, event) => {
     event.stopPropagation() 
@@ -26,6 +33,10 @@ export const FavoritesLayout = () => {
     });
   }
 
+  function deleteCard () {
+    getFavoriteList();
+  }
+
   return (
     <div>
       <Header />
@@ -33,9 +44,12 @@ export const FavoritesLayout = () => {
       <div className="container">
         <div className='body-container'>
           <div className="favorite-grid">
-            {favorites.map(favorite =>(
-              <a onClick={(event) => navigate(favorite.id, event)}>
-                <FavoriteCard key={favorite.id} cardPhoto={favorite.cardPhoto} cardTitle={favorite.cardTitle}/>
+            {cardList.map(favorite =>(
+              <a key={favorite.id} onClick={(event) => navigate(favorite.id, event)}>
+                <FavoriteCard 
+                deleteCard={deleteCard}
+                favoriteList={favorite}
+                />
               </a>
             )) }
           </div>

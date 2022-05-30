@@ -1,0 +1,96 @@
+// Variables
+@use './variables.scss';
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.App-container {
+  min-height: 100vh;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: #484848;
+}
+
+.Container {
+  margin-block: 2rem;
+  border: 1px solid #B8B8B8;
+  padding: 1rem;
+  border-radius: 0.7em;
+}
+
+.Container_Imagen p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.Imagen {
+  width: auto;
+  height: 306px;
+  object-fit: contain;
+  border-radius: 0.8em;
+}
+
+.Container_Details {
+  font-size: 14px;
+}
+
+.Header_3 {
+  font-size: 20px;
+  margin-bottom: 0.6rem;
+}
+
+.xDetails {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.xDetails p {
+  margin: 0.1rem;
+  font-weight: 500;
+}
+
+.Total {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.6rem;
+  padding-right: 0.4rem;
+  font-weight: 700;
+}
+
+.bloque_main {
+  display: flex;
+  width: 100%;
+}
+
+.bloque_izq{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.bloque_der{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.parraph {
+  width: 80%;
+  padding-bottom: 1rem;
+  margin: 0.1rem;
+  font-size: 12px;
+  font-weight: 400;
+}

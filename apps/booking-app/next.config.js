@@ -3,6 +3,7 @@ const withTM = require('next-transpile-modules')([
   '@booking-ui/shared',
   '@booking-ui/places',
   '@booking-ui/search-engine',
+  '@booking-ui/booking',
   '@booking-ui/messaging-system',
   '@booking-ui/geolocation',
   '@booking-ui/admin-panel',

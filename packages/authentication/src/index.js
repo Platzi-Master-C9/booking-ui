@@ -1,2 +1,2 @@
-export { Authentication } from './components/helloWorld';
+export { Authentication } from './components/index';
 export { LoginButton } from './components/LoginButton';
