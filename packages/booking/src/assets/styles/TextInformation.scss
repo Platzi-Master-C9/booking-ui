@@ -1,0 +1,8 @@
+// Variables
+@use './variables.scss';
+
+.textInformation {
+  font-size: 18px;
+  color: variables.$bk-black;
+  margin-top: 8px;
+}
