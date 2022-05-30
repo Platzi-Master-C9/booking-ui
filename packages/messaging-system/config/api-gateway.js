@@ -8,4 +8,5 @@ dotenv.config({ path });
 
 module.exports = {
   domain: process.env.DOMAIN_API_GATEWAY,
+  port: process.env.PORT_API_GATEWAY,
 };
