@@ -148,6 +148,3 @@ module.exports = withPlugins([withTM()], {
 | `yarn start:app ` | run server                                                               |
 | `yarn build:app`    |                                                                                  |
 | `yarn run:build:app`                | Built-in                                                                             |
-
-hello
-hello

@@ -27,6 +27,7 @@
     "@booking-ui/admin-panel": "^1.0.0",
     "@booking-ui/authentication": "^1.0.0",
     "@booking-ui/booking": "^1.0.0",
+    "@booking-ui/data-monitoring": "^1.0.0",
     "@booking-ui/geolocation": "^1.0.0",
     "@booking-ui/messaging-system": "^1.0.0",
     "@booking-ui/notification-system": "^1.0.0",
