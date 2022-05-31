@@ -4,7 +4,7 @@ import css from './perks.module.scss';
 export const Perks = () => {
   return (
     <div className={css.perks}>
-      <h1>What this place offers</h1>
+      <h2>What this place offers</h2>
       <ul>
         <li><img src="/places/kitchen.png" />Kitchen</li>
         <li><img src="/places/parkingLot.png" />Free parking</li>

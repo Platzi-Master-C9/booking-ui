@@ -1,0 +1,24 @@
+.item-benefit
+{
+   display: flex;
+   margin-bottom: 32px;
+   
+   &__image
+   {
+      height: 100%;
+      margin-right: 32px;
+   }
+   &__title 
+   {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 8px;
+   }
+   &__description 
+   {
+      color:#666666;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 8px;
+   }
+}
