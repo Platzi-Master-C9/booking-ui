@@ -7,5 +7,5 @@ const path = require('./environment');
 dotenv.config({ path });
 
 module.exports = {
-  domain: process.env.DOMAIN_API_GATEWAY,
+  domain: process.env.NEXT_PUBLIC_DOMAIN_API_GATEWAY,
 };
