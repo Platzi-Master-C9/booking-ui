@@ -1,0 +1,8 @@
+// Variables
+@use "./variables.scss";
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: variables.$bk-black;
+}

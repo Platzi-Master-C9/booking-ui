@@ -7,3 +7,4 @@ export { Calendar } from './components/Calendar';
 export { Dashboard } from './components/Dashboard';
 export { FilterContainer } from './components/Filters/FiltersContainer';
 export { LayoutAdministrators } from './components/LayoutAdministrators';
+export { FiltersContainer } from './components/Filters/FiltersContainer';

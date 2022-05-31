@@ -1,0 +1,28 @@
+.frame {
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
+    border: 1px solid #9B9B9B;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    padding-left: 32px;
+    font-family: 'Poppins', sans-serif;
+    
+    &Timeline {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        & strong {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            @media (max-width:624px){
+                display: block;
+            }
+        } 
+    }
+    @media (max-width:624px){
+        padding: 10px 15px;
+    }
+}
