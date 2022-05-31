@@ -1,0 +1,16 @@
+.item
+{
+   &:first-child
+   {
+      grid-area: 1 / 1 /3 / 3;
+   }
+   &__img 
+   {
+      border-radius: 32px;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+   }
+}
+
+

@@ -1,0 +1,32 @@
+// Variables
+@use './variables.scss';
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--blue {
+    background-color: variables.$bk-blue;
+  }
+
+  &--white {
+    background-color: variables.$bk-white;
+  }
+
+  &__name {
+    font-size: 36px;
+    font-weight: 600;
+
+    &--blue {
+      color: variables.$bk-white;
+    }
+
+    &--white {
+      color: variables.$bk-blue;
+    }
+  }
+}

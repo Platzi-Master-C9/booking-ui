@@ -1,0 +1,14 @@
+.loginButton {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  font-family: inherit;
+  background-color: #005ac2;
+  color: wheat;
+}
+
+.loginButton .icon {
+  font-size: 0.75em;
+}
+/*# sourceMappingURL=LoginButton.module.css.map */

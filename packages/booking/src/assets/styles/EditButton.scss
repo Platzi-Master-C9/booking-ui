@@ -1,0 +1,12 @@
+// Variables
+@use './variables.scss';
+
+.editButton {
+  font-size: 18px;
+  font-weight: 500;
+  color: variables.$bk-black;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

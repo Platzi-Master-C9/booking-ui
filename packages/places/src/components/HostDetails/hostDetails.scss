@@ -1,0 +1,71 @@
+.host-details-container {
+  padding: 30px 50px;
+  border-bottom: 1px solid #9B9B9B;
+  h3{
+    display: inline;
+    font-size: 32px;
+    line-height: 40px;
+    padding-left: 70px;
+  }
+  a{
+    text-decoration: underline;
+    margin-bottom: 40px; 
+    display: block;
+  }
+    .id-validation, .ratings{
+      display:inline;
+      padding-right:20px;
+    }
+
+    button {
+    width: 256px;
+    height: 60px;
+    margin-top: 24px;
+    font-weight: 600;
+    color: var(--color-main);
+    background-color: white;
+    border-radius: 32px;
+    border: 1px solid #1572A1;
+    cursor: pointer;
+  }
+  
+}
+
+.host-details__img {
+  width: 58px;
+  position:absolute;
+  height:58px;
+}
+
+.data__icon-start, 
+.verified-user__icon
+{
+  width: 20px;
+}
+
+.host-details__date{
+  color:#9B9B9B;
+  padding-left: 70px;
+}
+ 
+
+.host-details__section {
+  padding: 20px 0;
+  column-count: 2;
+  padding-left: 0;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.host-bio {
+  padding: 0 50px 20px 0;
+}
+
+.host-info{
+  padding-left: 40px;
+}
+
+.host-info__list {
+  list-style: none;
+  line-height: 30px;
+}

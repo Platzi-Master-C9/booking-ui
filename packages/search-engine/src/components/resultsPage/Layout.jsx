@@ -6,7 +6,8 @@ import Footer from "../Footer"
 import { ListResults } from "./ListResults"
 import { Pagination } from "./Pagination"
 import "./styles/style.css"
-import { getData } from "./API/getData";
+import { getData } from "../../scripts/petitions";
+import { ErrorMessage } from "../ErrorMessage";
 
 const PLACES_PER_PAGE = 10;
 const key = 15;
@@ -18,7 +19,8 @@ const ResultsPage = () => {
   const [ renderedPlaces, setRenderedPlaces ] = useState([]);
   const [ dataState, setDataState ] = useState({ loading: true, error: false });
   const [ currentPage, setCurrentPage ] = useState(0);
-  const [ TotalPages, setTotalPages ] = useState(0);
+  const [ totalPages, setTotalPages ] = useState(0);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     try {
@@ -30,8 +32,10 @@ const ResultsPage = () => {
   }, []);
 
   useEffect(() => {
-    setRenderedPlaces([...allPlaces].splice(0, PLACES_PER_PAGE));
-    setTotalPages(Math.ceil(allPlaces.length / PLACES_PER_PAGE));
+    if(allPlaces){
+      setRenderedPlaces([...allPlaces].splice(0, PLACES_PER_PAGE));
+      setTotalPages(Math.ceil(allPlaces.length / PLACES_PER_PAGE));
+    }
   }, [allPlaces]);
 
   const prevHandler = () => {
@@ -55,22 +59,38 @@ const ResultsPage = () => {
     setCurrentPage(nextPage);
   }
 
+  const handleSubmitFilters = async (minPrice, maxPrice, stars, fullPlace, privateRoom) => {
+    const data = await getData('places');
+    if(data.error) {
+      setError('Ha ocurrido un error al obtener los lugares');
+      return;
+    };
+    setAllPlaces(data);
+  }
+
   return (
     <div className="results__container">
-      <Header />
+      <Header handleSubmitFilters={handleSubmitFilters} />
 
       <section className="section__container">
         <Map />
-        <ListResults 
-          places={renderedPlaces}
-          statePlaces={dataState}
-        />
-        <Pagination 
-          TotalPages={TotalPages} 
-          currentPage={currentPage} 
-          prevHandler={prevHandler} 
-          nextHandler={nextHandler} 
-        />
+
+        {!error ? 
+          <>
+            <ListResults 
+              places={renderedPlaces}
+              statePlaces={dataState}
+            />
+            <Pagination 
+              TotalPages={totalPages} 
+              currentPage={currentPage} 
+              prevHandler={prevHandler} 
+              nextHandler={nextHandler} 
+            />
+          </>
+          : 
+          <ErrorMessage message={error} />
+        }
       </section>
 
       <Footer />

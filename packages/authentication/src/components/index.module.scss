@@ -1,0 +1,38 @@
+.button {
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.loginButton {
+  @extend .button;
+  background-color: papayawhip;
+  &:hover {
+    filter: brightness(90%);
+    background-color: darken(papayawhip, 5);
+  }
+}
+
+.logoutButton {
+  @extend .button;
+  background-color: tomato;
+  color: #fefefe;
+  &:hover {
+    filter: brightness(90%);
+    background-color: darken(tomato, 5);
+  }
+}
+
+.apiButton {
+  @extend .button;
+  background-color: darkgreen;
+  color: #fefefe;
+  margin-block: 10px;
+  &:hover {
+    filter: brightness(90%);
+    background-color: darken(darkgreen, 5);
+  }
+}
