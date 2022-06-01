@@ -57,5 +57,4 @@ lerna-debug.log*
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
-// dotenv
-.env
+*.env
