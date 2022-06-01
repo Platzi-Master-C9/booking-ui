@@ -15,7 +15,7 @@ const DashboardAdmin = styled.div`
 export const LayoutAdministrators = () => {
   const [admins, setAdmins] = useState([]);
   const [searchValue, setSearchValue] = React.useState("");
-  const [profileType, setProfileType] = React.useState(3);
+  const [profileType, setProfileType] = React.useState(2);
 
   useEffect(async () => {
     const response = await axios(api_url);
@@ -44,8 +44,8 @@ export const LayoutAdministrators = () => {
   }
 
   return (
-    <div className="conteiner-DashboardAdmin">
-      <h1 className="title-DashboardAdmin">Administrators</h1>
+    <div className="container-DashboardAdmin">
+      <h1 className="title-DashboardAdmin">Administradores</h1>
       <DashboardAdmin>
         <SearchBar
           searchValue={searchValue}

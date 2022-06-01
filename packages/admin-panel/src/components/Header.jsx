@@ -4,7 +4,7 @@ import "../assets/styles/Header.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export const Header = ({ showSidebar }) => (
-  <div className="Header-conteiner">
+  <div className="Header-container">
     <div className="Header">
       <div className="row" id="Menu-hamburger">
         <div id="Sidebar-list-icon">

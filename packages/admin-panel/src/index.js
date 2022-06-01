@@ -13,3 +13,4 @@ export { UserDetails } from './components/users/UserDetails';
 export { UserDetailsList } from './components/users/UserDetailsList';
 export { BanUser } from './components/users/BanUser';
 export { ActiveUser } from './components/users/ActiveUser';
+export { ButtonAddAdmin } from './components/ButtonAddAdmin';
