@@ -1,0 +1,44 @@
+button.button-ModalAddAdmin {
+  transition: all 0.5s ease;
+  background-color: #2185d0;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+button.button-ModalAddAdmin:hover {
+  background-color: #11609c;
+}
+
+#buttonCancel-ModalAddAdmin {
+  background-color: #e64741;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 37px;
+  left: 30%;
+  position: relative;
+}
+#buttonCancel-ModalAddAdmin:hover {
+  background-color: #11609c;
+}
+
+@media (max-width: 425px) {
+  #buttonCancel-ModalAddAdmin {
+    left: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  #buttonCancel-ModalAddAdmin {
+    left: 25%;
+  }
+}
+@media (min-width: 1024px) {
+  #buttonCancel-ModalAddAdmin {
+    left: 30%;
+  }
+}

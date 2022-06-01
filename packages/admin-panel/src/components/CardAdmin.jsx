@@ -3,12 +3,17 @@ import "../assets/styles/LayoutAdministrators.scss";
 import { Modal } from "./Modal";
 import { ButtonAddAdmin } from "./ButtonAddAdmin";
 
-export const CardAdmin = ({ searchAdmin, profileType, setProfileType }) => {
+export const CardAdmin = ({
+  searchAdmin,
+  profileType,
+  setProfileType,
+  openModalAddAdmin,
+}) => {
   const [estadoModal, cambiarEstadoModal] = useState(false);
   return (
     <>
       <div className="container_CardsAdmin">
-        <ButtonAddAdmin />
+        <ButtonAddAdmin openModalAddAdmin={openModalAddAdmin} />
         {searchAdmin.map((admin, key) => {
           if (admin.profile === 2) {
             return null;

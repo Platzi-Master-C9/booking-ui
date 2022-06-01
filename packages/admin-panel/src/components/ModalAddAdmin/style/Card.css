@@ -1,0 +1,42 @@
+.card-ModalAddAdmin {
+  width: 500px;
+  background-color: #fefefe;
+  color: #444;
+  border-radius: 30px;
+  border: 1px solid #888;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 20px;
+  border: 2px solid #1572a1;
+  margin: 0 auto;
+}
+
+.titleFormCreateAdmin-ModalAddAdmin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 710px) {
+  .card-ModalAddAdmin {
+    width: 400px;
+  }
+  .titleFormCreateAdmin-ModalAddAdmin {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .card-ModalAddAdmin {
+    width: 350px;
+  }
+  .titleFormCreateAdmin-ModalAddAdmin {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .card-ModalAddAdmin {
+    width: 310px;
+  }
+  .titleFormCreateAdmin-ModalAddAdmin {
+    font-size: 14px;
+  }
+}
