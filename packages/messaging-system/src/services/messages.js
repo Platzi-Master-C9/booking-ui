@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // Internal dependencies
 import http from './http';
 
