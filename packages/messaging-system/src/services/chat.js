@@ -1,15 +1,15 @@
 // Internal dependencies
-import http from "./http";
+import http from './http';
 
 const openChatRoom = async (customerId, hostId, placeId) => {
   try {
-    const response = await http.post("/chats/", {
+    const response = await http.post('/chats/', {
       customerId,
       hostId,
       placeId,
     });
 
-    const data = response.data;
+    const { data } = response;
 
     if (data) {
       return data;
@@ -30,7 +30,7 @@ const getChatRooms = async (userId, page) => {
       },
     });
 
-    const data = response.data;
+    const { data } = response;
 
     if (Array.isArray(data?.rows)) {
       return data;

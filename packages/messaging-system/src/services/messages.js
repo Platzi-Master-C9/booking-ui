@@ -1,5 +1,5 @@
 // Internal dependencies
-import http from "./http";
+import http from './http';
 
 const getMessagesFromChatRoom = async (chatId, page) => {
   try {
@@ -9,7 +9,7 @@ const getMessagesFromChatRoom = async (chatId, page) => {
       },
     });
 
-    const data = response.data;
+    const { data } = response;
 
     if (Array.isArray(data?.rows)) {
       return data;
@@ -32,7 +32,7 @@ const createMessage = async (chatId, message, userId) => {
       createdBy: userId,
     });
 
-    const data = response.data;
+    const { data } = response;
 
     if (data) {
       return data;
@@ -42,7 +42,7 @@ const createMessage = async (chatId, message, userId) => {
   }
 
   return null;
-}
+};
 
 export {
   getMessagesFromChatRoom,
