@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { CardAdmin } from "./CardAdmin";
 import "../assets/styles/LayoutAdministrators.scss";
 import { SearchBar } from "./SearchBar";
+import ModalAddAdmin from "./ModalAddAdmin";
 
 const api_url =
   "https://admin-panel-booking-services.herokuapp.com/admin-panel/admins";
@@ -16,6 +17,11 @@ export const LayoutAdministrators = () => {
   const [admins, setAdmins] = useState([]);
   const [searchValue, setSearchValue] = React.useState("");
   const [profileType, setProfileType] = React.useState(2);
+  const [modalAddAdmin, setModalAddAdmin] = React.useState(false);
+
+  const openModalAddAdmin = (props) => {
+    setModalAddAdmin((prevState) => !prevState);
+  };
 
   useEffect(async () => {
     const response = await axios(api_url);
@@ -45,6 +51,10 @@ export const LayoutAdministrators = () => {
 
   return (
     <div className="container-DashboardAdmin">
+      {!!modalAddAdmin && (
+        <ModalAddAdmin openModalAddAdmin={openModalAddAdmin} />
+      )}
+
       <h1 className="title-DashboardAdmin">Administradores</h1>
       <DashboardAdmin>
         <SearchBar
@@ -57,6 +67,7 @@ export const LayoutAdministrators = () => {
           searchAdmin={searchAdmin}
           profileType={profileType}
           setProfileType={setProfileType}
+          openModalAddAdmin={openModalAddAdmin}
         ></CardAdmin>
       </DashboardAdmin>
     </div>

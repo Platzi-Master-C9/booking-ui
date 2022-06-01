@@ -1,0 +1,29 @@
+.background-ModalAddAdmin {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* vertically center the overlay */
+  justify-content: center; /* horizontally center the overlay */
+}
+
+.container-ModalAddAdmin {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* @media (max-width: 710px) {
+  .container-ModalAddAdmin {
+    width: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .container-ModalAddAdmin {
+    width: 300px;
+  }
+} */
