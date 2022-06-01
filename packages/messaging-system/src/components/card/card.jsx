@@ -29,15 +29,9 @@ export class Card extends React.PureComponent {
 }
 
 Card.propTypes = {
-  username: PropTypes.string,
-  lastMessage: PropTypes.string,
-  profilePicture: PropTypes.string,
-};
-
-Card.defaultProps = {
-  username: 'Laura Restrepo',
-  lastMessage: 'Hola ¿Cómo estás?',
-  profilePicture: 'chats/lauren_photo_profile.png',
+  username: PropTypes.string.isRequired,
+  lastMessage: PropTypes.string.isRequired,
+  profilePicture: PropTypes.string.isRequired,
 };
 
 export default Card;
