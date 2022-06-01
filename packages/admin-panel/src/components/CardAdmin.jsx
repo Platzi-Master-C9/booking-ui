@@ -1,14 +1,16 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "../assets/styles/LayoutAdministrators.scss";
 import { Modal } from "./Modal";
+import { ButtonAddAdmin } from "./ButtonAddAdmin";
 
 export const CardAdmin = ({ searchAdmin, profileType, setProfileType }) => {
   const [estadoModal, cambiarEstadoModal] = useState(false);
   return (
     <>
       <div className="container_CardsAdmin">
+        <ButtonAddAdmin />
         {searchAdmin.map((admin, key) => {
-          if (admin.profile == 3) {
+          if (admin.profile === 2) {
             return null;
           } else if (admin.profile != profileType) {
             return (
@@ -22,20 +24,23 @@ export const CardAdmin = ({ searchAdmin, profileType, setProfileType }) => {
                   <b>{admin.fullName}</b>
                 </p>
                 <p className="profile_CardAdmin">
-                  {admin.profile == 1 ? "Super Admin" : "Admin"}
+                  {admin.profile == 4 ? "Super Admin" : "Admin"}
                 </p>
                 <div className="container-button_CardAdmin">
-                  <button className="button_CardAdmin"
+                  <button
+                    className="button_CardAdmin"
                     onClick={() => {
-                      cambiarEstadoModal(!estadoModal)
-                    }}>Manage</button>
+                      cambiarEstadoModal(!estadoModal);
+                    }}
+                  >
+                    Manage
+                  </button>
                 </div>
                 <Modal
                   estado={estadoModal}
                   cambiarEstado={cambiarEstadoModal}
                   admin={admin}
-                >
-                </Modal>
+                ></Modal>
               </div>
             );
           }
@@ -44,4 +49,3 @@ export const CardAdmin = ({ searchAdmin, profileType, setProfileType }) => {
     </>
   );
 };
-

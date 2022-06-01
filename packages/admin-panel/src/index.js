@@ -7,4 +7,8 @@ export { Calendar } from './components/Calendar';
 export { Dashboard } from './components/Dashboard';
 export { FilterContainer } from './components/Filters/FiltersContainer';
 export { LayoutAdministrators } from './components/LayoutAdministrators';
+<<<<<<< HEAD
 export { FiltersContainer } from './components/Filters/FiltersContainer';
+=======
+export { ButtonAddAdmin } from './components/ButtonAddAdmin';
+>>>>>>> 157a40d (Correction of misspellings, buttons for the Create admin modal.)

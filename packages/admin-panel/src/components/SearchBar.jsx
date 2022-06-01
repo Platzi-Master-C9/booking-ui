@@ -13,11 +13,10 @@ export const SearchBar = ({
   const onSearchValueChanged = (event) => {
     setSearchValue(event.target.value);
   };
-
   return (
     <>
       <div className="container-Search-and-filters">
-        <div className="conteiner-SearchBar_DashboardAdmins">
+        <div className="container-SearchBar_DashboardAdmins">
           <div className="icon-search">
             <span>
               <SearchIcon />
@@ -49,19 +48,19 @@ export const SearchBar = ({
         id={stateFilter ? "filters-active" : ""}
       >
         <button
-          id={profileType == 1 ? "active" : ""}
+          id={profileType == 4 ? "active" : ""}
           className="btn-filter_DashboardAdmins"
           onClick={
-            profileType != 1 ? () => setProfileType(1) : () => setProfileType(3)
+            profileType != 4 ? () => setProfileType(4) : () => setProfileType(2)
           }
         >
           Admin
         </button>
         <button
           className="btn-filter_DashboardAdmins"
-          id={profileType == 2 ? "active" : ""}
+          id={profileType == 3 ? "active" : ""}
           onClick={
-            profileType != 2 ? () => setProfileType(2) : () => setProfileType(3)
+            profileType != 3 ? () => setProfileType(3) : () => setProfileType(2)
           }
         >
           Super Admin
