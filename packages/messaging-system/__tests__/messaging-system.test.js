@@ -1,7 +1,3 @@
-'use strict';
-
-const messagingSystem = require('..');
-
 describe('@booking-ui/messaging-system', () => {
-    it('needs tests');
+  it('needs tests');
 });

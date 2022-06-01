@@ -1,3 +1,3 @@
-export { MessagingSystem } from './components/helloWorld';
+export { default as MessagingSystem } from './components/helloWorld';
 export { TextBox } from './components/TextBox/TextBox';
-export { ResponseTime } from './components/ResponseTime/ResponseTime';
+export { default as ResponseTime } from './components/ResponseTime/ResponseTime';
