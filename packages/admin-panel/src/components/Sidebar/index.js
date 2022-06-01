@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import "../assets/styles/Sidebar.scss";
+import "../../assets/styles/Sidebar.scss";
 import { SidebarData } from "./SidebarData.js";
 import MenuIcon from "@mui/icons-material/Menu";
 

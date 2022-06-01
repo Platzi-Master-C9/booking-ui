@@ -2,9 +2,9 @@ import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { CardAdmin } from "./CardAdmin";
-import "../assets/styles/LayoutAdministrators.scss";
+import "../../assets/styles/LayoutAdministrators.scss";
 import { SearchBar } from "./SearchBar";
-import ModalAddAdmin from "./ModalAddAdmin";
+import ModalAddAdmin from "../ModalAddAdmin";
 
 const api_url =
   "https://admin-panel-booking-services.herokuapp.com/admin-panel/admins";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../assets/styles/LayoutAdministrators.scss";
-import { Modal } from "./Modal";
+import "../../assets/styles/LayoutAdministrators.scss";
+import { Modal } from "../Modal";
 import { ButtonAddAdmin } from "./ButtonAddAdmin";
 
 export const CardAdmin = ({
