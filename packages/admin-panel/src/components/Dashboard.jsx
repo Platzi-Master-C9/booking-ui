@@ -8,7 +8,7 @@ import { ContextFilters } from "./Filters/FiltersContext/ContextFilters";
 export const Dashboard = () => {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState(null);
-  const baseURL = "http://demo5412895.mockable.io/users";
+  const baseURL = "https://admin-panel-booking-services.herokuapp.com/admin-panel/users";
   const { checked, setChecked, show, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, clicked, setClicked, setShow } = useContext(ContextFilters)
 
   useEffect(() => {
@@ -18,13 +18,13 @@ export const Dashboard = () => {
   const getUsers = async () => {
     try {
       const response = await axios.get(baseURL);
-      setUsers(response.data);
+      setUsers(response.data.result);
     } catch (error) {
       setError(error);
     }
   };
-
- const filterUsers = users.filter((u) => checked.checkedOne && u.type === "Anfitrión" || checked.checkedTwo && u.type === "Huésped" || checked.checkedThree && u.status === "Activo" || checked.checkedFour && u.status === "Inactivo" || checked.checkedFive && u.validate === "Sí" || checked.checkedSixx && u.validate === "No")
+console.log(users)
+ const filterUsers = users.filter((u) => checked.checkedOne && u.type === "Anfitrión" || checked.checkedTwo && u.type === "Huésped" || checked.checkedThree && u.status === "ACTIVE" || checked.checkedFour && u.status === "BANNED" || checked.checkedFive && u.validated === true || checked.checkedSixx && u.validated === false)
   
  return (
     <section className={styles.dashboard}>

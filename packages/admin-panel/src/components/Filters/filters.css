@@ -102,6 +102,8 @@
 }
 
 .title, .descriptionTitle {
+    font-size: 1rem !important;
+    font-weight: 100 !important;
     margin: 0;
 }
 

@@ -19,13 +19,15 @@ export const GridItem = ({ user }) => {
   const handleActive = () => {
     setIsMenuActive(!isMenuActive);
   };
+  const isValidated = user.validated === true ? "Sí" : "No"
+  const userStatus = user.status === "ACTIVE" ? "Activo" : "Baneado"
 
   return (
     <li key={user.id} className={styles.list__item}>
-      <div className={styles.textCenterName}>{user.full_name}</div>
+      <div className={styles.textCenterName}>{user.fullName}</div>
       <div>{user.type}</div>
-      <div>{user.status}</div>
-      <div>{user.validate}</div>
+      <div>{userStatus}</div>
+      <div>{isValidated}</div>
       <div>{user.date_of_register}</div>
       <StyledButton onClick={handleActive} isActive={isMenuActive}>
         Manage
