@@ -7,13 +7,9 @@ import SizeFilter from '../Filters/SizeFilter';
 import StartsFilter from '../Filters/StarsFilter';
 import './Header.css';
 
-export default function Header({ classPage, handleSubmitFilters }) {
-  let classHeader;
-  if (classPage !== 'landing') {
-    classHeader = 'header__container';
-  } else {
-    classHeader = classPage + ' header__container';
-  }
+export default function Header({ classPage, filters, handleSubmitFilters }) {
+  let classHeader = (classPage !== 'landing') ? 'header__container' : `${classPage} header__container`;
+  let showFilters = (!filters) ? 'hidden' : ' ';
 
   const [visible, setVisible] = useState(null);
   const [minPrice, setMinPrice] = useState(40000);
@@ -21,6 +17,8 @@ export default function Header({ classPage, handleSubmitFilters }) {
   const [stars, setStars] = useState(null);
   const [fullPlace, setFullPlace] = useState(false);
   const [privateRoom, setPrivateRoom] = useState(false);
+
+  const toggleVisibility = (key) => !visible ? setVisible(key) : setVisible(null);
 
   // Size filter
 
@@ -38,7 +36,6 @@ export default function Header({ classPage, handleSubmitFilters }) {
   }
 
   const submitPriceFilter = () => {
-    setVisible(null);
     sendFitler();
   } 
 
@@ -50,7 +47,6 @@ export default function Header({ classPage, handleSubmitFilters }) {
   }
 
   const submitSizeFilter = () => {
-    setVisible(null);
     sendFitler();
   }
 
@@ -65,7 +61,6 @@ export default function Header({ classPage, handleSubmitFilters }) {
   }
 
   const submitStarts = () => {
-    setVisible(null);
     sendFitler();
   }
 
@@ -82,11 +77,11 @@ export default function Header({ classPage, handleSubmitFilters }) {
       </div>
       <SearchBar />
       <User classUser={classPage} />
-      <div className='filter__container'>
+      <div className={`filter__container ${showFilters}`}>
         <ModalFilter 
           title='Precio'
           visible={visible === 'visiblePrice'}
-          setVisible={() => setVisible('visiblePrice')}
+          setVisible={() => toggleVisibility('visiblePrice')}
           reset={resetPriceFilter}
           submitFn={submitPriceFilter}
         >
@@ -101,7 +96,7 @@ export default function Header({ classPage, handleSubmitFilters }) {
         <ModalFilter 
           title='Tipo de alojamiento'
           visible={visible === 'visibleSize'}
-          setVisible={() => setVisible('visibleSize')}
+          setVisible={() => toggleVisibility('visibleSize')}
           reset={resetSizeFilter}
           submitFn={submitSizeFilter}
         >
@@ -116,7 +111,7 @@ export default function Header({ classPage, handleSubmitFilters }) {
         <ModalFilter 
           title='Calificación'
           visible={visible === 'visibleStars'}
-          setVisible={() => setVisible('visibleStars')}
+          setVisible={() => toggleVisibility('visibleStars')}
           reset={resetStars}
           submitFn={submitStarts}
         >

@@ -70,7 +70,7 @@ const ResultsPage = () => {
 
   return (
     <div className="results__container">
-      <Header handleSubmitFilters={handleSubmitFilters} />
+      <Header filters={true} handleSubmitFilters={handleSubmitFilters} />
 
       <section className="section__container">
         <Map />
