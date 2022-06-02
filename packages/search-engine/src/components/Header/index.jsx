@@ -77,7 +77,7 @@ export default function Header({ classPage, handleSubmitFilters }) {
 
   return (
     <header className={classHeader}>
-      <div className="logo">
+      <div className="logo__header">
         <a href="/">BS</a>
       </div>
       <SearchBar />

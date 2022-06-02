@@ -29,7 +29,7 @@
   border-bottom: none;
 }
 
-.logo {
+.logo__header {
   color: var(--color-font-light);
   width: 80px;
   height: 80px;
@@ -38,12 +38,12 @@
   background-color: var(--color-main);
 }
 
-.landing .logo {
+.landing .logo__header {
   color: var(--color-main);
   background-color: var(--color-font-light);
 }
 
-.logo a {
+.logo__header a {
   width: 80px;
   height: 80px;
   display: block;
