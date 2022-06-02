@@ -13,11 +13,6 @@
       rgba(147, 127, 182, 1) 35%,
       rgba(216, 159, 174, 1) 100%
     );
-    &__title {
-      align-self: flex-end;
-      font-size: clamp(2.4rem, 4vw, 4.8rem);
-      color: white;
-    }
   }
   &-housing {
     padding: 24px;

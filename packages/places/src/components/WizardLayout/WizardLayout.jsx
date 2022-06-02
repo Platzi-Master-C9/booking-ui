@@ -8,6 +8,10 @@ import FloorPlan from '../FloorPlan';
 import TextAreaComponent from '../TextAreaComponent';
 import LoadImages from '../LoadImages';
 
+// Components
+import WizardStepTitle from '../WizardStepTitle';
+import WizardSteps from '../WizardSteps';
+
 export function WizardLayout() {
   const [housingOptions, setHousingOptions] = useState({
     type: 'house',
@@ -46,63 +50,7 @@ export function WizardLayout() {
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
   const [nextDisable, setNextDisable] = useState(false);
-  const forms = [
-    {
-      title: '¿Dónde se encuentra tu alojamiento?',
-      form: (
-        <EnterAddress
-          housingOptions={housingOptions}
-          setHousingOptions={setHousingOptions}
-          setNextDisable={setNextDisable}
-        />
-      ),
-    },
-    {
-      title: '¿A cuántos huéspedes te gustaría recibir?',
-      form: (
-        <FloorPlan
-          housingOptions={housingOptions}
-          setHousingOptions={setHousingOptions}
-        />
-      ),
-    },
-    {
-      title: 'Ponle un nombre a tu alojamiento',
-      form: (
-        <TextAreaComponent
-          housingOptions={housingOptions}
-          setHousingOptions={setHousingOptions}
-          componentTitle="Crea tu título"
-          maxLength={50}
-          field="title"
-          textStyle="title"
-        />
-      ),
-    },
-    {
-      title: 'Ahora vamos a describir tu alojamiento',
-      form: (
-        <TextAreaComponent
-          housingOptions={housingOptions}
-          setHousingOptions={setHousingOptions}
-          componentTitle="Crea tu descripción"
-          maxLength={500}
-          field="description"
-          textStyle="paragraph"
-        />
-      ),
-    },
-    {
-      title: 'Ahora, vamos a subir algunas fotos de tu alojamiento',
-      form: (
-        <LoadImages
-          housingOptions={housingOptions}
-          setHousingOptions={setHousingOptions}
-          setNextDisable={setNextDisable}
-        />
-      ),
-    },
-  ];
+  const views = 5;
 
   const handleBack = () => {
     if (step === 0) return;
@@ -111,12 +59,12 @@ export function WizardLayout() {
   };
 
   const handleNext = () => {
-    if (step === forms.length - 1) return;
+    if (step === views - 1) return;
     setStep(step + 1);
   };
 
   useEffect(() => {
-    const percentage = 100 / forms.length;
+    const percentage = 100 / views;
     setProgress((step + 1) * percentage);
   }, [step]);
 
@@ -124,10 +72,50 @@ export function WizardLayout() {
     <main className="wizard">
       <div className="wizard-section">
         <BSIconButton bg="secondary" />
-        <h2 className="wizard-section__title">{forms[step].title}</h2>
+        <WizardStepTitle
+          titles={[
+            '¿Dónde se encuentra tu alojamiento?',
+            '¿A cuántos huéspedes te gustaría recibir?',
+            'Ponle un nombre a tu alojamiento',
+            'Ahora vamos a describir tu alojamiento',
+            'Ahora, vamos a subir algunas fotos de tu alojamiento',
+          ]}
+          page={step}
+        />
       </div>
       <div className="wizard-housing">
-        <div className="wizard-housing-options">{forms[step].form}</div>
+        <WizardSteps step={step}>
+          <EnterAddress
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+            setNextDisable={setNextDisable}
+          />
+          <FloorPlan
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+          />
+          <TextAreaComponent
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+            componentTitle="Crea tu título"
+            maxLength={50}
+            field="title"
+            textStyle="title"
+          />
+          <TextAreaComponent
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+            componentTitle="Crea tu descripción"
+            maxLength={500}
+            field="description"
+            textStyle="paragraph"
+          />
+          <LoadImages
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+            setNextDisable={setNextDisable}
+          />
+        </WizardSteps>
         <div className="wizard-housing-handle-sections">
           <progress
             className="wizard-housing-handle-sections__progress-bar"
