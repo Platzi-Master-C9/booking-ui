@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import './styles/wizard.scss';
 import { BSIconButton } from '../BSIconButton';
 
@@ -14,7 +13,13 @@ export function WizardLayout() {
     type: 'house',
     spaces: 1,
     services: ['wifi'],
-    address: null,
+    address: {
+      street: '',
+      city: '',
+      state: '',
+      zipcode: '',
+      country: '',
+    },
     floorPlans: [
       {
         field: 'Huéspedes',
@@ -36,6 +41,7 @@ export function WizardLayout() {
     title: 'Hogar para todos',
     description:
       'Relájate con toda la familia en este alojamiento donde la tranquilidad se respira.',
+    images: [],
   });
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
@@ -88,13 +94,20 @@ export function WizardLayout() {
     },
     {
       title: 'Ahora, vamos a subir algunas fotos de tu alojamiento',
-      form: <LoadImages />,
+      form: (
+        <LoadImages
+          housingOptions={housingOptions}
+          setHousingOptions={setHousingOptions}
+          setNextDisable={setNextDisable}
+        />
+      ),
     },
   ];
 
   const handleBack = () => {
     if (step === 0) return;
     setStep(step - 1);
+    setNextDisable(false);
   };
 
   const handleNext = () => {
