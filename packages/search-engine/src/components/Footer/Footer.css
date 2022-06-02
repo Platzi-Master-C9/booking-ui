@@ -1,6 +1,5 @@
 .footer__container {
   grid-area: footer;
-  width: 100%;
   height: 130px;
 }
 
