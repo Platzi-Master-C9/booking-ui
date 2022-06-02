@@ -24,7 +24,7 @@ ResponseTime.propTypes = {
 };
 
 ResponseTime.defaultProps = {
-  username: 'Laure Restrepo',
+  username: 'Laura Restrepo',
 };
 
 export default ResponseTime;
