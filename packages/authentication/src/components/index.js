@@ -14,8 +14,7 @@ export const Authentication = () => {
   const handleCallApi = async (type) => {
     console.log('>>>user', user);
     const token = await getAccessTokenSilently({
-      audience: 'https://hinojsa0/api/v2/',
-
+      audience: 'https://booking-ui/api',
       scope: 'read:post',
     });
     try {
@@ -26,7 +25,6 @@ export const Authentication = () => {
         },
       });
       const data = await response.json();
-      console.log('>>>. Data', data);
       alert(data.result);
     } catch (error) {
       alert('Error', error);
@@ -46,7 +44,6 @@ export const Authentication = () => {
           >
             Use private app
           </button>
-
           <button
             className={styles.apiButton}
             onClick={() => handleCallApi('public')}
