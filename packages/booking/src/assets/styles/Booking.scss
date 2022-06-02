@@ -1,0 +1,16 @@
+@use './variables.scss';
+
+.booking {
+  margin: 0 auto;
+  width: 1512px;
+  height: 1531px;
+  background-color: variables.$bk-white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.booking * {
+  outline: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}

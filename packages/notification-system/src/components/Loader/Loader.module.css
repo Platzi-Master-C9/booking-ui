@@ -1,0 +1,14 @@
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+.loader svg {
+  fill: #1572A1;
+}
+/*# sourceMappingURL=Loader.module.css.map */

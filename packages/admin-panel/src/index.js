@@ -6,3 +6,4 @@ export { Sidebar } from './components/Sidebar';
 export { Calendar } from './components/Calendar';
 export { Dashboard } from './components/Dashboard';
 export { LayoutAdministrators } from './components/LayoutAdministrators';
+export { FiltersContainer } from './components/Filters/FiltersContainer';

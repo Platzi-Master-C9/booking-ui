@@ -1,0 +1,46 @@
+// Variables
+@use './variables.scss';
+
+.data {
+  width: 100%;
+  height: 1216px;
+  border-top: 1px solid variables.$bk-gray;
+  border-bottom: 1px solid variables.$bk-gray;
+  padding: 0 64px;
+
+  &__booking {
+    width: 100%;
+    height: 164px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 24px;
+    color: variables.$bk-blue;
+    display: grid;
+    place-items: center;
+
+    svg {
+      margin-right: 24px;
+      width: 70%;
+      height: 70%;
+    }
+  }
+}
+
+.information {
+  width: 100%;
+  height: 1040px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__left {
+  }
+
+  &__right {
+    padding-left: 97px;
+  }
+}

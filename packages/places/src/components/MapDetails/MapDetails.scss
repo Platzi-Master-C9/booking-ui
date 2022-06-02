@@ -1,0 +1,15 @@
+.map
+{
+   padding: 0 64px;
+
+   h2
+   {
+      font-size: 36px;
+      font-weight: 500;
+   }
+   &__image
+   {
+      padding-top: 40px;
+      width: 100%;
+   }
+}

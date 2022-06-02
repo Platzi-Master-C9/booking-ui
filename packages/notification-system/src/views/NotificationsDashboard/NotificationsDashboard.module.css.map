@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACV,gBAAgB,EAAE,IAAI;EACtB,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;EACd,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACnB;;AAED,AAAA,MAAM,CAAC;EACN,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACnB;;AAED,AAAA,WAAW,CAAC;EACX,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,IAAI;CACnB",
+    "sources": [
+        "NotificationsDashboard.module.scss"
+    ],
+    "names": [],
+    "file": "NotificationsDashboard.module.css"
+}
