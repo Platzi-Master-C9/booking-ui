@@ -7,6 +7,7 @@ import { BSIconButton } from '../BSIconButton';
 import EnterAddress from '../EnterAddress';
 import FloorPlan from '../FloorPlan';
 import TextAreaComponent from '../TextAreaComponent';
+import LoadImages from '../LoadImages';
 
 export function WizardLayout() {
   const [housingOptions, setHousingOptions] = useState({
@@ -84,6 +85,10 @@ export function WizardLayout() {
           textStyle="paragraph"
         />
       ),
+    },
+    {
+      title: 'Ahora, vamos a subir algunas fotos de tu alojamiento',
+      form: <LoadImages />,
     },
   ];
 
