@@ -6,11 +6,7 @@
     width: 100%;
     height: 100%;
     input[type='text'] {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-block-end: 1px solid #9b9b9b;
-      font-size: 1.6rem;
+      @include input-text;
     }
     select {
       width: 100%;
@@ -22,11 +18,6 @@
     }
   }
   &__button {
-    width: 118px;
-    height: 48px;
-    border: none;
-    border-radius: 32px;
-    background: black;
-    color: white;
+    @include button-form;
   }
 }

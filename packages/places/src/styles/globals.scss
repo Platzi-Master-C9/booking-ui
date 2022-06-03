@@ -1,5 +1,7 @@
 html,
 body {
+  width: 100%;
+  height: auto;
   padding: 0;
   margin: 0;
   font-family: 'Poppins',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -27,6 +29,22 @@ a {
   }
   align-content: center;
   row-gap: 8px;
-  // border: 1px solid #9b9b9b;
-  // border-radius: 8px;
+}
+
+@mixin input-text {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-block-end: 1px solid #9b9b9b;
+  font-size: 1.6rem;
+}
+
+@mixin button-form {
+  width: 118px;
+  height: 38px;
+  border: none;
+  border-radius: 32px;
+  background: black;
+  color: white;
+  cursor: pointer;
 }

@@ -7,6 +7,7 @@ import EnterAddress from '../EnterAddress';
 import FloorPlan from '../FloorPlan';
 import TextAreaComponent from '../TextAreaComponent';
 import LoadImages from '../LoadImages';
+import WizardAddOptions from '../WizardAddOptions';
 
 // Components
 import WizardStepTitle from '../WizardStepTitle';
@@ -46,11 +47,12 @@ export function WizardLayout() {
     description:
       'Relájate con toda la familia en este alojamiento donde la tranquilidad se respira.',
     images: [],
+    houseRules: [],
   });
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
   const [nextDisable, setNextDisable] = useState(false);
-  const views = 5;
+  const views = 6;
 
   const handleBack = () => {
     if (step === 0) return;
@@ -79,6 +81,7 @@ export function WizardLayout() {
             'Ponle un nombre a tu alojamiento',
             'Ahora vamos a describir tu alojamiento',
             'Ahora, vamos a subir algunas fotos de tu alojamiento',
+            'Ahora, vamos agregar algunas reglas para tu alojamiento',
           ]}
           page={step}
         />
@@ -114,6 +117,12 @@ export function WizardLayout() {
             housingOptions={housingOptions}
             setHousingOptions={setHousingOptions}
             setNextDisable={setNextDisable}
+          />
+          <WizardAddOptions
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+            setNextDisable={setNextDisable}
+            placeHolderItem="Ingresa una regla para tu alojamiento"
           />
         </WizardSteps>
         <div className="wizard-housing-handle-sections">
