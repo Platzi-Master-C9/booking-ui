@@ -3,6 +3,8 @@ import './styles/wizard.scss';
 import { BSIconButton } from '../BSIconButton';
 
 // views
+import WizardPropertyType from '../WizardPropertyType';
+import WizardAmenities from '../WizardAmenities';
 import EnterAddress from '../EnterAddress';
 import FloorPlan from '../FloorPlan';
 import TextAreaComponent from '../TextAreaComponent';
@@ -16,7 +18,8 @@ import WizardSteps from '../WizardSteps';
 
 export function WizardLayout() {
   const [housingOptions, setHousingOptions] = useState({
-    type: 'house',
+    propertyType: 'house',
+    amenities: [],
     spaces: 1,
     services: ['wifi'],
     address: {
@@ -44,6 +47,7 @@ export function WizardLayout() {
         amount: 1,
       },
     ],
+    price: 0,
     title: 'Hogar para todos',
     description:
       'Relájate con toda la familia en este alojamiento donde la tranquilidad se respira.',
@@ -54,7 +58,7 @@ export function WizardLayout() {
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
   const [nextDisable, setNextDisable] = useState(false);
-  const views = 8;
+  const views = 9;
 
   const handleBack = () => {
     if (step === 0) return;
@@ -78,6 +82,8 @@ export function WizardLayout() {
         <BSIconButton bg="secondary" />
         <WizardStepTitle
           titles={[
+            '¿Qué tipo de alojamiento vas a compartir?',
+            '¿Qué servicios ofrece este lugar?',
             '¿Dónde se encuentra tu alojamiento?',
             '¿A cuántos huéspedes te gustaría recibir?',
             'Ponle un nombre a tu alojamiento',
@@ -92,6 +98,70 @@ export function WizardLayout() {
       </div>
       <div className="wizard-housing">
         <WizardSteps step={step}>
+          <WizardPropertyType
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+            setNextDisable={setNextDisable}
+            value="propertyType"
+            options={[
+              { label: 'Casa', img: '/places/house.png', name: 'house' },
+              {
+                label: 'Apartamento',
+                img: '/places/apartment.png',
+                name: 'apartment',
+              },
+              { label: 'Finca', img: '/places/state.png', name: 'state' },
+              { label: 'Hotel', img: '/places/hotel.png', name: 'hotel' },
+            ]}
+          />
+          <WizardAmenities
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+            setNextDisable={setNextDisable}
+            value="amenities"
+            options={[
+              {
+                label: 'Wifi',
+                img: '/places/wifi.png',
+                name: 'wifi',
+              },
+              {
+                label: 'freeParking',
+                img: '/places/parkingLot.png',
+                name: 'Estacionamiento gratuito',
+              },
+              {
+                label: 'Televisor con cable estándar',
+                img: '/places/tv.png',
+                name: 'televison',
+              },
+              {
+                label: 'Agua caliente',
+                img: '/places/bathtub.png',
+                name: 'hotWater',
+              },
+              {
+                label: 'Lavadora',
+                img: '/places/washer.png',
+                name: 'washingMachine',
+              },
+              {
+                label: 'Cocina',
+                img: '/places/kitchen.png',
+                name: 'kitchen',
+              },
+              {
+                label: 'Televisión',
+                img: '/places/tv.png',
+                name: 'television',
+              },
+              {
+                label: 'Calefacción',
+                img: '/places/heating.png',
+                name: 'Heating',
+              },
+            ]}
+          />
           <EnterAddress
             housingOptions={housingOptions}
             setHousingOptions={setHousingOptions}
