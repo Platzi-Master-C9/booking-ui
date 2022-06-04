@@ -4,7 +4,7 @@ import './styles.css/text-area-component.scss';
 function TextAreaComponent({
   housingOptions,
   setHousingOptions,
-  componentTitle,
+  instruction,
   maxLength,
   field,
   textStyle,
@@ -25,7 +25,7 @@ function TextAreaComponent({
 
   return (
     <div className="text-area-component">
-      <h2 className="text-area-component__title">{componentTitle}</h2>
+      <h2 className="text-area-component__instruction">{instruction}</h2>
       <div className="text-area-component__input">
         <textarea
           className={`text-area-component__input--text-${textStyle}`}

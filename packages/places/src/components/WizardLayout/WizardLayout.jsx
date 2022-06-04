@@ -48,11 +48,12 @@ export function WizardLayout() {
       'Relájate con toda la familia en este alojamiento donde la tranquilidad se respira.',
     images: [],
     houseRules: [],
+    healthAndSecurity: [],
   });
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
   const [nextDisable, setNextDisable] = useState(false);
-  const views = 6;
+  const views = 7;
 
   const handleBack = () => {
     if (step === 0) return;
@@ -82,6 +83,7 @@ export function WizardLayout() {
             'Ahora vamos a describir tu alojamiento',
             'Ahora, vamos a subir algunas fotos de tu alojamiento',
             'Ahora, vamos agregar algunas reglas para tu alojamiento',
+            'Opciones de salud y seguridad',
           ]}
           page={step}
         />
@@ -100,7 +102,7 @@ export function WizardLayout() {
           <TextAreaComponent
             housingOptions={housingOptions}
             setHousingOptions={setHousingOptions}
-            componentTitle="Crea tu título"
+            instruction="Crea tu título"
             maxLength={50}
             field="title"
             textStyle="title"
@@ -108,7 +110,7 @@ export function WizardLayout() {
           <TextAreaComponent
             housingOptions={housingOptions}
             setHousingOptions={setHousingOptions}
-            componentTitle="Crea tu descripción"
+            instruction="Crea tu descripción"
             maxLength={500}
             field="description"
             textStyle="paragraph"
@@ -123,6 +125,16 @@ export function WizardLayout() {
             setHousingOptions={setHousingOptions}
             setNextDisable={setNextDisable}
             placeHolderItem="Ingresa una regla para tu alojamiento"
+            houseOption="houseRules"
+            instruction="Agrega por lo menos una regla"
+          />
+          <WizardAddOptions
+            housingOptions={housingOptions}
+            setHousingOptions={setHousingOptions}
+            setNextDisable={setNextDisable}
+            placeHolderItem="Ingresa una regla para tu alojamiento"
+            houseOption="healthAndSecurity"
+            instruction="Agrega por lo menos una opción de salud y seguridad"
           />
         </WizardSteps>
         <div className="wizard-housing-handle-sections">

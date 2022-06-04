@@ -18,6 +18,10 @@ a {
   box-sizing: border-box;
 }
 
+@mixin instructionTitleForm {
+    font-size: clamp(1.6rem, 2vw, 2.4rem);
+}
+
 @mixin form-layout($elements-amount) {
   width: 100%;
   height: 100%;

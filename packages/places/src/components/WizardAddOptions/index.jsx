@@ -6,77 +6,77 @@ function WizardAddOptions({
   housingOptions,
   setHousingOptions,
   setNextDisable,
+  houseOption,
+  instruction
 }) {
-  const [items, setItems] = useState([]);
+  const itemsAmount = 10;
 
-  const addItem = (e) => {
-    e.preventDefault();
-    if (items.length >= 7) {
-      if (e.target.value === '') return;
-      setHousingOptions({ ...housingOptions, houseRules: [...items, { id: `${items.length + 1}p`, value: '' }] });
-      setNextDisable(false);
-      return;
-    }
-    setItems([...items, { id: `${items.length + 1}`, value: '' }]);
-    setHousingOptions({ ...housingOptions, houseRules: [...items, { id: `${items.length + 1}p`, value: '' }] });
+  const addItem = () => {
+    if (housingOptions[houseOption].length >= itemsAmount) return;
+    setHousingOptions({ ...housingOptions, [houseOption]: [...housingOptions[houseOption], ''] });
   };
 
-  const removeItem = (id) => {
-    const inputItems = items.filter((input) => input.id !== id);
-    setItems(inputItems);
-    setHousingOptions(inputItems);
+  const removeItem = (index) => {
+    const inputItems = [...housingOptions[houseOption]];
+    inputItems.splice(index, 1);
+    setHousingOptions({ ...housingOptions, [houseOption]: inputItems });
   };
 
-  const handleChange = (e) => {
-    const input = items.findIndex((item) => item.id === e.target.id);
-    const inputItems = items;
-    inputItems[input] = { ...inputItems[input], value: e.target.value };
-    setItems(inputItems);
-    setHousingOptions({ ...housingOptions, houseRules: inputItems });
-    if (inputItems[6]?.value === '') setNextDisable(true);
+  const handleChange = (e, index) => {
+    const inputItems = [...housingOptions[houseOption]];
+    inputItems[index] = e.target.value;
+    setHousingOptions({ ...housingOptions, [houseOption]: inputItems });
   };
 
   useEffect(() => {
-    setItems(housingOptions.houseRules);
-    if (housingOptions.houseRules.length < 7) setNextDisable(true);
+    if (housingOptions[houseOption].length === 0) {
+      setNextDisable(true);
+      return;
+    }
+    let itemsCompleted = 0;
+    housingOptions[houseOption].forEach((item) => {
+      if (item !== '') {
+        itemsCompleted += 1;
+      }
+    });
+    if (itemsCompleted === housingOptions[houseOption].length) {
+      setNextDisable(false);
+    } else {
+      setNextDisable(true);
+    }
   }, [housingOptions]);
 
   return (
     <div className="wizard-add-options">
-      <form className="wizard-add-options-items" onSubmit={addItem}>
-        {items.length > 0
-          && items.map(({ id }) => (
-            <label className="wizard-add-options-items__item" key={id} htmlFor={id}>
+      <h2 className="wizard-add-options__instruction">{instruction}</h2>
+      <form className="wizard-add-options-form">
+        { housingOptions[houseOption].length > 0
+          ? housingOptions[houseOption].map((value, index) => (
+            <label className="wizard-add-options-form__item" key={index} htmlFor={index}>
               <input
-                className="wizard-add-options-items__item-input"
+                className="wizard-add-options-form__item-input"
                 type="text"
-                name=""
-                id={id}
-                value={items[id - 1]?.value}
+                id={index}
+                name="rule"
+                value={value}
                 placeholder={placeHolderItem}
+                onChange={(e) => handleChange(e, index)}
                 required
-                onChange={handleChange}
               />
-              <button className="wizard-add-options-items__item-delete" type="button" onClick={() => removeItem(id)}>
+              <button className="wizard-add-options-form__item-delete" type="button" onClick={() => removeItem(index)}>
                 X
               </button>
             </label>
-          ))}
-        {items.length < 7 ? (
-          <button
-            type="submit"
-            className="wizard-add-options-items__add-button"
-          >
-            + Agregar
-          </button>
-        ) : (
-          <button
-            className="wizard-add-options__complete-button"
-            type="submit"
-          >
-            Está bien
-          </button>
-        ) }
+          )) : null}
+        { housingOptions[houseOption].length < itemsAmount && (
+        <button
+          className="wizard-add-options-form__add-button"
+          type="button"
+          onClick={addItem}
+        >
+          + Agregar
+        </button>
+        )}
       </form>
     </div>
   );

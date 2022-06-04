@@ -43,9 +43,9 @@ function LoadImages({housingOptions, setHousingOptions, setNextDisable}) {
     <div className="load-images">
       <div className="load-images__input">
         <span className="load-images__input-icon" />
-        <h4 className="load-images__input-instruction">
+        <h2 className="load-images__input-instruction">
           Arrastra las fotos aquí
-        </h4>
+        </h2>
         <span className="load-images__input-images-amount">
           Agrega por los menos 5 fotos
         </span>
