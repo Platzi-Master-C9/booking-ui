@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Pagination.css'
 
-export default function Pagination({currentPage, prevHandler, nextHandler, TotalPages}) {
+function Pagination({ currentPage, prevHandler, nextHandler, TotalPages }) {
   return <div className='paging__container'>
     <button className='icon icon--left' onClick={prevHandler}></button>
     <div>
@@ -12,3 +12,5 @@ export default function Pagination({currentPage, prevHandler, nextHandler, Total
     <button className='icon icon--right' onClick={nextHandler}></button>
   </div>
 }
+
+export { Pagination };

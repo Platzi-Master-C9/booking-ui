@@ -1,0 +1,67 @@
+.hosting 
+{
+   padding: 32px 64px 56px;
+   
+   &__name 
+   {
+      font-size: 36px;
+      font-weight: 600;
+   }
+   &__reputation 
+   {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 35px;
+      padding-top: 18.5px;
+      
+      .info
+      {
+         align-items: center;
+         display: flex;
+
+         &__icon-start
+         {
+            height: 32px;
+            margin-right: 8px;
+            width: 32px;
+         }
+         &__ranking, &__location, &__reviews
+         {
+            font-size: 18px;
+            font-weight: 600;
+         }
+         &__reviews 
+         {
+            color: #000;
+            font-weight: 400;
+            margin-left: 3px;
+            margin-right: 44px;
+            text-decoration: none;
+         }
+      }
+      .button-save
+      {
+         align-items: center;
+         background-color: transparent;
+         border: none;
+         color: #1572A1;
+         cursor: pointer;
+         display: flex;
+         font-size: 18px;
+         text-decoration: underline;
+
+         img
+         {
+            margin-right: 5px;
+         }
+      }
+   }
+   &__images
+   {
+      display: grid;
+      gap: 24px;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      list-style: none;
+   }
+}

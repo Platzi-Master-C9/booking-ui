@@ -1,0 +1,37 @@
+.priceFilter {
+  display: flex;
+  align-items: center;
+
+  & .priceContainer {
+    border: 1px solid #9B9B9B;
+    border-radius: 24px;
+    padding: 12px 20px;
+    min-width: 220px;
+    & p {
+      color: #666666;
+      font-size: 14px;
+      line-height: 21px;
+      user-select: none;
+    }
+    & .price {
+      display: flex;
+      & span ,
+      & input {
+        color: #000;
+        font-size: 18px;
+        line-height: 27px;
+      }
+      & input {
+        border: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  & .separator {
+    width: 8px;
+    height: 1px;
+    background-color: #9B9B9B;
+    margin: 0px 16px;
+  }
+}

@@ -1,0 +1,21 @@
+.politics {
+  width: 100%;
+  height: 248px;
+
+  &__section {
+    margin-top: 16px;
+    width: 100%;
+    height: 135px;
+  }
+}
+
+br {
+  display: block;
+  content: "";
+  height: 27px;
+}
+
+.button__confirm {
+  position: relative;
+  margin-top: 38px;
+}

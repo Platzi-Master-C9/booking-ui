@@ -17,6 +17,8 @@ node_modules
 
 # testing
 /coverage
+coverage
+.coverage*
 .out/
 
 # Build directories (next.js...)
@@ -55,3 +57,4 @@ lerna-debug.log*
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
+*.env

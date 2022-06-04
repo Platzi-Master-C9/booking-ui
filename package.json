@@ -10,12 +10,13 @@
   "private": true,
   "devDependencies": {
     "@types/prettier": "^2.4.4",
+    "eslint": "^8.16.0",
     "eslint-plugin-prettier": "^4.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.5.1",
+    "stylus-loader": "^6.2.0",
     "typescript": "^4.6.2",
-    "webpack": "^5.70.0",
-    "stylus-loader": "^6.2.0"
+    "webpack": "^5.70.0"
   },
   "scripts": {
     "bootstrap": "yarn install; lerna bootstrap;",
@@ -23,7 +24,8 @@
     "start:app": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope booking-app --stream dev",
     "build:app": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope booking-app --stream build",
     "run:build:app": "lerna run start --scope booking-app",
-    "start:app_alt": "lerna run --scope booking-app --stream dev"
+    "start:app_alt": "lerna run --scope booking-app --stream dev",
+    "storybook:app": "lerna run --scope booking-app --stream storybook"
   },
   "repository": "git+https://github.com/Platzi-Master-C9/booking-ui.git",
   "author": "C9",
@@ -32,4 +34,4 @@
     "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
   },
   "homepage": "https://github.com/Platzi-Master-C9/booking-ui#readme"
-}
+} 
