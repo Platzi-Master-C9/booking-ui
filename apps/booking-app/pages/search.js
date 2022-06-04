@@ -1,5 +1,5 @@
 import { ResultsPage } from '@booking-ui/shared'
 
-export default function Home() {
+export default function Search() {
   return <ResultsPage />
 }

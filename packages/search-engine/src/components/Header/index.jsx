@@ -36,7 +36,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
   }
 
   const submitPriceFilter = () => {
-    sendFitler();
+    sendFilter();
   } 
 
   // Size filter
@@ -47,7 +47,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
   }
 
   const submitSizeFilter = () => {
-    sendFitler();
+    sendFilter();
   }
 
   // Stars filter
@@ -61,7 +61,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
   }
 
   const submitStarts = () => {
-    sendFitler();
+    sendFilter();
   }
 
   // Send all filters
