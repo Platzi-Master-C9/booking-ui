@@ -1,5 +1,11 @@
 .wizard-section__title {
-    align-self: flex-end;
-    font-size: clamp(2.4rem, 4vw, 4.8rem);
-    color: white;
+  align-self: flex-end;
+  font-size: clamp(2.4rem, 4vw, 4.8rem);
+  color: white;
+}
+
+@media (min-width: 960px) {
+  .wizard-section__title {
+    align-self: flex-start;
+  }
 }

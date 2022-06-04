@@ -8,6 +8,7 @@ import FloorPlan from '../FloorPlan';
 import TextAreaComponent from '../TextAreaComponent';
 import LoadImages from '../LoadImages';
 import WizardAddOptions from '../WizardAddOptions';
+import WizardComplete from '../WizardComplete';
 
 // Components
 import WizardStepTitle from '../WizardStepTitle';
@@ -53,7 +54,7 @@ export function WizardLayout() {
   const [progress, setProgress] = useState(0);
   const [step, setStep] = useState(0);
   const [nextDisable, setNextDisable] = useState(false);
-  const views = 7;
+  const views = 8;
 
   const handleBack = () => {
     if (step === 0) return;
@@ -84,6 +85,7 @@ export function WizardLayout() {
             'Ahora, vamos a subir algunas fotos de tu alojamiento',
             'Ahora, vamos agregar algunas reglas para tu alojamiento',
             'Ahora vamos a agregar algunas opciones de salud y seguridad',
+            'Vamos a completar tu registro',
           ]}
           page={step}
         />
@@ -136,6 +138,7 @@ export function WizardLayout() {
             houseOption="healthAndSecurity"
             instruction="Agrega por lo menos una opción de salud y seguridad"
           />
+          <WizardComplete />
         </WizardSteps>
         <div className="wizard-housing-handle-sections">
           <progress
