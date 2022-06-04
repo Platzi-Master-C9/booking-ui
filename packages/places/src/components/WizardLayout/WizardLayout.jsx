@@ -83,7 +83,7 @@ export function WizardLayout() {
             'Ahora vamos a describir tu alojamiento',
             'Ahora, vamos a subir algunas fotos de tu alojamiento',
             'Ahora, vamos agregar algunas reglas para tu alojamiento',
-            'Opciones de salud y seguridad',
+            'Ahora vamos a agregar algunas opciones de salud y seguridad',
           ]}
           page={step}
         />

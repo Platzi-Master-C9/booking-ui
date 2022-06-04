@@ -54,3 +54,9 @@
             }
     }
 }
+
+@media (min-width: 960px) {
+    .wizard-add-options-form::-webkit-scrollbar {
+        display: none;
+    }
+}
