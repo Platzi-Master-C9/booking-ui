@@ -1,8 +1,8 @@
-const BASE_URL = 'https://624c7e76d71863d7a80bb010.mockapi.io/places/'
+const BASE_URL = 'https://mocki.io/v1/04cc8dd9-1e48-4eee-8b64-a68d8d61ea60'
 
 export const getData = async (pathName) => {
   try {
-    const response = await window.fetch(BASE_URL+pathName);
+    const response = await window.fetch(BASE_URL);
     console.log(response)
     if (!response.ok) {
       return { error: `Http status ${response.status}`};

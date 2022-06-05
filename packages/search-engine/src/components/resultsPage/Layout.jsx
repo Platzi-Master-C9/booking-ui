@@ -60,17 +60,17 @@ const ResultsPage = () => {
   }
 
   const handleSubmitFilters = async (minPrice, maxPrice, stars, fullPlace, privateRoom) => {
-    const data = await getData('places');
-    if(data.error) {
+    const { sites } = await getData('places');
+    if(sites.error) {
       setError('Ha ocurrido un error al obtener los lugares');
       return;
     };
-    setAllPlaces(data);
+    setAllPlaces(sites);
   }
 
   return (
     <div className="results__container">
-      <Header handleSubmitFilters={handleSubmitFilters} />
+      <Header filters={true} handleSubmitFilters={handleSubmitFilters} />
 
       <section className="section__container">
         <Map />

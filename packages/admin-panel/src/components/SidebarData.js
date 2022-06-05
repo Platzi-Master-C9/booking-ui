@@ -1,28 +1,28 @@
-import React from 'react';
-import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined';
-import PersonIcon from '@mui/icons-material/Person';
-import SettingsIcon from '@mui/icons-material/Settings';
-import ApartmentIcon from '@mui/icons-material/Apartment';
+import React from "react";
+import AnalyticsOutlinedIcon from "@mui/icons-material/AnalyticsOutlined";
+import PersonIcon from "@mui/icons-material/Person";
+import SettingsIcon from "@mui/icons-material/Settings";
+import ApartmentIcon from "@mui/icons-material/Apartment";
 
 export const SidebarData = [
   {
-    title: 'Métricas',
+    title: "Metrics",
     icon: <AnalyticsOutlinedIcon />,
-    link: '/admin/metricas',
+    link: "/admin/metricas",
   },
   {
-    title: 'Usuarios',
+    title: "Users",
     icon: <PersonIcon />,
-    link: '/admin/usuarios',
+    link: "/admin/users",
   },
   {
-    title: 'Administradores',
+    title: "Administrators",
     icon: <SettingsIcon />,
-    link: '/admin/administradores',
+    link: "/admin/administradores",
   },
   {
-    title: 'Alojamientos',
+    title: "Hostings",
     icon: <ApartmentIcon />,
-    link: '/admin/alojamientos',
+    link: "/admin/alojamientos",
   },
 ];

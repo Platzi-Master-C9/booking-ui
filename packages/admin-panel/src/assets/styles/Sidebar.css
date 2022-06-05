@@ -27,11 +27,11 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: black;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
@@ -50,8 +50,8 @@
 
 .row #Sidebar-list-icon {
   -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  -ms-flex: 30%;
+  flex: 30%;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -63,8 +63,8 @@
 
 .row #Sidebar-list-title {
   -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  -ms-flex: 70%;
+  flex: 70%;
 }
 
 #Menu-hamburger {

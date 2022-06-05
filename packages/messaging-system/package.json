@@ -29,7 +29,7 @@
     "axios": "^0.27.2",
     "dotenv": "^16.0.0",
     "prop-types": "^15.8.1",
-    "react": "^18.1.0"
+    "react": "17.0.2"
   },
   "devDependencies": {
     "eslint": "^8.2.0",

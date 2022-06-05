@@ -28,6 +28,10 @@ const User = ({ classUser = 'users_container' }) => {
       case 'Iniciar sesión':
         loginWithPopup();
         break;
+      case 'Regístrate':
+        loginWithPopup({
+          screen_hint: 'signup',
+        });
     }
     setIsOpen(false);
   };
