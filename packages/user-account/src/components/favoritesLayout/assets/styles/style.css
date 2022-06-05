@@ -1,0 +1,27 @@
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: repeat(8, 1fr);
+    place-items: center;
+  }
+  
+  .title {
+    grid-area: 2 / 1 / 3 / 9;
+    margin: 2%;
+  }
+  
+  .body-container{
+  max-width: 1024px;
+  grid-area: 3 / 2 / 4 / 8;
+}
+  .favorite-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 1%;
+  }
+  
+  #delete-button {
+     color: rgba(21, 114, 161, 1);
+  } 

@@ -21,12 +21,34 @@
     "url": "git+https://github.com/Platzi-Master-C9/booking-ui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest --detectOpenHandles"
   },
   "bugs": {
     "url": "https://github.com/Platzi-Master-C9/booking-ui/issues"
   },
   "dependencies": {
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "google-map-react": "^2.1.10",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@types/jest": "^27.4.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
+    "babel-jest": "^28.0.3",
+    "enzyme": "^3.11.0",
+    "jest": "27.5.1",
+    "react-test-renderer": "^18.1.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/__tests__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "testEnvironment": "jsdom"
   }
 }

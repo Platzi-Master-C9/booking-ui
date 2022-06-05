@@ -14,7 +14,7 @@
 
 .hero-background {
   height: 450px;
-  width: 1300px;
+  width: 100%;
   border-radius: 40px;
   background: url(https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;

@@ -1,8 +1,13 @@
 .perks{
-  width: 100%;
-  padding-left: 40px;
+  width: 60%;
+  margin-left: 64px;
+  padding: 40px 0;
+  border-top: 1px solid #9B9B9B;
+  h2{
+    font-weight: 500;
+    font-size: 36px;
+  }
   ul{
-    width: 60%;
     column-count: 2;
     list-style: none;
     padding-left: 0;

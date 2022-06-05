@@ -1,1 +1,3 @@
-export { Geolocation } from './components/helloWorld';
+export { Reservation } from './components/ReservationView';
+export { Booking } from './components/helloWorld';
+

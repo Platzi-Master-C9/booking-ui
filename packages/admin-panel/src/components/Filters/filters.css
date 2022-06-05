@@ -1,0 +1,198 @@
+.containerCards {
+    display: flex;
+    justify-content: space-around;
+    width: 30rem;
+  }
+  
+  .containerUsers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .type {
+    display: flex;
+    color: #1572A1;
+    height: 48px;
+    border: 1px solid #1572A1;
+    border-radius: 32px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.figure {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+.img {
+    height: inherit;
+    width: inherit;
+}
+
+.cardContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+    height: 226px;
+    justify-content: space-between;
+    padding: 1rem;
+    position: absolute;
+    width: 370px;
+}
+
+.details {
+    align-items: center;
+    display: flex;
+    text-align: start;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    color: #666666;
+}
+
+.lineDown {
+    border-bottom: 1px solid gray;
+}
+
+.buttonContainer {
+    align-items: self-end;
+    display: flex;
+    height: -webkit-fill-available;
+    justify-content: space-between;
+}
+
+.delete {
+    color: #1572A1;
+    height: 2rem;
+}
+
+.buttonSave {
+    background: #1572A1;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+.dees {
+    margin: 0 1.5rem;
+}
+
+.input {
+    height: 24px;
+    width: 24px;
+}
+
+.modal {
+    display: none;
+}
+
+.buttonFilter {
+    display: none;
+}
+
+.title, .descriptionTitle {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .containerCards {
+        flex-direction: column;
+        height: -webkit-fill-available;
+        justify-content: right;
+        width: 100%;
+    }
+    .cardContainer {
+        position: initial;
+        height: auto;
+        width: 100%;
+    }
+    .type {
+        border: none;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .cardContainer {
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+    .lineDown {
+        border-bottom: none;
+    }
+    .containerFilters {
+        display: none;
+    }
+    .containerFiltersTwo {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: -webkit-fill-available;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .modal {
+        background: white;
+        display: block;
+        height: -webkit-fill-available;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    .buttonFilter {
+        background-color: white;
+        display: block;
+        height: 48px;
+        width: 68px;
+        border: 1px solid #1572A1;
+        border-radius: 32px;
+        box-sizing: border-box;
+    }
+    .eq {
+        height: 2rem;
+        width: 2rem;
+    }
+    .containerEx {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 1rem;
+        width: 100%;
+    }
+    .buttonContainer {
+        display: none;
+    }
+    .containerButtons {
+        align-items: center;
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .buttonDelete, .buttonSave {
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        margin: 1rem 0;
+        width: 15rem;
+    }
+    .buttonSave {
+        background-color: #1572A1;
+        border: none;
+    }
+    .buttonDelete {
+        background-color: white;
+        border: 1px solid #1572A1;
+    }
+}

@@ -1,0 +1,32 @@
+.marker,
+.markerSelected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  width: max-content;
+  height: 2rem;
+  left: auto;
+  padding: 0.8rem 0.8rem;
+  border-radius: 3rem;
+  background-color: rgb(60, 66, 124);
+  transition: transform 0.1s ease-out;
+  cursor: pointer;
+  box-shadow: 0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.288);
+}
+
+.markerSelected {
+  background-color: rgb(50, 54, 100);
+}
+
+.marker:hover,
+.markerSelected:hover {
+  transform: scale(1.1);
+}
+
+.markerPrice {
+  margin: 0;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
