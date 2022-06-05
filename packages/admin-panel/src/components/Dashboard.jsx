@@ -66,9 +66,9 @@ export const Dashboard = () => {
             titleTwo="Huésped"
             descriptionOne="Descripcion para anfitrion"
             descriptionTwo="Descripcion para huesped"
-            show={show.showOne}
-            checkedOne={checked.checkedOne}
-            checkedTwo={checked.checkedTwo}
+            show={show?.showOne}
+            checkedOne={checked?.checkedOne}
+            checkedTwo={checked?.checkedTwo}
             handleSetShow={() => handleSetShow("showOne", !show.showOne)}
             handleChexboxOne={(e) =>
               handleSetChecked("checkedOne", e.target.checked)
@@ -88,9 +88,9 @@ export const Dashboard = () => {
             titleTwo="Inactivo"
             descriptionOne="Descripcion para activo"
             descriptionTwo="Descripcion para inactivo"
-            show={show.showTwo}
-            checkedOne={checked.checkedThree}
-            checkedTwo={checked.checkedFour}
+            show={show?.showTwo}
+            checkedOne={checked?.checkedThree}
+            checkedTwo={checked?.checkedFour}
             handleSetShow={() => handleSetShow("showTwo", !show.showTwo)}
             handleChexboxOne={(e) =>
               handleSetChecked("checkedThree", e.target.checked)
@@ -110,9 +110,9 @@ export const Dashboard = () => {
             titleTwo="No"
             descriptionOne="Descripcion para sí"
             descriptionTwo="Descripcion para no"
-            show={show.showThree}
-            checkedOne={checked.checkedFive}
-            checkedTwo={checked.checkedSixx}
+            show={show?.showThree}
+            checkedOne={checked?.checkedFive}
+            checkedTwo={checked?.checkedSixx}
             handleSetShow={() => handleSetShow("showThree", !show.showThree)}
             handleChexboxOne={(e) =>
               handleSetChecked("checkedFive", e.target.checked)
