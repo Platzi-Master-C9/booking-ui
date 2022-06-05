@@ -60,12 +60,12 @@ const ResultsPage = () => {
   }
 
   const handleSubmitFilters = async (minPrice, maxPrice, stars, fullPlace, privateRoom) => {
-    const data = await getData('places');
-    if(data.error) {
+    const { sites } = await getData('places');
+    if(sites.error) {
       setError('Ha ocurrido un error al obtener los lugares');
       return;
     };
-    setAllPlaces(data);
+    setAllPlaces(sites);
   }
 
   return (

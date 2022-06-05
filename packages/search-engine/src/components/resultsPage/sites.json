@@ -1,0 +1,270 @@
+{
+  "sites": [
+    {
+      "id": 1,
+      "title": "New Loft near Parque de los Pies",
+      "perks": "2 huéspedes · 1 habitación · 1 cama · 1 baño · Wifi · Cocina · Estacionamiento gratuito",
+      "price": "285040",
+      "rating": 5,
+      "reviews": 236,
+      "type": "Loft entero en Medellín",
+      "images": ["https://a0.muscache.com/im/pictures/71859ab5-663d-4ae9-8e8d-5677e4bb1661.jpg?im_w=1200", "https://a0.muscache.com/im/pictures/ec2add4e-0dd2-4fc8-aa03-341b25ae5cdd.jpg?im_w=720", "https://a0.muscache.com/im/pictures/4a47e1a5-cc4d-4676-b3e7-8f4766cea597.jpg?im_w=720", "https://a0.muscache.com/im/pictures/d89a974e-73db-4ba6-b2f4-8e1876534731.jpg?im_w=1200", "https://a0.muscache.com/im/pictures/9570f02f-b865-49b5-91d8-ebf5ee5465c2.jpg?im_w=720"],
+      "location": {
+        "lat": 6.207140,
+        "lng": -75.541947
+      }
+    },
+    {
+      "id": 2,
+      "title": "Condo entero",
+      "perks": "*La piscina se encuentra en mantenimiento. Espectacular apartamento rodeado de naturaleza. Tiene piscina, sauna, turco, gimnasio, salón para Coworking con Wifi, zona de juegos infantiles. Cerca al Mall Palma Grande, Mall Carulla, San Diego y Premium Plaza.",
+      "price": "123040",
+      "rating": 5,
+      "reviews": 236,
+      "type": "FULL APTO LAS PALMAS ★ COWORKING ★POOL ★ BALCONY",
+      "images": ["https://a0.muscache.com/im/pictures/f5873ec5-eaf4-49f5-86d3-b54f5febd23b.jpg?im_w=1200", "https://a0.muscache.com/im/pictures/9f2d8961-4c6a-4ae0-b53e-d98fbdfdc4dd.jpg?im_w=720", "https://a0.muscache.com/im/pictures/9e2da798-0b01-47b1-af03-c1069a1c3d0f.jpg?im_w=720", "https://a0.muscache.com/im/pictures/05e8d0d1-668b-4528-bcac-16ace861a26a.jpg?im_w=720", "https://a0.muscache.com/im/pictures/d648e767-2a24-458d-a22b-358a43d5837f.jpg?im_w=720"],
+      "location": {
+        "lat": 6.207159,
+        "lng": -75.541123
+      }
+    },
+    {
+      "id": 3,
+      "title": "Vivienda rentada entero",
+      "perks": "●★233 MB DE WIFI ★A/C ★LUJOSO APTO EN EL POBLADO●",
+      "price": "323040",
+      "rating": 5,
+      "reviews": 236,
+      "type": "Apartamento lujoso en la mejor ubicación",
+      "images": ["https://a0.muscache.com/im/pictures/miso/Hosting-48283649/original/c94ddda8-c887-4020-a6fe-73663bfc1b2f.jpeg?im_w=1200", "https://a0.muscache.com/im/pictures/miso/Hosting-48283649/original/ef0a6884-33a1-4f5b-b6f3-edf9f6c33e90.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-48283649/original/52c00a2f-deaa-444f-86aa-563d5e17ce44.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-48283649/original/76082329-e075-4a56-85b7-a76800e7caf8.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-48283649/original/91a46e91-433c-4c5f-b560-0acbd36f4185.jpeg?im_w=720"],
+      "location": {
+        "lat": 6.246112,
+        "lng": -75.590526
+      }
+    },
+    {
+      "id": 4,
+      "title": "Apartemento en Medellín",
+      "perks": "Laureles Studio; SAUNA, vista increíble a la azotea",
+      "price": "124040",
+      "rating": 5,
+      "reviews": 236,
+      "type": "El lugar perfecto para trabajar desde casa",
+      "images": ["https://a0.muscache.com/im/pictures/miso/Hosting-602862563230629927/original/c6f68db8-e012-4401-b74c-4e0455db170f.jpeg?im_w=1200", "https://a0.muscache.com/im/pictures/miso/Hosting-602862563230629927/original/c399c8b6-fcdb-4ed1-a0a0-98d22c73b2e0.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-602862563230629927/original/cfe0c09c-098f-4c4f-8cff-50408cfd19c1.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-602862563230629927/original/2c8fed83-3669-4cfe-8518-52186fd13298.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-602862563230629927/original/638ac747-bd76-4ce3-8d2b-c710e89c176d.jpeg?im_w=720"],
+      "location": {
+        "lat": 6.246152,
+        "lng": -75.590326
+      }
+    },
+    {
+      "id": 5,
+      "title": "Loft entero en Medellín",
+      "perks": "04 LOFT EXECUTIVE, IN LOFT 43 MEDELLIN.",
+      "price": "224040",
+      "rating": 5,
+      "reviews": 236,
+      "type": "Loft Ideal para quienes disfrutan trabajar desde cualquier lugar.",
+      "images": ["https://a0.muscache.com/im/pictures/8d3feaf0-6b71-4441-9fde-7dd2e5629243.jpg?im_w=1200", "https://a0.muscache.com/im/pictures/0dbe015c-72f1-4a53-811f-7955e1a1877f.jpg?im_w=720", "https://a0.muscache.com/im/pictures/35466e21-0e67-417b-a484-977fa6336110.jpg?im_w=720", "https://a0.muscache.com/im/pictures/03185d2b-b495-4a26-92ca-ef59224d15d6.jpg?im_w=720", "https://a0.muscache.com/im/pictures/447ef60a-2e81-415d-95df-ead8dace48b1.jpg?im_w=720"],
+      "location": {
+        "lat": 6.246132,
+        "lng": -75.590596
+      }
+    },
+    {
+      "id": 6,
+      "type": "Entire condo",
+      "title": "Stunning condominium in El Poblado",
+      "price": 86,
+      "rating": 4.88,
+      "reviews": 296,
+      "perks": "4 guests · 2 bedrooms · 2 beds · 1 baths · Wifi · Kitchen · Free parking · Shared pool · Shared hot tub",
+      "images": ["https://a0.muscache.com/im/pictures/c8105014-f022-4b05-8717-a92df737b59b.jpg?im_w=720","https://a0.muscache.com/im/pictures/35c67da4-31b6-4e17-b4e2-91cd6fe36c02.jpg?im_w=720","https://a0.muscache.com/im/pictures/ddfb61db-a616-493c-b0e7-4186d610eb44.jpg?im_w=720","https://a0.muscache.com/im/pictures/21227098-864a-412f-8c0b-470b7fc8a3d4.jpg?im_w=720","https://a0.muscache.com/im/pictures/6cb7ea96-b477-4634-ae5d-c4fc2ad0099f.jpg?im_w=720","https://a0.muscache.com/im/pictures/cee7c8cd-6304-4fa5-a651-0b465b758148.jpg?im_w=720"],
+      "location": {
+        "lat": 6.207159,
+        "lng": -75.541947
+      }
+    },
+    {
+      "id": 7,
+      "type": "Entire Loft",
+      "title": "Rustic & Modern Flat in the heart of Laureles",
+      "price": 43,
+      "rating": 4.90,
+      "reviews": 63,
+      "perks": "2 guests · 1 bedrooms · 1 beds · 1 baths · Wifi · Kitchen · Shared hot tub · Elevator · Free dryer · Free washer",
+      "images": ["https://a0.muscache.com/im/pictures/miso/Hosting-47981641/original/6d51bdc0-7002-4100-ab65-dba95be57b61.jpeg?im_w=720","https://a0.muscache.com/im/pictures/66fa0a00-1d62-4e6a-b479-2ce51549e697.jpg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-47981641/original/d073cefc-81cc-4555-a555-da87dba81f5e.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-47981641/original/d9b842ed-c0f2-4b75-84c8-c45c56c2b617.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-47981641/original/fee10cc2-9930-43d1-bf65-9a3c4f1213b1.jpeg?im_w=720","https://a0.muscache.com/im/pictures/66fa0a00-1d62-4e6a-b479-2ce51549e697.jpg?im_w=720"],
+      "location": {
+        "lat": 6.240418,
+        "lng": -75.587443
+      }
+    },
+    {
+      "id": 8,
+      "type": "Entire Rental",
+      "title": "Beautiful Mountain view-Loft (T) SelfCheck-In- 1BR",
+      "price": 79,
+      "rating": 5.00,
+      "reviews": 22,
+      "perks": "4 guests · 1 bedrooms · 2 beds · 1 baths · Wifi · Kitchen · Dedicated workspace · Elevator · Free parking",
+      "images": ["https://a0.muscache.com/im/pictures/fcf116ef-8806-4747-a078-f245f7d5351c.jpg?im_w=720","https://a0.muscache.com/im/pictures/dbf21e25-4544-4311-b221-2e156059e999.jpg?im_w=720","https://a0.muscache.com/im/pictures/d0407e51-6304-4e83-bdd9-d73acc022e94.jpg?im_w=720","https://a0.muscache.com/im/pictures/e8b3afcc-8c0b-4d17-8705-53e1423f56e0.jpg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-50173477/original/70c847ab-a869-4c9d-bed2-64ed9afd11b4.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-50173477/original/dc2f5f17-3fd3-46fb-b5df-bad781ff3fee.jpeg?im_w=720"],
+      "location": {
+        "lat": 6.213904,
+        "lng": -75.573486
+      }
+    },
+    {
+      "id": 9,
+      "type": "Shared Room",
+      "title": "Shared room in bed and breakfast",
+      "price": 8,
+      "rating": 4.63,
+      "reviews": 8,
+      "perks": "1 guests · 1 bedrooms · 16 beds · 3 shared baths · Wifi · Kitchen · Dedicated workspace · Washer · Free parking",
+      "images": ["https://a0.muscache.com/im/pictures/miso/Hosting-52044301/original/fadfbcc6-0fcd-49f8-8520-20488ff91b58.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-52044301/original/4c605669-9185-4754-a975-c7d7e94ce852.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-52044301/original/9f6d169d-21bc-454f-9125-5cbe95bb153c.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-52044301/original/967ba365-0ab1-47ea-adec-fd690b6330d5.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-52044301/original/9cce638d-e296-4376-99e5-13e4647a4199.jpeg?im_w=720"],
+      "location": {
+        "lat": 6.246152,
+        "lng": -75.590526
+      }
+    },
+    {
+      "id": 10,
+      "type": "Shared Room",
+      "title": "Shared room in hotel",
+      "price": 60,
+      "rating": 2.56,
+      "reviews": 2,
+      "perks": "4 guests · 1 bedrooms · 2 beds · 1 shared baths · Wifi · Air conditioning · Free parking",
+      "images": ["https://a0.muscache.com/im/pictures/a75f142b-6dd8-4260-a160-e964da72beb5.jpg?im_w=720","https://a0.muscache.com/im/pictures/6b71de8b-3e70-4fbb-b60f-6bf7dc789025.jpg?im_w=720","https://a0.muscache.com/im/pictures/707aa907-3e02-4ebb-afd4-524809574064.jpg?im_w=720","https://a0.muscache.com/im/pictures/e23e88f0-0d6d-406b-ae2f-27d4f36110ec.jpg?im_w=720","https://a0.muscache.com/im/pictures/6f66689b-7e75-4c09-8468-2d604cbf0e3b.jpg?im_w=720"],
+      "location": {
+        "lat": 6.259039,
+        "lng": -75.586800
+      }
+    },
+    {
+      "id": 11,
+      "type": "Shared Room",
+      "title": "3H Florencia Plaza Habitación Compartida Mixta",
+      "price": 14,
+      "rating": 3.95,
+      "reviews": 6,
+      "perks": "5 guests · 1 bedrooms · 5 beds · 1 shared baths · Wifi",
+      "images": ["https://a0.muscache.com/im/pictures/9fd79ec9-86fa-46c3-b497-7ad87004e625.jpg?im_w=720","https://a0.muscache.com/im/pictures/64c6157d-1240-408f-b2fe-3489dd012c6c.jpg?im_w=720","https://a0.muscache.com/im/pictures/78f3c075-571c-4764-9677-2301fadd9eae.jpg?im_w=720","https://a0.muscache.com/im/pictures/74b3f7df-068f-4792-bd4b-8bf354749eee.jpg?im_w=720","https://a0.muscache.com/im/pictures/64c6157d-1240-408f-b2fe-3489dd012c6c.jpg?im_w=720"],
+      "location": {
+        "lat": 6.210396,
+        "lng": -75.567283
+      }
+    },
+    {
+      "id": 12,
+      "type": "Shared Room",
+      "title": "STAY/Dormitorio compartido x 4/Otoño",
+      "price": 12,
+      "rating": 5.00,
+      "reviews": 1,
+      "perks": "4 guests · 1 bedrooms · 4 beds · Kitchen · Wifi · Washer · Dryer",
+      "images": ["https://a0.muscache.com/im/pictures/6cfebb12-1195-4c95-bdf4-003df82d7037.jpg?im_w=720","https://a0.muscache.com/im/pictures/231cd3c4-8795-4f86-8ebb-c4a5774dfc1f.jpg?im_w=720","https://a0.muscache.com/im/pictures/408e08ce-d3eb-4992-96ca-06400c988546.jpg?im_w=720","https://a0.muscache.com/im/pictures/04aa571e-8fc9-43e4-8478-387ff9091841.jpg?im_w=720","https://a0.muscache.com/im/pictures/606d2f4a-71a5-484d-9bdf-c669bd53d7f0.jpg?im_w=720","https://a0.muscache.com/im/pictures/a9336e06-4331-4ecd-ad65-64227e9b79ea.jpg?im_w=720"],
+      "location": {
+        "lat": 6.208985,
+        "lng": -75.566879
+      }
+    },
+    {
+      "id": 871931,
+      "type": "Entire Loft",
+      "title": "Beautiful loft in CDMX historic center",
+      "price": 937,
+      "rating": 4.92,
+      "reviews": 62,
+      "perks": "2 guests · 1 bedrooms · 1 beds · 1 baths · Wifi · Kitchen · Shared hot tub",
+      "images": ["https://a0.muscache.com/im/pictures/4d852d17-925e-4be2-8416-9f786d16e40a.jpg?im_w=960","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/c35c4ecc-6cd6-41df-ac1a-8939b495328d.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/32425666-a878-4413-9cc8-d312970cebc7.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/8e999c24-7576-4bd7-b236-5b83291c1214.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/135c9400-2c38-4042-9779-6413f9cb5400.jpeg?im_w=720"],
+      "location": {
+        "lat": 19.4348,
+        "lng": -99.1382
+      }
+    },
+    {
+      "id": 986712,
+      "type": "Entire Rental",
+      "title": "Historic Center apartment",
+      "price": 982,
+      "rating": 4.91,
+      "reviews": 42,
+      "perks": "2 guests · 1 bedrooms · 1 beds · 1 baths · Wifi · Kitchen · Shared hot tub",
+      "images": ["https://a0.muscache.com/im/pictures/4d852d17-925e-4be2-8416-9f786d16e40a.jpg?im_w=960","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/c35c4ecc-6cd6-41df-ac1a-8939b495328d.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/32425666-a878-4413-9cc8-d312970cebc7.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/8e999c24-7576-4bd7-b236-5b83291c1214.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/135c9400-2c38-4042-9779-6413f9cb5400.jpeg?im_w=720"],
+      "location": {
+        "lat": 19.4368,
+        "lng": -99.1349
+      }
+    },
+    {
+      "id": 961784,
+      "type": "Entire Rental",
+      "title": "CDMX Downtown rental apartment",
+      "price": 374,
+      "rating": 4.42,
+      "reviews": 32,
+      "perks": "2 guests · 1 bedrooms · 1 beds · 1 baths · Wifi · Kitchen · Shared hot tub",
+      "images": ["https://a0.muscache.com/im/pictures/4d852d17-925e-4be2-8416-9f786d16e40a.jpg?im_w=960","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/c35c4ecc-6cd6-41df-ac1a-8939b495328d.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/32425666-a878-4413-9cc8-d312970cebc7.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/8e999c24-7576-4bd7-b236-5b83291c1214.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/135c9400-2c38-4042-9779-6413f9cb5400.jpeg?im_w=720"],
+      "location": {
+        "lat": 19.438,
+        "lng": -99.1351
+      }
+    },
+    {
+      "id": 76142,
+      "type": "Private Room",
+      "title": "Cool and cozy room in CDMX historic center",
+      "price": 337,
+      "rating": 4.62,
+      "reviews": 65,
+      "perks": "2 guests · 1 bedrooms · 1 beds · 1 baths · Wifi · Kitchen · Shared hot tub",
+      "images": ["https://a0.muscache.com/im/pictures/4d852d17-925e-4be2-8416-9f786d16e40a.jpg?im_w=960","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/c35c4ecc-6cd6-41df-ac1a-8939b495328d.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/32425666-a878-4413-9cc8-d312970cebc7.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/8e999c24-7576-4bd7-b236-5b83291c1214.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/135c9400-2c38-4042-9779-6413f9cb5400.jpeg?im_w=720"],
+      "location": {
+        "lat": 19.4026,
+        "lng": -99.1326
+      }
+    },
+    {
+      "id": 9871948,
+      "type": "Private room",
+      "title": "Beautiful room in CDMX historic center",
+      "price": 872,
+      "rating": 4.32,
+      "reviews": 52,
+      "perks": "2 guests · 1 bedrooms · 1 beds · 1 baths · Wifi · Kitchen · Shared hot tub",
+      "images": ["https://a0.muscache.com/im/pictures/4d852d17-925e-4be2-8416-9f786d16e40a.jpg?im_w=960","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/c35c4ecc-6cd6-41df-ac1a-8939b495328d.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/32425666-a878-4413-9cc8-d312970cebc7.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/8e999c24-7576-4bd7-b236-5b83291c1214.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/135c9400-2c38-4042-9779-6413f9cb5400.jpeg?im_w=720"],
+      "location": {
+        "lat": 19.433,
+        "lng": -99.134
+      }
+    },
+    {
+      "id": 71987398,
+      "type": "Entire rental",
+      "title": "Boutique apartment in CDMX historic center",
+      "price": 872,
+      "rating": 4.57,
+      "reviews": 79,
+      "perks": "2 guests · 1 bedrooms · 1 beds · 1 baths · Wifi · Kitchen · Shared hot tub",
+      "images": ["https://a0.muscache.com/im/pictures/4d852d17-925e-4be2-8416-9f786d16e40a.jpg?im_w=960","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/c35c4ecc-6cd6-41df-ac1a-8939b495328d.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/32425666-a878-4413-9cc8-d312970cebc7.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/8e999c24-7576-4bd7-b236-5b83291c1214.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/135c9400-2c38-4042-9779-6413f9cb5400.jpeg?im_w=720"],
+      "location": {
+        "lat": 19.4344,
+        "lng": -99.1354
+      }
+    },
+    {
+      "id": 6173621,
+      "type": "Private room",
+      "title": "Beautiful room in CDMX historic center",
+      "price": 761,
+      "rating": 4.42,
+      "reviews": 32,
+      "perks": "2 guests · 1 bedrooms · 1 beds · 1 baths · Wifi · Kitchen · Shared hot tub",
+      "images": ["https://a0.muscache.com/im/pictures/4d852d17-925e-4be2-8416-9f786d16e40a.jpg?im_w=960","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/c35c4ecc-6cd6-41df-ac1a-8939b495328d.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/32425666-a878-4413-9cc8-d312970cebc7.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/8e999c24-7576-4bd7-b236-5b83291c1214.jpeg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-54214222/original/135c9400-2c38-4042-9779-6413f9cb5400.jpeg?im_w=720"],
+      "location": {
+        "lat": 19.4338,
+        "lng": -99.1341
+      }
+    }
+  ]
+}
