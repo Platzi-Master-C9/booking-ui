@@ -2,6 +2,8 @@
   width: 100%;
   height: calc(100vh - 160px);
   padding: 40px 60px;
+  display: flex;
+  flex-direction: row;
 }
 
 .sidePanel {
@@ -14,4 +16,9 @@
   padding-top: 20px;
   height: calc(100vh - calc(160px + 80px));
   overflow: hidden;
+}
+
+.chatContainer {
+  display: flex;
+  width: 100%;
 }
