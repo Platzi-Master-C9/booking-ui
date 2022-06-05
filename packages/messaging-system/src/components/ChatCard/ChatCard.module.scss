@@ -1,0 +1,66 @@
+.container {
+  border-radius: 32px;
+  border: 1px solid #9B9B9B9B;
+  width: 100%;
+  height: 130px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+
+  figure {
+    margin: 0;
+    padding: 0;
+
+    width: inherit;
+    height: inherit;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.contentContainer {
+  margin-left: 13px;
+  flex: 1;
+  min-width: 0;
+}
+
+.authorContainer {
+  width: 100%;
+}
+
+.authorName {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  text-align: left;
+}
+
+.lastMessage {
+  margin: 0;
+  margin-top: 12px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

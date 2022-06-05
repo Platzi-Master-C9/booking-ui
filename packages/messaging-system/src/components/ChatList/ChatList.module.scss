@@ -1,0 +1,39 @@
+.container {
+  height: inherit;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.list {
+  height: inherit;
+  width: 100%;
+  margin-top: 32px;
+  overflow-y: auto;
+}
+
+.listItemContainer {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.listItem {
+  background: none;
+  color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  width: inherit;
+	outline: inherit;
+  border-radius: 32px;
+
+  &:hover {
+    background-color: #fcfcfc;
+  }
+}
