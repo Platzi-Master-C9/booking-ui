@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  min-height: 590px;
+  height: calc(100vh - 160px);
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: row;
+  min-width: 1240px;
+}
+
+.sidePanel {
+  width: 100%;
+  max-width: calc(431px - 60px);
+}
+
+.chatListContainer {
+  padding-right: 60px;
+  padding-top: 20px;
+  height: calc(100vh - calc(160px + 80px));
+  overflow: hidden;
+}
+
+.chatContainer {
+  display: flex;
+  width: 100%;
+}
+
+.placeContainer {
+  padding-left: 54px;
+}

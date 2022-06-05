@@ -1,64 +1,64 @@
 .card_container {
-    display: flex;
-    justify-content: center;
-    max-width: 320px;
-    align-items: center;
-    border: 1px solid #9B9B9B;
-    border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  max-width: 320px;
+  align-items: center;
+  border: 1px solid #9b9b9b;
+  border-radius: 32px;
 }
 
 .card_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 270px;
-    margin: 32px 24px;
-    min-height: 436px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+  margin: 32px 24px;
+  min-height: 436px;
 }
 
 .card_image {
-    width: 270px;
-    height: 150px;
-    border-radius: 32px;
-    object-fit: cover;
-    margin-bottom: 32px;
+  width: 270px;
+  height: 150px;
+  border-radius: 32px;
+  object-fit: cover;
+  margin-bottom: 32px;
 }
 
 .card_title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    margin-top: 0;
-    margin-bottom: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .card_cta {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 27px;
-    margin-top: 0;
-    margin-bottom: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .card_cta.title {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .card_cta.text {
-    color: #666666;
+  color: #666666;
 }
 
 .card_button {
-    width: 270px;
-    height: 60px;
-    background: #1572A1;
-    border-radius: 32px;
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    margin-top: 12px;
-    line-height: 27px;
-    border: none;
+  width: 270px;
+  height: 60px;
+  background: #1572a1;
+  border-radius: 32px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 12px;
+  line-height: 27px;
+  border: none;
 }
