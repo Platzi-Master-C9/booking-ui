@@ -3,7 +3,7 @@
 import React from 'react';
 
 // Internal dependencies
-import './TextBox.css';
+import styles from './TextBox.module.scss';
 
 function TextBox({
   onChange = () => {},
@@ -16,10 +16,10 @@ function TextBox({
   };
 
   return (
-    <main className="principal_chart">
-      <div className="main_box">
+    <main className={styles.principal_chart}>
+      <div className={styles.main_box}>
         <input
-          className="text_box"
+          className={styles.text_box}
           type="text"
           name="textbox"
           placeholder="Escribe un mensaje..."
@@ -28,14 +28,15 @@ function TextBox({
         />
 
         <button
-          className={`btn_box ${loading ? 'btn_box-loading' : ''}`}
+          // className={`btn_box ${loading ? 'btn_box-loading' : ''}`}
+          className={`${styles.btn_box} ${loading ? styles["btn_box-loading"] : ''}`}
           type="button"
           onClick={onSubmit}
           disabled={disabled || loading}
         >
           {
             loading ? (
-              <div className="btn_box-loader">
+              <div className={styles["btn_box-loader"]}>
                 <div />
                 <div />
                 <div />
@@ -44,7 +45,7 @@ function TextBox({
             ) : (
               <>
                 <span>Enviar</span>
-                <img className="btn_box-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAYAAADNo/U5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVHgBndK9DYMwFARgEymRkip1lCpjpIQxqChYggGgYw9K1qCkp6UAJuBHxxUgkDCYx0lfebL9/JS6EgA/JQ1LA6Vkk3W21GJJTj69TKUY2zQU0nev9KYK+nSU0F9X9KjHcTJy6bEufiigwlAub6sDrcm5CK93nwdRQzII7I88wsHIdZ/7NL1nXiMHgjWSL+yVjN3bWr6r6AW7AAAAAElFTkSuQmCC" alt="send" />
+                <img className={styles["btn_box-icon"]} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAYAAADNo/U5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACUSURBVHgBndK9DYMwFARgEymRkip1lCpjpIQxqChYggGgYw9K1qCkp6UAJuBHxxUgkDCYx0lfebL9/JS6EgA/JQ1LA6Vkk3W21GJJTj69TKUY2zQU0nev9KYK+nSU0F9X9KjHcTJy6bEufiigwlAub6sDrcm5CK93nwdRQzII7I88wsHIdZ/7NL1nXiMHgjWSL+yVjN3bWr6r6AW7AAAAAElFTkSuQmCC" alt="send" />
               </>
             )
           }
