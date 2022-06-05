@@ -38,7 +38,7 @@ const SidebarNav = styled.nav`
 
 const TitleSidebar = styled.div`
   display: block;
-
+  font-size: 1em;
   @media screen and (max-width: 1110px) {
     & {
       display: none;
