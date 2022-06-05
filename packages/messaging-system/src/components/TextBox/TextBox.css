@@ -1,49 +1,104 @@
 .principal_chart {
-    /* padding:10px 25px; */
-    width: 100%;
+  /* padding:10px 25px; */
+  width: 100%;
 } /* No need for padding here (at least in storybook) */
+
 .main_box {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
 .text_box {
-    width: 100%;
-    height: 60px;
-    background-color: #FFFFFF;
-    border: 1px solid #9B9B9B;
-    box-sizing: border-box;
-    border-radius: 32px;
-    font-family: 'Poppins', sans-serif; /* loads sans-serif font if poppins doesn't*/
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 0px 125px 0px 12px;
-    letter-spacing: 1px;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  border: 1px solid #9b9b9b;
+  box-sizing: border-box;
+  border-radius: 32px;
+  font-family: 'Poppins', sans-serif; /* loads sans-serif font if poppins doesn't*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 0px 125px 0px 12px;
+  letter-spacing: 1px;
 }
+
 .btn_box {
-    position: absolute;
-    width: 98px;
-    height: 36px;
-    top: 12px;
-    right: 12px;
-    background: #1572A1;
-    border-radius: 32px;
-    color:#FFFFFF ;
-    font-family: 'Poppins', sans-serif; /* loads sans-serif font if poppins doesn't*/
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    padding-right: 22px;
-    border: none;
+  position: absolute;
+  width: 98px;
+  height: 36px;
+  top: 12px;
+  right: 12px;
+  background: #1572a1;
+  border-radius: 32px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif; /* loads sans-serif font if poppins doesn't*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
+.btn_box-loading {
+  width: 36px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: wait;
+}
+
 .btn_box-icon {
-    position: absolute;
-    width: 15px;
-    right: 25px;
-    top: 21px;
+  width: 15px;
+  right: 25px;
+  margin-left: 10px;
+}
+
+.btn_box-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+.btn_box-loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  animation: btn_box-loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.btn_box-loader div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.btn_box-loader div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.btn_box-loader div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes btn_box-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
