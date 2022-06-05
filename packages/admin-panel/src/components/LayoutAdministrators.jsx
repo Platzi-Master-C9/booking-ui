@@ -45,7 +45,7 @@ export const LayoutAdministrators = () => {
 
   return (
     <div className="conteiner-DashboardAdmin">
-      <h1 className="title-DashboardAdmin">Administradores</h1>
+      <h1 className="title-DashboardAdmin">Administrators</h1>
       <DashboardAdmin>
         <SearchBar
           searchValue={searchValue}
