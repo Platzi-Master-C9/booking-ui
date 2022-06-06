@@ -1,8 +1,10 @@
 export {
   Places,
+  Wizard,
   Perks,
   HouseRules,
-  WizardLayout,
+  PlaceProvider,
+  usePlaceProvider,
   DetailsPage,
 } from '@booking-ui/places';
 export { Geolocation, SearchResultsMap } from '@booking-ui/geolocation';
