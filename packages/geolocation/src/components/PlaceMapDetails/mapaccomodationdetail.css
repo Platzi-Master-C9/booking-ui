@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .root {
+  height: 300px;
+  width: 90%;
+  border-radius: 32px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.rs_marker {
+  height: 35px;
+  width: 23px;
+  z-index: 99;
+  color: orangered;
+  /*background: url('./images/img_marker.png');*/
+}
