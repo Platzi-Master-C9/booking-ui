@@ -5,9 +5,12 @@ import useFormulario from "./hooks/useFormulario";
 import Select from "./Select";
 import "./style/Button.css";
 
-const UserForm = ({ submit, openModalAddAdmin }) => {
-  const [formulario, handleChange, reset] = useFormulario({
-    fullName: "",
+const UserForm = ({ openModalAddAdmin }) => {
+  const [formulario, handleChange, reset, submit] = useFormulario({
+    first_name: "",
+    second_name: "",
+    first_surname: "",
+    second_surname: "",
     profile: "",
   });
 
@@ -15,7 +18,8 @@ const UserForm = ({ submit, openModalAddAdmin }) => {
     e.preventDefault();
     if (formulario.profile) {
       submit(formulario);
-      reset();
+      // reset();
+      // openModalAddAdmin();
     }
   };
 
@@ -23,11 +27,37 @@ const UserForm = ({ submit, openModalAddAdmin }) => {
     <>
       <form onSubmit={handleSubmit}>
         <Input
-          label="Nombre completo"
+          label="Primer nombre"
           type="text"
-          name="fullName"
-          placeholder="Nombre"
-          value={formulario.fullName}
+          name="first_name"
+          placeholder=""
+          value={formulario.first_name}
+          onChange={handleChange}
+          required
+        />
+        <Input
+          label="Segundo nombre"
+          type="text"
+          name="second_name"
+          placeholder=""
+          value={formulario.second_name}
+          onChange={handleChange}
+        />
+        <Input
+          label="Primer apellido"
+          type="text"
+          name="first_surname"
+          placeholder=""
+          value={formulario.first_surname}
+          onChange={handleChange}
+          required
+        />
+        <Input
+          label="Segundo apellido"
+          type="text"
+          name="second_surname"
+          placeholder=""
+          value={formulario.second_surname}
           onChange={handleChange}
         />
         <Select
