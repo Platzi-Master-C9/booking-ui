@@ -43,6 +43,6 @@ const MapDetails = () => {
     </div>
   );
 };
-ReactDom.render(<MapDetails />, document.getElementById('root'));
+//ReactDom.render(<MapDetails />, document.getElementById('root'));
 
-export default MapDetails;
+export { MapDetails };

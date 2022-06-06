@@ -34,7 +34,7 @@ function SearchResultsMap({ initCenter, initPlaces }) {
   return (
     <div style={{ height: '100vh', width: '100%' }} id="resultMap">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: '' }}
+        bootstrapURLKeys={{ key: 'AIzaSyByhlmtSqpfGkZwd7phQO56KlP4D5aXNNE' }}
         center={init.center}
         zoom={init.zoom}
         onChange={(obj) => _onChange(obj)}
