@@ -167,7 +167,7 @@ function Chat({ customerId, chatId }) {
                 group.messages.map((message) => (
                   <Message
                     key={message._id}
-                    name={message.name}
+                    name={message.createdBy === customerId ? 'Yo' : 'John Doe'}
                     text={message.text}
                     avatarUrl="https://cdn.pixabay.com/photo/2016/12/13/05/15/cat-1903313_960_720.jpg"
                     createdBy={message.createdBy}
