@@ -55,6 +55,7 @@ export function Price() {
 
   return (
     <form className="wizard-prices">
+      <h2 className="wizard-prices__instruction">Ingresa el precio en dolares</h2>
       <div className="wizard-prices__handle-price">
         <button
           className="wizard-prices__handle-price--decrement"

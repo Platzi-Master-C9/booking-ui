@@ -6,6 +6,9 @@
   display: grid;
   grid-template-rows: 80% 20%;
   place-items: center;
+  &__instruction {
+    @include instructionTitleForm;
+  }
   &__handle-price {
     width: 100%;
     height: 60px;
