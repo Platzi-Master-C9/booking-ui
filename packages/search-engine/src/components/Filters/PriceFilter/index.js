@@ -7,7 +7,7 @@ export default function PriceFilter (props) {
   return (
     <div className={css.priceFilter}>
       <div className={css.priceContainer}>
-        <p>Precio mínimo</p>
+        <p>min. price</p>
         <div className={css.price}>
           <span>$</span>
           <input type="number" value={minPrice} onChange={handleMinPrice}/>
@@ -15,7 +15,7 @@ export default function PriceFilter (props) {
       </div>
       <div className={css.separator} />
       <div className={css.priceContainer}>
-        <p>Precio máximo</p>
+        <p>max. price</p>
         <div className={css.price}>
           <span>$</span>
           <input type="number" value={maxPrice} onChange={handleMaxPrice}/>

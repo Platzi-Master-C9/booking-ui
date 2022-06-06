@@ -4,9 +4,7 @@
 }
 
 .footer__wrapper {
-  max-width: 1512px;
   height: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: left;
   align-items: center;
