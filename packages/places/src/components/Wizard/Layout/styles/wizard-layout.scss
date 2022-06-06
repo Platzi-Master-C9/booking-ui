@@ -59,11 +59,13 @@
         &__back {
           background: none;
           text-decoration: underline;
+          cursor: pointer;
         }
         &__next {
           background-color: #1572a1;
           border-radius: 32px;
           color: white;
+          cursor: pointer;
         }
       }
     }

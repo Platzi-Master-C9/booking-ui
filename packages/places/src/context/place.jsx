@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 const Context = createContext();
 
@@ -38,43 +38,18 @@ export function PlaceProvider({ children }) {
     images: [],
     houseRules: [],
     healthAndSecurity: [],
-    price: 49.9,
+    price: 49.0,
   });
 
-  const [progress, setProgress] = useState(0);
-  const [step, setStep] = useState(0);
   const [nextDisable, setNextDisable] = useState(false);
-  const views = 11;
-
-  const handleBack = () => {
-    if (step === 0) return;
-    setStep(step - 1);
-    setNextDisable(false);
-  };
-
-  const handleNext = () => {
-    if (step === views - 1) return;
-    setStep(step + 1);
-  };
-
-  useEffect(() => {
-    const percentage = 100 / views;
-    setProgress((step + 1) * percentage);
-  }, [step]);
 
   return (
     <Context.Provider
       value={{
         placeOptions,
         setPlaceOptions,
-        progress,
-        setProgress,
-        step,
-        setStep,
         nextDisable,
         setNextDisable,
-        handleBack,
-        handleNext,
       }}
     >
       {children}
