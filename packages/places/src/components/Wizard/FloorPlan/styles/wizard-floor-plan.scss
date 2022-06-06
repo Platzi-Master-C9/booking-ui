@@ -1,0 +1,27 @@
+@import '../../../../styles/globals.scss';
+
+.wizard-floor-plan {
+  @include form-layout(4);
+  &-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__field {
+      width: 180px;
+      font-size: 2.4rem;
+    }
+    &__handle-amount {
+      max-width: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: center;
+      column-gap: 8px;
+      button {
+        @include increment-decrement-button;
+      }
+      span {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}

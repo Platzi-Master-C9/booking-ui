@@ -1,10 +1,13 @@
 html,
 body {
+  width: 100%;
+  height: auto;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   overflow-x: hidden;
+  font-size: 62.5%;
 }
 
 a {
@@ -14,4 +17,54 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@mixin instructionTitleForm {
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+}
+
+@mixin form-layout($elements-amount) {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  // padding: 24px;
+  display: grid;
+  @if $elements-amount > 0 {
+    grid-template-rows: repeat($elements-amount, 52px);
+  }
+  align-content: center;
+  row-gap: 8px;
+}
+
+@mixin input-text {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-block-end: 1px solid #9b9b9b;
+  font-size: 1.6rem;
+}
+
+@mixin increment-decrement-button {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: transparent 0px 0px 0px 1px, transparent 0px 0px 0px 4px,
+    rgb(0 0 0 / 18%) 0px 2px 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 2.4rem;
+  &:hover {
+    border: 1px solid black;
+  }
+}
+
+@mixin button-form {
+  width: 118px;
+  height: 38px;
+  border: none;
+  border-radius: 32px;
+  background: black;
+  color: white;
+  cursor: pointer;
 }
