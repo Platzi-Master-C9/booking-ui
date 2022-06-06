@@ -1,0 +1,21 @@
+.container-services 
+{
+   width: 60%;
+   margin-left: 64px;
+   border-top: 1px solid #9B9B9B;
+   padding: 40px 0;
+}
+
+.title-services
+{
+   font-weight: 500;
+   font-size: 36px;
+}
+
+.services 
+{
+   list-style: none;
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}

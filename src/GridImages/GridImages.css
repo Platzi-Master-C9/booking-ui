@@ -1,0 +1,76 @@
+.hosting 
+{
+   padding: 32px 64px 56px;
+}
+
+.nameHosting 
+{
+   font-weight: 600;
+   font-size: 36px;
+}
+
+.reputationHosting 
+{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 18.5px;
+   padding-bottom: 35px;
+}
+
+.dataHosting
+{
+   display: flex;
+   align-items: center;
+}
+
+.dataHosting img
+{
+   width: 32px;
+   height: 32px;
+}
+
+.start 
+{
+   margin-right: 8px;
+}
+
+.rating, .location, .reviews
+{
+   font-weight: 600;
+   font-size: 18px;
+}
+
+.dataHosting .reviews 
+{
+   font-weight: 400;
+   margin-left: 3px;
+   margin-right: 44px;
+   text-decoration: none;
+   color: #000;
+}
+
+.saveHosting 
+{
+   border: none;
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   color: #1572A1;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.heart 
+{
+   margin-right: 5px;
+}
+
+.containerImgs
+{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-auto-rows: 1fr;
+   gap: 24px;
+   list-style: none;
+}
