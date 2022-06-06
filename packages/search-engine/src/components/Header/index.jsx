@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import SearchBar from '../LandingPage/SearchBar';
 import User from '../LandingPage/User';
 import ModalFilter from '../Filters/ModalFilters';
@@ -73,7 +74,9 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
   return (
     <header className={classHeader}>
       <div className="logo__header">
-        <a href="/">BS</a>
+        <Link href="/">
+          <a>BS</a>
+        </Link>
       </div>
       <SearchBar />
       <User classUser={classPage} />

@@ -1,0 +1,144 @@
+/* colors */
+$color-font-dark: #000000;
+$color-font-middle: #666666;
+$color-font-light: #ffffff;
+$color-font-alt: #1572a1;
+$color-dark: #000000;
+$color-light: #ffffff;
+$color-main: #1572a1;
+
+/* font-size */
+$size-font-l: 2rem;
+$size-font-m: 1.5rem;
+$size-font-s: 1rem;
+
+.hr {
+  margin: 0;
+  width: 100%;
+  border: 1px solid $color-font-middle;
+}
+
+.modal_login-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1572a1c0;
+  z-index: 1;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  position: relative;
+  border-radius: 32px;
+  background-color: $color-light;
+
+  &_header {
+    font-size: $size-font-s;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    padding: 32px 0;
+    color: $color-font-dark;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    background-image: url('../../../assets/icons/icons8-close-100.png');
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  &_body {
+    padding: 40px 24px;
+  }
+
+  &_title {
+    font-size: $size-font-l;
+    font-weight: 600;
+    line-height: 40px;
+    color: $color-font-dark;
+    margin-bottom: 24px;
+  }
+
+  &_input {
+    width: 100%;
+    border: 1px solid $color-font-middle;
+    border-radius: 24px;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+
+    p {
+      user-select: none;
+    }
+
+    input {
+      width: 100%;
+      font-size: $size-font-s;
+      line-height: 27px;
+      color: $color-font-dark;
+      border: 0;
+    }
+  }
+
+  &_text {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 21px;
+    color: $color-font-middle;
+  }
+
+  .hr {
+    .above {
+      position: absolute;
+      top: 330px;
+      left: 50%;
+      padding: 5px;
+      background-color: $color-font-light;
+    }
+  }
+
+  &_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 21px 24px;
+    border: 1px solid $color-font-middle;
+    border-radius: 24px;
+    margin-top: 24px;
+    cursor: pointer;
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 32px;
+    }
+
+    p {
+      width: 100%;
+      font-size: $size-font-s;
+      font-weight: 600;
+      line-height: 27px;
+      text-align: center;
+    }
+  }
+}
+
+.facebook-icon {
+  background-image: url('../../../assets/icons/icons8-facebook-96.png');
+}
+
+.twitter-icon {
+  background-image: url('../../../assets/icons/icons8-twitter-96.png');
+}

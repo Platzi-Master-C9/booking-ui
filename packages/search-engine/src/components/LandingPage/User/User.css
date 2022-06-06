@@ -4,12 +4,14 @@
   --color-font-middle: #666666;
   --color-font-light: #ffffff;
   --color-font-alt: #1572a1;
+  --color-dark: #000000;
+  --color-light: #ffffff;
   --color-main: #1572a1;
 
   /* font-size */
-  --size-font-l: 36px;
-  --size-font-m: 24px;
-  --size-font-s: 18px;
+  --size-font-l: 2rem;
+  --size-font-m: 1.5rem;
+  --size-font-s: 1rem;
 }
 
 .users_container {
@@ -21,7 +23,7 @@
 }
 
 .link {
-  font-size: 1rem;
+  font-size: var(--size-font-s);
   font-weight: 400;
   color: var(--color-font-dark);
 }
@@ -32,12 +34,44 @@
   align-items: center;
   width: 60px;
   height: 60px;
+  position: relative;
   background-color: var(--color-main);
   background-image: url('../assets/iconUser.png');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.user_menu {
+  display: none;
+  flex-direction: column;
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: var(--color-light);
+  box-shadow: 0 0 10px var(--color-font-middle);
+  border-radius: 32px;
+}
+
+.user_menu span {
+  font-size: var(--size-font-s);
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--color-font-dark);
+  padding: 32px 0 32px 24px;
+}
+
+.hr {
+  margin: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--color-font-middle);
+}
+
+.show {
+  display: flex;
 }
 
 .host {
