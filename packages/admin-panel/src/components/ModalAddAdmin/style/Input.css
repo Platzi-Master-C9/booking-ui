@@ -1,0 +1,48 @@
+.field-ModalAddAdmin {
+  margin-bottom: 20px;
+}
+.field-ModalAddAdmin label {
+  display: block;
+  margin: 0 0 5px 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.field-ModalAddAdmin input {
+  background-color: #fff;
+  outline: 0;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: 1px solid rgb(34, 34, 34, 0.15);
+  color: #222;
+  border-radius: 4px;
+  min-width: 90%;
+  box-sizing: border-box;
+}
+
+.select-ModalAddAdmin {
+  border: 1px solid rgb(34, 34, 34, 0.15);
+  padding: 10px 15px;
+  min-width: 50%;
+  display: block;
+  margin: 0 0 25px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media (max-width: 320px) {
+  .field-ModalAddAdmin input {
+    font-size: 14px;
+  }
+  .select-ModalAddAdmin {
+    font-size: 14px;
+  }
+}
+@media (max-width: 710px) {
+  .field-ModalAddAdmin input {
+    font-size: 16px;
+  }
+  .select-ModalAddAdmin {
+    font-size: 16px;
+  }
+}
