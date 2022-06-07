@@ -4,9 +4,9 @@ const MapMarkerDetails = ({ text }) => {
   return (
     <div style={{ color: 'orangered' }} className="rs_marker">
       <img
-        style={{ height: '30px', width: '30px' }}
+        style={{ height: '50px', width: '50px' }}
         className="rs_marker"
-        src={img_mk2}
+        src="/places/2ns point marker.png"
         alt=""
       />
       {text}
