@@ -9,12 +9,8 @@ const Hero = () => {
       <div className="hero-background">
         <Header classPage="landing" />
         <div className="hero--text-container">
-          <h1>
-            Encuentra los mejores <br />
-            lugares para visitar
-          </h1>
-          <br />
-          <p>Este es un texto cualquiera haha</p>
+          <h1>Find the best places to visit</h1>
+          <p>Enjoy an incredible adventure</p>
         </div>
       </div>
     </div>

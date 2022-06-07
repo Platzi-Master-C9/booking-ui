@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import css from './SizeFilter.module.scss'
 
 export default function SizeFilter (props) {
-  const { fullPlace, privateRoom, handleFullPlace, handlePrivateRoom } = props
+  const { fullPlace, privateRoom, sharedRoom, handleFullPlace, handlePrivateRoom, handleSharedRoom  } = props
 
   const LabelSize = ({
     title,
@@ -23,16 +23,22 @@ export default function SizeFilter (props) {
   return (
     <div className={css.sizeFilter}>
       <LabelSize 
-        title='Lugar completo'
-        description='Tienes un espacio entero para ti'
+        title='Entire place'
+        description='A place all to you'
         check={fullPlace}
         handleCheck={handleFullPlace}
       />
       <LabelSize 
-        title='Habitación privada'
-        description='Tienes tu propia habitación y compartes algunos espacios comunes'
+        title='Private room'
+        description='Your own room in a home or a hotel, plus some shared common spaces'
         check={privateRoom}
         handleCheck={handlePrivateRoom}
+      />
+      <LabelSize 
+        title='Shared room'
+        description='A sleeping space and common areas that may be shared with others'
+        check={sharedRoom}
+        handleCheck={handleSharedRoom}
       />
     </div>
   )

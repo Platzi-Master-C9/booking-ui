@@ -17,6 +17,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
   const [stars, setStars] = useState(null);
   const [fullPlace, setFullPlace] = useState(false);
   const [privateRoom, setPrivateRoom] = useState(false);
+  const [sharedRoom, setSharedRoom] = useState(false);
 
   const toggleVisibility = (key) => !visible ? setVisible(key) : setVisible(null);
 
@@ -79,7 +80,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
       <User classUser={classPage} />
       <div className={`filter__container ${showFilters}`}>
         <ModalFilter 
-          title='Precio'
+          title='Price range'
           visible={visible === 'visiblePrice'}
           setVisible={() => toggleVisibility('visiblePrice')}
           reset={resetPriceFilter}
@@ -94,7 +95,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
         </ModalFilter>
 
         <ModalFilter 
-          title='Tipo de alojamiento'
+          title='Type of place'
           visible={visible === 'visibleSize'}
           setVisible={() => toggleVisibility('visibleSize')}
           reset={resetSizeFilter}
@@ -103,13 +104,15 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
           <SizeFilter 
             fullPlace={fullPlace}
             privateRoom={privateRoom}
+            sharedRoom={sharedRoom}
             handleFullPlace={() => setFullPlace(!fullPlace)}
             handlePrivateRoom={() => setPrivateRoom(!privateRoom)}
+            handleSharedRoom={() => setSharedRoom(!sharedRoom)}
           />
         </ModalFilter>
 
         <ModalFilter 
-          title='Calificación'
+          title='Rating'
           visible={visible === 'visibleStars'}
           setVisible={() => toggleVisibility('visibleStars')}
           reset={resetStars}
