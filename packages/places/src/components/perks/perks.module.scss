@@ -1,18 +1,19 @@
-.perks{
+.perks {
   width: 60%;
   margin-left: 64px;
   padding: 40px 0;
-  border-top: 1px solid #9B9B9B;
-  h2{
+  border-top: 1px solid #9b9b9b;
+  h2 {
     font-weight: 500;
     font-size: 36px;
   }
-  ul{
+  ul {
     column-count: 2;
     list-style: none;
     padding-left: 0;
     margin-bottom: 30px;
-    li{
+    li {
+      font-size: 1.6rem;
       padding-top: 29px;
       img {
         height: 32px;
@@ -23,6 +24,7 @@
   }
   a {
     color: inherit;
+    font-size: 1.6rem;
     margin-top: 10px;
   }
 }
