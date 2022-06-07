@@ -44,11 +44,12 @@ export function Price() {
       setPlaceOptions({
         ...placeOptions,
         price: 0,
+        address: { ...placeOptions.address, price: 0 },
       });
     } else {
       setPlaceOptions({
         ...placeOptions,
-        price,
+        address: { ...placeOptions.address, price },
       });
     }
   }, [price]);
