@@ -1,9 +1,9 @@
-import ReactDom from 'react-dom';
+//import ReactDom from 'react-dom';
 import React, { useEffect, useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import { MapMarkerDetails } from './MapMarkerDetails';
 
-const MapDetails = () => {
+const PlacesDetailsMap = () => {
   const [center, setCenter] = useState({ lat: 10.99858, lng: -74.830177 });
   const [zoom, setZoom] = useState(100);
   const [markers, setMarkers] = useState([]);
@@ -24,19 +24,19 @@ const MapDetails = () => {
   }, [zoom]);
 
   return (
-    <div style={{ height: '90%', width: '100%', borderRadius: '32px' }}>
+    <div style={{ height: '500px', width: '100%', borderRadius: '32px' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: 'AIzaSyByhlmtSqpfGkZwd7phQO56KlP4D5aXNNE' }}
         // defaultCenter={center}
         center={center}
-        defaultZoom={zoom}
+        defaultZoom={15}
       >
         {markers.map((marker) => (
           <MapMarkerDetails
             key={marker._id}
             lat={marker.location.coordinates[1]}
             lng={marker.location.coordinates[0]}
-            text=""
+            text="Posicion"
           />
         ))}
       </GoogleMapReact>
@@ -45,4 +45,4 @@ const MapDetails = () => {
 };
 //ReactDom.render(<MapDetails />, document.getElementById('root'));
 
-export { MapDetails };
+export { PlacesDetailsMap };
