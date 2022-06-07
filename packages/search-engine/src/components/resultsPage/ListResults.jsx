@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Card } from '../Card';
+import CardComponent from '../Card';
 import './styles/ListResults.css';
 import './styles/loader.css';
 
@@ -15,7 +15,8 @@ function ListResults({ places, statePlaces }) {
         <h1>An error has occurred: <span>{statePlaces.error}</span></h1>
       }
       { (!statePlaces.loading && !places.length) &&
-        <h1>Places not found</h1>
+        // <h1>Places not found</h1>
+        <CardComponent />
       }
       { places.map(card => {
         return <div className="results__card" key={card.uuid}> {card.city} </div>
