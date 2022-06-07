@@ -1,8 +1,8 @@
 .slider {
-  width: 12rem;
-  height: 8.5rem;
+  width: 20rem;
+  height: 10rem;
   position: relative;
-  /* top: -1.2rem; */
+  top: -1rem;
 }
 
 .sliderImage {

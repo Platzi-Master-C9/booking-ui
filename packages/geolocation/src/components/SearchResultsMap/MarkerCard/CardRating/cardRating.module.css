@@ -1,9 +1,8 @@
 .rating {
   display: flex;
   align-items: center;
-  font-size: 0.7rem;
-  padding-top: 0.2rem;
-  height: 30%;
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
 }
 
 .star {
@@ -14,6 +13,6 @@
 
 .rating p:nth-child(3) {
   color: rgb(151, 151, 151);
-  margin-left: 0.2rem;
-  font-size: 0.6rem;
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
 }
