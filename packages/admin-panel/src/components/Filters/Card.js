@@ -3,7 +3,7 @@ import "./filters.css"
 import { ContextFilters } from './FiltersContext/ContextFilters';
 
 export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, checkedOne, checkedTwo, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete}) => {
-    const {  clicked, setClicked, handleClose } = useContext(ContextFilters)
+    const {  clicked, setClicked, handleClose, filterUsers } = useContext(ContextFilters)
 
     return (
         <>
@@ -27,7 +27,7 @@ export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, check
 
             <div className='buttonContainer'>
                 <span className='delete' onClick={handleChexboxOneDelete}>Borrar</span>
-                <button className='buttonSave' disabled={checkedOne === false && checkedTwo === false} onClick={() => setClicked(true)}>Guardar</button>
+                <button className='buttonSave' disabled={checkedOne === false && checkedTwo === false} onClick={filterUsers}>Guardar</button>
             </div>
         </div>
         <div onClick={handleClose} className="filterDiv" id="filter"></div>

@@ -21,11 +21,12 @@ export const GridItem = ({ user }) => {
   };
   const isValidated = user.validated === true ? "Sí" : "No"
   const userStatus = user.status === "ACTIVE" ? "Activo" : "Baneado"
+  const typeOfUser = user.profile === 1 ? "Huésped" : "Anfitrión"
 
   return (
     <li key={user.id} className={styles.list__item}>
       <div className={styles.textCenterName}>{user.fullName}</div>
-      <div>{user.type}</div>
+      <div>{typeOfUser}</div>
       <div>{userStatus}</div>
       <div>{isValidated}</div>
       <div>{user.date_of_register}</div>

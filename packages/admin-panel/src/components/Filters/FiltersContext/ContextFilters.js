@@ -29,23 +29,51 @@ export const ContextOfFilters = (props) => {
         })
     }
 
-    const handleSetChecked = (state, value) => {
+    const handleUnchecked = (stateTwo) => {
+        const { checkedOne, checkedTwo, checkedThree, checkedFour, checkedFive, checkedSixx } = checked
+        if (checkedOne === true || checkedTwo === true || checkedThree === true || checkedFour === true || checkedFive === true || checkedSixx === true) {
+            {
+                setFilter({
+                    ...applyFilter,
+                    [stateTwo]: null,
+                })
+            }
+        }
+    }
+
+    const handleSetChecked = (state, value, stateTwo) => {
         setChecked({
             ...checked,
             [state]: value,
         })
-        if ([state] !== true) {
-            setClicked(false)
-        }
+
+        handleUnchecked(stateTwo)
+        console.log(stateTwo)
     }
 
-    const handleSetDelete = (stateOne, stateTwo, valueOne, valueTwo) => {
+    const handleSetDelete = (stateOne, stateTwo, stateThree, stateFour, valueThree, valueOne, valueTwo) => {
         setChecked({
             ...checked,
             [stateOne]: valueOne,
             [stateTwo]: valueTwo
         })
-        setClicked(false)
+        setFilter({
+            ...applyFilter,
+            [stateThree]: valueThree,
+            [stateFour]: valueThree
+        })
+
+        const { optionOne, optionTwo, optionThree, optionFour, optionFive, optionSixx } = applyFilter
+
+        if (optionOne === "" || optionTwo === "" || optionThree === "" || optionFour === "" || optionFive === "" || optionSixx === "") {
+            {
+                setFilter({
+                    ...applyFilter,
+                    [stateThree]: null,
+                    [stateFour]: null
+                })
+            }
+        }
     }
 
     const handleClose = () => {
@@ -61,8 +89,31 @@ export const ContextOfFilters = (props) => {
         }
     }
 
+    const [applyFilter, setFilter] = useState({
+        optionOne: "",
+        optionTwo: "",
+        optionThree: "",
+        optionFour: "",
+        optionFive: "",
+        optionSixx: "",
+    })
+
+    const filterUsers = () => {
+
+        const prof = "profile="
+        const st = "status="
+        const val = "validated="
+
+        if (checked.checkedOne === true) { setFilter({ ...applyFilter, optionOne: `${prof}2` }) }
+        if (checked.checkedTwo === true) { setFilter({ ...applyFilter, optionTwo: `${prof}1` }) }
+        if (checked.checkedThree === true) { setFilter({ ...applyFilter, optionThree: `${st}ACTIVE` }) }
+        if (checked.checkedFour === true) { setFilter({ ...applyFilter, optionFour: `${st}BANNED` }) }
+        if (checked.checkedFive === true) { setFilter({ ...applyFilter, optionFive: val + true }) }
+        if (checked.checkedSixx === true) { setFilter({ ...applyFilter, optionSixx: val + false }) }
+    }
+
     return (
-        <ContextFilters.Provider value={{ checked, setChecked, show, setShow, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, clicked, setClicked, handleClose }}>
+        <ContextFilters.Provider value={{ checked, setChecked, show, setShow, openFilters, setOpenFilters, handleSetShow, handleSetChecked, handleSetDelete, clicked, setClicked, handleClose, filterUsers, applyFilter, setFilter }}>
             {props.children}
         </ContextFilters.Provider>
     )
