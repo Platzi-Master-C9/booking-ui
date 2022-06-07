@@ -6,13 +6,13 @@ export function PlaceProvider({ children }) {
   const [placeOptions, setPlaceOptions] = useState({
     propertyType: 'house',
     amenities: [],
-    spaces: 1,
     address: {
       street: '',
       city: '',
       state: '',
       zipcode: '',
       country: '',
+      price: '',
     },
     floorPlans: [
       {
