@@ -14,7 +14,6 @@ export const Dashboard = () => {
   useEffect(() => {
     getUsers();
   }, [baseURL, checked, applyFilter]);
-  console.log(baseURL)
 
   const getUsers = async () => {
     try {
@@ -38,7 +37,7 @@ export const Dashboard = () => {
           <CardContainer type={"Tipo"} titleOne="Anfitrión" titleTwo="Huésped" descriptionOne="Descripcion para anfitrion" descriptionTwo="Descripcion para huesped" show={show.showOne} checkedOne={checked.checkedOne} checkedTwo={checked.checkedTwo} handleSetShow={() => handleSetShow("showOne", !show.showOne)} handleChexboxOne={(e) => handleSetChecked("checkedOne", e.target.checked, "optionOne")} handleChexboxTwo={(e) => handleSetChecked("checkedTwo", e.target.checked, "optionTwo")} handleChexboxOneDelete={(e) => handleSetDelete("checkedOne", "checkedTwo", "optionOne", "optionTwo", "", false, false)} />
         </div>
         <div style={{ gridColumn: "3/4"}}>
-          <CardContainer type={"Estado"} titleOne="Activo" titleTwo="Inactivo" descriptionOne="Descripcion para activo" descriptionTwo="Descripcion para inactivo" show={show.showTwo} checkedOne={checked.checkedThree} checkedTwo={checked.checkedFour} handleSetShow={() => handleSetShow("showTwo", !show.showTwo)} handleChexboxOne={(e) => handleSetChecked("checkedThree", e.target.checked, "optionThree")} handleChexboxTwo={(e) => handleSetChecked("checkedFour", e.target.checked, "optionFour")} handleChexboxOneDelete={(e) => handleSetDelete("checkedThree", "checkedFour", "optionThree", "optionFour", "", false, false)} />
+          <CardContainer type={"Estado"} titleOne="Activo" titleTwo="Baneado" descriptionOne="Descripcion para activo" descriptionTwo="Descripcion para inactivo" show={show.showTwo} checkedOne={checked.checkedThree} checkedTwo={checked.checkedFour} handleSetShow={() => handleSetShow("showTwo", !show.showTwo)} handleChexboxOne={(e) => handleSetChecked("checkedThree", e.target.checked, "optionThree")} handleChexboxTwo={(e) => handleSetChecked("checkedFour", e.target.checked, "optionFour")} handleChexboxOneDelete={(e) => handleSetDelete("checkedThree", "checkedFour", "optionThree", "optionFour", "", false, false)} />
         </div>
         <div style={{ gridColumn: "4/5"}}>
           <CardContainer type={"Validación"} titleOne="Sí" titleTwo="No" descriptionOne="Descripcion para sí" descriptionTwo="Descripcion para no" show={show.showThree} checkedOne={checked.checkedFive} checkedTwo={checked.checkedSixx} handleSetShow={() => handleSetShow("showThree", !show.showThree)} handleChexboxOne={(e) => handleSetChecked("checkedFive", e.target.checked, "optionFive")} handleChexboxTwo={(e) => handleSetChecked("checkedSixx", e.target.checked, "optionSixx",)} handleChexboxOneDelete={(e) => handleSetDelete("checkedFive", "checkedSixx", "optionFive", "optionSixx", "", false, false)} />

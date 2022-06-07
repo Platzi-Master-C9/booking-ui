@@ -90,12 +90,12 @@ export const ContextOfFilters = (props) => {
     }
 
     const [applyFilter, setFilter] = useState({
-        optionOne: "",
-        optionTwo: "",
-        optionThree: "",
-        optionFour: "",
-        optionFive: "",
-        optionSixx: "",
+        optionOne: null,
+        optionTwo: null,
+        optionThree: null,
+        optionFour: null,
+        optionFive: null,
+        optionSixx: null,
     })
 
     const filterUsers = () => {
