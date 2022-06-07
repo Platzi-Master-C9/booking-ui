@@ -21,12 +21,12 @@ const CardComponent = (props) => {
             <figure>
               <img src='/search-engine/icon-star.png' alt='' />
               <figcaption className='card-content__reviews_text'>
-                <strong>{rating}</strong><span>({reviews} reseñas)</span>
+                <strong>{rating}</strong><span>({reviews} reviews)</span>
               </figcaption>
             </figure>
           </div>
           <div className='card-content__price'>
-            <span>${price} </span>COP / noche
+            <span>${price} </span> night
           </div>
         </div>
       </div>
