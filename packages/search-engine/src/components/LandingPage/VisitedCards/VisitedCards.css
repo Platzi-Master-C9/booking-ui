@@ -11,20 +11,21 @@
   margin-top: 50px;
   font-size: 26px;
   font-weight: 600;
+  text-transform: capitalize;
   color: #ffffff;
 }
 
 .malta {
-  background: url(https://images.pexels.com/photos/3496763/pexels-photo-3496763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: linear-gradient(180deg, #1572A1 0%, rgba(196, 196, 196, 0) 50%), url(https://images.pexels.com/photos/3496763/pexels-photo-3496763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
 }
 
 .peru {
-  background: url(https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: linear-gradient(180deg, #1572A1 0%, rgba(196, 196, 196, 0) 50%), url(https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
 }
 
 .mexico {
-  background: url(https://images.pexels.com/photos/604661/pexels-photo-604661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: linear-gradient(180deg, #1572A1 0%, rgba(196, 196, 196, 0) 50%), url(https://images.pexels.com/photos/604661/pexels-photo-604661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
 }
