@@ -26,8 +26,8 @@ export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, check
             </div>
 
             <div className='buttonContainer'>
-                <span className='delete' onClick={handleChexboxOneDelete}>Borrar</span>
-                <button className='buttonSave' disabled={checkedOne === false && checkedTwo === false} onClick={filterUsers}>Guardar</button>
+                <span className='delete' onClick={handleChexboxOneDelete}>Delete</span>
+                <button className='buttonSave' disabled={checkedOne === false && checkedTwo === false} onClick={filterUsers}>Save</button>
             </div>
         </div>
         <div onClick={handleClose} className="filterDiv" id="filter"></div>
