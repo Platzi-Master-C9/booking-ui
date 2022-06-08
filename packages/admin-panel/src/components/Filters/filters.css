@@ -40,11 +40,12 @@
     flex-direction: column;
     border-radius: 32px;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
-    height: 226px;
+    height: 20.5rem;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
     position: absolute;
     width: 370px;
+    z-index: 2;
 }
 
 .details {
@@ -71,7 +72,7 @@
 
 .delete {
     color: #1572A1;
-    height: 2rem;
+    height: 3rem;
 }
 
 .buttonSave {
@@ -85,6 +86,7 @@
 
 .dees {
     margin: 0 1.5rem;
+    font-size: 1.5rem;
 }
 
 .input {
@@ -101,98 +103,16 @@
 }
 
 .title, .descriptionTitle {
+    font-weight: 100 !important;
     margin: 0;
 }
 
+.filterDiv {
+    position: fixed;
+    top: 0;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    left: 0;
+    z-index: 1;
+  }
 
-@media (max-width: 768px) {
-    .containerCards {
-        flex-direction: column;
-        height: -webkit-fill-available;
-        justify-content: right;
-        width: 100%;
-    }
-    .cardContainer {
-        position: initial;
-        height: auto;
-        width: 100%;
-    }
-    .type {
-        border: none;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .cardContainer {
-        border-radius: 0;
-        box-shadow: none;
-        padding: 0;
-    }
-    .lineDown {
-        border-bottom: none;
-    }
-    .containerFilters {
-        display: none;
-    }
-    .containerFiltersTwo {
-        align-items: center;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        height: -webkit-fill-available;
-        justify-content: flex-start;
-        width: 100%;
-    }
-    .modal {
-        background: white;
-        display: block;
-        height: -webkit-fill-available;
-        padding: 1rem;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 2;
-    }
-    .buttonFilter {
-        background-color: white;
-        display: block;
-        height: 48px;
-        width: 68px;
-        border: 1px solid #1572A1;
-        border-radius: 32px;
-        box-sizing: border-box;
-    }
-    .eq {
-        height: 2rem;
-        width: 2rem;
-    }
-    .containerEx {
-        display: flex;
-        justify-content: flex-end;
-        margin: 0 0 1rem;
-        width: 100%;
-    }
-    .buttonContainer {
-        display: none;
-    }
-    .containerButtons {
-        align-items: center;
-        display: flex;
-        flex: 2;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .buttonDelete, .buttonSave {
-        border-radius: 0.5rem;
-        height: 2.5rem;
-        margin: 1rem 0;
-        width: 15rem;
-    }
-    .buttonSave {
-        background-color: #1572A1;
-        border: none;
-    }
-    .buttonDelete {
-        background-color: white;
-        border: 1px solid #1572A1;
-    }
-}

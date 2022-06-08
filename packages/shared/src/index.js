@@ -29,3 +29,6 @@ export {
 } from '@booking-ui/user-account';
 export { Button } from './components/Button';
 export * from '@booking-ui/messaging-system';
+
+
+export * from '@booking-ui/admin-panel';

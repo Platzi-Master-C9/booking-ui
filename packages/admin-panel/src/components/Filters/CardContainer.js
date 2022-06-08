@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from './Card';
 import "./filters.css";
 
-export const CardContainer = ({ type, titleOne, titleTwo, descriptionOne, descriptionTwo, show, checkedOne, checkedTwo, handleSetShow, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete, }) => {
+export const CardContainer = ({ type, titleOne, titleTwo, descriptionOne, descriptionTwo, show, checkedOne, checkedTwo, handleSetShow, handleChexboxOne, handleChexboxTwo, handleChexboxOneDelete }) => {
 
   return (
     <>
