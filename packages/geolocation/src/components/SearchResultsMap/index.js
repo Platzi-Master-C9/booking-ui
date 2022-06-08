@@ -34,7 +34,6 @@ function SearchResultsMap({ initCenter, initPlaces }) {
 
   return (
     <div
-      style={{ height: '100vh', width: '100%' }}
       id="resultMap"
       className="resultMap"
     >

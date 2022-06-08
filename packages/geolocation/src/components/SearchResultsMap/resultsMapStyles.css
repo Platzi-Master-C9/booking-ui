@@ -1,3 +1,6 @@
 .resultMap {
   grid-area: map;
+  max-height: 100vh;
+  min-width: 550px;
+  width: 100%;
 }
