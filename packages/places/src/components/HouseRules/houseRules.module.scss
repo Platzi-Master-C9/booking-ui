@@ -10,22 +10,24 @@
     font-weight: 500;
     font-size: 36px;
   }
-  div{
+  div {
     width: 33%;
     display: inline-flex;
     flex-direction: column;
-    ul{
-    width: 380px;
-    margin-left: 14px;
-    display: flex;
-    flex-direction: column;
+    h3 {
+      font-size: 2.4rem;
     }
-    li::marker{
-      font-size: 10px
+    ul {
+      width: 380px;
+      margin-left: 14px;
+      display: flex;
+      flex-direction: column;
+      li {
+        font-size: 1.6rem;
+      }
+    }
+    span {
+      font-size: 1.6rem;
     }
   }
-}
-
-.cancellations span{
-  padding-top: 16px;
 }

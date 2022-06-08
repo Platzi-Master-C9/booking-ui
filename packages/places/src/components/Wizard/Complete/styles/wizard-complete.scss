@@ -3,14 +3,30 @@
 .wizard-complete {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-auto-rows: min-content;
-  justify-items: center;
-  align-content: center;
-  &__instruction {
-    @include instructionTitleForm;
+  &__loading {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 64px 32px;
+    place-content: center;
+    place-items: center;
+    font-size: clamp(1.2rem, 2vw, 2.4rem);
+    font-weight: bold;
+    text-align: center;
   }
-  &__complete-register {
-    @include button-form;
+  &__status {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: min-content;
+    place-content: center;
+    place-items: center;
+    &-instruction {
+      @include instructionTitleForm;
+      text-align: center;
+    }
+    &-complete-register {
+      @include button-form;
+    }
   }
 }

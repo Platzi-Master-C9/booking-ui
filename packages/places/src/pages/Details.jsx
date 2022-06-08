@@ -8,7 +8,7 @@ import { GridImages } from '../components/GridImages';
 import { ItemImage } from '../components/ItemImage';
 import { DescriptionHosting } from '../components/DescriptionHosting';
 import { ItemBenefit } from '../components/ItemBenefit';
-import { MapDetails } from '../components/MapDetails';
+import { PlacesDetailsMap } from '../../../geolocation/src/components/PlaceMapDetails';
 
 // Como no hay de donde obtener las imagenes monte estas provisionalmente en mi servidor, pero
 // posteriormente deben cambiarse por las imagenes reales del host
@@ -101,6 +101,7 @@ export function DetailsPage() {
   return (
     <>
       <Header />
+
       <GridImages
         nameHosting={dataPlace.nameHosting}
         ranking={dataPlace.ranking}
@@ -131,7 +132,7 @@ export function DetailsPage() {
         ))}
       </DescriptionHosting>
       <Perks />
-      <MapDetails />
+      <PlacesDetailsMap />
       <HouseRules />
       <HostDetails
         host={hostDetails.host}
@@ -144,6 +145,7 @@ export function DetailsPage() {
         responseIndex={hostDetails.responseIndex}
         responseTime={hostDetails.responseTime}
       />
+
       <Footer />
     </>
   );
