@@ -38,6 +38,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
 
   const submitPriceFilter = () => {
     sendFilter();
+    toggleVisibility('visiblePrice');
   } 
 
   // Size filter
@@ -49,6 +50,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
 
   const submitSizeFilter = () => {
     sendFilter();
+    toggleVisibility('visibleSize');
   }
 
   // Stars filter
@@ -63,6 +65,7 @@ export default function Header({ classPage, filters, handleSubmitFilters }) {
 
   const submitStarts = () => {
     sendFilter();
+    toggleVisibility('visibleStars');
   }
 
   // Send all filters

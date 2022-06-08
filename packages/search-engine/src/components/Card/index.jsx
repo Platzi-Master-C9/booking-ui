@@ -1,8 +1,9 @@
 import React from 'react';
+import Link from 'next/link';
 import './Card.css';
 
 const CardComponent = (props) => {
-  const { subtitle, title, description, rating, price, reviews, image } = props
+  const { id, subtitle, title, description, rating, price, reviews, image } = props
   return (
     <div className='wrap-card'>
       <div className='wrap-slider'>
@@ -12,7 +13,11 @@ const CardComponent = (props) => {
       <div className='card-content'>
         <img className='card-content__fav' src='/search-engine/icon-heart.png' alt='' />
         <span className='card-content__subtitle'>{subtitle}</span>
-        <h1 className='card-content__title'>{title}</h1>
+
+        <Link href='/places/details'>
+          <a className='card-content__title'>{title}</a>
+        </Link>
+
         <p className='card-content__description'>
           {description}
         </p>

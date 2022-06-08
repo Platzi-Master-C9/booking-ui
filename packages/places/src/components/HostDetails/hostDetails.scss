@@ -1,4 +1,5 @@
 .host-details-container {
+  position: relative;
   padding: 30px 50px;
   border-bottom: 1px solid #9B9B9B;
   font-size: 14px;
@@ -35,8 +36,9 @@
 
 .host-details__img {
   width: 58px;
-  position: absolute;
   height: 58px;
+  position: absolute;
+  top: 30px;
 }
 
 .data__icon-start,

@@ -10,76 +10,51 @@ import { DescriptionHosting } from '../components/DescriptionHosting';
 import { ItemBenefit } from '../components/ItemBenefit';
 import { PlacesDetailsMap } from '../../../geolocation/src/components/PlaceMapDetails';
 
-// Como no hay de donde obtener las imagenes monte estas provisionalmente en mi servidor, pero
-// posteriormente deben cambiarse por las imagenes reales del host
 const imgsPlace = [
-  { urlImg: '/places/image1.png' },
-  { urlImg: '/places/image2.png' },
-  { urlImg: '/places/image3.png' },
-  { urlImg: '/places/image4.png' },
-  { urlImg: '/places/image5.png' },
+  { urlImg: 'https://a0.muscache.com/im/pictures/miso/Hosting-47981641/original/6d51bdc0-7002-4100-ab65-dba95be57b61.jpeg?im_w=720' },
+  { urlImg: 'https://a0.muscache.com/im/pictures/66fa0a00-1d62-4e6a-b479-2ce51549e697.jpg?im_w=720' },
+  { urlImg: 'https://a0.muscache.com/im/pictures/miso/Hosting-47981641/original/d073cefc-81cc-4555-a555-da87dba81f5e.jpeg?im_w=720' },
+  { urlImg: 'https://a0.muscache.com/im/pictures/miso/Hosting-47981641/original/d9b842ed-c0f2-4b75-84c8-c45c56c2b617.jpeg?im_w=720' },
+  { urlImg: 'https://a0.muscache.com/im/pictures/miso/Hosting-47981641/original/fee10cc2-9930-43d1-bf65-9a3c4f1213b1.jpeg?im_w=720' },
 ];
 
-// Este codigo nos genera una funcion aleatoria que nos da el ranking y el numero de reseñas provisionalmente
-const minInt = 1;
-const maxInt = 5;
-const minFloat = 0;
-const maxFloat = 99;
-let getNumber = '';
-let rankingPlace = '';
-let reviews = '';
-
-function random(min, max) {
-  getNumber = Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-random(minInt, maxInt);
-rankingPlace = getNumber;
-
-if (getNumber != 5) {
-  random(minFloat, maxFloat);
-  rankingPlace = `${rankingPlace}.${getNumber}`;
-}
-
-random(minFloat, maxFloat);
-reviews = getNumber;
-
 const dataPlace = {
-  nameHosting: 'Parque de los Pies Descalsos',
-  ranking: `${rankingPlace}`,
-  reviews: `${reviews}`,
+  nameHosting: 'Rustic & Modern Flat in the heart of Laureles',
+  ranking: 4.9,
+  reviews: 63,
+  price: 43,
   location: 'Medellín, Antioquia, Colombia',
 };
 
 const descriptionPlace = {
   location: 'Medellín',
   host: 'Laura',
-  guests: '2 huespedes',
-  rooms: '1 habitación',
-  bed: '1 cama',
-  bathroom: '1 baño',
+  guests: '2 guests',
+  rooms: '1 room',
+  bed: '1 bed',
+  bathroom: '1 bath',
   photoHost: '/places/photo_profile.png',
   description:
-    'Te va a encantar mi espacio principalmente por la excelente ubicación Vivo frente al Parque de los Pies Descalsos, esta es una de las principales lugares de Medellín y conecta los barrios más al norte de la ciudad. Parque de los Pies Descalsos es conocido por ser el mejor lugar para hospedarse en Medellín debido a todos los excelentes bares y clubes, restaurantes y centros comerciales, y la reputación de ser la zona más bonita y segura de la ciudad.',
+    'You are going to love my space mainly because of the excellent Vivo location in front of the Parque de los Pies Descalsos, this is one of the main places of Medellin and connects the most northern neighborhoods of the city. Parque de los Pies Descalsos is known to be the best place to stay in Medellin due to all the excellent bars and clubs, restaurants and shopping centers, and the reputation of being the most beautiful and safe area of the city.',
 };
 
 const benefits = [
   {
     photoBenefit: '/places/cleaning.png',
-    title: 'Opciones de limpieza mejoradas',
+    title: 'Improved cleaning options',
     description:
-      'Este anfitrión se comprometió a seguir el proceso de limpieza avanzada de 5 pasos de Booking System.',
+      'This host committed to follow the 5-step advanced cleaning process of Booking System.',
   },
   {
     photoBenefit: '/places/key.png',
-    title: 'Acceso sin restricción de horario',
+    title: 'Unrestricted access to the premises',
     description:
-      'Realiza tu llegada fácilmente mediante la caja de seguridad para llaves.',
+      'Make your arrival easily using the key safe.',
   },
   {
     photoBenefit: '/places/pool-benefit.png',
-    title: 'Piscina',
-    description: 'Los huéspedes suelen buscar este popular servicio.',
+    title: 'Pool',
+    description: 'Guests often search for this popular service.',
   },
 ];
 
@@ -88,12 +63,12 @@ const hostDetails = {
   id: true,
   photoHost: '/places/photo_profile.png',
   ratings: '221',
-  registerDate: 'Febrero 2018',
+  registerDate: 'February 2018',
   hostBio:
-    'Hola, mi nombre es Laura  y soy del hermoso y colorido norte de Colombia. Vine a Medellín hace 10 años para sentirme  mitad costeña y mitad paisa, mi cultura es una mezcla compleja ya que también he vivido en el extranjero. Soy ingeniera civil que actualmente estudia francés. Disfruto...',
-  languages: 'Español, Inglés y Francés',
+    'Hello, my name is Laura and I am from the beautiful and colorful north of Colombia. I came to Medellín 10 years ago to feel half coastal and half country, my culture is a complex mix since I have also lived abroad. I am a civil engineer currently studying French. I enjoy...',
+  languages: 'Spanish, English y French',
   responseIndex: 98,
-  responseTime: 'En menos de una hora',
+  responseTime: 'In less than an hour',
 };
 
 let key = 0;
@@ -109,6 +84,7 @@ export function DetailsPage() {
         location={dataPlace.location}
       >
         {imgsPlace.map((imgPlace) => (
+          // eslint-disable-next-line no-plusplus
           <ItemImage key={key++} urlImg={imgPlace.urlImg} />
         ))}
       </GridImages>
@@ -121,6 +97,7 @@ export function DetailsPage() {
         bathroom={descriptionPlace.bathroom}
         photoHost={descriptionPlace.photoHost}
         description={descriptionPlace.description}
+        dataPlace={dataPlace}
       >
         {benefits.map((benefit) => (
           <ItemBenefit
