@@ -12,7 +12,7 @@ export const Card = ({ titleOne, titleTwo, descriptionOne, descriptionTwo, check
                 <div className='details'>
                     <input onChange={handleChexboxOne} checked={checkedOne} className='input' type="checkbox" />
                     <div className='dees'>
-                        <p className='title'>{titleOne}</p>
+                        <p className='descriptionTitle'>{titleOne}</p>
                         <span className='description'>{descriptionOne}</span>
                     </div>
                 </div>

@@ -1,9 +1,8 @@
+import Wizard from './components/Wizard';
+
+export { Wizard };
 export { Places } from './components/helloWorld';
 export { Perks } from './components/perks/perks';
 export { HouseRules } from './components/HouseRules/HouseRules';
-export { GridImages } from './components/GridImages/index.js';
-export { ItemImage } from './components/ItemImage/index.js';
-export { DescriptionHosting } from './components/DescriptionHosting/index.js';
-export { ItemBenefit } from './components/ItemBenefit/index.js';
-export { MapDetails } from './components/MapDetails/index.js';
-export { DetailsPage } from './pages/Details.jsx';
+export { DetailsPage } from './pages/Details';
+export { PlaceProvider, usePlaceProvider } from './context/place';

@@ -24,7 +24,7 @@ const ResultsPage = () => {
 
   useEffect(() => {
     try {
-      getData(key).then(res => setAllPlaces(res.data));
+      handleSubmitFilters(false)
       setDataState({ ...dataState, loading: false });
     } catch(error) {
       setDataState({ ...dataState, error: error });
@@ -59,18 +59,18 @@ const ResultsPage = () => {
     setCurrentPage(nextPage);
   }
 
-  const handleSubmitFilters = async (minPrice, maxPrice, stars, fullPlace, privateRoom) => {
-    const data = await getData('places');
-    if(data.error) {
+  const handleSubmitFilters = async (filter) => {
+    const { sites } = await getData(filter);
+    if(sites.error) {
       setError('Ha ocurrido un error al obtener los lugares');
       return;
     };
-    setAllPlaces(data);
+    setAllPlaces(sites);
   }
 
   return (
     <div className="results__container">
-      <Header handleSubmitFilters={handleSubmitFilters} />
+      <Header filters={true} handleSubmitFilters={handleSubmitFilters} />
 
       <section className="section__container">
         <Map />

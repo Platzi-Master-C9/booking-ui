@@ -10,13 +10,131 @@
   --size-font-l: 36px;
   --size-font-m: 24px;
   --size-font-s: 18px;
+  --size-font-xs: 14px;
 }
 
 .search__container {
+  display: flex;
   width: 590px;
   height: 60px;
+  font-size: var(--size-font-s);
   justify-self: center;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
   border-radius: 60px;
   background-color: var(--color-font-light);
   box-shadow: 0 0 10px var(--color-font-middle);
+}
+
+.search__container input {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: var(--size-font-xs);
+  height: 22px;
+}
+
+.search__container .search_location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  border: 1px solid transparent;
+  border-right-color: var(--color-main);
+  width: 150px;
+  cursor: pointer;
+}
+
+.search__container .search_location label {
+  user-select: none;
+}
+
+.search__container .search_location input {
+  user-select: none;
+}
+
+.search__container .search_arrivalDepartures {
+  width: 105px;
+}
+
+.search__container .search_arrivalDepartures .picker_box {
+  width: 100px;
+  font-family: Poppins;
+  border-style: none;
+  background-color: transparent;
+  outline: none;
+  font-size: var(--size-font-xs);
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.search__container .search_Guests {
+  position: relative;
+  width: 110px;
+  border-right-color: none;
+}
+
+.search__container .search_Guests .input-disable {
+  height: 22px;
+  font-size: var(--size-font-xs);
+  color: #666666;
+}
+
+.search__container .icon-search {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-main);
+  border-radius: 50%;
+}
+
+.search__container .icon-search .icon-png {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/icons8-search-32.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.menu_guest {
+  position: absolute;
+  z-index: 2;
+  top: 65px;
+  left: -10px;
+  width: 250px;
+  height: 170px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: var(--color-font-light);
+  box-shadow: 0 0 10px var(--color-font-dark);
+}
+
+.show_menu-guest {
+  display: flex;
+}
+
+.show_menu-guest .menu-options {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show_menu-guest .menu-options input {
+  width: 40px;
+  height: 35px;
+  padding: 5px;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid var(--color-main);
+  border-radius: 6px;
 }

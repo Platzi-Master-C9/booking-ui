@@ -1,9 +1,9 @@
 import React from 'react';
 import css from './houseRules.module.scss';
 
-export const HouseRules = () => {
+export function HouseRules() {
   return (
-    <div className={css["should-know"]} >
+    <div className={css['should-know']}>
       <h2>What you should know</h2>
       <div className="rules">
         <h3>House rules</h3>
@@ -32,6 +32,6 @@ export const HouseRules = () => {
       </div>
     </div>
   );
-};
+}
 
 export default HouseRules;

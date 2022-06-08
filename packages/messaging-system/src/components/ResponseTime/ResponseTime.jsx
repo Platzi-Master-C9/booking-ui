@@ -1,30 +1,24 @@
+// External dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// Internal dependencies
 import styles from './ResponseTime.module.scss';
 
-export class ResponseTime extends React.PureComponent {
-  render() {
-    const { username } = this.props;
-    return (
-      <div className={styles.frame}>
-        <p className={styles.frameTimeline}>
-          <strong>
-            {username}
-          </strong>
-          {' '}
-          Tiempo de respuesta: en menos de una hora
-        </p>
-      </div>
-    );
-  }
+function ResponseTime({ username }) {
+  return (
+    <p className={styles.frameTimeline}>
+      <strong>
+        {username}
+      </strong>
+      {' '}
+      · Tiempo de respuesta: en menos de una hora
+    </p>
+  );
 }
 
 ResponseTime.propTypes = {
-  username: PropTypes.string,
-};
-
-ResponseTime.defaultProps = {
-  username: 'Laura Restrepo',
+  username: PropTypes.string.isRequired,
 };
 
 export default ResponseTime;

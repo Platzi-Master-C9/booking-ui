@@ -1,0 +1,39 @@
+.user__container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  font-size: 1.5rem;
+}
+
+.user__container span {
+  cursor: pointer;
+  color: #1572a1;
+  border-bottom: 1px solid transparent;
+}
+
+.user__container span:hover {
+  border-bottom: 1px solid #1572a1;
+}
+
+.user__container h2 {
+  margin-bottom: 1em;
+}
+
+.breadcrumbs {
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 14px;
+}
+
+.breadcrumbs p {
+  margin-left: 2em;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}

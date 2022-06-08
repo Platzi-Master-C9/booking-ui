@@ -4,7 +4,7 @@ import './footer.css'
 export default function Footer() {
   return (
     <>
-    <div className='line-item'>
+    <div className='line-item-hr'>
     <hr />
     </div>
     <footer>

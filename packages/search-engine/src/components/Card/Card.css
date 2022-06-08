@@ -1,0 +1,147 @@
+.wrap-card {
+  margin: 20px auto;
+  padding: 0;
+  max-width: 850px;
+  /* height: 300px; */
+  border-radius: 32px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins";
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  /* grid-template-columns: repeat( auto-fit, minmax(290px, 1fr) ); */
+  grid-template-rows: 3fr;
+}
+
+.wrap-slider {
+  max-width: 292px;
+  padding: 20px;
+  position: relative;
+}
+
+.wrap-slider img {
+  width: 100%;
+  height: 260px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.slider-arrow__right {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  right: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../../assets/icons/arrow-right2x.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 20px;
+  display: grid;
+  position: relative;
+}
+
+.card-content__fav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card-content__title {
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+  margin: 0;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 97px;
+  height: 2px;
+  margin-top: 20px;
+  border-bottom: 1px solid #9B9B9B;
+}
+
+.card-content__subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  color: #666666;
+}
+
+.card-content__description {
+  font-size: 18px;
+  line-height: 27px;
+  color: #666666;
+  margin: 20px 0;
+}
+
+.card-content__reviews_text {
+  font-size: 18px;
+  padding-left: 5px;
+}
+.card-content__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card-content__footer figure {
+  margin: 0;
+  display: flex;
+}
+
+.card-content__footer figure span {
+  color: #666666;
+}
+
+.card-content__price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+@media (max-width: 600px) {
+  .wrap-card {
+    grid-template-columns: 1fr;
+  }
+
+  .wrap-slider {
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+
+  .card-content {
+    padding: 20px;
+    display: grid;
+    position: relative;
+  }
+
+  .card-content__fav {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+  }
+
+  .card-content__description {
+    max-width: 100%;
+  }
+
+  .card-content__footer {
+    display: block;
+  }
+
+  .card-content__reviews {
+    margin-bottom: 10px;
+  }
+}

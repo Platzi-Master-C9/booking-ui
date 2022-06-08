@@ -2,11 +2,12 @@
 // Internal dependencies
 import http from './http';
 
-const getMessagesFromChatRoom = async (chatId, page) => {
+const getMessagesFromChatRoom = async (chatId, userId, page) => {
   try {
     const response = await http.get(`/chats/${chatId}/messages`, {
       params: {
         page,
+        userId,
       },
     });
 
@@ -29,7 +30,7 @@ const getMessagesFromChatRoom = async (chatId, page) => {
 const createMessage = async (chatId, message, userId) => {
   try {
     const response = await http.post(`/chats/${chatId}/messages`, {
-      message,
+      text: message,
       createdBy: userId,
     });
 
