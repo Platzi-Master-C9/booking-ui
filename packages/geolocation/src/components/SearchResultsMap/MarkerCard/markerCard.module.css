@@ -1,8 +1,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 12rem;
-  height: 14rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 1rem;
   cursor: pointer;
   background-color: rgb(236, 236, 236);
