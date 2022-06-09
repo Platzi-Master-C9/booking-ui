@@ -21,7 +21,7 @@ function ListResults({ places, statePlaces }) {
         {places.map((place) => {
           return (
             <CardComponent
-              key={place.id}
+              id={place.id}
               subtitle={place.title}
               title={place.type}
               description={place.perks}

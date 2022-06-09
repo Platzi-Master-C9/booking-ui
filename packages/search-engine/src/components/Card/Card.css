@@ -1,15 +1,10 @@
 .wrap-card {
-  margin: 20px auto;
-  padding: 0;
-  max-width: 850px;
-  /* height: 300px; */
+  width: 100%;
+  margin-bottom: 20px;
   border-radius: 32px;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
-  font-family: 'Poppins';
-  font-weight: 400;
   display: grid;
   grid-template-columns: 290px 1fr;
-  /* grid-template-columns: repeat( auto-fit, minmax(290px, 1fr) ); */
   grid-template-rows: 3fr;
 }
 

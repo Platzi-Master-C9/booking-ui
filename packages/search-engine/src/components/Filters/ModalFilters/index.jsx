@@ -17,8 +17,8 @@ export default function ModalFilters(props) {
             {children}
           </div>
           <div className={css.modalFooter}>
-            <button className={css.delete} onClick={() => reset()}>Borrar</button>
-            <button className={css.done} onClick={() => submitFn()}>Guardar</button>
+            <button className={css.delete} onClick={() => reset()}>Clear</button>
+            <button className={css.done} onClick={() => submitFn()}>Apply</button>
           </div>
         </div>
       }

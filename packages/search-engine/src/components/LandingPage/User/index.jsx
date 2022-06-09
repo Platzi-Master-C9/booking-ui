@@ -2,13 +2,13 @@ import { useAuth0 } from '@auth0/auth0-react';
 import React, { useState } from 'react';
 import './User.css';
 
-const optionsNoAuthenticated = ['Regístrate', 'Iniciar sesión'];
+const optionsNoAuthenticated = ['Sign up', 'Log in'];
 const optionsAuthenticated = [
-  'Mensajes',
-  'Notificaciones',
-  'Listas de favoritos',
-  'Cuenta',
-  'Cerrar sesión',
+  'Messages',
+  'Notifications',
+  'Favorite places',
+  'Account',
+  'Log out',
 ];
 
 const User = ({ classUser = 'users_container' }) => {
@@ -22,13 +22,13 @@ const User = ({ classUser = 'users_container' }) => {
   const onOptionClicked = (value) => () => {
     setSelectedOption(value);
     switch (value) {
-      case 'Cerrar sesión':
+      case 'Log out':
         logout();
         break;
-      case 'Iniciar sesión':
+      case 'Log in':
         loginWithPopup();
         break;
-      case 'Regístrate':
+      case 'Sign up':
         loginWithPopup({
           screen_hint: 'signup',
         });
@@ -43,7 +43,7 @@ const User = ({ classUser = 'users_container' }) => {
   return (
     <div className={classUser}>
       <div className="link host">
-        <a href="/">Hazte anfitrión</a>
+        <a href="/">Become a Host</a>
       </div>
 
       <button
