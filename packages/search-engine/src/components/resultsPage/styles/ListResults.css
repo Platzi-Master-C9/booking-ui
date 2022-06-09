@@ -2,9 +2,9 @@
   /* colors */
   --color-font-dark: #000000;
   --color-font-middle: #666666;
-  --color-font-light: #FFFFFF;
-  --color-font-alt: #1572A1;
-  --color-main: #1572A1;
+  --color-font-light: #ffffff;
+  --color-font-alt: #1572a1;
+  --color-main: #1572a1;
 
   /* font-size */
   --size-font-l: 36px;
@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 0px;
   padding: 40px 0;
 }
 

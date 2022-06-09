@@ -17,7 +17,7 @@ export const GridItem = ({ user }) => {
   return (
     <li key={user.id} className={styles.list__item}>
       <div className={styles.textCenterName}>{user.fullName}</div>
-      <div>{user.userType === 1 ? "GUEST" : "HOST"}</div>
+      <div>{user.profile === 1 ? "GUEST" : "HOST"}</div>
       <div>{user.status}</div>
       <div>{user.validated === true ? "VALIDATED" : "REQUIRED"}</div>
       <div>{user.dateOfRegister}</div>

@@ -1,9 +1,9 @@
 .price {
   display: flex;
+  margin-top: 0.8rem;
   flex-direction: row;
-  height: 33%;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .price > p:nth-child(1) {

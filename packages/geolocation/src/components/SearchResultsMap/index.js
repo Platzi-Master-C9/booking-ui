@@ -1,6 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import { MapMarker } from './MapMarker';
+import './resultsMapStyles.css';
 
 /* 
   @param {Object} initCenter - Initial center to render the map
@@ -15,14 +16,14 @@ function SearchResultsMap({ initCenter, initPlaces }) {
 
   React.useEffect(() => {
     // Call corresponding api to get and set places
-    console.log(center);
+    // console.log(center);
   }, [center]);
 
   // Temporal values
   const init = {
     center: {
-      lat: 19.4326,
-      lng: -99.1332,
+      lat: 6.246112,
+      lng: -75.590526,
     },
     zoom: 15,
   };
@@ -32,21 +33,25 @@ function SearchResultsMap({ initCenter, initPlaces }) {
   }
 
   return (
-    <div style={{ height: '100vh', width: '100%' }} id="resultMap">
+    <div
+      style={{ height: '100vh', width: '100%' }}
+      id="resultMap"
+      className="resultMap"
+    >
       <GoogleMapReact
-        bootstrapURLKeys={{ key: '' }}
+        bootstrapURLKeys={{ key: 'AIzaSyByhlmtSqpfGkZwd7phQO56KlP4D5aXNNE' }}
         center={init.center}
         zoom={init.zoom}
         onChange={(obj) => _onChange(obj)}
         options={{ scrollwheel: true }}
       >
-        {places.map((place) => {
+        {initPlaces.map((place) => {
           return (
             <MapMarker
               key={place.id}
               lat={place.location.lat}
               lng={place.location.lng}
-              text={`$${place.price} MXN`}
+              text={`$${place.price} COP`}
               place={place}
             />
           );

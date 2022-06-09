@@ -7,7 +7,11 @@ export {
   usePlaceProvider,
   DetailsPage,
 } from '@booking-ui/places';
-export { Geolocation, SearchResultsMap } from '@booking-ui/geolocation';
+export {
+  Geolocation,
+  SearchResultsMap,
+  PlaceMapDetails,
+} from '@booking-ui/geolocation';
 export * from '@booking-ui/authentication';
 export { Booking, Reservation } from '@booking-ui/booking';
 export {
