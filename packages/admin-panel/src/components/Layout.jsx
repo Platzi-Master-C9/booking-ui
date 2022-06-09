@@ -6,7 +6,7 @@ import { Sidebar } from "./Sidebar";
 import "../assets/styles/Layout.scss";
 
 const Section = styled.section`
-  margin-left: ${({ sidebar }) => (sidebar ? "230px" : "0")};
+  margin-left: ${({ sidebar }) => (sidebar ? "250px" : "0")};
   transition: 350ms;
 
   @media screen and (max-width: 1110px) {

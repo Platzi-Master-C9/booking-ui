@@ -1,20 +1,19 @@
-
-.container-Search-and-filters{
+.container-Search-and-filters {
   width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .conteiner-SearchBar_DashboardAdmins  {
-    width: 80%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #e5e9e3;
-    border-radius: 15px
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-SearchBar_DashboardAdmins {
+  width: 80%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e9e3;
+  border-radius: 15px
 }
 
 .button-filters_DashboardAdmins {
@@ -39,6 +38,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .searchBar {
   width: 100%;
   height: 55px;
@@ -54,8 +54,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
+
 .btn-filter_DashboardAdmins {
   transition: 350ms;
   background: none;
@@ -89,6 +89,30 @@
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
 }
 
+#container_buttonAddAdmin:hover {
+  background-color: #f4fcff;
+}
+
+#container_buttonAddAdmin {
+  cursor: pointer;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+#buttonAddAdmin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddf4ff00;
+  height: 110px;
+}
+
+#iconAddAdmin {
+  font-size: 70px;
+  color: #1572A1;
+}
+
 .conteiner-DashboardAdmin {
   font-size: 1.5rem;
   padding: 25px;
@@ -99,7 +123,7 @@
   padding-bottom: 30px;
 }
 
-.CardAdmin{
+.CardAdmin {
   background-color: white;
   width: 220px;
   height: 280px;
@@ -119,12 +143,13 @@
   height: 150px;
   width: 150px;
 }
+
 .full-name_CardAdmin {
   padding-top: 15px;
-  
+
 }
 
-.profile_CardAdmin{
+.profile_CardAdmin {
   font-size: 14px;
 }
 
@@ -135,7 +160,8 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-.container-button_CardAdmin:hover{
+
+.container-button_CardAdmin:hover {
   background-color: #1572a10d;
 }
 
@@ -150,4 +176,4 @@
   cursor: pointer;
   outline: inherit;
   border-top: #1572A1 solid 1px;
-  }
+}

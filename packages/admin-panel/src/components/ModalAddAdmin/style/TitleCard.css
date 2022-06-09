@@ -1,0 +1,38 @@
+.TitleCard-ModalAddAdmin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1572a1;
+  padding-left: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #1572a1;
+}
+.iconCloseModalCreateAdmin:hover {
+  background-color: #d8ecf5;
+}
+.iconCloseModalCreateAdmin {
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid #1572a1; */
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.iconCloseModalCreateAdmin svg {
+  font-size: 35px;
+  font-weight: 200;
+}
+@media (max-width: 768px) {
+  .TitleCard-ModalAddAdmin {
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .TitleCard-ModalAddAdmin {
+    font-size: 16px;
+  }
+}

@@ -1,4 +1,4 @@
-.Header-conteiner{
+.Header-container {
   display: block;
   height: 100px;
 }
@@ -15,19 +15,23 @@
   padding: 0 18px 0 18px;
   background-color: #fff;
 }
+
 #Perfil {
   justify-content: end;
 }
+
 .Circulo {
   background-color: aqua;
   width: 60px;
   height: 60px;
   border-radius: 100%;
 }
+
 #Menu-hamburger {
   display: flex;
   cursor: pointer;
 }
+
 .Company-name {
   background-color: #1572a1;
   border-radius: 50%;
@@ -41,36 +45,43 @@
   pointer-events: none;
   font-size: 5.5rem;
 }
+
 .Company-container {
   margin-left: 2em;
 }
+
 .admin {
   display: flex;
   align-items: center;
   padding-right: 2em;
 }
+
 .Administrador {
   color: #1572a1;
   margin-right: 20px;
   font-size: 18px;
   pointer-events: none;
 }
+
 .Admin-photo {
   border-radius: 50%;
   height: 60px;
   width: 60px;
   object-fit: cover;
 }
+
 @media only screen and (max-width: 425px) {
   .Company-name {
     width: 50px;
     height: 50px;
     font-size: 4rem;
   }
+
   .Admin-photo {
     width: 40px;
     height: 40px;
   }
+
   .Administrador {
     font-size: 16px;
   }

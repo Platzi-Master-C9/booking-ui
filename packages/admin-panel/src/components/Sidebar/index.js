@@ -2,13 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import "../assets/styles/Sidebar.scss";
+import "../../assets/styles/Sidebar.scss";
 import { SidebarData } from "./SidebarData.js";
 import MenuIcon from "@mui/icons-material/Menu";
-
-const SidebarContainer = styled.div`
-  width: 230px;
-`;
 
 const SidebarNav = styled.nav`
   position: fixed;
@@ -29,7 +25,7 @@ const SidebarNav = styled.nav`
   }
 
   &:hover {
-    width: 230px;
+    width: 250px;
   }
   &:hover #Sidebar-list-title {
     display: block;
@@ -38,7 +34,8 @@ const SidebarNav = styled.nav`
 
 const TitleSidebar = styled.div`
   display: block;
-  font-size: 1em;
+  font-size: 18px;
+
   @media screen and (max-width: 1110px) {
     & {
       display: none;
@@ -50,7 +47,7 @@ export const Sidebar = ({ sidebar }) => {
   const router = useRouter();
 
   return (
-    <SidebarContainer className="Sidebar-container">
+    <div className="Sidebar-container">
       <SidebarNav className="Sidebar" sidebar={sidebar}>
         <ul className="SidebarList">
           {SidebarData.map((val, key) => {
@@ -70,6 +67,6 @@ export const Sidebar = ({ sidebar }) => {
           })}
         </ul>
       </SidebarNav>
-    </SidebarContainer>
+    </div>
   );
 };
